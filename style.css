@@ -1,10 +1,15 @@
+body{
+    background-color: rgb(124, 166, 243);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
 #barraescura{
  background-color:rgb(22, 22, 192);
-
- padding: 15px;
+display: flex;
+ padding: 50px;
  max-width: 300px;
-
-
 }
 .tela{
 background-color: rgb(104, 182, 255); 
