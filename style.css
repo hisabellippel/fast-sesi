@@ -1,6 +1,8 @@
 #barraescura{
  background-color:rgb(22, 22, 192);
- padding: 10px;
+
+ padding: 15px;
+ max-width: 20px;
 
 
 }
