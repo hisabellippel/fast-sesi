@@ -11,6 +11,10 @@ display: flex;
  padding: 50px;
  max-width: 300px;
 }
+.tela{
+background-color: rgb(104, 182, 255); 
+width: 300px;
+}
 #nome{
     text-align: center;
     color: rgb(182, 193, 202);
