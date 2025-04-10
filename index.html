@@ -15,14 +15,22 @@
             
         </div>
     </header>
-     <main>
-
-     </main>
-     
-     <footer>
-
-
-     </footer>
+<main>
+    <form action="usuario"id = "gerenteForm"></form>
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome"id = "nome">
+    <br>
+    <label for="credencial">Credencial:</label>
+    <input type="text" name="credencial"id = "credencial"> required
+    <br>
+    <label for="senha">senha:</label>
+    <input type="number" name="senha"id = "senha"> required
+    <br>
+    <label for="OTP">OTP:</label>
+    <input type="number" name="OTP"id = "OTP"> required
+    <br>
+    <button type="button" onclick="validarLogin()">Enviar OTP</button>
+</main>
     
 </body>
 </html>
