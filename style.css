@@ -8,7 +8,8 @@
 }
 .tela{
 background-color: rgb(104, 182, 255); 
-width: 300px;
+padding: 100px;
+max-width: 300px;
 }
 #nome{
     text-align: center;
