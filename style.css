@@ -84,7 +84,7 @@ body {
 .topo1 {
     width: 30px;
     height: 30px;
-    margin-left: -10px;
+    margin-left: 15px;
 }
 
 .topo2 {
@@ -109,4 +109,35 @@ body {
     border-radius:100px;
     margin: 65px;
     justify-content: center
+}
+
+.c1{
+    display: flex;
+}
+
+.c2{
+    display: flex;
+}
+
+.c3{
+    display: flex;
+}
+
+.c4{
+    display: flex;
+}
+
+.im{
+    width: 40px;
+    height: 37px;
+}
+
+.i{
+    padding-top: -200px;
+    padding-right: 50px;
+    align-items: center;
+}
+
+.imgtopo{
+    background: linear-gradient(to bottom, rgb(174, 201, 252), rgb(174, 201, 252));
 }
