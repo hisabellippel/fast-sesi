@@ -23,7 +23,6 @@ max-width: 50%;
 #barraescura{
  background-color:rgb(25, 25, 146);
  display: flex;
- padding: 35px;
  max-width: 2000px;
 }
 .tela{
@@ -69,7 +68,6 @@ max-width: 50%;
 #azul{
     background-color:rgb(22, 22, 192);
     display: flex;
-    padding: 0px;
     max-width: 2000px;
    }
 
@@ -83,4 +81,9 @@ max-width: 50%;
     width: 30px;
     height: 30px;
     margin-left: 250px;
-}  
+}
+
+.imagembase{
+    width: 60px;
+    padding-top: 260px;
+}
