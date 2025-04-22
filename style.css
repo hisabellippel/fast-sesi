@@ -4,6 +4,12 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.posicionar{
+    position: fixed; 
+  bottom: 0;      
+  left: 50%;      
+  transform: translateX(-50%); 
+}
 
 #barraescura{
  background-color:rgb(25, 25, 146);
