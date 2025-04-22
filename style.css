@@ -46,3 +46,14 @@ body{
  #img{
     width: 400px;
  }
+
+.branca{
+    border: 1px;
+    background-color: white;
+    text-align: center;
+    padding-left: 20px;
+    align-items: center;
+    border-radius: 30px 30px 50px 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
