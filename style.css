@@ -67,6 +67,11 @@ align-items: center;
 #azul{
     background-color:rgb(22, 22, 192);
     display: flex;
-    padding: 25px;
+    padding: 0px;
     max-width: 2000px;
    }
+
+
+
+
+
