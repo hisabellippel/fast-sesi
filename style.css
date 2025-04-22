@@ -12,9 +12,11 @@ body{
 }
 .alinharimg{
 display: flex;
-    
+
 justify-content: center; 
 align-items: center; 
+max-width: 50%; 
+ max-height: 50%;
 
 }
 
@@ -67,7 +69,7 @@ align-items: center;
 #azul{
     background-color:rgb(22, 22, 192);
     display: flex;
-    padding: 25px;
+    padding: 0px;
     max-width: 2000px;
    }
 
