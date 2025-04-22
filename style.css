@@ -11,8 +11,10 @@ body{
   transform: translateX(-50%); 
 }
 .alinharimg{
-    display: flex;
-    justify-content: center;
+display: flex;
+    
+justify-content: center; 
+align-items: center; 
 
 }
 
