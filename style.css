@@ -10,6 +10,11 @@ body{
   left: 50%;      
   transform: translateX(-50%); 
 }
+.alinharimg{
+    display: flex;
+    justify-content: center;
+
+}
 
 #barraescura{
  background-color:rgb(25, 25, 146);
