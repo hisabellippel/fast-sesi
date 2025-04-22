@@ -28,6 +28,7 @@ body {
     background-color: rgb(25, 25, 146);
     display: flex;
     max-width: 2000px;
+    padding: 10;
 }
 
 .tela {
@@ -76,20 +77,20 @@ body {
 }
 
 #azul {
-    background-color: rgb(22, 22, 192);
+    background-color: rgb(25, 25, 146);
     display: flex;
     justify-content: center
 }
 
 .topo1 {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     margin-left: 15px;
 }
 
 .topo2 {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     margin-left: 250px;
 }
 
@@ -103,11 +104,12 @@ body {
 }
 
 .redonda {
-    background-color: rgb(22, 22, 192);
+    background-color: rgb(25, 25, 146);
     display: flex;
     color: rgb(255, 255, 255);
     border-radius:100px;
-    margin: 65px;
+    margin: 30px;
+    padding: 10px;
     justify-content: center
 }
 
@@ -140,4 +142,10 @@ body {
 
 .imgtopo{
     background: linear-gradient(to bottom, rgb(174, 201, 252), rgb(174, 201, 252));
+}
+#barra{
+    background-color: rgb(25, 25, 146);
+    display: flex;
+    max-width: 2000px;
+    padding: 10;
 }
