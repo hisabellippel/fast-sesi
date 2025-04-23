@@ -156,7 +156,7 @@ body {
 margin: 30px;
 background-color:  rgb(94, 156, 239);
 
-height: 400px;
+height: 475px;
 
 
 
@@ -173,7 +173,7 @@ text-align: justify;
 .botao{
     background-color: #003366; 
     
-    padding: 15px 20px; 
+    padding: 20px 80px; 
     border: none; 
     border-radius: 25px; 
     cursor: pointer; 
@@ -183,9 +183,10 @@ text-align: justify;
     justify-content: center;
     display: flex;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
     align-items: center;
-    margin-left: 125px;
+    margin-left: 46px;
+    
    
 
 }
@@ -194,8 +195,20 @@ text-align: justify;
     background-color: #003366; 
     color: white;
     border: none;
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: 20px;
+    
     
 }
+#imgofc {
+    
   
+    
+   
+  }
   
+  #imgofc img {
+    
+  }
     
