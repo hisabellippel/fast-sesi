@@ -153,11 +153,12 @@ body {
 
 
 
-margin: 30px;
+margin: 25px;
 background-color:  rgb(94, 156, 239);
 
 height: 475px;
-
+position: absolute;
+width: 400px;
 
 
 
@@ -169,6 +170,8 @@ height: 475px;
 color: whitesmoke;
 padding: 20px;
 text-align: justify;
+
+
 }
 .botao{
     background-color: #003366; 
@@ -186,6 +189,8 @@ text-align: justify;
     margin-top: 30px;
     align-items: center;
     margin-left: 46px;
+    position: absolute;
+    
     
    
 
@@ -200,8 +205,11 @@ text-align: justify;
     font-size: 20px;
     
     
+    
 }
 #imgofc {
+    
+    
     
   
     
@@ -209,6 +217,7 @@ text-align: justify;
   }
   
   #imgofc img {
-    
+    width:800;
+    height:515;
   }
     
