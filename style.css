@@ -150,16 +150,40 @@ body {
     padding: 10;
 }
 .alterarPerfil{
-    display: flex;
-  justify-content: center; /* Centraliza os botões horizontalmente */
-  align-items: center; /* Opcional: centraliza os botões verticalmente dentro da altura de 150px */
-  background: rgb(94, 156, 239);
-  max-width: 500px;
-  max-height: 150px;
-    
-    
-  
-   
-   
+
+
+
+margin: 30px;
+background-color:  rgb(94, 156, 239);
+border-bottom-color: aliceblue;
+height: 400px;
+
+
+
+
+
+
 
 }
+.letras{
+color: whitesmoke;
+padding: 20px;
+text-align: justify;
+}
+.botao{
+    background-color: #003366; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 25px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    font-weight: bold; 
+    width: 90px;
+    justify-content: center;
+
+}
+
+  
+  
+    
