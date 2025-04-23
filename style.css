@@ -155,7 +155,7 @@ body {
 
 margin: 30px;
 background-color:  rgb(94, 156, 239);
-border-bottom-color: aliceblue;
+
 height: 400px;
 
 
@@ -172,8 +172,8 @@ text-align: justify;
 }
 .botao{
     background-color: #003366; 
-    color: white; 
-    padding: 10px 20px; 
+    
+    padding: 15px 20px; 
     border: none; 
     border-radius: 25px; 
     cursor: pointer; 
@@ -181,9 +181,21 @@ text-align: justify;
     font-weight: bold; 
     width: 90px;
     justify-content: center;
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    align-items: center;
+    margin-left: 125px;
+   
 
 }
 
+.botao button {
+    background-color: #003366; 
+    color: white;
+    border: none;
+    
+}
   
   
     
