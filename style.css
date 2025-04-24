@@ -220,4 +220,11 @@ text-align: justify;
     width:800;
     height:515;
   }
+  .botao button {
+    transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave na propriedade transform */
+  }
+  
+  .botao button:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do botão em 10% quando o mouse passa por cima */
+  }
     
