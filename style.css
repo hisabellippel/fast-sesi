@@ -148,6 +148,7 @@ body {
     display: flex;
     max-width: 2000px;
     padding: 10;
+    color: aliceblue;
 }
 .alterarPerfil{
 
@@ -221,3 +222,13 @@ text-align: justify;
     height:515;
   }
     
+.im{
+    width: 75px;
+    height: 60px;
+    
+}
+.im2{
+    width: 65px;
+    height: 60px;
+    margin-left: 20px;
+}
