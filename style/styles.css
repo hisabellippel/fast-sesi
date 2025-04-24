@@ -254,3 +254,18 @@ color: aliceblue;
     height: 67px;
     
 }
+.paratras{
+    position: relative;
+    z-index: 1;
+}
+.overlay-transparente {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    background: rgba(29, 75, 214, 0.3); 
+    z-index: 2;
+    pointer-events: none; 
+    backdrop-filter: blur(6px);
+  }
