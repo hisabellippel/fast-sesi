@@ -159,7 +159,8 @@ background-color:  rgb(94, 156, 239);
 
 height: 475px;
 position: absolute;
-width: 400px;
+width: 380px;
+margin-right: 800px;
 
 
 
@@ -189,8 +190,9 @@ text-align: justify;
     text-align: center;
     margin-top: 30px;
     align-items: center;
-    margin-left: 46px;
+    margin-left: 70px;
     position: absolute;
+
     
     
    
@@ -218,8 +220,10 @@ text-align: justify;
   }
   
   #imgofc img {
-    width:800;
-    height:515;
+    padding: right 90px;
+    width: 500px;
+    height:700px;
+    margin-top: 150px; 
   }
   .botao button {
     transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave na propriedade transform */
@@ -238,4 +242,7 @@ text-align: justify;
     width: 65px;
     height: 60px;
     margin-left: 20px;
+}
+#fonte{
+color: aliceblue;
 }
