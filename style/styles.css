@@ -260,6 +260,7 @@ width: 300p;
 padding-right:30px;
 border-radius: 20px;
 
+
 }
 .quadrados{
     margin: 20px;
@@ -268,6 +269,7 @@ border-radius: 20px;
     width: 250px;
     padding-right:30px;
     border-radius: 20px;
+    
    
     
 }
@@ -278,7 +280,8 @@ color: aliceblue;
 border-radius: 20px;
 padding-left: 20px;
 margin-left:20px;
-margin-top: 30px;
+margin-top: 20px;
+text-align: justify;
 
 }
 
@@ -353,6 +356,7 @@ margin-top: 30px;
        height: 30px;
    border-radius: 20px;
    color: aliceblue;
+   
    }
    
    .quadradomaior{
@@ -364,6 +368,7 @@ margin-top: 30px;
        width: 380px;
        margin-right: 7px;
        color: aliceblue;
+       
    }
 .redond {
     background-color: rgb(231, 231, 237);
