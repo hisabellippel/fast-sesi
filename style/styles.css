@@ -269,3 +269,21 @@ color: aliceblue;
     pointer-events: none; 
     backdrop-filter: blur(6px);
   }
+
+.linhaso{
+margin: 20px;
+background-color: rgb(24, 81, 157);
+height: 435px;
+width: 300p;
+padding-right:30px;
+
+
+}
+.quadrados{
+    margin: 20px;
+    background-color: rgb(24, 81, 157);
+    height: 435px;
+    width: 300p;
+    padding-right:30px;
+    
+}
