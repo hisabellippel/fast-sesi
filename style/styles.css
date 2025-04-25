@@ -152,8 +152,6 @@ body {
 }
 .alterarPerfil{
 
-
-
 margin: 25px;
 background-color:  rgb(94, 156, 239);
 border-radius:20px;
@@ -161,11 +159,6 @@ height: 475px;
 position: absolute;
 width: 380px;
 margin-right: 800px;
-
-
-
-
-
 
 }
 .letras{
@@ -192,11 +185,6 @@ text-align: justify;
     align-items: center;
     margin-left: 70px;
     position: absolute;
-
-    
-    
-   
-
 }
 
 .botao button {
@@ -210,14 +198,6 @@ text-align: justify;
     
     
 }
-#imgofc {
-    
-    
-    
-  
-    
-   
-  }
   
   #imgofc img {
     padding: right 90px;
@@ -246,9 +226,7 @@ text-align: justify;
 #fonte{
 color: aliceblue;
 }
-.topog{
 
-}
 .im3{
     width: 67px;
     height: 67px;
