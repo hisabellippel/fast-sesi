@@ -156,7 +156,7 @@ body {
 
 margin: 25px;
 background-color:  rgb(94, 156, 239);
-
+border-radius:20px;
 height: 475px;
 position: absolute;
 width: 380px;
@@ -276,7 +276,7 @@ background-color: rgb(24, 81, 157);
 height: 435px;
 width: 300p;
 padding-right:30px;
-
+border-radius: 20px;
 
 }
 .quadrados{
@@ -285,5 +285,6 @@ padding-right:30px;
     height: 435px;
     width: 300p;
     padding-right:30px;
+    border-radius: 20px;
     
 }
