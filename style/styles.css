@@ -156,7 +156,7 @@ body {
 
 margin: 25px;
 background-color:  rgb(94, 156, 239);
-
+border-radius:20px;
 height: 475px;
 position: absolute;
 width: 380px;
@@ -253,4 +253,44 @@ color: aliceblue;
     width: 67px;
     height: 67px;
     
+}
+.paratras{
+    position: relative;
+    z-index: 1;
+}
+.overlay-transparente {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    background: rgba(29, 75, 214, 0.3); 
+    z-index: 2;
+    pointer-events: none; 
+    backdrop-filter: blur(6px);
+  }
+
+.linhaso{
+margin: 20px;
+background-color: rgb(24, 81, 157);
+height: 435px;
+width: 300p;
+padding-right:30px;
+border-radius: 20px;
+
+}
+.quadrados{
+    margin: 20px;
+    background-color: rgb(94, 156, 239);
+    height: 435px;
+    width: 300p;
+    padding-right:30px;
+    border-radius: 20px;
+    
+}
+.quadradoslinhas{
+background-color:rgb(24, 81, 157);
+width: 300px;
+color: aliceblue;
+
 }
