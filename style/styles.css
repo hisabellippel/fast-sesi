@@ -294,7 +294,6 @@ width: 300px;
 color: aliceblue;
 
 }
-<<<<<<< HEAD
 
 .redonda1{
     background-color: rgb(25, 25, 146);
@@ -308,20 +307,3 @@ color: aliceblue;
     padding: 10px;
     justify-content: center
 }
-=======
-  .menu-lateral li {
-    display: flex;
-    justify-content: space-between; /* empurra o triângulo para o final */
-    align-items: center;
-    padding: 10px 0;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .triangulo {
-    font-size: 25px;
-  }
-  .trilhos{
-    color: aliceblue;
-  }
->>>>>>> 95e898cd0fe83817577b7cbc9497e2b3ecc7bdad
