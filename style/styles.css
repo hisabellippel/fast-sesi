@@ -341,3 +341,18 @@ color: aliceblue;
     padding: 10px;
     justify-content: center
 }
+.redond {
+    background-color: rgb(166, 166, 226);
+    display: flex;
+    color: rgb(255, 255, 255);
+    border-radius:100px;
+    margin: 30px;
+    padding: 10px;
+    justify-content: center
+}
+.claro{
+
+}
+.red{
+    color: crimson;
+}
