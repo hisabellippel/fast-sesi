@@ -294,3 +294,18 @@ width: 300px;
 color: aliceblue;
 
 }
+  .menu-lateral li {
+    display: flex;
+    justify-content: space-between; /* empurra o triângulo para o final */
+    align-items: center;
+    padding: 10px 0;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .triangulo {
+    font-size: 25px;
+  }
+  .trilhos{
+    color: aliceblue;
+  }
