@@ -159,6 +159,7 @@ height: 475px;
 position: absolute;
 width: 380px;
 margin-right: 800px;
+color: aliceblue;
 
 }
 .letras{
@@ -263,16 +264,21 @@ border-radius: 20px;
 .quadrados{
     margin: 20px;
     background-color: rgb(94, 156, 239);
-    height: 435px;
-    width: 300p;
+    height: 130px;
+    width: 250px;
     padding-right:30px;
     border-radius: 20px;
+   
     
 }
 .quadradoslinhas{
 background-color:rgb(24, 81, 157);
-width: 300px;
+width: 200px;
 color: aliceblue;
+border-radius: 20px;
+padding-left: 20px;
+margin-left:20px;
+margin-top: 30px;
 
 }
 
@@ -340,4 +346,22 @@ color: aliceblue;
     margin-bottom: 170px;
     padding: 10px;
     justify-content: center
+}
+.linhaa{
+ background-color:    rgb(24, 81, 157);
+    width: 200px;
+    height: 30px;
+border-radius: 20px;
+color: aliceblue;
+}
+
+.quadradomaior{
+    margin: 25px;
+    background-color:  rgb(94, 156, 239);
+    border-radius:20px;
+    height: 800px;
+    position: absolute;
+    width: 380px;
+    margin-right: 7px;
+    color: aliceblue;
 }
