@@ -238,7 +238,7 @@ color: aliceblue;
     position: absolute;
     z-index: 1;
 }
-.overlay-transparente {
+.transparente {
     position: absolute;
     top: 0;
     left: 0px;
@@ -347,13 +347,31 @@ margin-top: 30px;
     padding: 10px;
     justify-content: center
 }
+.linhaa{
+    background-color:    rgb(24, 81, 157);
+       width: 200px;
+       height: 30px;
+   border-radius: 20px;
+   color: aliceblue;
+   }
+   
+   .quadradomaior{
+       margin: 25px;
+       background-color:  rgb(94, 156, 239);
+       border-radius:20px;
+       height: 800px;
+       position: absolute;
+       width: 380px;
+       margin-right: 7px;
+       color: aliceblue;
+   }
 .redond {
-    background-color: rgb(166, 166, 226);
+    background-color: rgb(231, 231, 237);
     display: flex;
-    color: rgb(255, 255, 255);
+    color: rgb(7, 7, 7);
     border-radius:100px;
-    margin: 30px;
-    padding: 10px;
+    margin: 25px;
+    padding: 0px;
     justify-content: center
 }
 .claro{
@@ -362,3 +380,14 @@ margin-top: 30px;
 .red{
     color: crimson;
 }
+.transparente1 {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 50%;
+    height: 106%;
+    background: rgba(29, 75, 214, 0.3); 
+    z-index: 2;
+    pointer-events: none; 
+    backdrop-filter: blur(6px);
+  }
