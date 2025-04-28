@@ -79,7 +79,8 @@ body {
 #azul {
     background-color: rgb(25, 25, 146);
     display: flex;
-    justify-content: center
+    justify-content: center;
+    color: aliceblue;
 }
 
 .topo1 {
@@ -255,8 +256,8 @@ color: aliceblue;
 .linhaso{
 margin: 20px;
 background-color: rgb(24, 81, 157);
-height: 435px;
-width: 300p;
+height:230px;
+width: 250px;
 padding-right:30px;
 border-radius: 20px;
 
@@ -265,9 +266,10 @@ border-radius: 20px;
 .quadrados{
     margin: 20px;
     background-color: rgb(94, 156, 239);
-    height: 130px;
-    width: 250px;
-    padding-right:30px;
+    padding-top: 5px;
+    height: 150px;
+    width: 210px;
+    padding-right:20px;
     border-radius: 20px;
     
    
@@ -278,7 +280,7 @@ background-color:rgb(24, 81, 157);
 width: 200px;
 color: aliceblue;
 border-radius: 20px;
-padding-left: 20px;
+padding-left: 5px;
 margin-left:20px;
 margin-top: 20px;
 text-align: justify;
@@ -356,7 +358,11 @@ text-align: justify;
        height: 30px;
    border-radius: 20px;
    color: aliceblue;
-   
+   text-align: center;
+   justify-content: center;
+   padding-left: 40px;
+   font-size: small;
+   margin-left: 40px;
    }
    
    .quadradomaior{
@@ -365,9 +371,10 @@ text-align: justify;
        border-radius:20px;
        height: 800px;
        position: absolute;
-       width: 380px;
+       width: 330px;
        margin-right: 7px;
        color: aliceblue;
+       background-size: 40px;
        
    }
 .redond {
