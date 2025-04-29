@@ -255,11 +255,14 @@ color: aliceblue;
 }
 .linhaso{
 margin: 20px;
-background-color: rgb(24, 81, 157);
+background-color: rgb(35, 93, 170);
 height:230px;
 width: 250px;
 padding-right:30px;
 border-radius: 20px;
+
+
+
 
 
 }
@@ -271,6 +274,7 @@ border-radius: 20px;
     width: 210px;
     padding-right:20px;
     border-radius: 20px;
+    
     
    
     
@@ -284,6 +288,7 @@ padding-left: 5px;
 margin-left:20px;
 margin-top: 20px;
 text-align: justify;
+
 
 }
 
@@ -403,3 +408,13 @@ text-align: justify;
     pointer-events: none; 
     backdrop-filter: blur(6px);
   }
+  
+.umdo{
+display: flex;
+font-size: 12px;
+white-space:nowrap;
+padding-bottom: 50px;
+margin-bottom: 40px;
+justify-content: space-between;
+
+}
