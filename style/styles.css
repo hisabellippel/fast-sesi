@@ -401,6 +401,7 @@ margin-top: 10px;
     padding-top: 20px;
     z-index: -1;
 }
+   
 
 .redonda5{
     background-color: rgb(25, 25, 146);
@@ -543,4 +544,25 @@ a:hover {
     text-align: left;
     color: white;
 }
+.gastos{
+    margin-top: 5px;
+    padding-right: 200px;
+    color: white;
+    text-align: left;
+    padding-left: 10%;
+}
+.gastos2{
+   
+    background-color: rgba(183, 201, 240, 0.7);
+    border-radius: 15%;
+    margin: 5%;
+    padding-right: 35%;
 
+   
+}
+
+.sensores{
+    margin-top: 5px;
+    padding-right: 180px;
+    color: white;
+}
