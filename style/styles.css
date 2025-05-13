@@ -208,11 +208,11 @@ text-align: justify;
     margin-top: 150px; 
   }
   .botao button {
-    transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave na propriedade transform */
+    transition: transform 0.3s ease-in-out;
   }
   
   .botao button:hover {
-    transform: scale(1.1); /* Aumenta o tamanho do botão em 10% quando o mouse passa por cima */
+    transform: scale(1.1); 
   }
     
 .im{
@@ -446,7 +446,7 @@ text-align: justify;
     top: 0;
     right: 0px;
     width: 50%;
-    height: 106%;
+    height: 109%;
     background: rgba(29, 75, 214, 0.3); 
     z-index: 2;
     pointer-events: none; 
@@ -458,4 +458,6 @@ display: flex;
 font-size: 15px;
 white-space:nowrap;
 justify-content: space-between;
+margin-left: 30px;
+
 }
