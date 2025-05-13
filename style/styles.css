@@ -426,15 +426,18 @@ margin-top: 10px;
    }
    
    .quadradomaior{
-       margin: 25px;
+       margin: 20px;
        background-color:  rgb(94, 156, 239);
        border-radius:20px;
        height: 800px;
        position: absolute;
-       width: 330px;
+       width: 350px;
        margin-right: 7px;
        color: aliceblue;
        background-size: 40px;
+
+       
+
        
    }
 .redond {
