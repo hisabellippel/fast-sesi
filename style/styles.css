@@ -511,3 +511,36 @@ a:hover {
     z-index: -1;
     color: rgb(196, 27, 27);
 }
+
+.new{
+    margin:5% 10% 1% 10%;
+    border: 0;
+    height: 1px;
+    border-top: 1px solid rgb(255, 255, 255);
+    padding: 0;
+}
+
+.linha{
+    background-color: rgb(142, 174, 245);
+    margin: 10%;
+    border-radius: 30px;
+    font-size: small;
+    padding-top: 5px;
+}
+
+.linhas{
+    margin-top: 5px;
+    padding-right: 200px;
+    color: white;
+}
+
+.linha2{
+    background-color: rgb(120, 163, 255);
+    margin: 5%;
+    border-radius: 30px;
+    font-size: small;
+    padding: 10px;
+    text-align: left;
+    color: white;
+}
+
