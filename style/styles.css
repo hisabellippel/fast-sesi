@@ -270,7 +270,7 @@ border-radius: 20px;
     margin: 20px;
     background-color: rgb(94, 156, 239);
     padding-top: 5px;
-    height: 100px;
+    height: 70px;
     width: 215px;
     padding-right:20px;
     border-radius: 20px;
@@ -433,7 +433,7 @@ text-align: justify;
     border-radius:100px;
     margin: 25px;
     padding: 0px;
-    justify-content: center
+    justify-content: center;
 }
 .claro{
 
@@ -457,30 +457,7 @@ text-align: justify;
 display: flex;
 font-size: 15px;
 white-space:nowrap;
-padding-bottom: 50px;
-margin-bottom: 40px;
 justify-content: space-between;
 margin-left: 30px;
 
-}
-.Grande{
-    background-color: rgb(212, 212, 212);
-    color: rgb(7, 7, 7);
-    border-radius:25px;
-    margin: 25px;
-    padding: 0px;
-    justify-content: center;
-    padding-bottom: 650px;
-    
-}
-.redond2 {
-    background-color: rgb(231, 231, 237);
-    
-    color: rgb(7, 7, 7);
-    border-radius:15px;
-    margin: 15px;
-   padding-bottom: 5px;
-   padding-top: 5px;
-    justify-content: center;
- 
 }
