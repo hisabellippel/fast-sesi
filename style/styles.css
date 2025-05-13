@@ -470,14 +470,17 @@ margin-left: 30px;
     margin: 25px;
     padding: 0px;
     justify-content: center;
+    padding-bottom: 650px;
     
 }
 .redond2 {
     background-color: rgb(231, 231, 237);
     
     color: rgb(7, 7, 7);
-    border-radius:10px;
+    border-radius:15px;
     margin: 15px;
-    padding: 0px;
-    justify-content: center
+   padding-bottom: 5px;
+   padding-top: 5px;
+    justify-content: center;
+ 
 }
