@@ -256,7 +256,7 @@ color: aliceblue;
 .linhaso{
 margin: 20px;
 background-color: rgb(35, 93, 170);
-height:230px;
+height:250px;
 width: 250px;
 padding-right:30px;
 border-radius: 20px;
@@ -270,11 +270,11 @@ border-radius: 20px;
     margin: 20px;
     background-color: rgb(94, 156, 239);
     padding-top: 5px;
-    height: 150px;
-    width: 210px;
+    height: 100px;
+    width: 215px;
     padding-right:20px;
     border-radius: 20px;
-    
+    padding-top: 70px;
     
    
     
@@ -455,11 +455,12 @@ text-align: justify;
   
 .umdo{
 display: flex;
-font-size: 12px;
+font-size: 15px;
 white-space:nowrap;
 padding-bottom: 50px;
 margin-bottom: 40px;
 justify-content: space-between;
+margin-left: 30px;
 
 }
 .Grande{
