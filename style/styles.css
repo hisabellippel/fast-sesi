@@ -208,11 +208,11 @@ text-align: justify;
     margin-top: 150px; 
   }
   .botao button {
-    transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave na propriedade transform */
+    transition: transform 0.3s ease-in-out;
   }
   
   .botao button:hover {
-    transform: scale(1.1); /* Aumenta o tamanho do botão em 10% quando o mouse passa por cima */
+    transform: scale(1.1); 
   }
     
 .im{
@@ -446,7 +446,7 @@ text-align: justify;
     top: 0;
     right: 0px;
     width: 50%;
-    height: 106%;
+    height: 109%;
     background: rgba(29, 75, 214, 0.3); 
     z-index: 2;
     pointer-events: none; 
@@ -461,4 +461,22 @@ padding-bottom: 50px;
 margin-bottom: 40px;
 justify-content: space-between;
 
+}
+.Grande{
+    background-color: rgb(212, 212, 212);
+    color: rgb(7, 7, 7);
+    border-radius:25px;
+    margin: 25px;
+    padding: 0px;
+    justify-content: center;
+    
+}
+.redond2 {
+    background-color: rgb(231, 231, 237);
+    
+    color: rgb(7, 7, 7);
+    border-radius:10px;
+    margin: 15px;
+    padding: 0px;
+    justify-content: center
 }
