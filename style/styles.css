@@ -571,13 +571,15 @@ a:hover {
   color: aliceblue;
   padding-left: 10%;
   font-size: 54%;
-   
+
+
+/* Css da ouvvidoria*/
 }
 .quadropadrao{
 padding: 70px;
 background-color: #6aaaff;
 
-margin: 40px;
+margin: 30px;
 border: 5px;
 border-radius: 30px;
 padding: 5px;
@@ -596,6 +598,7 @@ border-radius: 30px;
 padding: 5px;
 margin: 10px;
 
+
 }
 .redondaofc{
     background-color: rgb(25, 25, 146);
@@ -605,7 +608,7 @@ margin: 10px;
     margin-top: 30px;
     margin-right: 30px;
     margin-left: 30px;
-    margin-bottom: 30px;
+    
     padding: 10px;
     justify-content: center
 }
@@ -613,4 +616,60 @@ margin: 10px;
 .seta-baixo {
     font-size: 1.5em;
     display: flex;
+  }
+
+/* Css dos dados dos funcionários*/
+
+
+
+
+.container-funcionarios {
+    background-color: #6aaaff;
+    color: #18519d;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .container-funcionarios h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .lista-funcionarios {}
+  
+  .item-funcionario {
+    padding: 10px 0;
+    display: flex;
+    align-items: baseline;
+    border-bottom: 1px solid white; /* Adicionada a linha branca aqui */
+  }
+  
+  .item-funcionario:last-child {
+    /* Você pode remover isso se quiser a linha branca no último item também */
+    /* border-bottom: none; */
+  }
+  
+  .seta-baixo {
+    font-size: 1.2em;
+    margin-right: 10px;
+  }
+  
+  .nome-codigo {
+    display: inline-block; /* Mudança para inline-block */
+  align-items: baseline;
+  border-bottom: 2px solid #18519d; /* Linha azul abaixo de nome e código */
+  padding-bottom: 2px;
+  margin-right: auto; /* Empurra para a esquerda o máximo possível */
+  }
+  
+  .nome-funcionario {
+    margin-right: 5px;
+  }
+  
+  .codigo-funcionario {
+    font-weight: bold;
   }
