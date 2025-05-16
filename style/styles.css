@@ -629,8 +629,13 @@ margin: 10px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding: 20px;
-    margin: 20px;
+    margin: 30px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    
+    
+    padding: 5px;
+    margin-left: 60px;
+    margin-right: 60px;
   }
   
   .container-funcionarios h2 {
@@ -673,3 +678,24 @@ margin: 10px;
   .codigo-funcionario {
     font-weight: bold;
   }
+
+#detalhesfuncio{
+color: white;
+text-align: justify;
+font-size: 10px;
+margin-right: 1000px;
+margin-bottom: 50px;
+width:500px;
+
+}
+
+#detalhesfuncio p {
+    margin-bottom: -10px; 
+  }
+
+#ajeitarimg{
+margin-right: 5000px;
+width: 10px;
+
+
+}
