@@ -650,12 +650,11 @@ margin: 10px;
     padding: 10px 0;
     display: flex;
     align-items: baseline;
-    border-bottom: 1px solid white; /* Adicionada a linha branca aqui */
+    border-bottom: 1px solid white;
   }
   
   .item-funcionario:last-child {
-    /* Você pode remover isso se quiser a linha branca no último item também */
-    /* border-bottom: none; */
+    
   }
   
   .seta-baixo {
@@ -664,11 +663,11 @@ margin: 10px;
   }
   
   .nome-codigo {
-    display: inline-block; /* Mudança para inline-block */
+    display: inline-block; 
   align-items: baseline;
-  border-bottom: 2px solid #18519d; /* Linha azul abaixo de nome e código */
+  border-bottom: 2px solid #18519d; 
   padding-bottom: 2px;
-  margin-right: auto; /* Empurra para a esquerda o máximo possível */
+  margin-right: auto; 
   }
   
   .nome-funcionario {
