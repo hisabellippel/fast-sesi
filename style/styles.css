@@ -650,7 +650,6 @@ margin: 10px;
     text-align: left;
   }
   
-  .lista-funcionarios {}
   
   .item-funcionario {
     padding: 10px 0;
@@ -659,9 +658,6 @@ margin: 10px;
     border-bottom: 1px solid white;
   }
   
-  .item-funcionario:last-child {
-     
-  }
   
   .seta-baixo {
     font-size: 1.2em;
