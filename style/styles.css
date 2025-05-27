@@ -9,9 +9,9 @@ body {
 
 .posicionar{
     position: fixed; 
-  bottom: 0;      
-  left: 50%;      
-  transform: translateX(-50%); 
+    bottom: 0;      
+    left: 50%;      
+    transform: translateX(-50%); 
 }
 
 .alinharimg {
@@ -21,13 +21,11 @@ body {
     height: 100px;
     margin: 40% 100% 200% 40%;
     padding-top: 40%;
-
 }
 
 #barraescura {
     background-color: rgb(25, 25, 146);
     display: flex;
-  
     padding: 10;
 }
 
@@ -100,7 +98,7 @@ body {
     padding-top: 260px;
 }
 
-#hs {
+#hs{
     color: rgb(255, 255, 255);
 }
 
@@ -144,6 +142,7 @@ body {
 .imgtopo{
     background: linear-gradient(to bottom, rgb(174, 201, 252), rgb(174, 201, 252));
 }
+
 #barra{
     background-color: rgb(25, 25, 146);
     display: flex;
@@ -151,28 +150,26 @@ body {
     padding: 10;
     color: aliceblue;
 }
+
 .alterarPerfil{
-
-margin: 25px;
-background-color:  rgb(94, 156, 239);
-border-radius:20px;
-height: 475px;
-position: absolute;
-width: 380px;
-margin-right: 800px;
-color: aliceblue;
-
+    margin: 25px;
+    background-color:  rgb(94, 156, 239);
+    border-radius:20px;
+    height: 475px;
+    position: absolute;
+    width: 380px;
+    margin-right: 800px;
+    color: aliceblue;
 }
+
 .letras{
-color: whitesmoke;
-padding: 20px;
-text-align: justify;
-
-
+    color: whitesmoke;
+    padding: 20px;
+    text-align: justify;
 }
+
 .botao{
     background-color: #003366; 
-    
     padding: 20px 80px; 
     border: none; 
     border-radius: 25px; 
@@ -196,35 +193,34 @@ text-align: justify;
     font-weight: bold;
     white-space: nowrap;
     font-size: 20px;
-    
-    
-    
 }
   
-  #imgofc img {
+#imgofc img {
     padding: right 90px;
     width: 500px;
     height:700px;
     margin-top: 150px; 
-  }
-  .botao button {
+}
+
+.botao button {
     transition: transform 0.3s ease-in-out;
-  }
+}
   
-  .botao button:hover {
+.botao button:hover {
     transform: scale(1.1); 
-  }
+}
     
 .im{
     width: 75px;
     height: 50px;
-    
 }
+
 .im2{
     width: 50px;
     height: 50px;
     margin-left: 25px;
 }
+
 #fonte{
 color: aliceblue;
 }
@@ -232,19 +228,18 @@ color: aliceblue;
 .im3{
     width: 50px;
     height: 50px;
-    
 }
 
 .im4{
     width: 50px;
-    height: 50px;
-    
+    height: 50px;   
 }
+
 .paratras{
-    
     position: absolute;
     z-index: 1;
 }
+
 .transparente {
     position: absolute;
     top: 0;
@@ -255,26 +250,23 @@ color: aliceblue;
     z-index: 2;
     pointer-events: none; 
     backdrop-filter: blur(6px);
-  }
+}
+
 .texto{
     color: aliceblue;
 }
+
 .linhaso{
-margin: 20px;
-background-color: rgb(35, 93, 170);
-height:250px;
-width: 230px;
-padding-right:30px;
-border-radius: 20px;
-padding-left: 30px;
-
-
-
-
-
+    margin: 20px;
+    background-color: rgb(35, 93, 170);
+    height:250px;
+    width: 230px;
+    padding-right:30px;
+    border-radius: 20px;
+    padding-left: 30px;
 }
+
 .quadrados{
-   
     padding-left: 10px;
     padding-top: 5px;
     background-color: rgb(94, 156, 239);
@@ -283,30 +275,17 @@ padding-left: 30px;
     border-radius: 20px;
     justify-content: center;
     margin-top: 10px;
-    
-    
-    
-   
-    
 }
+
 .quadradoslinhas{
-background-color:rgb(24, 81, 157);
-width: 180px;
-color: aliceblue;
-text-align: justify;
-justify-content: center;
-font-size: 12px;
-margin-left: 10px;
-margin-top: 10px;
-
-
-
-
-
-
-
-
-
+    background-color:rgb(24, 81, 157);
+    width: 180px;
+    color: aliceblue;
+    text-align: justify;
+    justify-content: center;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .redonda1{
@@ -436,32 +415,28 @@ margin-top: 10px;
 }
 .linhaa{
     background-color:    rgb(24, 81, 157);
-       width: 200px;
-       height: 30px;
-   border-radius: 20px;
-   color: aliceblue;
-   text-align: center;
-   justify-content: center;
-   padding-left: 40px;
-   font-size: small;
-   margin-left: 40px;
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    color: aliceblue;
+    text-align: center;
+    justify-content: center;
+    padding-left: 40px;
+    font-size: small;
+    margin-left: 40px;
    }
    
-   .quadradomaior{
-       margin: 20px;
-       background-color:  rgb(94, 156, 239);
-       border-radius:20px;
-       height: 800px;
-       position: absolute;
-       width: 350px;
-       margin-right: 7px;
-       color: aliceblue;
-       background-size: 40px;
-
-       
-
-       
-   }
+.quadradomaior{
+    margin: 20px;
+    background-color:  rgb(94, 156, 239);
+    border-radius:20px;
+    height: 800px;
+    position: absolute;
+    width: 350px;
+    margin-right: 7px;
+    color: aliceblue;
+    background-size: 40px;
+}
 .redond {
     background-color: rgb(231, 231, 237);
     display: flex;
@@ -475,6 +450,7 @@ margin-top: 10px;
 .red{
     color: crimson;
 }
+
 .transparente1 {
     position: absolute;
     top: 0;
@@ -488,22 +464,23 @@ margin-top: 10px;
   }
   
 .umdo{
-display: flex;
-font-size: 15px;
-white-space:nowrap;
-justify-content: space-between;
-margin-left: 30px;
+    display: flex;
+    font-size: 15px;
+    white-space:nowrap;
+    justify-content: space-between;
+    margin-left: 30px;
 
 }
 
 a:link {
     color: white;
     text-decoration: none;
-  }
+}
 
 a:hover {
     color: rgb(32, 13, 175);
 }
+
 .informacao3{
     border-style: solid;
     border: 0px;
@@ -558,13 +535,10 @@ a:hover {
     padding-left: 10%;
 }
 .gastos2{
-   
     background-color: rgba(183, 201, 240, 0.7);
     border-radius: 15%;
     margin: 5%;
     padding-right: 35%;
-
-   
 }
 
 .sensores{
@@ -572,40 +546,32 @@ a:hover {
     padding-right: 180px;
     color: white;
 }
+
 .gastos3{
-   
-  color: aliceblue;
-  padding-left: 10%;
-  font-size: 54%;
-
-
-
+    color: aliceblue;
+    padding-left: 10%;
+    font-size: 54%;
 }
+
 .quadropadrao{
-padding: 70px;
-background-color: #6aaaff;
-
-margin: 30px;
-border: 5px;
-border-radius: 30px;
-padding: 5px;
-
-
-
+    padding: 70px;
+    background-color: #6aaaff;
+    margin: 30px;
+    border: 5px;
+    border-radius: 30px;
+    padding: 5px;
 }
 
 .quadrodescrita{
-color: white;
-text-align: justify;
-
-background-color: #5e9cef;
-border: 5px;
-border-radius: 30px;
-padding: 5px;
-margin: 10px;
-
-
+    color: white;
+    text-align: justify;
+    background-color: #5e9cef;
+    border: 5px;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 10px;
 }
+
 .redondaofc{
     background-color: rgb(25, 25, 146);
     display: flex;
@@ -614,7 +580,6 @@ margin: 10px;
     margin-top: 30px;
     margin-right: 30px;
     margin-left: 30px;
-    
     padding: 10px;
     justify-content: center
 }
@@ -622,12 +587,7 @@ margin: 10px;
 .seta-baixo {
     font-size: 1.5em;
     display: flex;
-  }
-
-
-
-
-
+}
 
 .container-funcionarios {
     background-color: #6aaaff;
@@ -637,138 +597,132 @@ margin: 10px;
     padding: 20px;
     margin: 30px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    
-    
     padding: 5px;
     margin-left: 60px;
     margin-right: 60px;
-  }
+}
   
-  .container-funcionarios h2 {
+.container-funcionarios h2 {
     margin-top: 0;
     margin-bottom: 15px;
     text-align: left;
-  }
+}
   
   
-  .item-funcionario {
+.item-funcionario {
     padding: 10px 0;
     display: flex;
     align-items: baseline;
     border-bottom: 1px solid white;
-  }
+}
   
   
-  .seta-baixo {
+.seta-baixo {
     font-size: 1.2em;
     margin-right: 10px;
-  }
+}
   
-  .nome-codigo {
+.nome-codigo {
     display: inline-block; 
   align-items: baseline;
   border-bottom: 2px solid #18519d; 
   padding-bottom: 2px;
   margin-right: auto; 
-  }
+}
   
-  .nome-funcionario {
+.nome-funcionario {
     margin-right: 5px;
-  }
+}
   
-  .codigo-funcionario {
+.codigo-funcionario {
     font-weight: bold;
-  }
+}
 
 #detalhesfuncio{
-color: white;
-text-align: justify;
-font-size: 10px;
-margin-right: 1000px;
-margin-bottom: 50px;
-width:500px;
-
+    color: white;
+    text-align: justify;
+    font-size: 10px;
+    margin-right: 1000px;
+    margin-bottom: 50px;
+    width:500px;
 }
 
 #detalhesfuncio p {
     margin-bottom: -10px; 
-  }
+}
 
 #ajeitarimg{
-margin-right: 5000px;
-width: 10px;
-
+    margin-right: 5000px;
+    width: 10px;
 }
 .barrapequena{
-     background-color: #0b4d91; 
-      width: 40px;
-      height: 50px;
-      border-radius: 10px;
-      position: relative;
-      padding-left: 5%;
-      padding-bottom: 10%;
-     
+    background-color: #0b4d91; 
+    width: 40px;
+    height: 50px;
+    border-radius: 10px;
+    position: relative;
+    padding-left: 5%;
+    padding-bottom: 10%;
 }
-.barrap {
-      content: '';
-      position: absolute;
-      top: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 8px;
-      height: 25px;
-      background-color: white;
-      border-radius: 4px;
-    }
-    .barrapequena2{
-     background-color: #0b4d91; 
-      width: 20px;
-      height: 40px;
-      border-radius: 10px;
-      position: relative;
-      padding-left: 0%;
-      padding-bottom: 195%;
-      left: 94%;
-     
-}
-.barrap2 {
-      content: '';
-      position: absolute;
-      top: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 8px;
-      height: 25px;
-      background-color: white;
-      border-radius: 4px;
-      padding-bottom: 95%;
-        
-    }
 
-  .barrapequena3{
-  background-color: #0b4d91; 
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  position: relative;
-  padding-left: 0%;
-  padding-bottom: 10%;
-  left: 94%;
-  top: 15%;
-  display: grid;
-     
+.barrap {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 25px;
+    background-color: white;
+    border-radius: 4px;
 }
+
+.barrapequena2{
+    background-color: #0b4d91; 
+    width: 20px;
+    height: 40px;
+    border-radius: 10px;
+    position: relative;
+    padding-left: 0%;
+    padding-bottom: 195%;
+    left: 94%;
+}
+
+.barrap2 {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 25px;
+    background-color: white;
+    border-radius: 4px;
+    padding-bottom: 95%;
+}
+
+.barrapequena3{
+    background-color: #0b4d91; 
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    position: relative;
+    padding-left: 0%;
+    padding-bottom: 10%;
+    left: 94%;
+    top: 15%;
+    display: grid;
+}
+
 .barrap3 {
-      content: '';
-      position: absolute;
-      top: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 8px;
-      height: 25px;
-      background-color: white;
-      border-radius: 4px;
-      
-        
-    }
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 25px;
+    background-color: white;
+    border-radius: 4px;
+}
 
