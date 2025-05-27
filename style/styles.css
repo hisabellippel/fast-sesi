@@ -16,11 +16,11 @@ body {
 
 .alinharimg {
     display: flex;
-
     justify-content: center;
-    align-items: center;
-    max-width: 50%;
-    max-height: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 40% 100% 200% 40%;
+    padding-top: 40%;
 
 }
 
@@ -230,6 +230,12 @@ color: aliceblue;
 }
 
 .im3{
+    width: 67px;
+    height: 67px;
+    
+}
+
+.im4{
     width: 67px;
     height: 67px;
     
