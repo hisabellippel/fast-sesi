@@ -17,9 +17,10 @@ body {
 .alinharimg {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 5px;
+    width: 100px;
+    height: 100px;
+    margin: 40% 100% 200% 40%;
+    padding-top: 40%;
 
 }
 
