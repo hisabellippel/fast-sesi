@@ -74,16 +74,15 @@ body {
     margin-right: 40px;
 }
 
-.branca {
+.branca1 {
     border: 1px;
     background-color: white;
     text-align: center;
     padding-left: 20px;
     align-items: center;
     border-radius: 30px 30px 50px 50px;
-    margin-left: 40px;
-    margin-right: 40px;
-    padding-bottom: 10px;
+    margin: 190px 30px 110px 30px;
+    padding-top: 20px;
 }
 
 #azul {
@@ -149,7 +148,12 @@ body {
 }
 
 .imgtopo{
-    background: linear-gradient(to bottom, rgb(174, 201, 252), rgb(174, 201, 252));
+    z-index: -1;
+    align-items: center;
+    position: absolute;
+    height: 300px;
+    width: 420px;
+    padding-left: 0px;
 }
 
 #barra{
