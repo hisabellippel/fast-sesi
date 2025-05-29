@@ -74,6 +74,17 @@ body {
     margin-right: 40px;
 }
 
+.branca1 {
+    border: 1px;
+    background-color: white;
+    text-align: center;
+    padding-left: 20px;
+    align-items: center;
+    border-radius: 30px 30px 50px 50px;
+    margin: 190px 30px 110px 30px;
+    padding-top: 20px;
+}
+
 #azul {
     background-color: rgb(25, 25, 146);
     display: flex;
@@ -137,7 +148,12 @@ body {
 }
 
 .imgtopo{
-    background: linear-gradient(to bottom, rgb(174, 201, 252), rgb(174, 201, 252));
+    z-index: -1;
+    align-items: center;
+    position: absolute;
+    height: 300px;
+    width: 420px;
+    padding-left: 0px;
 }
 
 #barra{
@@ -401,7 +417,6 @@ color: aliceblue;
 
 .redonda3{
     background-color: rgb(25, 25, 146);
-    display: flex;
     color: rgb(255, 255, 255);
     border-radius:100px;
     margin-top: 30px;

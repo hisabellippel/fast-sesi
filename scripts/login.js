@@ -32,3 +32,6 @@ if (!OTP || !OTP.lenght == 5 || isNaN(OTP)) {
    console.log(OTP)
 }
 }
+function redirecionar() {
+    window.location.href = "paginaGastos2.html";
+}
