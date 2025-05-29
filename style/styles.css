@@ -149,8 +149,11 @@ body {
 
 .imgtopo{
     z-index: -1;
-    position: absolute;
     align-items: center;
+    position: absolute;
+    height: 300px;
+    width: 420px;
+    padding-left: 0px;
 }
 
 #barra{
