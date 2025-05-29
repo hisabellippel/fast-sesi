@@ -81,9 +81,8 @@ body {
     padding-left: 20px;
     align-items: center;
     border-radius: 30px 30px 50px 50px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 100px;
+    margin: 190px 30px 110px 30px;
+    padding-top: 20px;
 }
 
 #azul {
@@ -149,7 +148,9 @@ body {
 }
 
 .imgtopo{
-    background: linear-gradient(to bottom, rgb(174, 201, 252), rgb(174, 201, 252));
+    z-index: -1;
+    position: absolute;
+    align-items: center;
 }
 
 #barra{
