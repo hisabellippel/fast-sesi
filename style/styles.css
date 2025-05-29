@@ -782,3 +782,12 @@ a:hover {
 }
 
 
+#barraouvidoria{
+    background-color: rgb(25, 25, 146);
+    display: flex;
+    max-width: 2000px;
+    padding: 10;
+    color: aliceblue;
+    margin-top: 310px;
+   
+}
