@@ -125,6 +125,12 @@ body {
     height: 30px;
 }
 
+.imag{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+
 .i{
     padding-top: -200px;
     align-items: center;
