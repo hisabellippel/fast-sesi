@@ -74,6 +74,18 @@ body {
     margin-right: 40px;
 }
 
+.branca {
+    border: 1px;
+    background-color: white;
+    text-align: center;
+    padding-left: 20px;
+    align-items: center;
+    border-radius: 30px 30px 50px 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-bottom: 10px;
+}
+
 #azul {
     background-color: rgb(25, 25, 146);
     display: flex;
@@ -401,7 +413,6 @@ color: aliceblue;
 
 .redonda3{
     background-color: rgb(25, 25, 146);
-    display: flex;
     color: rgb(255, 255, 255);
     border-radius:100px;
     margin-top: 30px;
