@@ -792,19 +792,8 @@ a:hover {
     position: relative;
 }
 .botao2{
-    background-color: #003366; 
-    padding: 20px 80px; 
-    border: none; 
-    border-radius: 25px; 
-    cursor: pointer; 
-    font-size: 16px; 
-    font-weight: bold; 
-    justify-content: center;
-    text-align: center;
-    margin-top: 30px;
-    align-items: center;
-    margin-left: 70px;
-    position: absolute;
+ display: inline;
+
 }
 
 
