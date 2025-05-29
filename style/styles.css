@@ -147,8 +147,9 @@ body {
     background-color: rgb(25, 25, 146);
     display: flex;
     max-width: 2000px;
-    padding: 10;
+    padding: 10px;
     color: aliceblue;
+   
 }
 
 .alterarPerfil{
@@ -725,4 +726,5 @@ a:hover {
     background-color: white;
     border-radius: 4px;
 }
+
 
