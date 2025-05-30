@@ -820,3 +820,11 @@ a:hover {
     backdrop-filter: blur(6px);
 }
 
+#barrabotao{
+    background-color: rgb(25, 25, 146);
+    display: flex;
+    max-width: 2000px;
+    padding: 10px;
+    color: aliceblue;
+    margin-top: 220px;
+}
