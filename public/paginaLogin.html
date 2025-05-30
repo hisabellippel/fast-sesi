@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style/styles.css">
-    <source src="login.js" type="">
+    <script src="../scripts/login.js"></script>
     
 
    
@@ -21,42 +21,47 @@
     <div class="branca1">
 
         <img class="i" src="../asets/imagens/meio/perfil.png" alt="">
-        <form action="usuario"id = "gerenteForm"></form>
+        <form id="meuFormulario">
 
-        <div class="c2">
-        <label for="nome"></label><br>
-        <img class="im" src="../asets/imagens/meio/nome.png" alt="">
-        <input type="text" name="nome"id = "nome" value=""  placeholder="Insira seu nome:" required>
-        </div>
+            <div class="c2">
+            <label for="nome"></label><br>
+            <img class="im" src="../asets/imagens/meio/nome.png" alt="">
+            <input type="text" name="nome" id = "nome" placeholder="Insira seu nome:" required>
+            <div class="error" id="erroNome"></div>
+            </div>
 
-        <br>
+            <br>
 
-        <div class="c2">
-        <label for="credencial"></label><br>
-        <img class="im" src="../asets/imagens/meio/credencial.png" alt="">
-        <input type="text" name="credencial"id = "credencial" value="" placeholder="Insira sua credencial:" required> 
-        </div>
+            <div class="c2">
+                <label for="credencial"></label><br>
+                <img class="im" src="../asets/imagens/meio/credencial.png" alt="">
+                <input type="text" name="credencial"id = "credencial" placeholder="Insira sua credencial:" required>
+                <div class="error" id="erroCredencial"></div> 
+            </div>
 
-        <br>
+            <br>
 
-        <div class="c2">
-        <label for="senha"></label><br>
-        <img class="im" src="../asets/imagens/meio/senha.png" alt="">
-        <input type="password" name="senha"id = "senha" value="" placeholder="Insira sua senha:" required> 
-        </div>
+            <div class="c2">
+                <label for="senha"></label><br>
+                <img class="im" src="../asets/imagens/meio/senha.png" alt="">
+                <input type="password" name="senha" id = "senha" placeholder="Insira sua senha:" required> 
+                <div class="error" id="erroSenha"></div>
+            </div>
 
-        <br>
+            <br>
 
-        <div class="c2">
-        <label for="OTP"></label><br>
-        <img class="im" src="../asets/imagens/meio/otp.png" alt="">
-        <input type="number" name="OTP"id = "OTP" value="" placeholder="Insira o OTP:"required> 
-        </div>
+            <div class="c2">
+                <label for="otp"></label><br>
+                <img class="im" src="../asets/imagens/meio/otp.png" alt="">
+                <input type="number" name="otp" id = "otp" placeholder="Insira o OTP:"required> 
+                <div class="error" id="erroOTP"></div>
+            </div>
 
-        <br>
-        <a href="pagina4.html">Não tem uma conta? Clique aqui!</a>
-        <br>
-        <a href="paginaMenuPrincipal.html"><button type="button" onclick="validarLogin()">Entrar</button></a>
+            <br>
+            <a href="pagina4.html">Não tem uma conta? Clique aqui!</a>
+            <br>
+            <button type="submit">Entrar</button>
+        </form>
     </div>
 
 
