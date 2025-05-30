@@ -577,8 +577,9 @@ a:hover {
 .gastos2{
     background-color: rgba(183, 201, 240, 0.7);
     border-radius: 15%;
-    margin: 5%;
-    padding-right: 35%;
+    padding-bottom: 2%;
+ 
+    
 }
 
 .sensores{
@@ -589,8 +590,8 @@ a:hover {
 
 .gastos3{
     color: aliceblue;
-    padding-left: 10%;
-    font-size: 54%;
+    
+    font-size: 80%;
 }
 
 .quadropadrao{
