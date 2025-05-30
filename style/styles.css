@@ -886,4 +886,11 @@ padding-top: 30px;
   .cor{
     color: azure;
   }
-  
+  a:link {
+    color: white;
+    text-decoration: none;
+  }
+
+a:hover {
+    color: rgb(32, 13, 175);
+}
