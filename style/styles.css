@@ -170,10 +170,11 @@ body {
     background-color:  rgb(94, 156, 239);
     border-radius:20px;
     height: 475px;
-    position: absolute;
-    width: 380px;
-    margin-right: 800px;
+    
+    width: 350px;
+    margin-right: 600px;
     color: aliceblue;
+    margin-bottom: 150px;
 }
 
 .letras{
@@ -196,8 +197,8 @@ body {
     text-align: center;
     margin-top: 30px;
     align-items: center;
-    margin-left: 70px;
-    position: absolute;
+    margin-left: 53px;
+    
 }
 
 .botao button {
@@ -577,8 +578,9 @@ a:hover {
 .gastos2{
     background-color: rgba(183, 201, 240, 0.7);
     border-radius: 15%;
-    margin: 5%;
-    padding-right: 35%;
+    padding-bottom: 2%;
+ 
+    
 }
 
 .sensores{
@@ -589,8 +591,8 @@ a:hover {
 
 .gastos3{
     color: aliceblue;
-    padding-left: 10%;
-    font-size: 54%;
+    
+    font-size: 80%;
 }
 
 .quadropadrao{
@@ -640,6 +642,7 @@ a:hover {
     padding: 5px;
     margin-left: 60px;
     margin-right: 60px;
+    margin-bottom: 85px;
 }
   
 .container-funcionarios h2 {
@@ -814,6 +817,84 @@ a:hover {
     height: 106%;
     background: rgba(29, 75, 214, 0.3); 
     z-index: 2;
-    
     backdrop-filter: blur(6px);
 }
+
+#barrabotao{
+    background-color: rgb(25, 25, 146);
+    display: flex;
+    max-width: 2000px;
+    padding: 10px;
+    color: aliceblue;
+    margin-top: 220px;
+}
+
+.redondacorrecao{
+    background-color: rgb(25, 25, 146);
+    color: rgb(255, 255, 255);
+    border-radius:100px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 170px;
+    padding: 10px;
+    justify-content: center;
+    height: 55px;
+}
+
+.nova{
+color: crimson;
+padding-top: 30px;
+margin-left: 0px;
+margin-right: 0px;
+}
+
+p.nova{
+margin: 0px;
+margin-left: 0px;
+margin-right: 0px;
+
+}
+#agrupar{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.maq{
+padding: 0px;
+margin: 0px;
+padding-top: 30px;
+
+}
+
+.nova2{
+padding: 0px;
+margin: 0px;
+padding-top: 30px;
+}
+.transparentet {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 50%;
+    height: 103.5%;
+    background: rgba(29, 75, 214, 0.3); 
+    z-index: 2;
+    backdrop-filter: blur(6px);
+  }
+
+  .cor{
+    color: azure;
+  }
+  #barraemerg{
+    background-color: rgb(25, 25, 146);
+    display: flex;
+    max-width: 2000px;
+    padding: 10px;
+    color: aliceblue;
+    margin-top: 270px;
+   
+
+  }
+  
