@@ -816,7 +816,6 @@ a:hover {
     height: 106%;
     background: rgba(29, 75, 214, 0.3); 
     z-index: 2;
-    
     backdrop-filter: blur(6px);
 }
 
@@ -840,3 +839,14 @@ a:hover {
     padding: 10px;
     justify-content: center
 }
+.transparentet {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 50%;
+    height: 103.5%;
+    background: rgba(29, 75, 214, 0.3); 
+    z-index: 2;
+    backdrop-filter: blur(6px);
+  }
+  
