@@ -886,4 +886,14 @@ padding-top: 30px;
   .cor{
     color: azure;
   }
+  #barraemerg{
+    background-color: rgb(25, 25, 146);
+    display: flex;
+    max-width: 2000px;
+    padding: 10px;
+    color: aliceblue;
+    margin-top: 270px;
+   
+
+  }
   
