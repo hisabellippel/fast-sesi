@@ -838,5 +838,38 @@ a:hover {
     margin-left: 30px;
     margin-bottom: 170px;
     padding: 10px;
-    justify-content: center
+    justify-content: center;
+    height: 70px;
+}
+
+.nova{
+color: crimson;
+padding-top: 30px;
+margin-left: 0px;
+margin-right: 0px;
+}
+
+p.nova{
+margin: 0px;
+margin-left: 0px;
+margin-right: 0px;
+
+}
+#agrupar{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.maq{
+padding: 0px;
+margin: 0px;
+padding-top: 30px;
+
+}
+
+.nova2{
+padding: 0px;
+margin: 0px;
+padding-top: 30px;
 }
