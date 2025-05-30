@@ -170,10 +170,11 @@ body {
     background-color:  rgb(94, 156, 239);
     border-radius:20px;
     height: 475px;
-    position: absolute;
-    width: 380px;
-    margin-right: 800px;
+    
+    width: 350px;
+    margin-right: 600px;
     color: aliceblue;
+    margin-bottom: 150px;
 }
 
 .letras{
@@ -196,8 +197,8 @@ body {
     text-align: center;
     margin-top: 30px;
     align-items: center;
-    margin-left: 70px;
-    position: absolute;
+    margin-left: 53px;
+    
 }
 
 .botao button {
@@ -818,3 +819,4 @@ a:hover {
     
     backdrop-filter: blur(6px);
 }
+
