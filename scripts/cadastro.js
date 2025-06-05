@@ -1,0 +1,105 @@
+document.addEventListener("DOMContentLoaded", function(){
+    const formulario = document.getElementById("meuFormulario");
+    
+    formulario.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let valido = true;
+
+    // para limpar os erros
+    document.getElementById("erroNome").textContent = "";
+    document.getElementById("erroSenha").textContent = "";
+    document.getElementById("erroOTP").textContent = "";
+    document.getElementById("erroCPF").textContent = "";
+    document.getElementById("erroEmail").textContent = "";
+    document.getElementById("erroDN").textContent = "";
+    document.getElementById("erroTel").textContent = "";
+
+    const nome = document.getElementById("nome").value.trim();
+    const senha = document.getElementById("senha").value.trim();
+    const otp = document.getElementById("otp").value.trim();
+    const cpf = document.getElementById("cpf").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const dn= document.getElementById("dn").value.trim();
+    const tel = document.getElementById("tel").value.trim();
+
+    console.log(nome);
+    console.log(senha);
+    console.log(otp);
+    console.log(cpf);
+    console.log(email);
+    console.log(dn);
+    console.log(tel);
+
+    if (nome.length < 3){
+        document.getElementById("erroNome").textContent = "O nome deve ter pelo menos 3 caracteres";
+        valido = false;
+    }
+
+    if (senha.length < 6){
+        document.getElementById("erroSenha").textContent = "A senha é inválida";
+        valido = false;
+    }
+
+    if (otp.length < 6){
+        document.getElementById("erroOTP").textContent = "O OTP informado é inválido";
+        valido = false;
+    }
+
+    if (cpf.length = 11){
+        document.getElementById("erroCPF").textContent = "O CPF informado é inválido";
+        valido = false;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(email)){
+        document.getElementById("erroEmail").textContent = "E-mail inválido";
+        valido = false;
+    }
+
+    if (dn.length == ''){
+        document.getElementById("erroDN").textContent = "Data não preenchida";
+        valido = false;
+    }
+
+    if (tel.length = 11){
+        document.getElementById("erroTel").textContent = "O telefone informado é inválido";
+        valido = false;
+    }
+
+
+
+    if(valido) {
+        alert("Formulário enviado com sucesso!");
+        redirecionar2();
+    }
+
+
+    });
+});
+
+function redirecionar() {
+    window.location.href = "paginaGastos2.html";
+}
+function redirecionar2() {
+    window.location.href = "paginaMenuPrincipal.html";
+}
+function redirecionar3() {
+    window.location.href = "paginaSelecioneLinhas.html";
+}
+function redirecionar4() {
+    window.location.href = "paginaTrensAtivados1.html";
+}
+function redirecionar5() {
+    window.location.href = "paginaControledeInspeção.html";
+}
+function redirecionar6() {
+    window.location.href = "paginaRelatorioeAnalises.html";
+}
+function redirecionar7() {
+    window.location.href = "paginaOuvidoriaGeral.html";
+}
+function redirecionar8() {
+    window.location.href = "paginaAlertaseNotificacoes1.html";
+}
