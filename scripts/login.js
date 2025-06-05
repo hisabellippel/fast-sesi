@@ -11,16 +11,28 @@ document.addEventListener("DOMContentLoaded", function(){
     document.getElementById("erroCredencial").textContent = "";
     document.getElementById("erroSenha").textContent = "";
     document.getElementById("erroOTP").textContent = "";
+    document.getElementById("erroCPF").textContent = "";
+    document.getElementById("erroEmail").textContent = "";
+    document.getElementById("erroDN").textContent = "";
+    document.getElementById("erroTel").textContent = "";
 
     const nome = document.getElementById("nome").value.trim();
     const credencial = document.getElementById("credencial").value.trim();
     const senha = document.getElementById("senha").value.trim();
     const otp = document.getElementById("otp").value.trim();
+    const cpf = document.getElementById("cpf").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const dn= document.getElementById("dn").value.trim();
+    const tel = document.getElementById("tel").value.trim();
 
     console.log(nome);
     console.log(credencial);
     console.log(senha);
     console.log(otp);
+    console.log(cpf);
+    console.log(email);
+    console.log(dn);
+    console.log(tel);
 
     if (nome.length < 3){
         document.getElementById("erroNome").textContent = "O nome deve ter pelo menos 3 caracteres";
@@ -41,6 +53,30 @@ document.addEventListener("DOMContentLoaded", function(){
         document.getElementById("erroOTP").textContent = "O OTP informado é inválido";
         valido = false;
     }
+
+    if (cpf.length < 11){
+        document.getElementById("erroCPF").textContent = "O CPF informado é inválido";
+        valido = false;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(email)){
+        document.getElementById("erroEmail").textContent = "E-mail inválido";
+        valido = false;
+    }
+
+    if (dn.length == ''){
+        document.getElementById("erroDN").textContent = "Data não preenchida";
+        valido = false;
+    }
+
+    if (tel.length < 11){
+        document.getElementById("erroTel").textContent = "O OTP informado é inválido";
+        valido = false;
+    }
+
+
 
     if(valido) {
         alert("Formulário enviado com sucesso!");
