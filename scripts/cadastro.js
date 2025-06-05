@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function(){
     document.getElementById("erroOTP").textContent = "";
     document.getElementById("erroCPF").textContent = "";
     document.getElementById("erroEmail").textContent = "";
-    document.getElementById("erroDN").textContent = "";
     document.getElementById("erroTel").textContent = "";
 
     const nome = document.getElementById("nome").value.trim();
@@ -20,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function(){
     const otp = document.getElementById("otp").value.trim();
     const cpf = document.getElementById("cpf").value.trim();
     const email = document.getElementById("email").value.trim();
-    const dn= document.getElementById("dn").value.trim();
     const tel = document.getElementById("tel").value.trim();
 
     console.log(nome);
@@ -28,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function(){
     console.log(otp);
     console.log(cpf);
     console.log(email);
-    console.log(dn);
     console.log(tel);
 
     if (nome.length < 3){
@@ -46,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function(){
         valido = false;
     }
 
-    if (cpf.length = 11){
+    if (cpf.length > 11){
         document.getElementById("erroCPF").textContent = "O CPF informado é inválido";
         valido = false;
     }
@@ -58,12 +55,8 @@ document.addEventListener("DOMContentLoaded", function(){
         valido = false;
     }
 
-    if (dn.length == ''){
-        document.getElementById("erroDN").textContent = "Data não preenchida";
-        valido = false;
-    }
 
-    if (tel.length = 11){
+    if (tel.length > 11){
         document.getElementById("erroTel").textContent = "O telefone informado é inválido";
         valido = false;
     }
