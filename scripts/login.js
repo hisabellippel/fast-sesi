@@ -12,10 +12,10 @@ document.addEventListener("DOMContentLoaded", function(){
     document.getElementById("erroSenha").textContent = "";
     document.getElementById("erroOTP").textContent = "";
 
-    const nome = document .getElementById("nome").value.trim();
-    const credencial = document .getElementById("credencial").value.trim();
-    const senha = document .getElementById("senha").value.trim();
-    const otp = document .getElementById("otp").value.trim();
+    const nome = document.getElementById("nome").value.trim();
+    const credencial = document.getElementById("credencial").value.trim();
+    const senha = document.getElementById("senha").value.trim();
+    const otp = document.getElementById("otp").value.trim();
 
     console.log(nome);
     console.log(credencial);
