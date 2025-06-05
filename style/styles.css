@@ -26,7 +26,10 @@ body {
 #barraescura {
     background-color: rgb(25, 25, 146);
     display: flex;
-    padding: 10;
+}
+
+#nav-itens{
+    padding: 2%;
 }
 
 .tela {
@@ -149,11 +152,9 @@ body {
 
 .imgtopo {
     z-index: -1;
-    align-items: center;
     position: absolute;
     height: 300px;
-    width: 420px;
-    padding-left: 0px;
+    width: 450px;
     -webkit-mask-image: linear-gradient(to top, transparent 15%, rgb(255, 255, 255) 100%);
     background-image: url("../asets/imagens/meio/fotoFundoTrem.png");
 }
