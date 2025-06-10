@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     if(valido) {
         alert("Formulário enviado com sucesso!");
-        redirecionar2();
+        window.location.href= "paginaLogin.html";
     }
 
 
