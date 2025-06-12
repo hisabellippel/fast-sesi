@@ -41,6 +41,9 @@ body {
     width: 100px;
     max-width: 300px;
 }
+.ar{
+    font-size: smaller;
+}
 
 #nome {
     text-align: center;
