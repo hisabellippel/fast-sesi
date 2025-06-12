@@ -87,8 +87,9 @@ body {
     padding-left: 20px;
     align-items: center;
     border-radius: 30px 30px 50px 50px;
-    margin: 100px 30px 135px 30px;
+    margin: 135px 30px 175px 30px;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #azul {
@@ -162,8 +163,9 @@ body {
 .imgtopo {
     z-index: -1;
     position: absolute;
-    height: 300px;
-    width: 400px;
+    height: 310px;
+    padding-left: 20px;
+    width: 410px;
     -webkit-mask-image: linear-gradient(to top, transparent 15%, rgb(255, 255, 255) 100%);
     background-image: url("../asets/imagens/meio/fotoFundoTrem.png");
 }
@@ -174,6 +176,7 @@ body {
     max-width: 2000px;
     padding: 11px;
     color: aliceblue;
+    margin-bottom: -10px;
 
 }
 
