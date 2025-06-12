@@ -136,6 +136,7 @@ body {
     justify-content: center
 }
 
+
 .c1 {
     display: flex;
 }
@@ -146,6 +147,11 @@ body {
 
 .pad{
     margin-bottom: 130px;
+}
+
+.pad2{
+    margin-bottom: 243px;
+    margin-top: 45px;
 }
 
 .im {
