@@ -136,6 +136,7 @@ body {
     justify-content: center
 }
 
+
 .c1 {
     display: flex;
 }
@@ -146,6 +147,11 @@ body {
 
 .pad{
     margin-bottom: 130px;
+}
+
+.pad2{
+    margin-bottom: 243px;
+    margin-top: 45px;
 }
 
 .im {
@@ -297,7 +303,7 @@ body {
     width: 230px;
     padding-right: 30px;
     border-radius: 20px;
-    padding-left: 30px;
+    padding-left: 40px;
 }
 
 .quadrados {
@@ -320,6 +326,8 @@ body {
     font-size: 12px;
     margin-left: 10px;
     margin-top: 10px;
+    border-radius: 10px;
+    padding-left: 5px;
 }
 
 .redonda1 {
@@ -490,22 +498,22 @@ body {
 
 .linhaa {
     background-color: rgb(24, 81, 157);
-    width: 200px;
+    width: 300px;
     height: 30px;
     border-radius: 20px;
     color: aliceblue;
-    text-align: center;
-    justify-content: center;
-    padding-left: 40px;
     font-size: small;
-    margin-left: 40px;
+    margin-left: 18px;
+}
+
+.imglinha{
 }
 
 .quadradomaior {
     margin: 20px;
     background-color: rgb(94, 156, 239);
     border-radius: 20px;
-    height: 800px;
+    height: 600px;
     position: absolute;
     width: 350px;
     margin-right: 7px;
@@ -766,7 +774,7 @@ a:hover {
     border-radius: 10px;
     position: relative;
     padding-left: 0%;
-    padding-bottom: 195%;
+    padding-bottom: 149%;
     left: 94%;
 }
 
