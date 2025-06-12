@@ -105,13 +105,13 @@ body {
 .topo1 {
     width: 45px;
     height: 45px;
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 .topo2 {
     width: 50px;
     height: 50px;
-    margin-left: 250px;
+    margin-left: 297px;
 }
 
 .topoTradutor {
@@ -168,6 +168,11 @@ body {
 .pad4{
     margin-bottom: 260px;
     margin-top: 45px;
+}
+
+.pad5{
+    margin-bottom: 330px;
+    margin-top: 72px;
 }
 
 .im {
