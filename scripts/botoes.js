@@ -22,3 +22,10 @@ function redirecionar7() {
 function redirecionar8() {
     window.location.href = "paginaAlertaseNotificacoes1.html";
 }
+
+
+
+
+function redirecionar11() {
+    window.location.href = "paginaGastos3.html";
+}
