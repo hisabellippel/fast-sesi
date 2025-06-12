@@ -514,7 +514,8 @@ body {
     margin-left: 30px;
     margin-bottom: 170px;
     padding: 10px;
-    justify-content: center
+    justify-content: center;
+    
 }
 
 .linhaa {
@@ -1017,4 +1018,9 @@ p.nova {
     margin-top: -200px;
     padding-top: 20px;
     z-index: 1;
+}
+
+.alinharvermelho{
+   color: red;
+   
 }
