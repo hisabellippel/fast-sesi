@@ -613,7 +613,7 @@ a:hover {
     background-color: rgb(142, 174, 245);
     margin: 10%;
     border-radius: 30px;
-    font-size: small;
+    font-size: smaller;
     padding-top: 5px;
 }
 
@@ -621,6 +621,7 @@ a:hover {
     margin-top: 5px;
     padding-right: 200px;
     color: white;
+    font-size: smaller;
 }
 
 .linha2 {
