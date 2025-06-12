@@ -646,8 +646,8 @@ a:hover {
 
 .gastos2 {
     background-color: rgba(183, 201, 240, 0.7);
-    border-radius: 15%;
-    padding-bottom: 2%;
+    border-radius: 20%;
+    padding-bottom: 3%;
 
 
 }
@@ -1023,4 +1023,29 @@ p.nova {
 .alinharvermelho{
    color: red;
    
+}
+.redonda33 {
+    background-color: rgb(25, 25, 146);
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+    margin-top: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 170px;
+    padding: 5px;
+    justify-content: center
+
+}
+.informacao23 {
+    border-style: solid;
+    border: 0px;
+    background-color: rgb(108, 140, 211, 0.7);
+    border-radius: 0px 0px 35px 35px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: 14px;
+    position: relative;
+    margin-top: -200px;
+    padding-top: 20px;
+    z-index: -1;
 }
