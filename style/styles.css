@@ -1141,3 +1141,24 @@ p.nova {
     margin-top: -40px;
     
 }
+
+.quadradomaior2{
+ margin: 20px;
+    background-color: rgb(94, 156, 239);
+    border-radius: 30px;
+    height: 600px;
+   
+    width: 350px;
+    margin-right: 7px;
+    color: aliceblue;
+   
+}
+
+#barra777{
+ background-color: rgb(25, 25, 146);
+    display: flex;
+    max-width: 2000px;
+    padding: 11px;
+    color: aliceblue;
+  margin-top: 630px;
+}
