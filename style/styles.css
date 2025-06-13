@@ -515,6 +515,7 @@ body {
     margin-bottom: 170px;
     padding: 10px;
     justify-content: center;
+     height: 70px; 
     
     
 }
@@ -1056,16 +1057,18 @@ p.nova {
     display: flex; 
     align-items: center; 
     gap: 5px; 
+    margin: 0; 
+    padding: 0; 
     justify-content: center;
 }
 
-.numero-branco {
-    color: white; 
+.numero-vermelho {
+    color: crimson; 
     font-weight: bold; 
 }
 
-.simbolo-vermelho {
-    color: crimson; 
+.simbolo-branco { 
+    color: white; 
     font-weight: bold; 
 }
 
@@ -1076,4 +1079,10 @@ p.nova {
 
 .red {
     color: crimson;
+}
+
+
+.redonda3 a {
+    text-decoration: none; 
+    color: inherit; 
 }
