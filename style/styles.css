@@ -175,6 +175,22 @@ body {
     margin-top: 72px;
 }
 
+.pad6{
+    margin-bottom: 230px;
+    margin-top: 25px;
+}
+
+.pad7{
+    margin-bottom: 200px;
+    margin-top: 15px;
+}
+
+.pad8{
+    margin-bottom: 240px;
+    margin-top: 15px;
+}
+
+
 .im {
     width: 30px;
     height: 30px;
@@ -320,7 +336,7 @@ body {
 .linhaso {
     margin: 20px;
     background-color: rgb(35, 93, 170);
-    height: 250px;
+    height: 400px;
     width: 230px;
     padding-right: 30px;
     border-radius: 20px;
@@ -331,7 +347,7 @@ body {
     padding-left: 10px;
     padding-top: 5px;
     background-color: rgb(94, 156, 239);
-    height: 120px;
+    height: 250px;
     width: 215px;
     border-radius: 20px;
     justify-content: center;
@@ -515,6 +531,8 @@ body {
     margin-bottom: 170px;
     padding: 10px;
     justify-content: center;
+     height: 70px; 
+    
     
 }
 
@@ -1048,4 +1066,113 @@ p.nova {
     margin-top: -200px;
     padding-top: 20px;
     z-index: -1;
+}
+
+.alert-text {
+    color: azure; 
+    display: flex; 
+    align-items: center; 
+    gap: 5px; 
+    margin: 0; 
+    padding: 0; 
+    justify-content: center;
+}
+
+.numero-vermelho {
+    color: crimson; 
+    font-weight: bold; 
+}
+
+.simbolo-branco { 
+    color: white; 
+    font-weight: bold; 
+}
+
+
+.cor {
+    color: azure;
+}
+
+.red {
+    color: crimson;
+}
+
+
+.redonda3 a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+
+#barra00 {
+    background-color: rgb(25, 25, 146);
+    display: flex;
+    max-width: 2000px;
+    padding: 11px;
+    color: aliceblue;
+   margin-top: 270px;
+   height: 60px;
+   
+}
+
+.redonda20 {
+    background-color: rgb(25, 25, 146);
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+   
+    margin-right: 30px;
+    margin-left: 30px;
+    
+    padding: 10px;
+    justify-content: center;
+     height: 70px; 
+    margin-top: -40px;
+    
+}
+
+#barra01 {
+    background-color: rgb(25, 25, 146);
+    display: flex;
+    max-width: 2000px;
+    padding: 11px;
+    color: aliceblue;
+   margin-top: 270px;
+   height: 60px;
+   
+}
+
+.redonda21 {
+    background-color: rgb(25, 25, 146);
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+   
+    margin-right: 30px;
+    margin-left: 30px;
+    
+    padding: 10px;
+    justify-content: center;
+     height: 70px; 
+    margin-top: -40px;
+    
+}
+
+.quadradomaior2{
+ margin: 20px;
+    background-color: rgb(94, 156, 239);
+    border-radius: 20px;
+    height: 450px;
+    position: absolute;
+    width: 350px;
+    margin-right: 7px;
+    color: aliceblue;
+   
+}
+
+#barra777{
+ background-color: rgb(25, 25, 146);
+    display: flex;
+    max-width: 2000px;
+    padding: 11px;
+    color: aliceblue;
+  margin-top: 630px;
 }
