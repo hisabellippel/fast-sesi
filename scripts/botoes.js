@@ -29,3 +29,12 @@ function redirecionar8() {
 function redirecionar11() {
     window.location.href = "paginaGastos3.html";
 }
+function redirecionar12() {
+    window.location.href = "paginaGastos4.html";
+}
+function redirecionar13() {
+    window.location.href = "paginaGastos5.html";
+}
+function redirecionar14() {
+    window.location.href = "paginaGastos6.html";
+}
