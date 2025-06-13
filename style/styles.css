@@ -517,6 +517,8 @@ body {
     margin-bottom: 170px;
     padding: 10px;
     justify-content: center;
+     height: 70px; 
+    
     
 }
 
@@ -1050,4 +1052,39 @@ p.nova {
     margin-top: -200px;
     padding-top: 20px;
     z-index: -1;
+}
+
+.alert-text {
+    color: azure; 
+    display: flex; 
+    align-items: center; 
+    gap: 5px; 
+    margin: 0; 
+    padding: 0; 
+    justify-content: center;
+}
+
+.numero-vermelho {
+    color: crimson; 
+    font-weight: bold; 
+}
+
+.simbolo-branco { 
+    color: white; 
+    font-weight: bold; 
+}
+
+
+.cor {
+    color: azure;
+}
+
+.red {
+    color: crimson;
+}
+
+
+.redonda3 a {
+    text-decoration: none; 
+    color: inherit; 
 }
