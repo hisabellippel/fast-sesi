@@ -516,6 +516,7 @@ body {
     padding: 10px;
     justify-content: center;
     
+    
 }
 
 .linhaa {
@@ -1048,4 +1049,31 @@ p.nova {
     margin-top: -200px;
     padding-top: 20px;
     z-index: -1;
+}
+
+.alert-text {
+    color: azure; 
+    display: flex; 
+    align-items: center; 
+    gap: 5px; 
+    justify-content: center;
+}
+
+.numero-branco {
+    color: white; 
+    font-weight: bold; 
+}
+
+.simbolo-vermelho {
+    color: crimson; 
+    font-weight: bold; 
+}
+
+
+.cor {
+    color: azure;
+}
+
+.red {
+    color: crimson;
 }
