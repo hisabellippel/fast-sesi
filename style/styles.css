@@ -234,6 +234,9 @@ body {
 .pad19{
     margin-bottom: 92px;
 }
+.pad21{
+    margin-bottom: 160px;
+}
 
 .im {
     width: 30px;
@@ -1135,7 +1138,7 @@ p.nova {
 
 .red {
     color: crimson;
-}
+   
 
 
 .redonda3 a {
