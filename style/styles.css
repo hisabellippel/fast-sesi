@@ -195,6 +195,34 @@ body {
     margin-top: 15px;
 }
 
+.pad10{
+    margin-bottom: 295px;
+    margin-top: 45px;
+}
+
+.pad11{
+    margin-bottom: 190px;
+}
+
+.pad12{
+    margin-bottom: 180px;
+}
+
+.pad13{
+    margin-bottom: 133px;
+}
+
+.pad14{
+    margin-bottom: 230px;
+}
+
+.pad15{
+    margin-bottom: 20px;
+}
+
+.pad16{
+    margin-bottom: 122px;
+}
 
 .im {
     width: 30px;
@@ -780,7 +808,7 @@ a:hover {
     font-size: 10px;
     margin-right: 1000px;
     margin-bottom: 50px;
-    width: 500px;
+    width: 200px;
 }
 
 #detalhesfuncio p {
@@ -788,7 +816,6 @@ a:hover {
 }
 
 #ajeitarimg {
-    margin-right: 5000px;
     width: 10px;
 }
 
