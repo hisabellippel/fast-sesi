@@ -1,6 +1,6 @@
 <?php
 
-$sql = "SELECT * FROM funcionario ";
+$sql = "SELECT * FROM funcionario";
 $result = $conn->query($sql);
 
 
