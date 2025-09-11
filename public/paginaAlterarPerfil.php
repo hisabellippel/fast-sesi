@@ -1,48 +1,10 @@
 <?php
 
-$sql = "SELECT * FROM funcionario";
-$result = $conn->query($sql);
-
-
-  if ($result->num_rows > 0) {
-                echo "<table border='1' cellpadding='8' cellspacing='0'>
-                    <tr>
-                        <th>Credencial </th>
-                        <th>Nome</th>
-                        <th>CPF</th>
-                        <th>Email</th>
-                        <th>Telefone</th>
-                      <th>Salario</th>
-                        <th>Senha</th>
-                        <th>Funcao</th>
-                         <th>Data de nascimento</th>
-                    </tr>";
-
-                      while ($row = $result->fetch_assoc()) {
-                    echo "<tr>
-                            <td>{$row['credencial_funcionario']}</td>
-                            <td>{$row['nome_funcionario']}</td>
-                            <td>{$row[' cpf_funcionario']}</td>
-                             <td>{$row[' email_funcionario']}</td>
-                            <td>{$row['  telefone_funcionario']}</td>
-                            <td>{$row['  salario_funcionario']}</td>
-                            <td>{$row['  senha_funcionario']}</td>
-                            <td>{$row['  funcao_funcionario']}</td>
-                            <td>{$row['   data_nascimento_funcionario']}</td>
-
-                            <td>
-<a href='update_jogador.php?id={$row['id']}'>Editar</a> | 
-
-                            </td>
-                          </tr>";
-                }
-                echo "</table>";
-            } else {
-                echo "<p>Nenhum usuário cadastrado.</p>";
-            }
-
-
-
+// Conexão com o banco de dados
+$mysqli = new mysqli("localhost", "root", "root", "fast_sesi_sa");
+if ($mysqli->connect_errno) {
+    die("Erro de conexão: " . $mysqli->connect_error);
+}
 ?>
 
 <html lang="en">
@@ -67,16 +29,41 @@ $result = $conn->query($sql);
     </div>
     
         <div class="pad6">
+
             <div class="alterarPerfil">
-        
+
+            <?php
+            $sql = "SELECT * FROM funcionario WHERE credencial_funcionario = 1";
+            $result = $mysqli->query($sql);
+
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    $cpf = $row['cpf_funcionario'];
+              
+                    $cpf_formatted = substr($cpf, 0, 3) . '.' . substr($cpf, 3, 3) . '.' . substr($cpf, 6, 3) . '-' . substr($cpf, 9, 2);
+                    $senha_masked = str_repeat('*', 8);
+
+                    echo "<p><strong>Nome:</strong> {$row['nome_funcionario']}</p>";
+                    echo "<p><strong>Credencial:</strong> {$row['credencial_funcionario']}</p>";
+                    echo "<p><strong>Data de nascimento:</strong> {$row['data_nascimento_funcionario']}</p>";
+                    echo "<p><strong>Telefone:</strong> {$row['telefone_funcionario']}</p>";
+                    echo "<p><strong>Senha:</strong> {$senha_masked}</p>";
+                    echo "<p><strong>E-mail:</strong> {$row['email_funcionario']}</p>";
+                    echo "<p><strong>CPF:</strong> {$cpf_formatted}</p>";
+                }
+            } else {
+                echo "<p>Nenhum usuário cadastrado.</p>";
+            }
+            ?>
+
                 <img src="../asets/imagens/meio/rostoAlterarPerfil.png" alt="">
-            
+
                 <div class="letras">
-                    
+
                 </div>
 
                 <div class="botao"> 
-                    <a href="paginaLogin.php">
+                    <a href="paginaAlterarPerfil2php">
                     <button type="button">Alterar Perfil:</button>
                     </a>
                 </div>
