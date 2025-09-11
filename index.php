@@ -9,6 +9,6 @@
     <title>Página Inicial</title>
 </head>
 <body>
-    <a href="public/paginaInicial.html">Portal de Entrada</a>
+    <a href="public/paginaInicial.php">Portal de Entrada</a>
 </body>
 </html>
