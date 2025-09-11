@@ -15,13 +15,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $senha = $_POST['senha'];
     $otp = $_POST['otp'];
 
-    // Atualizar os dados no banco
+  
     $stmt = $mysqli->prepare("UPDATE funcionario SET nome_funcionario=?, senha_funcionario=? WHERE credencial_funcionario=?");
     $stmt->bind_param("sss", $nome, $senha, $credencial);
     $stmt->execute();
     $stmt->close();
 
-    // Redirecionar ou mensagem de sucesso pode ser adicionada aqui
+    
 }
 
 // Buscar dados atuais do usuário (credencial 1)
@@ -32,7 +32,7 @@ if ($result->num_rows > 0) {
     $nome = $row['nome_funcionario'];
     $credencial = $row['credencial_funcionario'];
     $senha = $row['senha_funcionario'];
-    // OTP is not stored in DB, so keep empty or handle accordingly
+    
 } else {
     echo "<p>Nenhum usuário encontrado.</p>";
     exit;
