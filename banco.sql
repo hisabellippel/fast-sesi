@@ -7,14 +7,14 @@ CREATE TABLE funcionario(
     cpf_funcionario varchar(11) NOT NULL,
     email_funcionario varchar(45) NOT NULL,
     telefone_funcionario int(15) NOT NULL,
-    salario_funcionario int NOT NULL,
+    salario_funcionario int,
     senha_funcionario varchar(255) NOT NULL,
-    funcao_funcionario varchar(45) NOT NULL,
-    data_nascimento_funcionario date NOT NULL
+    funcao_funcionario varchar(45),
+    data_nascimento_funcionario date
 );
 
 CREATE TABLE trilhos(
-    nome_trilho varchar(45) primary key AUTO_INCREMENT NOT NULL
+    nome_trilho INT primary key AUTO_INCREMENT NOT NULL
 );
 
 CREATE TABLE gastos_gerais(
@@ -31,13 +31,13 @@ CREATE TABLE alertas_notificacoes(
 );
 
 CREATE TABLE trens(
-    id_trem varchar(45) primary key AUTO_INCREMENT NOT NULL,
+    id_trem INT primary key AUTO_INCREMENT NOT NULL,
     peso_trem int NOT NULL,
     temperatura_trem int NOT NULL
 );
 
 CREATE TABLE sensores(
-    nome_sensor varchar(45) primary key
+    nome_sensor INT primary key AUTO_INCREMENT NOT NULL
 );
 
 CREATE TABLE linhas(
@@ -52,21 +52,19 @@ CREATE TABLE linhas(
     consumo_energia_linhas int NOT NULL,
     acidentes_linhas int NOT NULL,
     falhas_tecnicas_linhas varchar(45),
-    motorista_linhas varchar(45) NOT NULL,
+    motorista_linhas INT NOT NULL,
     FOREIGN KEY (motorista_linhas) REFERENCES funcionario(credencial_funcionario)
 );
 
 CREATE TABLE trilhos_manutencao(
     id_manutenção INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-    nome_trilho_manutencao varchar(45),
-    nome_trilho_manutencao
+    nome_trilho_manutencao INT,
     FOREIGN KEY (nome_trilho_manutencao) REFERENCES trilhos(nome_trilho)
 );
 
 CREATE TABLE trilhos_risco(
     id_trilho_risco INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-    nome_trilho_risco varchar(45),
-    nome_trilho_risco,
+    nome_trilho_risco INT,
     FOREIGN KEY (nome_trilho_risco) REFERENCES trilhos(nome_trilho)
 );
 
@@ -80,12 +78,12 @@ CREATE TABLE ouvidoria(
     id_ouvidoria int primary key AUTO_INCREMENT NOT NULL,
     nome_cliente varchar (45),
     observacoes_ouvidoria varchar (45) NOT NULL,
-    nome_funcionario varchar(45)
+    nome_funcionario INT,
     FOREIGN KEY (nome_funcionario) REFERENCES funcionario(credencial_funcionario)
 );
 
 CREATE TABLE trens_descarrilhados(
-    ID_trem_descarrilhado varchar(45) primary key AUTO_INCREMENT NOT NULL,
-    nome_trem_descarrilhado varchar(45),
+    ID_trem_descarrilhado INT primary key AUTO_INCREMENT NOT NULL,
+    nome_trem_descarrilhado INT,
     FOREIGN KEY (nome_trem_descarrilhado) REFERENCES trens(id_trem)
 );
