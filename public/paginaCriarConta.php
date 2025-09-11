@@ -1,4 +1,26 @@
+<?php
+include 'db.php';
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+    $name = $_POST['nome_funcionario'];
+    $email = $_POST['email_funcionario'];
+
+    $sql = " INSERT INTO funcionários (nome_funcionario,email_funcionario) VALUE ('$name','$email')";
+
+    if ($conn->query($sql) === true) {
+        echo "Novo registro criado com sucesso.";
+    } else {
+        echo "Erro " . $sql . '<br>' . $conn->error;
+    }
+    $conn->close();
+}
+
+?>
+
+
 <html lang="en">
+
 
 <head>
     <meta charset="UTF-8">
@@ -24,15 +46,21 @@
 
                 <img class="i" src="../asets/imagens/meio/perfil.png" alt="">
                 <form id="meuFormulario">
+ <form method="POST" action="create.php">
+        <img class="imag" src="../asets/imagens/meio/nome.png" alt="">
+        <label for="name"> Insira seu nome: </label>
+        <input type="text" name="name" required>
+        <br>
+        <img class="imag" src="../asets/imagens/meio/email.png" alt="">
+        <label for="email"> Insira seu email: </label>
+        <input type="email" name="email" required>
+        <br>
+    
 
-                    <div class="c1">
-                        <label for="nome"></label><br>
-                        <img class="imag" src="../asets/imagens/meio/nome.png" alt="">
-                        <input type="text" name="nome" id="nome" placeholder="Insira seu nome:" required>
-                        <div class="error" id="erroNome"></div>
-                    </div>
+        <input type="submit" value="Adicionar">
 
-                    <br>
+    </form>
+                  
 
                     <div class="c1">
                         <label for="cpf"></label><br>
@@ -43,13 +71,7 @@
 
                     <br>
 
-                    <div class="c1">
-                        <label for="email"></label><br>
-                        <img class="imag" src="../asets/imagens/meio/email.png" alt="">
-                        <input type="email" name="email" id="email" placeholder="Insira seu e-mail:" required>
-                        <div class="error" id="erroEmail"></div>
-                    </div>
-
+                   
                     <br>
 
                     <div class="c1">
