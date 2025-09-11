@@ -13,8 +13,35 @@ CREATE TABLE funcionario(
     data_nascimento_funcionario date NOT NULL
 );
 
+CREATE TABLE trilhos(
+    nome_trilho varchar(45) primary key AUTO_INCREMENT NOT NULL
+);
+
+CREATE TABLE gastos_gerais(
+    id_gastos_gerais int primary key AUTO_INCREMENT NOT NULL,
+    gastos_ferrovia int NOT NULL,
+    gastos_materiais int NOT NULL,
+    gastos_manutencoes int NOT NULL,
+    gastos_funcionarios int NOT NULL
+);
+
+CREATE TABLE alertas_notificacoes(
+    id_alertas_notficacoes int primary key AUTO_INCREMENT NOT NULL,
+    observacoes_alertas_notificacoes varchar(45)
+);
+
+CREATE TABLE trens(
+    id_trem varchar(45) primary key AUTO_INCREMENT NOT NULL,
+    peso_trem int NOT NULL,
+    temperatura_trem int NOT NULL
+);
+
+CREATE TABLE sensores(
+    nome_sensor varchar(45) primary key
+);
+
 CREATE TABLE linhas(
-    numero_linhas int primary key NOT NULL,
+    numero_linhas int primary key AUTO_INCREMENT NOT NULL ,
     nome_linhas varchar(45) NOT NULL,
     velocidade_linhas int(45) NOT NULL,
     passageiros_linhas int NOT NULL,
@@ -26,68 +53,39 @@ CREATE TABLE linhas(
     acidentes_linhas int NOT NULL,
     falhas_tecnicas_linhas varchar(45),
     motorista_linhas varchar(45) NOT NULL,
-    CONSTRAINT fk_motorista_linhas
-    FOREIGN KEY (fk_motorista_linhas) REFERENCES funcionario(credencial_funcionario)
-);
-
-CREATE TABLE trilhos(
-    nome_trilho varchar(45) primary key NOT NULL
+    FOREIGN KEY (motorista_linhas) REFERENCES funcionario(credencial_funcionario)
 );
 
 CREATE TABLE trilhos_manutencao(
     id_manutenção INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     nome_trilho_manutencao varchar(45),
-    CONSTRAINT fk_nome_trilho_manutencao
-    FOREIGN KEY (fk_nome_trilho_manutencao) REFERENCES trilhos(nome_trilho)
+    nome_trilho_manutencao
+    FOREIGN KEY (nome_trilho_manutencao) REFERENCES trilhos(nome_trilho)
 );
 
 CREATE TABLE trilhos_risco(
     id_trilho_risco INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     nome_trilho_risco varchar(45),
-    CONSTRAINT fk_nome_trilho_risco
-    FOREIGN KEY (fk_nome_trilho_risco) REFERENCES trilhos(nome_trilho)
+    nome_trilho_risco,
+    FOREIGN KEY (nome_trilho_risco) REFERENCES trilhos(nome_trilho)
 );
 
 CREATE TABLE botao_emergencia(
-linha_botao_emergencia int(3) primary key,
-CONSTRAINT fk_linha_botao_emergencia
-        FOREIGN KEY (linha_botao_emergencia)
-        REFERENCES linhas(numero_linhas)
-);
-
-CREATE TABLE gastos_gerais(
-id_gastos_gerais int primary key,
-gastos_ferrovia int NOT NULL,
-gastos_materiais int NOT NULL,
-gastos_manutencoes int NOT NULL,
-gastos_funcionarios int NOT NULL
+    id_linha_botao_emergencia INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    linha_botao_emergencia int(3),
+    FOREIGN KEY (linha_botao_emergencia) REFERENCES linhas(numero_linhas)
 );
 
 CREATE TABLE ouvidoria(
-id_ouvidoria int primary key,
-nome_funcionario varchar(45),
-nome_cliente varchar (45),
-observacoes_ouvidoria varchar (45) NOT NULL
-);
-
-CREATE TABLE alertas_notificacoes(
-id_alertas_notficacoes int primary key,
-observacoes_alertas_notificacoes varchar(45)
-);
-
-CREATE TABLE trens(
-nome_trem varchar(45) primary key NOT NULL,
-peso_trem int NOT NULL,
-temperatura_trem int NOT NULL
+    id_ouvidoria int primary key AUTO_INCREMENT NOT NULL,
+    nome_cliente varchar (45),
+    observacoes_ouvidoria varchar (45) NOT NULL,
+    nome_funcionario varchar(45)
+    FOREIGN KEY (nome_funcionario) REFERENCES funcionario(credencial_funcionario)
 );
 
 CREATE TABLE trens_descarrilhados(
-nome_trem_descarrilhado varchar(45) primary key,
-CONSTRAINT fk_nome_trem_descarrilhado
-        FOREIGN KEY (nome_trem_descarrilhado)
-        REFERENCES trens(nome_trem)
-);
-
-CREATE TABLE sensores(
-nome_sensor varchar(45) primary key
+    ID_trem_descarrilhado varchar(45) primary key AUTO_INCREMENT NOT NULL,
+    nome_trem_descarrilhado varchar(45),
+    FOREIGN KEY (nome_trem_descarrilhado) REFERENCES trens(id_trem)
 );
