@@ -22,16 +22,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $nome = $_POST["nome_funcionario"] ?? "";
     $cred = $_POST["credencial_funcionario"] ?? "";
     $pass = $_POST["password"] ?? "";
-    $otp  = $_POST["otp_funcionario"] ?? "";
 
-    $stmt = $mysqli->prepare("SELECT nome_funcionario, credencial_funcionario, senha_funcionario, otp_funcionario  FROM funcionario WHERE nome_funcionario=? AND credencial_funcionario=? AND senha_funcionario=? AND otp_funcionario=?");
-    $stmt->bind_param("ss", $nome, $cred, $pass, $otp);
+    $stmt = $mysqli->prepare("SELECT nome_funcionario, credencial_funcionario, senha_funcionario FROM funcionario WHERE nome_funcionario=? AND credencial_funcionario=?");
+    $stmt->bind_param("ss", $nome, $cred);
     $stmt->execute();
     $result = $stmt->get_result();
     $dados = $result->fetch_assoc();
     $stmt->close();
 
-    if ($dados) {
+    if ($dados && password_verify($pass, $dados["senha_funcionario"])) {
         $_SESSION["user_credencial_funcionario"] = $dados["credencial_funcionario"];
         $_SESSION["credencial_funcionario"] = $dados["credencial_funcionario"];
         header("Location: paginaMenuPrincipal.php");
@@ -40,6 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $msg = "Usuário ou senha incorretos!";
     }
 }
+
 ?>
 <html lang="en">
 <head>
@@ -47,7 +47,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="../style/styles.css">
-    <script src="../scripts/login.js"></script>
     
 
    
@@ -75,12 +74,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <img class="i" src="../asets/imagens/meio/perfil.png" alt="">
             <?php else: ?>
             <?php if ($msg): ?><p class="msg"><?= $msg ?></p><?php endif; ?>
-            <form id="seuFormulario">
+            <form method="post">
 
                 <div class="c2">
                 <label for="nome"></label><br>
                 <img class="im" src="../asets/imagens/meio/nome.png" alt="">
-                <input type="text" name="nome" id = "nome" placeholder="Insira seu nome:" required>
+                <input type="text" name="nome_funcionario" id="nome" placeholder="Insira seu nome:" required>
                 <div class="error" id="erroNome"></div>
                 </div>
 
@@ -89,7 +88,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 <div class="c2">
                     <label for="credencial"></label><br>
                     <img class="im" src="../asets/imagens/meio/credencial.png" alt="">
-                    <input type="text" name="credencial"id = "credencial" placeholder="Insira sua credencial:" required>
+                    <input type="text" name="credencial_funcionario" id="credencial" placeholder="Insira sua credencial:" required>
                     <div class="error" id="erroCredencial"></div> 
                 </div>
 
@@ -98,18 +97,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 <div class="c2">
                     <label for="senha"></label><br>
                     <img class="im" src="../asets/imagens/meio/senha.png" alt="">
-                    <input type="password" name="senha" id = "senha" placeholder="Insira sua senha:" required> 
+                   <input type="password" name="password" id="senha" placeholder="Insira sua senha:" required> 
                     <div class="error" id="erroSenha"></div>
                 </div>
 
                 <br>
-
-                <div class="c2">
-                    <label for="otp"></label><br>
-                    <img class="im" src="../asets/imagens/meio/otp.png" alt="">
-                    <input type="number" name="otp" id = "otp" placeholder="Insira o OTP:"required> 
-                    <div class="error" id="erroOTP"></div>
-                </div>
 
                 <br>
                 <a href="paginaCriarConta.php">Não tem uma conta? Clique aqui!</a>

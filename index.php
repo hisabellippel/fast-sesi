@@ -3,9 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/styles.css">
-    <link rel="stylesheet" href="public/paginaInicial.html">
-    <script src="scripts/cadastro.js"></script>
-    <script src="scripts/login.js"></script>
+    <link rel="stylesheet" href="public/paginaInicial.php">
     <title>Página Inicial</title>
 </head>
 <body>
