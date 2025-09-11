@@ -1,3 +1,44 @@
+<?php
+// login.php
+
+// 1) Conexão
+$mysqli = new mysqli("localhost", "root", "root", "login_db");
+if ($mysqli->connect_errno) {
+    die("Erro de conexão: " . $mysqli->connect_error);
+}
+
+session_start();
+
+// 2) Logout
+if (isset($_GET['logout'])) {
+    session_destroy();
+    header("Location: index.html");
+    exit;
+}
+
+// 3) Login
+$msg = "";
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $user = $_POST["username"] ?? "";
+    $pass = $_POST["password"] ?? "";
+
+    $stmt = $mysqli->prepare("SELECT pk, username, senha FROM usuarios WHERE username=? AND senha=?");
+    $stmt->bind_param("ss", $user, $pass);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $dados = $result->fetch_assoc();
+    $stmt->close();
+
+    if ($dados) {
+        $_SESSION["user_pk"] = $dados["pk"];
+        $_SESSION["username"] = $dados["username"];
+        header("Location: index.html");
+        exit;
+    } else {
+        $msg = "Usuário ou senha incorretos!";
+    }
+}
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -59,7 +100,7 @@
                 </div>
 
                 <br>
-                <a href="paginaCriarConta.html">Não tem uma conta? Clique aqui!</a>
+                <a href="paginaCriarConta.php">Não tem uma conta? Clique aqui!</a>
                 <br>
                 <button type="submit">Entrar</button>
             </form>
