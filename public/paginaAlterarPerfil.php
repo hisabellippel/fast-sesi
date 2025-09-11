@@ -1,3 +1,50 @@
+<?php
+
+$sql = "SELECT * FROM funcionario ";
+$result = $conn->query($sql);
+
+
+  if ($result->num_rows > 0) {
+                echo "<table border='1' cellpadding='8' cellspacing='0'>
+                    <tr>
+                        <th>Credencial </th>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                      <th>Salario</th>
+                        <th>Senha</th>
+                        <th>Funcao</th>
+                         <th>Data de nascimento</th>
+                    </tr>";
+
+                      while ($row = $result->fetch_assoc()) {
+                    echo "<tr>
+                            <td>{$row['credencial_funcionario']}</td>
+                            <td>{$row['nome_funcionario']}</td>
+                            <td>{$row[' cpf_funcionario']}</td>
+                             <td>{$row[' email_funcionario']}</td>
+                            <td>{$row['  telefone_funcionario']}</td>
+                            <td>{$row['  salario_funcionario']}</td>
+                            <td>{$row['  senha_funcionario']}</td>
+                            <td>{$row['  funcao_funcionario']}</td>
+                            <td>{$row['   data_nascimento_funcionario']}</td>
+
+                            <td>
+<a href='update_jogador.php?id={$row['id']}'>Editar</a> | 
+
+                            </td>
+                          </tr>";
+                }
+                echo "</table>";
+            } else {
+                echo "<p>Nenhum usuário cadastrado.</p>";
+            }
+
+
+
+?>
+
 <html lang="en">
 
 <head>
@@ -25,17 +72,11 @@
                 <img src="../asets/imagens/meio/rostoAlterarPerfil.png" alt="">
             
                 <div class="letras">
-                    <strong><p>Nome: João da Silva</p> </strong>
-                    <strong><p>Credencial: USR-908XPL-2025</p> </strong>
-                    <strong><p>Data de nascimento:15/08/1990</p> </strong>
-                    <strong><p>Telefone: (47) 98765-4321</p></strong>
-                    <strong><p>Senha: ********</p></strong>
-                    <strong><p>E-mail: joaodasilva@email.com</p></strong>
-                    <strong><p>CPF: 123.456.789-00</p></strong>
+                    
                 </div>
 
                 <div class="botao"> 
-                    <a href="paginaLogin.html">
+                    <a href="paginaLogin.php">
                     <button type="button">Alterar Perfil:</button>
                     </a>
                 </div>
