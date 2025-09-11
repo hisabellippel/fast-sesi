@@ -1,4 +1,4 @@
-<html lang="en">
+<php lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
 
     <header>
         <div id="barraescura">
-            <a href="paginaLogin.html"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+            <a href="paginaLogin.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
@@ -23,42 +23,42 @@
         <br>
         <div class="pad">
             <div class="redonda">
-            <a href="paginaSelecioneLinhas.html"><p class="cor">Linhas</p></a>
+            <a href="paginaSelecioneLinhas.php"><p class="cor">Linhas</p></a>
             </div>
 
             <div class="redonda">
-                <a href="paginaTrensAtivados1.html"><p class="cor">Trens</p></a>
+                <a href="paginaTrensAtivados1.php"><p class="cor">Trens</p></a>
             </div>
 
             <div class="redonda">
-                <a href="paginaControledeInspeção.html"><p class="cor">Controle de inspeção</p></a>
+                <a href="paginaControledeInspeção.php"><p class="cor">Controle de inspeção</p></a>
             </div>
 
             <div class="redonda">
-                <a href="paginaRelatorioeAnalises.html"><p class="cor">Relatório e análises </p></a>
+                <a href="paginaRelatorioeAnalises.php"><p class="cor">Relatório e análises </p></a>
             </div>
 
             <div class="redonda">
-                <a href="paginaOuvidoriaGeral.html"><p class="cor">Ouvidoria</p></a>
+                <a href="paginaOuvidoriaGeral.php"><p class="cor">Ouvidoria</p></a>
             </div>
 
             <div class="redonda">
-                <a href="paginaAlertaseNotificacoes1.html"><p class="cor">Alertas e Notificações</p></a>
+                <a href="paginaAlertaseNotificacoes1.php"><p class="cor">Alertas e Notificações</p></a>
             </div>
         </div>
     </main>
     <footer>
          <div id="barra">
-            <a href="paginainformacoes.html"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
+            <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
-            <a href="paginaNotificacoes.html"><img class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
-            <a href="paginaAlterarPerfil2.html"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
-            <a href="paginaPesquisar.html"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
+            <a href="paginaNotificacoes.php"><img class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
+            <a href="paginaAlterarPerfil2.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
+            <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
         </div>
     </footer>
 
 
 </body>
 
-</html>
+</php>

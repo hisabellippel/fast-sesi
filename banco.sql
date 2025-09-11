@@ -2,7 +2,7 @@ CREATE DATABASE fast_sesi_sa;
 USE fast_sesi_sa;
 
 CREATE TABLE funcionario(
-    credencial_funcionario INT AUTO_INCREMENT primary key NOT NULL,
+    credencial_funcionario INT primary key NOT NULL,
     nome_funcionario varchar(120) NOT NULL,
     cpf_funcionario varchar(11) NOT NULL,
     email_funcionario varchar(45) NOT NULL,
@@ -14,7 +14,8 @@ CREATE TABLE funcionario(
 );
 
 CREATE TABLE trilhos(
-    nome_trilho INT primary key AUTO_INCREMENT NOT NULL
+    nome_trilho varchar(120) NOT NULL,
+    id_trilho INT primary key NOT NULL
 );
 
 CREATE TABLE gastos_gerais(
@@ -37,11 +38,12 @@ CREATE TABLE trens(
 );
 
 CREATE TABLE sensores(
-    nome_sensor INT primary key AUTO_INCREMENT NOT NULL
+    id_sensor INT primary key AUTO_INCREMENT NOT NULL,
+    nome_sensor varchar(120) NOT NULL
 );
 
 CREATE TABLE linhas(
-    numero_linhas int primary key AUTO_INCREMENT NOT NULL ,
+    numero_linhas int primary key NOT NULL ,
     nome_linhas varchar(45) NOT NULL,
     velocidade_linhas int(45) NOT NULL,
     passageiros_linhas int NOT NULL,
@@ -59,13 +61,13 @@ CREATE TABLE linhas(
 CREATE TABLE trilhos_manutencao(
     id_manutenção INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     nome_trilho_manutencao INT,
-    FOREIGN KEY (nome_trilho_manutencao) REFERENCES trilhos(nome_trilho)
+    FOREIGN KEY (nome_trilho_manutencao) REFERENCES trilhos(id_trilho)
 );
 
 CREATE TABLE trilhos_risco(
     id_trilho_risco INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     nome_trilho_risco INT,
-    FOREIGN KEY (nome_trilho_risco) REFERENCES trilhos(nome_trilho)
+    FOREIGN KEY (nome_trilho_risco) REFERENCES trilhos(id_trilho)
 );
 
 CREATE TABLE botao_emergencia(

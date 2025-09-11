@@ -178,6 +178,36 @@ body {
 .pad6{
     margin-bottom: 230px;
     margin-top: 25px;
+    padding: 15px;
+    max-width: 700px;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+.pad6 table {
+    width: 100%;
+    table-layout: fixed;
+    word-wrap: break-word;
+    border-collapse: collapse;
+}
+
+.pad6 table th,
+.pad6 table td {
+    padding: 8px;
+    text-align: left;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.alterarPerfil {
+    margin: 25px;
+    background-color: rgb(94, 156, 239);
+    border-radius: 20px;
+    height: 475px;
+    width: 350px;
+    margin-right: 30px; /* reduced from 600px */
+    color: aliceblue;
+    margin-bottom: 150px;
 }
 
 .pad7{
