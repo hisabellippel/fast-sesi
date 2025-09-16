@@ -12,7 +12,7 @@ session_start();
 // 2) Logout
 if (isset($_GET['logout'])) {
     session_destroy();
-    header("Location: paginaInicial.php");
+    header("Location: paginaLogin.php");
     exit;
 }
 
@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <?php if (!empty($_SESSION["credencial_funcionario"])): ?>
     <div class="card">
         <?= $_SESSION["nome_funcionario"] ?>
-        <p>Sua sessão foi encerrada! Clique aqui para logar novamente.</p>
+        <p>Sua sessão foi encerrada! Clique em SAIR para logar novamente⬇️</p>
         <p><a href="?logout=1">Sair</a></p>
     </div>
 
