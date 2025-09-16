@@ -2,11 +2,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/styles.css">
-    <link rel="stylesheet" href="public/paginaInicial.php">
     <title>Página Inicial</title>
+    <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
-    <a href="public/paginaInicial.php">Portal de Entrada</a>
+    <header>
+
+    </header>
+    <main>
+        <div>
+            <a href="public/paginaLogin.php">
+                <img class="alinharimg" src="../asets/imagens/barraAbaixo/logo.png" alt="">
+            </a>
+            <h4>Clique aqui para acessar o aplicativo!⬆</h4>
+        </div>
+
+        <div class="posicionar">
+            <img src="../asets/imagens/meio/construçãodefundo.png" alt="">
+        </div>
+
+    </main>
+    
 </body>
 </html>
