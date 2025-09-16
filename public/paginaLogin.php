@@ -71,7 +71,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <img class="i" src="../asets/imagens/meio/perfil.png" alt="">
             <?php else: ?>
             <?php if ($msg): ?><p class="msg"><?= $msg ?></p><?php endif; ?>
-            <form method="POST">
+            <form class="branca1" method="POST">
+
+            <img class="i" src="../asets/imagens/meio/perfil.png" alt="">
 
                 <div class="c2">
                 <label for="nome"></label><br>
