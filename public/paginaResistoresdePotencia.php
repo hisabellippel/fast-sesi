@@ -12,7 +12,7 @@
 
     <header>
         <div id="barraescura">
-            <a href="paginaControledeInspeção.html"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+            <a href="paginaControledeInspeção.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
 
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
@@ -28,15 +28,15 @@
 
         <div class="pad11">
             <div class="redonda">
-                <a href="paginaResistoresdePotencia2.html"><p class="cor">Falhas térmicas</p><p class="red"><strong>°1</strong></p>▼</a>
+                <a href="paginaResistoresdePotencia2.php"><p class="cor">Falhas térmicas</p><p class="red"><strong>°1</strong></p>▼</a>
             </div>
 
             <div class="redonda">
-                <a href="paginaResistoresdePotencia2.html"><p class="cor">Problemas estruturais</p><p class="red"><strong>°2</strong></p>▼</a>
+                <a href="paginaResistoresdePotencia2.php"><p class="cor">Problemas estruturais</p><p class="red"><strong>°2</strong></p>▼</a>
             </div>
 
             <div class="redonda">
-                <a href="paginaResistoresdePotencia2.html"><p class="cor">Erros de Projeto</p><p class="red"><strong>°1</strong></p>▼</a>
+                <a href="paginaResistoresdePotencia2.php"><p class="cor">Erros de Projeto</p><p class="red"><strong>°1</strong></p>▼</a>
             </div>
         </div>
 
@@ -44,7 +44,7 @@
 
     <footer>
         <div id="barra">
-            <a href="paginainformacoes.html"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
+            <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
         </div>
@@ -52,4 +52,4 @@
 
 </body>
 
-</html>
+</php>

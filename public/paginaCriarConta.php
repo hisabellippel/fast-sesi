@@ -11,12 +11,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
    
     $pass = $_POST['senha_funcionario'] ?? "";
     $CPF = $_POST['cpf_funcionario'] ?? "";
-    $credencial = $_POST['credencial_funcionario'] ?? "";
+  
 
 
 
 
-    $sql = " INSERT INTO funcionario (nome_funcionario,email_funcionario,senha_funcionario,cpf_funcionario, credencial_funcionario) VALUES ('$name','$email','$pass','$CPF','$credencial') ";
+    $sql = " INSERT INTO funcionario (nome_funcionario,email_funcionario,senha_funcionario,cpf_funcionario) VALUES ('$name','$email','$pass','$CPF') ";
 
 
     if ($conn->query($sql) === true) {
@@ -123,12 +123,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div class="error" id="erroNome"></div>
         </div>
          <br>
-          <label for="credencial_funcionario"></label>
-        <img class="imag" src="../asets/imagens/meio/cpf.png" alt="">
-        <input type="text" name="credencial_funcionario" id="credencialf_funcionario" placeholder=" Insira sua credencial: " required>
-        <div class="error" id="erroNome"></div>
-        </div>
-         <br>
+        
    
 
 

@@ -12,7 +12,7 @@
 
     <header>
         <div id="barraescura">
-             <a href="paginaControledeInspeção.html"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+             <a href="paginaControledeInspeção.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
@@ -28,16 +28,16 @@
 
         <div class="pad4">
             <div class="redonda7">
-            <a href="paginaTrilhos2.html"><p class="cor">Em manutenção:  ▼</p></a>
+            <a href="paginaTrilhos2.php"><p class="cor">Em manutenção:  ▼</p></a>
         </div>
 
         <div class="redonda7">
-            <a href="paginaTrilhos2.html"><p class="cor">Trilhos em risco:  ▼</p></a>
+            <a href="paginaTrilhos2.php"><p class="cor">Trilhos em risco:  ▼</p></a>
         </div></div>
 
     <footer>
         <div id="barra">
-            <a href="paginainformacoes.html"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
+            <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
         </div>

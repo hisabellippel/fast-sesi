@@ -13,7 +13,7 @@
     <header>
         <div id="barraescura">
             
-        <a href="paginaControledeInspeção.html"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt="">
+        <a href="paginaControledeInspeção.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt="">
 
         <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
@@ -28,24 +28,24 @@
         <br>
         <div class="pad21">
             <div class="redonda">
-                <a href="paginaSistemadeSinalizacao2.html"><p class="cor">Sinaleiros ▼</p></a>
+                <a href="paginaSistemadeSinalizacao2.php"><p class="cor">Sinaleiros ▼</p></a>
             </div>
             <br>
             <div class="redonda">
-                <a href="paginaSistemadeSinalizacao2.html"><p class="cor">Placas de sinalização▼</p></a>
+                <a href="paginaSistemadeSinalizacao2.php"><p class="cor">Placas de sinalização▼</p></a>
             </div>
             <br>
             <div class="redonda">
-                <a href="paginaSistemadeSinalizacao2.html"><p class="cor">CBTC (communication-Based Train Control)▼</p></a>
+                <a href="paginaSistemadeSinalizacao2.php"><p class="cor">CBTC (communication-Based Train Control)▼</p></a>
             </div>
             <br>
             <div class="redonda">
-                <a href="paginaSistemadeSinalizacao2.html"><p class="cor">Intertravamento▼</p></a>
+                <a href="paginaSistemadeSinalizacao2.php"><p class="cor">Intertravamento▼</p></a>
             </div>
         </div>
 
         <div id="barra">
-            <a href="paginainformacoes.html"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
+            <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
         </div>

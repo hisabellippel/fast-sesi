@@ -8,7 +8,7 @@
 <body>
     <header>
          <div id="barraescura">
-             <a href="paginaRelatorioeAnalises.html"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+             <a href="paginaRelatorioeAnalises.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
@@ -29,7 +29,7 @@
       <div class="item-funcionario">
         <span class="seta-baixo">▼</span>
         <div class="nome-codigo">
-          <a href="../public/paginaDadosdosFuncionarios2.html"> 
+          <a href="../public/paginaDadosdosFuncionarios2.php"> 
           <span class="nome-funcionario">Hisabel Lippel</span>
           <span class="codigo-funcionario">905467</span>
         </a>
@@ -97,7 +97,7 @@
     
         <footer>
             <div id="barra">
-                <a href="paginainformacoes.html"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
+                <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
                 <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
                 <h3>Fast.sesi</h3>
             </div>

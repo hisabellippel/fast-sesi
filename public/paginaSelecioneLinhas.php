@@ -8,7 +8,7 @@
 <body>
     <header>
         <div id="barraescura">
-            <a href="paginaMenuPrincipal.html"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+            <a href="paginaMenuPrincipal.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
@@ -28,31 +28,31 @@
         </div>
     <div class="quadrados">       
 
-        <a href="paginaSelecioneLinhas1.html">
+        <a href="paginaSelecioneLinhas1.php">
         <div class="quadradoslinhas">
             <p>Linha001</p>
         </div>
         </a>
 
-        <a href="paginaSelecioneLinhas2.html">
+        <a href="paginaSelecioneLinhas2.php">
         <div class="quadradoslinhas">
             <p>Linha002</p>   
         </div>
         </a>
 
-        <a href="paginaSelecioneLinhas3.html">
+        <a href="paginaSelecioneLinhas3.php">
         <div class="quadradoslinhas">
             <p>Linha003</p>
         </div>    
         </a>
         
-        <a href="paginaSelecioneLinhas4.html">
+        <a href="paginaSelecioneLinhas4.php">
         <div class="quadradoslinhas">
             <p>Linha004</p>
         </div>   
         </a>
 
-        <a href="paginaSelecionelinhas5.html">
+        <a href="paginaSelecionelinhas5.php">
         <div class="quadradoslinhas">
             <p>Linha005</p>
         </div>   
@@ -69,7 +69,7 @@
 </main>
 <footer> 
     <div id="barra777">
-            <a href="paginainformacoes.html"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
+            <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
     </div>

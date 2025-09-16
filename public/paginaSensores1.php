@@ -12,7 +12,7 @@
 
     <header>
         <div id="barraescura">
-             <a href="paginaControledeInspeção.html"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+             <a href="paginaControledeInspeção.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
@@ -27,18 +27,18 @@
         <br>
             <div class="pad19">
                 <div class="linha">
-                    <a href="paginaSensores2.html"><p class="sensores"> ▼ Sensores de roda <hr class="new"><br></p></a>
-                    <a href="paginaSensores2.html"><p class="sensores"> ▼ Sensores eletromagnéticos <hr class="new"><br></p></a>
-                    <a href="paginaSensores2.html"><p class="sensores"> ▼ Sensor de temperatura <hr class="new"><br></p></a>
-                    <a href="paginaSensores2.html"><p class="sensores"> ▼ Sensor DPS <hr class="new"><br></p></a>
-                    <a href="paginaSensores2.html"><p class="sensores"> ▼ Sensor TDM <hr class="new"><br></p></a>
-                    <a href="paginaSensores2.html"><p class="sensores"> ▼ Sensores de fibra ótica <hr class="new"><br></p></a>
-                    <a href="paginaSensores2.html"><p class="sensores"> ▼ Sensores de contato <hr class="new"><br></p></a>
+                    <a href="paginaSensores2.php"><p class="sensores"> ▼ Sensores de roda <hr class="new"><br></p></a>
+                    <a href="paginaSensores2.php"><p class="sensores"> ▼ Sensores eletromagnéticos <hr class="new"><br></p></a>
+                    <a href="paginaSensores2.php"><p class="sensores"> ▼ Sensor de temperatura <hr class="new"><br></p></a>
+                    <a href="paginaSensores2.php"><p class="sensores"> ▼ Sensor DPS <hr class="new"><br></p></a>
+                    <a href="paginaSensores2.php"><p class="sensores"> ▼ Sensor TDM <hr class="new"><br></p></a>
+                    <a href="paginaSensores2.php"><p class="sensores"> ▼ Sensores de fibra ótica <hr class="new"><br></p></a>
+                    <a href="paginaSensores2.php"><p class="sensores"> ▼ Sensores de contato <hr class="new"><br></p></a>
                 </div>
             </div>
          
         <div id="barra">
-            <a href="paginainformacoes.html"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
+            <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
         </div>
