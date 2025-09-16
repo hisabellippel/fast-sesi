@@ -1,10 +1,9 @@
 <?php
 
-// Conexão com o banco de dados
-$mysqli = new mysqli("localhost", "root", "root", "fast_sesi_sa");
-if ($mysqli->connect_errno) {
-    die("Erro de conexão: " . $mysqli->connect_error);
-}
+include 'db.php';
+
+
+
 ?>
 
 <html lang="en">
@@ -34,7 +33,7 @@ if ($mysqli->connect_errno) {
 
             <?php
             $sql = "SELECT * FROM funcionario WHERE credencial_funcionario = 1";
-            $result = $mysqli->query($sql);
+            $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {

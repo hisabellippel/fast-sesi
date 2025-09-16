@@ -1,9 +1,7 @@
 <?php
+include 'db.php';
 
-$mysqli = new mysqli("localhost", "root", "root", "fast_sesi_sa");
-if ($mysqli->connect_errno) {
-    die("Erro de conexão: " . $mysqli->connect_error);
-}
+$id = $_GET['id'] ?? null;
 
 
 $nome = $credencial = $senha = $otp = "";
@@ -16,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $otp = $_POST['otp'];
 
   
-    $stmt = $mysqli->prepare("UPDATE funcionario SET nome_funcionario=?, senha_funcionario=? WHERE credencial_funcionario=?");
+    $stmt = $conn->prepare("UPDATE funcionario SET nome_funcionario=?, senha_funcionario=? WHERE credencial_funcionario=?");
     $stmt->bind_param("sss", $nome, $senha, $credencial);
     $stmt->execute();
     $stmt->close();
@@ -25,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 $sql = "SELECT * FROM funcionario WHERE credencial_funcionario = 1";
-$result = $mysqli->query($sql);
+$result = $conn->query($sql);
 if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
     $nome = $row['nome_funcionario'];
