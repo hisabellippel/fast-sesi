@@ -1,35 +1,35 @@
 <?php
+session_start();
 include 'db.php';
 
-$id = $_GET['id'] ?? null;
+if (!isset($_SESSION["credencial_funcionario"])) {
+    header("Location: paginaLogin.php");
+    exit;
+}
 
+$credencial = $_SESSION["credencial_funcionario"];
 
-$nome = $credencial = $senha = $otp = "";
-
+$nome = $senha = $otp = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST['nome'];
-    $credencial = $_POST['credencial'];
     $senha = $_POST['senha'];
     $otp = $_POST['otp'];
 
-  
     $stmt = $conn->prepare("UPDATE funcionario SET nome_funcionario=?, senha_funcionario=? WHERE credencial_funcionario=?");
     $stmt->bind_param("sss", $nome, $senha, $credencial);
     $stmt->execute();
     $stmt->close();
-
-
 }
 
-$sql = "SELECT * FROM funcionario WHERE credencial_funcionario = 1";
+$sql = "SELECT * FROM funcionario WHERE credencial_funcionario = $credencial";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
     $nome = $row['nome_funcionario'];
     $credencial = $row['credencial_funcionario'];
     $senha = $row['senha_funcionario'];
-    
+
 } else {
     echo "<p>Nenhum usuário encontrado.</p>";
     exit;
