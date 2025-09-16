@@ -63,7 +63,7 @@ if ($mysqli->connect_errno) {
                 </div>
 
                 <div class="botao"> 
-                    <a href="paginaAlterarPerfil2php">
+                    <a href="paginaAlterarPerfil2.php">
                     <button type="button">Alterar Perfil:</button>
                     </a>
                 </div>

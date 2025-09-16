@@ -21,10 +21,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->execute();
     $stmt->close();
 
-    
+
 }
 
-/
 $sql = "SELECT * FROM funcionario WHERE credencial_funcionario = 1";
 $result = $mysqli->query($sql);
 if ($result->num_rows > 0) {
