@@ -11,7 +11,7 @@
 
     <header>
         <div id="barraescura">
-             <a href="paginaControledeInspeção.html"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+             <a href="paginaControledeInspeção.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
@@ -28,22 +28,22 @@
         <div class="pad">
 
         <div class="redonda">
-            <a href="paginaEixosFerroviarios2.html"><p class="cor">Trincas por Fadiga</p><p class="red"><strong>°1</strong></p>▼</a>
+            <a href="paginaEixosFerroviarios2.php"><p class="cor">Trincas por Fadiga</p><p class="red"><strong>°1</strong></p>▼</a>
         </div>
         <br>
 
         <div class="redonda">
-            <a href="paginaEixosFerroviarios2.html"><p class="cor">Desgaste mecânico</p><p class="red"><strong>°1</strong></p>▼</a>
+            <a href="paginaEixosFerroviarios2.php"><p class="cor">Desgaste mecânico</p><p class="red"><strong>°1</strong></p>▼</a>
         </div>
         <br>
 
         <div class="redonda">
-            <a href="paginaEixosFerroviarios2.html"><p class="cor">Problemas de manutenção</p><p class="red"><strong>°2</strong></p>▼</a>
+            <a href="paginaEixosFerroviarios2.htmphpl"><p class="cor">Problemas de manutenção</p><p class="red"><strong>°2</strong></p>▼</a>
         </div>
         </div>
 
         <div id="barra">
-            <a href="paginainformacoes.html"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
+            <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
         </div>

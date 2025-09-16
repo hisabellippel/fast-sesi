@@ -12,7 +12,7 @@
     <header>
         <div id="barraescura">
             
-            <a href="paginaMenuPrincipal.html"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+            <a href="paginaMenuPrincipal.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
@@ -28,14 +28,14 @@
 
     <div class="pad2">
         <div class="redonda3">
-            <a href="paginaAlertaseNotificacoes2.html">
+            <a href="paginaAlertaseNotificacoes2.php">
             <p class="alert-text">Alertas <span class="numero-vermelho">°1</span> <span class="simbolo-branco">▼</span></p>
             </a>
         </div>
             
 
         <div class="redonda3">
-            <a href="paginaAlertaseNotificacoes3.html">
+            <a href="paginaAlertaseNotificacoes3.php">
             <p class="alert-text">Notificações <span class="numero-vermelho">°1</span> <span class="simbolo-branco">▼</span></p></a>
         </div>
     </div>
@@ -44,7 +44,7 @@
 
     <footer>
         <div id="barra">
-            <a href="paginainformacoes.html"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
+            <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
         </div>

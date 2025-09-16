@@ -11,7 +11,7 @@
 
     <header>
         <div id="barraescura">
-             <a href="paginaMenuPrincipal.html"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+             <a href="paginaMenuPrincipal.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
@@ -25,23 +25,23 @@
         <br>
         <div class="pad3">
             <div class="redonda">
-                <a href="paginaTrilhos1.html"><p class="cor">Trilhos</p></a>
+                <a href="paginaTrilhos1.php"><p class="cor">Trilhos</p></a>
             </div>
 
             <div class="redonda">
-                <a href="paginaAlertasMecanicos.html"><p class="cor">Alertas mecânicos</p></a>
+                <a href="paginaAlertasMecanicos.php"><p class="cor">Alertas mecânicos</p></a>
             </div>
 
             <div class="redonda">
-                <a href="paginaSistemasdeSinalizacao.html"><p class="cor">Sistema de sinalização</p></a>
+                <a href="paginaSistemasdeSinalizacao.php"><p class="cor">Sistema de sinalização</p></a>
             </div>
 
             <div class="redonda">
-                <a href="paginaSensores1.html"><p class="cor">Sensores</p></a>
+                <a href="paginaSensores1.php"><p class="cor">Sensores</p></a>
             </div>
 
             <div class="redonda">
-                <a href="paginaTrensDescarrilhados.html"><p class="cor">Trens descarrilhados</p></a>
+                <a href="paginaTrensDescarrilhados.php"><p class="cor">Trens descarrilhados</p></a>
             </div>
         </div>
         <br>
@@ -49,7 +49,7 @@
 
     <footer>
         <div id="barra">
-            <a href="paginainformacoes.html"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
+            <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
         </div>

@@ -11,7 +11,7 @@
 
     <header>
         <div id="barraescura">
-             <a href="paginaAlertasMecanicos.html"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+             <a href="paginaAlertasMecanicos.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
@@ -27,11 +27,11 @@
 
         <div class="pad8">
             <div class="redonda3">
-                <a href="paginaBotaodeEmergencia2.html"><p class="cor">Maquinista▼</p></a>
+                <a href="paginaBotaodeEmergencia2.php"><p class="cor">Maquinista▼</p></a>
             </div>
 
             <div class="redonda3">
-                <a href="paginaBotaodeEmergencia3.html"><p class="cor">Bagageiro▼</p></a>
+                <a href="paginaBotaodeEmergencia3.php"><p class="cor">Bagageiro▼</p></a>
             </div>
         </div>
 
@@ -39,7 +39,7 @@
 
     <footer>
         <div id="barra">
-            <a href="paginainformacoes.html"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
+            <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
         </div>
