@@ -47,9 +47,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="../style/styles.css">
-    
-
-   
 </head>
     <header>
         <div id="barraescura">
@@ -111,15 +108,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         </div>
         <?php endif; ?>
 
-
         <footer>
             <div id="barra">
                 <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
                 <h3>Fast.sesi</h3>
             </div>
         </footer>
-
     </main>
-    
 </body>
 </html>
