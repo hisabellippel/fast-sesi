@@ -1,13 +1,5 @@
 <?php
-session_start();
-include 'db.php';
-
-if (!isset($_SESSION["credencial_funcionario"])) {
-    header("Location: paginaLogin.php");
-    exit;
-}
-
-$credencial = $_SESSION["credencial_funcionario"];
+include "db.php"
 ?>
 
 <html lang="en">
@@ -36,7 +28,7 @@ $credencial = $_SESSION["credencial_funcionario"];
             <div class="alterarPerfil">
 
             <?php
-            $sql = "SELECT * FROM funcionario WHERE credencial_funcionario = $credencial";
+            $sql = "SELECT * FROM funcionario";
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {

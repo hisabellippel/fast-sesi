@@ -2,7 +2,7 @@ CREATE DATABASE fast_sesi_sa;
 USE fast_sesi_sa;
 
 CREATE TABLE funcionario(
-    credencial_funcionario INT primary key NOT NULL,
+    credencial_funcionario INT primary key AUTO_INCREMENT NOT NULL,
     nome_funcionario varchar(120) NOT NULL,
     cpf_funcionario varchar(11) NOT NULL,
     email_funcionario varchar(45) NOT NULL,
@@ -11,7 +11,7 @@ CREATE TABLE funcionario(
 
 CREATE TABLE trilhos(
     nome_trilho varchar(120) NOT NULL,
-    id_trilho INT primary key NOT NULL
+    id_trilho INT primary key AUTO_INCREMENT NOT NULL
 );
 
 CREATE TABLE gastos_gerais(
@@ -39,7 +39,7 @@ CREATE TABLE sensores(
 );
 
 CREATE TABLE linhas(
-    numero_linhas int primary key NOT NULL ,
+    id_linhas int primary key AUTO_INCREMENT NOT NULL ,
     nome_linhas varchar(45) NOT NULL,
     velocidade_linhas int(45) NOT NULL,
     passageiros_linhas int NOT NULL,
@@ -69,7 +69,7 @@ CREATE TABLE trilhos_risco(
 CREATE TABLE botao_emergencia(
     id_linha_botao_emergencia INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     linha_botao_emergencia int(3),
-    FOREIGN KEY (linha_botao_emergencia) REFERENCES linhas(numero_linhas)
+    FOREIGN KEY (linha_botao_emergencia) REFERENCES linhas(id_linhas)
 );
 
 CREATE TABLE ouvidoria(
@@ -81,7 +81,7 @@ CREATE TABLE ouvidoria(
 );
 
 CREATE TABLE trens_descarrilhados(
-    ID_trem_descarrilhado INT primary key AUTO_INCREMENT NOT NULL,
+    id_trem_descarrilhado INT primary key AUTO_INCREMENT NOT NULL,
     nome_trem_descarrilhado INT,
     FOREIGN KEY (nome_trem_descarrilhado) REFERENCES trens(id_trem)
 );
