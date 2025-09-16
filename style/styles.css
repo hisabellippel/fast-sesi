@@ -1270,3 +1270,16 @@ p.nova {
     color: aliceblue;
   margin-top: -70px;
 }
+
+.erro {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+}
+.sucesso {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+}

@@ -1,5 +1,15 @@
 <?php
-include "db.php"
+session_start();
+include "db.php";
+
+if (isset($_GET['logout'])) {
+    session_destroy();
+    header("Location: paginaLogin.php?msg=expired");
+    exit;
+}
+
+
+
 ?>
 
 <html lang="en">
@@ -13,16 +23,25 @@ include "db.php"
     <body>
         <header>
             <div id="barraescura">
-               <a href="paginaMenuPrincipal.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a> 
+               <a href="paginaMenuPrincipal.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
                 <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
             </div>
         </header>
-        
-         
+
+
     <div id="fonte">
-        <h1>Meu Perfil:</h1>
+
+    <?php if (empty($_SESSION["credencial_funcionario"])): ?>
+    <div class="card">
+        <p>Sua sessão foi encerrada! Clique aqui para logar novamente.</p>
+        <p><a href="paginaLogin.php">Logar novamente</a></p>
     </div>
-    
+
+    <?php else: ?>
+
+        <h1>Meu Perfil:</h1>
+        <p><a href="?logout=1">Sair</a></p>
+
         <div class="pad6">
 
             <div class="alterarPerfil">
@@ -35,7 +54,7 @@ include "db.php"
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {
                     $cpf = $row['cpf_funcionario'];
-              
+
                     $cpf_formatted = substr($cpf, 0, 3) . '.' . substr($cpf, 3, 3) . '.' . substr($cpf, 6, 3) . '-' . substr($cpf, 9, 2);
                     $senha_masked = str_repeat('*', 8);
 
@@ -47,7 +66,7 @@ include "db.php"
                     echo "<p><strong>E-mail:</strong> {$row['email_funcionario']}</p>";
                     echo "<p><strong>CPF:</strong> {$cpf_formatted}</p>";
 
-                    echo '<div class="botao"> 
+                    echo '<div class="botao">
                             <a href="paginaAlterarPerfil2.php?credencial_funcionario=' . $row['credencial_funcionario'] . '">
                             <button type="button">Alterar Perfil:</button>
                             </a>
@@ -58,23 +77,28 @@ include "db.php"
             }
             ?>
 
-               
+
 
                 <div class="letras">
 
                 </div>
 
-                
-                    
-                </div>
+
+
+
+                    </div>
             </div>
         </div>
+    <?php endif; ?>
 
         <footer>
             <div id="barra">
                 <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
                 <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
                 <h3>Fast.sesi</h3>
+                <a href="paginaNotificacoes.php"><img class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
+            <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
+            <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
             </div>
         </footer>
     </body>
