@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $stmt->close();
 
     if ($dados) {
-        $_SESSION["user_credencial_funcionario"] = $dados["credencial_funcionario"];
+        $_SESSION["nome_funcionario"] = $dados["nome_funcionario"];
         $_SESSION["credencial_funcionario"] = $dados["credencial_funcionario"];
         header("Location: paginaMenuPrincipal.php");
         exit;
@@ -61,9 +61,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     </header>
 
 <body>
-    <?php if (!empty($_SESSION["user_credencial_funcionario"])): ?>
+    <?php if (!empty($_SESSION["credencial_funcionario"])): ?>
     <div class="card">
-        <?= $_SESSION["credencial_funcionario"] ?>
+        <?= $_SESSION["nome_funcionario"] ?>
         <p>Sua sessão foi encerrada! Clique aqui para logar novamente.</p>
         <p><a href="?logout=1">Sair</a></p>
     </div>
