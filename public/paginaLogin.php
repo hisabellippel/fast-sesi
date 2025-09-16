@@ -117,6 +117,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <div id="barra">
                 <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
                 <h3>Fast.sesi</h3>
+               
             </div>
         </footer>
     </main>
