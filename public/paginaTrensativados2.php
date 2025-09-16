@@ -12,7 +12,7 @@
 
     <header>
         <div id="barraescura">
-             <a href="paginaTrensAtivados1.html"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+             <a href="paginaTrensAtivados1.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
@@ -35,20 +35,20 @@
             </div>    
 
             <div class="redonda">
-             <a href="paginaTrensativados3.html"><p class="cor">Ouro negro-monte Claro</p>
+             <a href="paginaTrensativados3.php"><p class="cor">Ouro negro-monte Claro</p>
             </a>
                 
                 
             </div>
 
             <div class="redonda">
-                <a href="paginaTrensAtivados4.html">
+                <a href="paginaTrensAtivados4.php">
                 <p>Rio verde eldoria</p>
                 </a>
             </div>
 
             <div class="redonda">
-                <a href="paginaTrensAtivados5.html">
+                <a href="paginaTrensAtivados5.php">
                 <p>Coralua-Maresia </p>
                 </a>
             </div>
@@ -57,7 +57,7 @@
     </main>
     <footer>
         <div id="barra">
-            <a href="paginainformacoes.html"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
+            <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
         </div>

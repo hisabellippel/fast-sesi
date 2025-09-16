@@ -12,7 +12,7 @@
 
     <header>
         <div id="barraescura">
-            <a href="paginaMenuPrincipal.html"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+            <a href="paginaMenuPrincipal.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
@@ -28,24 +28,24 @@
         <div class="pad2">
             
         <div class="redonda">
-           <a href="paginaDesempenho1.html"><p class="cor">Dados sobre Desempenho</p></a>
+           <a href="paginaDesempenho1.php"><p class="cor">Dados sobre Desempenho</p></a>
         </div>
 
         <div class="redonda">
-            <a href="paginaGastos.html"><p class="cor">Gastos</p></a>
+            <a href="paginaGastos.php"><p class="cor">Gastos</p></a>
         </div>
 
         <div class="redonda">
-            <a href="paginaDadosdosFuncionarios1.html"><p class="cor">Dados dos Funcionários</p></a>
+            <a href="paginaDadosdosFuncionarios1.php"><p class="cor">Dados dos Funcionários</p></a>
         </div>
 
         <div class="redonda">
-            <a href="paginaRelatoriodasLinhas1.html"><p class="cor">Relatório das Linhas</p></a>
+            <a href="paginaRelatoriodasLinhas1.php"><p class="cor">Relatório das Linhas</p></a>
         </div>
         </div>
 
         <div id="barra">
-            <a href="paginainformacoes.html"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
+            <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
         </div>
