@@ -6,11 +6,7 @@ CREATE TABLE funcionario(
     nome_funcionario varchar(120) NOT NULL,
     cpf_funcionario varchar(11) NOT NULL,
     email_funcionario varchar(45) NOT NULL,
-    telefone_funcionario int(15) NOT NULL,
-    salario_funcionario int,
     senha_funcionario varchar(255) NOT NULL,
-    funcao_funcionario varchar(45),
-    data_nascimento_funcionario date
 );
 
 CREATE TABLE trilhos(
