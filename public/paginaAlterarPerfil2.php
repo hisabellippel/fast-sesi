@@ -89,6 +89,8 @@ $conn->close();
             <img class="i" src="../asets/imagens/meio/perfil.png" alt="">
             <form id="seuFormulario" method="post" action="">
 
+                <input type="hidden" name="credencial_funcionario" value="<?php echo htmlspecialchars($credencial_funcionario); ?>">
+
                 <div class="c2">
                 <label for="nome_funcionario"></label><br>
                 <img class="im" src="../asets/imagens/meio/nome.png" alt="">
