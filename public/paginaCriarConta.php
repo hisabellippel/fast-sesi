@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </header>
 
     <main>
-        <div class="pad12">
+        <div class="pad22">
             <div class="branca">
                 <img class="i" src="../asets/imagens/meio/perfil.png" alt="">
 
