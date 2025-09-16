@@ -21,16 +21,16 @@ $msg = "";
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $nome = $_POST["nome_funcionario"] ?? "";
     $cred = $_POST["credencial_funcionario"] ?? "";
-    $pass = $_POST["password"] ?? "";
+    $pass = $_POST["password"] ?? ""; // aqui pode ter um hash
 
-    $stmt = $mysqli->prepare("SELECT nome_funcionario, credencial_funcionario, senha_funcionario FROM funcionario WHERE nome_funcionario=? AND credencial_funcionario=?");
-    $stmt->bind_param("ss", $nome, $cred);
+    $stmt = $mysqli->prepare("SELECT nome_funcionario, credencial_funcionario, senha_funcionario FROM funcionario WHERE nome_funcionario=? AND credencial_funcionario=? AND senha_funcionario =? ");
+    $stmt->bind_param("sss", $nome, $cred, $pass);
     $stmt->execute();
     $result = $stmt->get_result();
     $dados = $result->fetch_assoc();
     $stmt->close();
 
-    if ($dados && password_verify($pass, $dados["senha_funcionario"])) {
+    if ($dados) {
         $_SESSION["user_credencial_funcionario"] = $dados["credencial_funcionario"];
         $_SESSION["credencial_funcionario"] = $dados["credencial_funcionario"];
         header("Location: paginaMenuPrincipal.php");
@@ -74,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <img class="i" src="../asets/imagens/meio/perfil.png" alt="">
             <?php else: ?>
             <?php if ($msg): ?><p class="msg"><?= $msg ?></p><?php endif; ?>
-            <form method="post">
+            <form method="POST">
 
                 <div class="c2">
                 <label for="nome"></label><br>
@@ -103,7 +103,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
                 <br>
 
-                <br>
                 <a href="paginaCriarConta.php">Não tem uma conta? Clique aqui!</a>
                 <br>
                 <button type="submit">Entrar</button>
