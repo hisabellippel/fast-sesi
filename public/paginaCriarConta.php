@@ -2,10 +2,12 @@
 include 'db.php';
 
 
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
     $name = $_POST['nome_funcionario']?? "";
+    $name2 = $_POST['nome_funcionario2']?? "";
     $email = $_POST['email_funcionario']?? "";
     $pass = $_POST['senha_funcionario'] ?? "";
     $CPF = $_POST['cpf_funcionario'] ?? "";
@@ -78,23 +80,38 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </div>
                     <br>
 
+            <div class="c1">
+                        <label for="nome_funcionario2"></label><br>
+                        <img class="imag" src="../asets/imagens/meio/nome.png" alt="">
+                        <input type="text" name="nome_funcionario2" id="nome_funcionario2" placeholder="Confirme seu nome:" required>
+                        <div class="error" id="erroNome"></div>
+            </div>
+                    <br>
 
 
-
+        <div class="c1">
+        
+        <label for="email_funcionario">  </label>
         <img class="imag" src="../asets/imagens/meio/email.png" alt="">
-        <label for="email_funcionario"> Insira seu email: </label>
-        <input type="email" name="email_funcionario" required>
+        <input type="email" name="email_funcionario" id="email_funcionario" placeholder="Insira seu email:" required>
         <br>
+        </div>
 
+        <div class="c1">
+        
+        <label for="senha_funcionario"> </label>
         <img class="imag" src="../asets/imagens/meio/senha.png" alt="">
-        <label for="senha_funcionario"> Insira sua senha: </label>
-        <input type="password" name="senha_funcionario"  required>
+        <input type="password" name="senha_funcionario" id="senha_funcionario" placeholder="Insira sua senha:" required>
         <br>
+        </div>
 
+        <div class="c1">
+        
+        <label for="cpf_funcionario"></label>
         <img class="imag" src="../asets/imagens/meio/cpf.png" alt="">
-        <label for="cpf_funcionario"> Insira seu CPF: </label>
-        <input type="number" name="cpf_funcionario"  required>
+        <input type="number" name="cpf_funcionario" id="cpf_funcionario" placeholder=" Insira seu CPF: " required>
         <br>
+        </div>
    
 
 
