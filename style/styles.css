@@ -191,7 +191,6 @@ body {
     border-collapse: collapse;
 }
 
-.pad6 table th,
 .pad6 table td {
     padding: 8px;
     text-align: left;
@@ -205,7 +204,7 @@ body {
     border-radius: 20px;
     height: 475px;
     width: 350px;
-    margin-right: 30px; /* reduced from 600px */
+    margin-right: 30px; 
     color: aliceblue;
     margin-bottom: 150px;
 }
@@ -617,8 +616,6 @@ body {
     text-align: justify;
 }
 
-.imglinha{
-}
 
 .quadradomaior {
     margin: 20px;
@@ -1168,7 +1165,7 @@ p.nova {
 
 .red {
     color: crimson;
-   
+}  
 
 
 .redonda3 a {

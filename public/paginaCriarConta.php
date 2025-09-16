@@ -7,15 +7,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
     $name = $_POST['nome_funcionario']?? "";
-    $name2 = $_POST['nome_funcionario2']?? "";
     $email = $_POST['email_funcionario']?? "";
+   
     $pass = $_POST['senha_funcionario'] ?? "";
     $CPF = $_POST['cpf_funcionario'] ?? "";
+    $credencial = $_POST['credencial_funcionario'] ?? "";
 
 
 
 
-    $sql = " INSERT INTO funcionários (nome_funcionario,email_funcionario,senha_funcionario,cpf_funcionario) VALUE ('$name','$email',' $pass','$CPF') ";
+    $sql = " INSERT INTO funcionario (nome_funcionario,email_funcionario,senha_funcionario,cpf_funcionario, credencial_funcionario) VALUES ('$name','$email','$pass','$CPF','$credencial') ";
 
 
     if ($conn->query($sql) === true) {
@@ -64,12 +65,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
                 <img class="i" src="../asets/imagens/meio/perfil.png" alt="">
-                <form id="meuFormulario">
+              
 
 
      
                        
-    <form method="POST" action="create.php">
+    <form method="POST">
 
 
                     <div class="c1">
@@ -80,45 +81,61 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </div>
                     <br>
 
-            <div class="c1">
-                        <label for="nome_funcionario2"></label><br>
-                        <img class="imag" src="../asets/imagens/meio/nome.png" alt="">
-                        <input type="text" name="nome_funcionario2" id="nome_funcionario2" placeholder="Confirme seu nome:" required>
-                        <div class="error" id="erroNome"></div>
-            </div>
-                    <br>
-
 
         <div class="c1">
         
         <label for="email_funcionario">  </label>
         <img class="imag" src="../asets/imagens/meio/email.png" alt="">
         <input type="email" name="email_funcionario" id="email_funcionario" placeholder="Insira seu email:" required>
-        <br>
+       <div class="error" id="erroNome"></div>
         </div>
+         <br>
+            <div class="c1">
+                        <label for="email_funcionario"></label><br>
+                       <img class="imag" src="../asets/imagens/meio/email.png" alt="">
+                        <input type="text" name="email_funcionario" id="email_funcionario" placeholder="Confirme seu email:" required>
+                        <div class="error" id="erroNome"></div>
+            </div>
+                    <br>
 
         <div class="c1">
         
         <label for="senha_funcionario"> </label>
         <img class="imag" src="../asets/imagens/meio/senha.png" alt="">
         <input type="password" name="senha_funcionario" id="senha_funcionario" placeholder="Insira sua senha:" required>
-        <br>
+        <div class="error" id="erroNome"></div>
         </div>
+         <br>
+           <div class="c1">
+        
+        <label for="senha_funcionario"> </label>
+        <img class="imag" src="../asets/imagens/meio/senha.png" alt="">
+        <input type="password" name="senha_funcionario" id="senha_funcionario" placeholder="Repita sua senha:" required>
+        <div class="error" id="erroNome"></div>
+        </div>
+         <br>
 
         <div class="c1">
         
         <label for="cpf_funcionario"></label>
         <img class="imag" src="../asets/imagens/meio/cpf.png" alt="">
-        <input type="number" name="cpf_funcionario" id="cpf_funcionario" placeholder=" Insira seu CPF: " required>
-        <br>
+        <input type="text" name="cpf_funcionario" id="cpf_funcionario" placeholder=" Insira seu CPF: " required>
+        <div class="error" id="erroNome"></div>
         </div>
+         <br>
+          <label for="credencial_funcionario"></label>
+        <img class="imag" src="../asets/imagens/meio/cpf.png" alt="">
+        <input type="text" name="credencial_funcionario" id="credencialf_funcionario" placeholder=" Insira sua credencial: " required>
+        <div class="error" id="erroNome"></div>
+        </div>
+         <br>
    
 
 
-        <input type="submit" value="Criar conta">
+        <input type="submit">
             </div>
     </div>
-
+    </form>
 
         <footer>
             <div id="barra">
