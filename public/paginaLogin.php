@@ -18,6 +18,9 @@ if (isset($_GET['logout'])) {
 
 // 3) Login
 $msg = "";
+if (isset($_GET['msg']) && $_GET['msg'] == 'expired') {
+    $msg = "Sua sessão foi expirada!";
+}
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $nome = $_POST["nome_funcionario"] ?? "";
     $cred = $_POST["credencial_funcionario"] ?? "";
@@ -114,6 +117,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <div id="barra">
                 <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
                 <h3>Fast.sesi</h3>
+               
             </div>
         </footer>
     </main>
