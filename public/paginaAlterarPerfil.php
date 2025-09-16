@@ -26,6 +26,7 @@ include "db.php"
         <div class="pad6">
 
             <div class="alterarPerfil">
+                  <img src="../asets/imagens/meio/rostoAlterarPerfil.png" alt="">
 
             <?php
             $sql = "SELECT * FROM funcionario";
@@ -45,22 +46,26 @@ include "db.php"
                     echo "<p><strong>Senha:</strong> {$senha_masked}</p>";
                     echo "<p><strong>E-mail:</strong> {$row['email_funcionario']}</p>";
                     echo "<p><strong>CPF:</strong> {$cpf_formatted}</p>";
+
+                    echo '<div class="botao"> 
+                            <a href="paginaAlterarPerfil2.php?credencial_funcionario=' . $row['credencial_funcionario'] . '">
+                            <button type="button">Alterar Perfil:</button>
+                            </a>
+                          </div>';
                 }
             } else {
                 echo "<p>Nenhum usuário cadastrado.</p>";
             }
             ?>
 
-                <img src="../asets/imagens/meio/rostoAlterarPerfil.png" alt="">
+               
 
                 <div class="letras">
 
                 </div>
 
-                <div class="botao"> 
-                    <a href="paginaAlterarPerfil2.php">
-                    <button type="button">Alterar Perfil:</button>
-                    </a>
+                
+                    
                 </div>
             </div>
         </div>

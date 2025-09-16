@@ -11,7 +11,7 @@
 
     <header>
         <div id="barraescura">
-            <a href="paginaControledeInspeção.html"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+            <a href="paginaControledeInspeção.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
@@ -26,25 +26,25 @@
 
         <div class="pad2">
             <div class="redonda">
-                <a href="paginaBotaodeEmergencia1.html"><p class="cor">Botão de Emergência▼</p></a>
+                <a href="paginaBotaodeEmergencia1.php"><p class="cor">Botão de Emergência▼</p></a>
             </div>
 
             <div class="redonda">
-                <a href="paginaEixosFerroviarios1.html"><p class="cor">Eixos ferroviários▼</p></a>
+                <a href="paginaEixosFerroviarios1.php"><p class="cor">Eixos ferroviários▼</p></a>
             </div>
 
             <div class="redonda">
-                <a href="paginaSistemadeFrenagem1.html"><p class="cor">Sistema de frenagem▼</p></a>
+                <a href="paginaSistemadeFrenagem1.php"><p class="cor">Sistema de frenagem▼</p></a>
             </div>
 
             <div class="redonda">
-                <a href="paginaResistoresdePotencia.html"><p class="cor">Resitores de potência▼</p></a>
+                <a href="paginaResistoresdePotencia.php"><p class="cor">Resitores de potência▼</p></a>
             </div>
         </div>
 
 
         <div id="barra">
-            <a href="paginainformacoes.html"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
+            <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
         </div>

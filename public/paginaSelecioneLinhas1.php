@@ -8,7 +8,7 @@
 <body>
     <header>
         <div id="barraescura">
-            <a href="paginaMenuPrincipal.html"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+            <a href="paginaMenuPrincipal.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
@@ -51,7 +51,7 @@
 </main>
 <footer> 
     <div id="barra778">
-            <a href="paginainformacoes.html"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
+            <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
     </div>

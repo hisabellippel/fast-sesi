@@ -12,7 +12,7 @@
 
     <header>
         <div id="barraescura">
-            <a href="paginaMenuPrincipal.html"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+            <a href="paginaMenuPrincipal.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
@@ -28,13 +28,13 @@
         <div class="pad2">
 
             <div class="redonda">
-                <a href="paginaTrensativados2.html"><p class="cor">Altorre-Glaciaris</p></a>
+                <a href="paginaTrensativados2.php"><p class="cor">Altorre-Glaciaris</p></a>
                 
             </div>
 
             
             <div class="redonda">
-                  <a href="paginaTrensativados3.html">
+                  <a href="paginaTrensativados3.php">
                 <p class="cor">Ouro negro-Monte Claro</p></a>
             </div>
            
@@ -43,13 +43,13 @@
 
 
             <div class="redonda">
-                <a href="paginaTrensAtivados4.html">
+                <a href="paginaTrensAtivados4.php">
                 <p>Rio Verde-Eldoria</p>
                 </a>
             </div>
 
             <div class="redonda">
-                <a href="paginaTrensAtivados5.html">
+                <a href="paginaTrensAtivados5.php">
                 <p>Coraluna-Marésia</p>
                 </a>
             </div>
@@ -59,7 +59,7 @@
     </main>
     <footer>
         <div id="barra">
-            <a href="paginainformacoes.html"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
+            <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
         </div>

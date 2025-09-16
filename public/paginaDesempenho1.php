@@ -11,7 +11,7 @@
 
     <header>
         <div id="barraescura">
-              <a href="paginaRelatorioeAnalises.html"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+              <a href="paginaRelatorioeAnalises.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
@@ -26,7 +26,7 @@
           
         <div class="pad14">
               <div class="linha">
-                <a href="paginaDesempenho2.html"><p class="linhas"> ▼ Linha 001 <hr class="new"><br></p></a>
+                <a href="paginaDesempenho2.php"><p class="linhas"> ▼ Linha 001 <hr class="new"><br></p></a>
                 <p class="linhas"> ▼ Linha 002 <hr class="new"><br></p>
                 <p class="linhas"> ▼ Linha 003 <hr class="new"><br></p>
                 <p class="linhas"> ▼ Linha 004 <hr class="new"><br></p>
@@ -36,7 +36,7 @@
 
 
         <div id="barra">
-            <a href="paginainformacoes.html"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
+            <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
         </div>

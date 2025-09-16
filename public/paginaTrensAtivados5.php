@@ -12,7 +12,7 @@
 
     <header>
         <div id="barraescura">
-             <a href="paginaTrensAtivados1.html"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+             <a href="paginaTrensAtivados1.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
@@ -28,13 +28,13 @@
 
         <div class="pad1">
             <div class="redonda">
-                <a href="paginaTrensativados2.html"><p class="cor">Altorre-Glaciaris</p></a>
+                <a href="paginaTrensativados2.php"><p class="cor">Altorre-Glaciaris</p></a>
             </div>
             
              
 
             <div class="redonda">
-                   <a href="paginaTrensativados3.html"><p class="cor">Ouro negro-monte</p></a>
+                   <a href="paginaTrensativados3.php"><p class="cor">Ouro negro-monte</p></a>
             </div>
 
             
@@ -46,7 +46,7 @@
 
 
             <div class="redonda5">
-                <a href="paginaTrensativados5.html"><p class="cor">Coralua-Maresia</p></a>
+                <a href="paginaTrensativados5.php"><p class="cor">Coralua-Maresia</p></a>
             </div>
             <div class="informacao">
                <p>Localização: Vale dos Pinheiros <br> Distância percorrida: 100km <br> Passageiros: 19.800 <br> Velocidade: 65km/h <br> Maquinista: Camila Santos</p>
@@ -57,7 +57,7 @@
     </main>
     <footer>
         <div id="barra">
-            <a href="paginainformacoes.html"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
+            <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
         </div>
