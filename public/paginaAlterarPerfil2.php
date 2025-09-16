@@ -1,14 +1,14 @@
 <?php
-// Conexão com o banco de dados
+
 $mysqli = new mysqli("localhost", "root", "root", "fast_sesi_sa");
 if ($mysqli->connect_errno) {
     die("Erro de conexão: " . $mysqli->connect_error);
 }
 
-// Inicializar variáveis para armazenar dados do usuário
+
 $nome = $credencial = $senha = $otp = "";
 
-// Verificar se o formulário foi enviado para atualizar os dados
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST['nome'];
     $credencial = $_POST['credencial'];
@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
 }
 
-// Buscar dados atuais do usuário (credencial 1)
+/
 $sql = "SELECT * FROM funcionario WHERE credencial_funcionario = 1";
 $result = $mysqli->query($sql);
 if ($result->num_rows > 0) {
