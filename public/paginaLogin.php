@@ -21,7 +21,8 @@ $msg = "";
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $nome = $_POST["nome_funcionario"] ?? "";
     $cred = $_POST["credencial_funcionario"] ?? "";
-    $pass = $_POST["password"] ?? ""; // aqui pode ter um hash
+    $pass = $_POST["password"] ?? ""; // inserir uma  password_hash
+    
 
     $stmt = $mysqli->prepare("SELECT nome_funcionario, credencial_funcionario, senha_funcionario FROM funcionario WHERE nome_funcionario=? AND credencial_funcionario=? AND senha_funcionario =? ");
     $stmt->bind_param("sss", $nome, $cred, $pass);
