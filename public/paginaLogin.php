@@ -13,6 +13,7 @@ session_start();
 if (isset($_GET['logout'])) {
     session_destroy();
     header("Location: paginaLogin.php");
+    echo " Sua sessão foi encerrada!";
     exit;
 }
 
@@ -52,73 +53,65 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <title>Login</title>
     <link rel="stylesheet" href="../style/styles.css">
 </head>
-    <header>
-        <div id="barraescura">
-            <div  id="nav-itens">
-                <img class="topoTradutor" src="../asets/imagens/barraAcima/tradutor.png" alt="">
-            </div>
-            <img class="imgtopo" src="../asets/imagens/meio/fotoFundoTrem.png" alt="">
+<header>
+    <div id="barraescura">
+        <div  id="nav-itens">
+            <img class="topoTradutor" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
-    </header>
+        <img class="imgtopo" src="../asets/imagens/meio/fotoFundoTrem.png" alt="">
+    </div>
+</header>
 
 <body>
-    <?php if (!empty($_SESSION["credencial_funcionario"])): ?>
-    <div class="card">
-        <?= $_SESSION["nome_funcionario"] ?>
-        <p>Sua sessão foi encerrada! Clique em SAIR para logar novamente⬇️</p>
-        <p><a href="?logout=1">Sair</a></p>
-    </div>
-
-    <main>
-        <div class="branca1">
-
-            <img class="i" src="../asets/imagens/meio/perfil.png" alt="">
-            <?php else: ?>
-            <?php if ($msg): ?><p class="msg"><?= $msg ?></p><?php endif; ?>
-            <form class="branca1" method="POST">
-
-            <img class="i" src="../asets/imagens/meio/perfil.png" alt="">
-
-                <div class="c2">
-                <label for="nome"></label><br>
-                <img class="im" src="../asets/imagens/meio/nome.png" alt="">
-                <input type="text" name="nome_funcionario" id="nome" placeholder="Insira seu nome:" required>
-                <div class="error" id="erroNome"></div>
-                </div>
-
-                <br>
-
-                <div class="c2">
-                    <label for="credencial"></label><br>
-                    <img class="im" src="../asets/imagens/meio/credencial.png" alt="">
-                    <input type="text" name="credencial_funcionario" id="credencial" placeholder="Insira sua credencial:" required>
-                    <div class="error" id="erroCredencial"></div> 
-                </div>
-
-                <br>
-
-                <div class="c2">
-                    <label for="senha"></label><br>
-                    <img class="im" src="../asets/imagens/meio/senha.png" alt="">
-                   <input type="password" name="password" id="senha" placeholder="Insira sua senha:" required> 
-                    <div class="error" id="erroSenha"></div>
-                </div>
-
-                <br>
-
-                <button type="submit">Entrar</button>
-            </form>
+    <?php if (empty($_SESSION["credencial_funcionario"])): ?>
+       
+        <div class="login-login">
             
-        </div>
-        <?php endif; ?>
-
-        <footer>
-            <div id="barra">
-                <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
-                <h3>Fast.sesi</h3>
-               
+            <div class="branca1">
+                <form class="branca1" method="POST">
+                <img class="i" src="../asets/imagens/meio/perfil.png" alt="">
+    
+                    <div class="c2">
+                        <label for="nome"></label><br>
+                        <img class="im" src="../asets/imagens/meio/nome.png" alt="">
+                        <input type="text" name="nome_funcionario" id="nome" placeholder="Insira seu nome:" required>
+                        <div class="error" id="erroNome"></div>
+                    </div>
+    
+                    <br>
+    
+                    <div class="c2">
+                        <label for="credencial"></label><br>
+                        <img class="im" src="../asets/imagens/meio/credencial.png" alt="">
+                        <input type="text" name="credencial_funcionario" id="credencial" placeholder="Insira sua credencial:" required>
+                        <div class="error" id="erroCredencial"></div> 
+                    </div>
+    
+                    <br>
+    
+                    <div class="c2">
+                        <label for="senha"></label><br>
+                        <img class="im" src="../asets/imagens/meio/senha.png" alt="">
+                    <input type="password" name="password" id="senha" placeholder="Insira sua senha:" required> 
+                        <div class="error" id="erroSenha"></div>
+                    </div>
+    
+                    <br>
+    
+                    <button type="submit">Entrar</button>
+                </form>
             </div>
-        </footer>
-    </main>
+        </div>
+
+    <?php else: ?>
+        <?php if ($msg): ?><p class="msg"><?= $msg ?></p><?php endif; ?>
+    <?php endif; ?>
+
+    <footer>
+        <div id="barra">
+            <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
+            <h3>Fast.sesi</h3>
+        </div>
+    </footer>
 </body>
 </html>

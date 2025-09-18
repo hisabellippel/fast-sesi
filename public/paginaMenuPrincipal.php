@@ -12,7 +12,7 @@
 
     <header>
         <div id="barraescura">
-            <a href="paginaLogin.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+            <a class = "sair" href="paginaLogin.php?logout=1"><button type="submit">SAIR</button></a>
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
@@ -58,7 +58,6 @@
             <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
         </div>
     </footer>
-
 
 </body>
 
