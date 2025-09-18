@@ -1,16 +1,17 @@
 <?php
-session_start();
 include "db.php";
 
-if (isset($_GET['logout'])) {
+session_start();
+
+
+if(isset($_GET['logout'])){
     session_destroy();
-    header("Location: paginaLogin.php?msg=expired");
+    header("Location: paginaLogin.php");
     exit;
 }
 
-
-
 ?>
+
 
 <html lang="en">
 
@@ -21,6 +22,20 @@ if (isset($_GET['logout'])) {
     <link rel="stylesheet" href="../style/styles.css">
 </head>
     <body>
+        <?php
+
+    if (empty($_SESSION["user_pk"])): ?>
+    <div class="card">
+        <p>Sua sessão foi encerrada! Clique aqui para logar novamente.</p>
+        <p><a href="paginaLogin.php">Logar novamente</a></p>
+    </div>
+
+<?php else: // Se o usuário estiver logado, exibe o perfil ?>
+    
+
+
+ 
+
         <header>
             <div id="barraescura">
                <a href="paginaMenuPrincipal.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
@@ -44,8 +59,11 @@ if (isset($_GET['logout'])) {
                   <img src="../asets/imagens/meio/rostoAlterarPerfil.png" alt="">
 
             <?php
-            $sql = "SELECT * FROM funcionario";
-            $result = $conn->query($sql);
+                // Pega a chave primária (PK) do usuário logado na sessão
+                $user_pk = $_SESSION["user_pk"];
+                // Consulta para buscar SOMENTE o perfil do usuário logado
+                $sql = "SELECT * FROM funcionario WHERE user_pk = '$user_pk'";
+                $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {
@@ -97,5 +115,6 @@ if (isset($_GET['logout'])) {
             <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
             </div>
         </footer>
+        <?php endif; ?> 
     </body>
 </html>
