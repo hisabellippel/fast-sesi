@@ -34,10 +34,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
        
         $sql = "INSERT INTO funcionario 
                 (credencial_funcionario,nome_funcionario, cpf_funcionario, email_funcionario, senha_funcionario, telefone_funcionario, cargo_funcionario, funcao_funcionario, salario_funcionario)
-                VALUES (?, ?, ?, ?)";
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         $stmt = $conn->prepare($sql);
-        $stmt->bind_param("ssss", $credencial, $name, $cpf, $email, $pass);
+        $stmt->bind_param("isssssssi", $credencial, $name, $cpf, $email, $pass, $telefone, $cargo, $funcao, $salario);
 
         if ($stmt->execute()) {
             $sucesso = "Novo registro criado com sucesso!";
