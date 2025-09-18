@@ -86,5 +86,5 @@ CREATE TABLE trens_descarrilhados(
     FOREIGN KEY (nome_trem_descarrilhado) REFERENCES trens(id_trem)
 );
 
-INSERT INTO funcionario ( nome_funcionario, cpf_funcionario, email_funcionario, senha_funcionario,) 
+INSERT INTO funcionario ( nome_funcionario, cpf_funcionario, email_funcionario, senha_funcionario) 
 VALUES ( 'ana', '12345678910', 'ana@gmail.com','1234')
