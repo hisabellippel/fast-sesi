@@ -52,13 +52,13 @@ if (isset($_GET['logout'])) {
                     $cpf = $row['cpf_funcionario'];
 
                     $cpf_formatted = substr($cpf, 0, 3) . '.' . substr($cpf, 3, 3) . '.' . substr($cpf, 6, 3) . '-' . substr($cpf, 9, 2);
-                    $senha_masked = str_repeat('*', 8);
+                    
 
                     echo "<p><strong>Nome:</strong> {$row['nome_funcionario']}</p>";
                     echo "<p><strong>Credencial:</strong> {$row['credencial_funcionario']}</p>";
                     echo "<p><strong>Data de nascimento:</strong> {$row['data_nascimento_funcionario']}</p>";
                     echo "<p><strong>Telefone:</strong> {$row['telefone_funcionario']}</p>";
-                    echo "<p><strong>Senha:</strong> {$senha_masked}</p>";
+                    echo "<p><strong>Senha:</strong> {$senha_funcionario}</p>";
                     echo "<p><strong>E-mail:</strong> {$row['email_funcionario']}</p>";
                     echo "<p><strong>CPF:</strong> {$cpf_formatted}</p>";
 
