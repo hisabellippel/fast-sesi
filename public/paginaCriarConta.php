@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
        
         $sql = "INSERT INTO funcionario 
-                (credencial_funcionario,nome_funcionario, cpf_funcionario, email_funcionario, senha_funcionario, telefone_funcionario, cargo_funcionario, funcao_funcionari, salario_funcionario)
+                (credencial_funcionario,nome_funcionario, cpf_funcionario, email_funcionario, senha_funcionario, telefone_funcionario, cargo_funcionario, funcao_funcionario, salario_funcionario)
                 VALUES (?, ?, ?, ?)";
 
         $stmt = $conn->prepare($sql);
@@ -128,7 +128,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                      <div class="c1">
                         <img class="imag" src="../asets/imagens/meio/Cargo.png" alt="">
-                        <input type="password" name="cargo_funcionario" placeholder="Insira o cargo " required>
+                        <input type="text" name="cargo_funcionario" placeholder="Insira o cargo " required>
                     </div><br>
 
 

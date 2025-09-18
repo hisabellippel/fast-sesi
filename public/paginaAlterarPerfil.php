@@ -36,8 +36,9 @@ if (isset($_GET['logout'])) {
     </header>
 
     <div id="fonte">
-        <h1>Meu Perfil:</h1>
+        <h1>Funcionários:</h1>
         <p><a href="?logout=1">Sair</a></p>
+         <p><a href="paginaCriarConta.php">Cadastrar Novo Funcionário</a></p>
 
         <div class="pad6">
             <div class="alterarPerfil">
