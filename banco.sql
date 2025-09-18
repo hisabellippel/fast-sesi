@@ -2,11 +2,16 @@ CREATE DATABASE fast_sesi_sa;
 USE fast_sesi_sa;
 
 CREATE TABLE funcionario(
-    credencial_funcionario INT primary key AUTO_INCREMENT NOT NULL,
+    id_funcionario INT primary key AUTO_INCREMENT NOT NULL,
+    credencial_funcionario INT  NOT NULL,
     nome_funcionario varchar(120) NOT NULL,
     cpf_funcionario varchar(11) NOT NULL,
     email_funcionario varchar(45) NOT NULL,
-    senha_funcionario varchar(255) NOT NULL
+    senha_funcionario varchar(255) NOT NULL,
+    telefone_funcionario varchar(45) NOT NULL,
+    cargo_funcionario ENUM ( 'ADM', 'FUNCIONARIO') NOT NULL,
+    funcao_funcionario varchar(45) NOT NULL,
+    salario_funconario INT NOT NULL
 );
 
 CREATE TABLE trilhos(
@@ -51,7 +56,7 @@ CREATE TABLE linhas(
     acidentes_linhas int NOT NULL,
     falhas_tecnicas_linhas varchar(45),
     motorista_linhas INT NOT NULL,
-    FOREIGN KEY (motorista_linhas) REFERENCES funcionario(credencial_funcionario)
+    FOREIGN KEY (motorista_linhas) REFERENCES funcionario(id_funcionario)
 );
 
 CREATE TABLE trilhos_manutencao(
@@ -77,7 +82,7 @@ CREATE TABLE ouvidoria(
     nome_cliente varchar (45),
     observacoes_ouvidoria varchar (45) NOT NULL,
     nome_funcionario INT,
-    FOREIGN KEY (nome_funcionario) REFERENCES funcionario(credencial_funcionario)
+    FOREIGN KEY (nome_funcionario) REFERENCES funcionario(id_funcionario)
 );
 
 CREATE TABLE trens_descarrilhados(
@@ -86,5 +91,6 @@ CREATE TABLE trens_descarrilhados(
     FOREIGN KEY (nome_trem_descarrilhado) REFERENCES trens(id_trem)
 );
 
-INSERT INTO funcionario ( nome_funcionario, cpf_funcionario, email_funcionario, senha_funcionario) 
-VALUES ( 'ana', '12345678910', 'ana@gmail.com','1234')
+INSERT INTO funcionario ( credencial_funcionario, nome_funcionario, cpf_funcionario, email_funcionario, senha_funcionario,
+    telefone_funcionario, cargo_funcionario, funcao_funcionario, salario_funconario)
+VALUES ('1234', 'João', '08068776931', 'adm_joao@gmail.com', '6768', '47997794533', 'ADM', 'Gerente', '10000')
