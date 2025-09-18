@@ -62,6 +62,8 @@ if (isset($_GET['logout'])) {
                     echo "<p><strong>Senha:</strong> {$senha_mascarada}</p>";
                     echo "<p><strong>E-mail:</strong> {$row['email_funcionario']}</p>";
                     echo "<p><strong>CPF:</strong> {$cpf_formatted}</p>";
+                    echo "<p><strong>Salário:</strong> {$row['salario_funcionario']}</p>";
+
 
                     echo '<div class="botao">
                             <a href="paginaAlterarPerfil2.php?credencial_funcionario=' . $row['credencial_funcionario'] . '">
