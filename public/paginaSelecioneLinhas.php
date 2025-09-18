@@ -13,7 +13,6 @@
         </div>
     </header>
     <br>
-    <br>
 <main>
     <div id="azul">
         <h2> Linhas:</h2>
