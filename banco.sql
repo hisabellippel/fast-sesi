@@ -6,7 +6,7 @@ CREATE TABLE funcionario(
     nome_funcionario varchar(120) NOT NULL,
     cpf_funcionario varchar(11) NOT NULL,
     email_funcionario varchar(45) NOT NULL,
-    senha_funcionario varchar(255) NOT NULL,
+    senha_funcionario varchar(255) NOT NULL
 );
 
 CREATE TABLE trilhos(
@@ -86,5 +86,5 @@ CREATE TABLE trens_descarrilhados(
     FOREIGN KEY (nome_trem_descarrilhado) REFERENCES trens(id_trem)
 );
 
-INSERT INTO funcionario ( credencial_funcionario, nome_funcionario, cpf_funcionario, email_funcionario, telefone_funcionario, salario_funcionario, senha_funcionario, funcao_funcionario, data_nascimento_funcionario ) 
-VALUES ( '1234', 'ana', '12345678910', 'ana@gmail.com', '123456789', '1234', '1234', 'motorista', '2000/09/05' )
+INSERT INTO funcionario ( nome_funcionario, cpf_funcionario, email_funcionario, senha_funcionario) 
+VALUES ( 'ana', '12345678910', 'ana@gmail.com','1234')
