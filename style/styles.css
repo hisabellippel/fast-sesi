@@ -416,14 +416,14 @@ body {
 
 
 .quadrados {
-    padding-left: 10px;
-    padding-top: 5px;
+    padding-left: 45px;
+    padding-top: 20px;
     background-color: rgb(94, 156, 239);
-    height: 250px;
-    width: 215px;
+    height: 190px;
+    width: 235px;
     border-radius: 20px;
-    justify-content: center;
-    margin-top: 10px;
+    margin-bottom: 50PX;
+
 }
 
 .quadradoslinhas {
@@ -431,7 +431,6 @@ body {
     width: 180px;
     color: aliceblue;
     text-align: justify;
-    justify-content: center;
     font-size: 12px;
     margin-left: 10px;
     margin-top: 10px;
@@ -630,6 +629,7 @@ body {
     margin-right: 7px;
     color: aliceblue;
     background-size: 40px;
+    margin-bottom: -50PX;
 }
 
 .redond {
@@ -859,12 +859,12 @@ a:hover {
 
 .barrapequena {
     background-color: #0b4d91;
-    width: 40px;
-    height: 50px;
+    width: 2px;
+    height: 30px;
     border-radius: 10px;
     position: relative;
-    padding-left: 5%;
-    padding-bottom: 10%;
+    padding-left: 3%;
+    padding-bottom: 15%;
 }
 
 .barrap {
@@ -1229,15 +1229,22 @@ p.nova {
     
 }
 
+.linhaso{
+    width: 280px;
+    height: 280px;
+
+}
+
 .quadradomaior2{
     margin: 20px 20px 20px 20px;
     background-color: rgb(94, 156, 239);
     border-radius: 20px;
-    height: 400px;
+    height: 200px;
     position: absolute;
-    width: 300px;
+    width: 280px;
     margin-right: 10px;
     color: aliceblue;
+    margin-bottom: 50PX;
    
 }
 
