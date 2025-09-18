@@ -4,7 +4,7 @@ session_start();
 
 if (isset($_GET['logout'])) {
     session_destroy();
-    header("Location: paginaLogin.php");
+    header("Location: paginaLogin.php?msg=expired");
     exit;
 }
 ?>
@@ -58,7 +58,6 @@ if (isset($_GET['logout'])) {
                     
                     echo "<p><strong>Nome:</strong> {$row['nome_funcionario']}</p>";
                     echo "<p><strong>Credencial:</strong> {$row['credencial_funcionario']}</p>";
-                    echo "<p><strong>Data de nascimento:</strong> {$row['data_nascimento_funcionario']}</p>";
                     echo "<p><strong>Telefone:</strong> {$row['telefone_funcionario']}</p>";
                     echo "<p><strong>Senha:</strong> {$senha_mascarada}</p>";
                     echo "<p><strong>E-mail:</strong> {$row['email_funcionario']}</p>";
