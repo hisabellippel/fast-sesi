@@ -106,8 +106,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
                 <br>
 
-                <a href="paginaCriarConta.php">Não tem uma conta? Clique aqui!</a>
-                <br>
                 <button type="submit">Entrar</button>
             </form>
             
