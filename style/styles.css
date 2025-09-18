@@ -90,7 +90,7 @@ body {
     padding-left: 20px;
     align-items: center;
     border-radius: 30px 30px 50px 50px;
-    margin: 105px 30px 171px 30px;
+    margin: 105px 60px 193px 60px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -149,7 +149,7 @@ body {
 }
 
 .pad{
-    margin-bottom: 130px;
+    margin-bottom: 24px;
 }
 
 .pad1{
@@ -1230,13 +1230,13 @@ p.nova {
 }
 
 .quadradomaior2{
- margin: 20px;
+    margin: 20px 20px 20px 20px;
     background-color: rgb(94, 156, 239);
     border-radius: 20px;
-    height: 450px;
+    height: 400px;
     position: absolute;
-    width: 350px;
-    margin-right: 7px;
+    width: 300px;
+    margin-right: 10px;
     color: aliceblue;
    
 }
@@ -1285,4 +1285,10 @@ p.nova {
     font-weight: bold;
     text-align: center;
     margin: 10px 0;
+}
+
+.sair{
+    margin: 12px 12px 10px 10px;
+    border-style: solid;
+
 }
