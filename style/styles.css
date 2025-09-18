@@ -80,7 +80,7 @@ body {
     padding-left: 12px;
     align-items: center;
     border-radius: 30px 30px 50px 50px;
-    margin: 85px 30px 35px 30px;
+    margin: 25px 45px 30px 45px;
 }
 
 .branca1 {
@@ -267,7 +267,8 @@ body {
     margin-bottom: 160px;
 }
 .pad22{
-    margin-bottom: 10px;
+    width: 399px;
+    height: 400px;
 }
 
 .im {
