@@ -133,12 +133,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
                       <div class="c1">
-                        <img class="imag" src="../asets/imagens/meio/cpf.png" alt="">
+                        <img class="imag" src="../asets/imagens/meio/Funcao.png" alt="">
                         <input type="text" name="funcao_funcionario" placeholder=" Insira a função  " required>
                     </div><br>
 
                       <div class="c1">
-                        <img class="imag" src="../asets/imagens/meio/cpf.png" alt="">
+                        <img class="imag" src="../asets/imagens/meio/salario.png" alt="">
                         <input type="text" name="salario_funcionario" placeholder=" Insira o salário  " required>
                     </div><br>
 

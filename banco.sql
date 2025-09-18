@@ -92,5 +92,5 @@ CREATE TABLE trens_descarrilhados(
 );
 
 INSERT INTO funcionario ( credencial_funcionario, nome_funcionario, cpf_funcionario, email_funcionario, senha_funcionario,
-    telefone_funcionario, cargo_funcionario, funcao_funcionario, salario_funconario)
+    telefone_funcionario, cargo_funcionario, funcao_funcionario, salario_funcionario)
 VALUES ('1234', 'João', '08068776931', 'adm_joao@gmail.com', '6768', '47997794533', 'ADM', 'Gerente', '10000')

@@ -37,9 +37,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $senha_para_db = $nova_senha;
     
     if (!empty($nova_senha)) {
-        $stmt->bind_param("ssssdss", $nome_funcionario, $cpf_funcionario, $email_funcionario, $telefone_funcionario, $salario_funcionario, $funcao_funcionario, $senha_para_db, $credencial);
+        $stmt->bind_param("ssssdssd", $nome_funcionario, $cpf_funcionario, $email_funcionario, $telefone_funcionario, $salario_funcionario, $funcao_funcionario, $senha_para_db, $credencial);
     } else {
-        $stmt->bind_param("ssssds", $nome_funcionario, $cpf_funcionario, $email_funcionario, $telefone_funcionario, $salario_funcionario, $funcao_funcionario, $credencial);
+        $stmt->bind_param("ssssdsd", $nome_funcionario, $cpf_funcionario, $email_funcionario, $telefone_funcionario, $salario_funcionario, $funcao_funcionario, $credencial);
     }
     
     if ($stmt->execute()) {
@@ -62,7 +62,7 @@ if ($result && $result->num_rows > 0) {
     $cpf_funcionario = $row['cpf_funcionario'];
     $email_funcionario = $row['email_funcionario'];
     $telefone_funcionario = $row['telefone_funcionario'];
-    $salario_funcionario = $row['salario_funconario'];
+    $salario_funcionario = $row['salario_funcionario'];
     $funcao_funcionario = $row['funcao_funcionario'];
     $senha_funcionario = $row['senha_funcionario']; // A senha é carregada do banco de dados
 } else {
@@ -131,7 +131,7 @@ $conn->close();
 
                 <div class="c2">
                     <label for="salario_funcionario"></label><br>
-                    <input type="number" step="0.01" name="salario_funcionario" id="salario" placeholder="Insira seu salário:" value="<?php echo htmlspecialchars($salario_funcionario); ?>" required>
+                    <input type="number" step="0.01" name="salario_funcionario" id="salario_funcionario" placeholder="Insira seu salário:" value="<?php echo htmlspecialchars($salario_funcionario); ?>" required>
                 </div>
 
                 <br>
