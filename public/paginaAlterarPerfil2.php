@@ -37,9 +37,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $senha_para_db = $nova_senha;
     
     if (!empty($nova_senha)) {
-        $stmt->bind_param("ssssdss", $nome_funcionario, $cpf_funcionario, $email_funcionario, $telefone_funcionario, $salario_funcionario, $funcao_funcionario, $senha_para_db, $credencial);
+        $stmt->bind_param("ssssdssd", $nome_funcionario, $cpf_funcionario, $email_funcionario, $telefone_funcionario, $salario_funcionario, $funcao_funcionario, $senha_para_db, $credencial);
     } else {
-        $stmt->bind_param("ssssds", $nome_funcionario, $cpf_funcionario, $email_funcionario, $telefone_funcionario, $salario_funcionario, $funcao_funcionario, $credencial);
+        $stmt->bind_param("ssssdsd", $nome_funcionario, $cpf_funcionario, $email_funcionario, $telefone_funcionario, $salario_funcionario, $funcao_funcionario, $credencial);
     }
     
     if ($stmt->execute()) {
