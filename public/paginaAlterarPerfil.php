@@ -31,13 +31,9 @@ if (isset($_GET['logout'])) {
 
     <div id="fonte">
 
-    <?php if (empty($_SESSION["credencial_funcionario"])): ?>
-    <div class="card">
-        <p>Sua sessão foi encerrada! Clique aqui para logar novamente.</p>
-        <p><a href="paginaLogin.php">Logar novamente</a></p>
-    </div>
 
-    <?php else: ?>
+
+    
 
         <h1>Meu Perfil:</h1>
         <p><a href="?logout=1">Sair</a></p>
@@ -89,7 +85,7 @@ if (isset($_GET['logout'])) {
                     </div>
             </div>
         </div>
-    <?php endif; ?>
+    
 
         <footer>
             <div id="barra">
