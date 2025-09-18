@@ -86,7 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                 <form method="POST">
                       <div class="c1">
-                        <img class="imag" src="../asets/imagens/meio/nome.png" alt="">
+                        <img class="imag" src="../asets/imagens/meio/CredencialLogo.png" alt="">
                         <input type="text" name="credencial_funcionario" placeholder="Insira a credencial " required>
                     </div><br>
 
@@ -122,12 +122,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </div><br>
 
                      <div class="c1">
-                        <img class="imag" src="../asets/imagens/meio/cpf.png" alt="">
+                        <img class="imag" src="../asets/imagens/meio/TelefoneLogo.png" alt="">
                         <input type="text" name="telefone_funcionario" placeholder=" Insira o telefone  " required>
                     </div><br>
 
                      <div class="c1">
-                        <img class="imag" src="../asets/imagens/meio/senha.png" alt="">
+                        <img class="imag" src="../asets/imagens/meio/Cargo.png" alt="">
                         <input type="password" name="cargo_funcionario" placeholder="Insira o cargo " required>
                     </div><br>
 
