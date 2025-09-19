@@ -11,14 +11,16 @@
     </header>
     <main>
         <div>
+            <img class="alinharimg" src="asets/imagens/barraAbaixo/logo.png" alt="">
             <a href="public/paginaLogin.php">
-                <img class="alinharimg" src="../asets/imagens/barraAbaixo/logo.png" alt="">
-            </a>
+                 <h2>Bem-vindo!</h2>
             <h4>Clique aqui para acessar o aplicativo!⬆</h4>
+            </a>
+            
         </div>
 
         <div class="posicionar">
-            <img src="../asets/imagens/meio/construçãodefundo.png" alt="">
+            <img src="asets/imagens/meio/construçãodefundo.png" alt="">
         </div>
 
     </main>
