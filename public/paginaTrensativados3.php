@@ -26,7 +26,7 @@
         <br>
 
 
-        <div class="pad1">
+        <div >
             <div class="redonda5">
                 <a href="paginaTrensativados2.php"><p class="cor">Altorre-Glaciaris</p></a>
             </div>
