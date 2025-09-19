@@ -28,16 +28,16 @@
 
        
         <div class="quadradomaior">
-            <h3>Linha002:</h3> 
+            <h3>Linha003:</h3> 
 
             <img class="imglinha" src="../asets/imagens/meio/mapa.png" alt="Mapa da linha">
 
             <div class="linhaa">
-                <h3>Velocidade: 95 km/h</h3>
+                <h3>Velocidade: 85 km/h</h3>
             </div>
 
             <div class="linhaa">
-                <h3>Passageiros em tempo real: 180</h3>
+                <h3>Passageiros em tempo real: 290</h3>
             </div>
 
             <div class="linhaa">
