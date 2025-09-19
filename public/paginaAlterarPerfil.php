@@ -7,22 +7,22 @@ if (empty($_SESSION["credencial_funcionario"])) {
     exit;
 }
 
-// Always fetch user cargo from DB to ensure accuracy
+// Always fetch user cargo and name from DB to ensure accuracy
 $credencial = $_SESSION['credencial_funcionario'];
-$sql = "SELECT cargo_funcionario FROM funcionario WHERE credencial_funcionario = '$credencial'";
+$sql = "SELECT nome_funcionario, cargo_funcionario FROM funcionario WHERE credencial_funcionario = '$credencial'";
 $result = $conn->query($sql);
 if ($result && $result->num_rows > 0) {
     $row = $result->fetch_assoc();
     $_SESSION['cargo_funcionario'] = $row['cargo_funcionario'];
-    // Debug: echo "Cargo: " . $_SESSION['cargo_funcionario'] . "<br>";
+    $_SESSION['nome_funcionario'] = $row['nome_funcionario'];
 } else {
     echo "Erro ao verificar permissões.";
     exit;
 }
 
-// Check if user is admin
-if ($_SESSION['cargo_funcionario'] !== 'ADM') {
-    echo "<div class='card'><p>Acesso negado. Apenas administradores podem acessar esta página.</p><p><a href='paginaMenuPrincipal.php'>Voltar ao menu principal</a></p></div>";
+// Check if user is João (credencial 1234) and admin
+if ($_SESSION['credencial_funcionario'] != '1234' || $_SESSION['cargo_funcionario'] !== 'ADM') {
+    echo "<div class='card'><p>Acesso negado. Apenas João, administrador, pode acessar esta página.</p><p><a href='paginaMenuPrincipal.php'>Voltar ao menu principal</a></p></div>";
     exit;
 }
 
