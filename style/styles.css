@@ -307,7 +307,6 @@ body {
 
 }
 
-
 .alterarPerfil {
     margin: 25px;
     background-color: rgb(94, 156, 239);
@@ -1290,25 +1289,3 @@ p.nova {
 
 }
 
-.padAlterar{
-
-   
-    padding: 10px;
-    max-width: 600px;
-    box-sizing: border-box;
-    overflow-x: auto;
-}
-
-.padAlterar table {
-    width: 100%;
-    table-layout: fixed;
-    word-wrap: break-word;
-    border-collapse: collapse;
-}
-
-.padAlterar table td {
-    padding: 8px;
-    text-align: left;
-    word-wrap: break-word;
-    white-space: normal;
-}
