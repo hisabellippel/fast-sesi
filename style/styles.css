@@ -665,7 +665,6 @@ body {
     display: flex;
     font-size: 15px;
     white-space: nowrap;
-    
     margin-left: 5px;
     justify-content: center;
 
@@ -1236,7 +1235,6 @@ p.nova {
     background-color: rgb(94, 156, 239);
     border-radius: 20px;
     height: 200px;
-    position: absolute;
     width: 280px;
     margin-right: 10px;
     color: aliceblue;
@@ -1245,12 +1243,12 @@ p.nova {
 }
 
 #barra777{
- background-color: rgb(25, 25, 146);
+    background-color: rgb(25, 25, 146);
     display: flex;
     max-width: 2000px;
     padding: 11px;
     color: aliceblue;
-  margin-top: 630px;
+    margin-bottom: 0px;
 }
 .grafico2{
     height: 87px;
