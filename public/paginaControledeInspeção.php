@@ -23,7 +23,7 @@
         </div>
         <br>
         <br>
-        <div class="pad3">
+        <div class="pad1">
             <div class="redonda">
                 <a href="paginaTrilhos1.php"><p class="cor">Trilhos</p></a>
             </div>
@@ -44,7 +44,6 @@
                 <a href="paginaTrensDescarrilhados.php"><p class="cor">Trens descarrilhados</p></a>
             </div>
         </div>
-        <br>
     </main>
 
     <footer>

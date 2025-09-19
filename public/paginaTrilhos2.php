@@ -24,23 +24,27 @@
         </div>
         
         <br>
-        
-        <div class="redonda3">
-            <p>Em manutenção:  ▼</p>
-        </div>
 
-        <div class="informacao2">
-            <p>Linha1 - Em reforma <br>Linha1 - Em reforma <br>Linha1 - Em reforma <br>Linha1 - Em reforma <br>Linha1 - Em reforma <br></p>
+        <div class="pad18">
+        
+            <div class="redonda3">
+                <p>Em manutenção:  ▼</p>
             </div>
 
-        <div class="redonda3">
-            <p>Trilhos em risco:  ▼</p>
+            <div class="informacao2">
+                <p>Linha1 - Em reforma <br>Linha1 - Em reforma <br>Linha1 - Em reforma <br>Linha1 - Em reforma <br>Linha1 - Em reforma <br></p>
+                </div>
+
+            <div class="redonda3">
+                <p>Trilhos em risco:  ▼</p>
+            </div>
+
+            <div class="informacao221">
+                <p>Linha1 -Risco de rachadura <br>Linha1 - Sem risco de rachadura <br>Linha1 - Sem risco de rachadura<br>Linha1 - Sem risco de rachadura <br>Linha1 - Sem risco de rachadura </p>
+            
+            </div>
         </div>
 
-        <div class="informacao221">
-            <p>Linha1 -Risco de rachadura <br>Linha1 - Sem risco de rachadura <br>Linha1 - Sem risco de rachadura<br>Linha1 - Sem risco de rachadura <br>Linha1 - Sem risco de rachadura </p>
-        
-        </div>
     <footer>
         <div id="barra">
             <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>

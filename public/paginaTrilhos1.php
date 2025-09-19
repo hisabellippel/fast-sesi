@@ -26,12 +26,12 @@
         <br>
         <br>
 
-        <div class="pad4">
-            <div class="redonda7">
+        <div class="pad10">
+            <div class="redonda">
             <a href="paginaTrilhos2.php"><p class="cor">Em manutenção:  ▼</p></a>
         </div>
 
-        <div class="redonda7">
+        <div class="redonda">
             <a href="paginaTrilhos2.php"><p class="cor">Trilhos em risco:  ▼</p></a>
         </div></div>
 
