@@ -67,7 +67,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
        
         <div class="login-login">
             
-            <div class="branca1">
                 <form class="branca1" method="POST">
                 <img class="i" src="../asets/imagens/meio/perfil.png" alt="">
     
@@ -100,7 +99,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     
                     <button type="submit">Entrar</button>
                 </form>
-            </div>
         </div>
 
     <?php else: ?>
