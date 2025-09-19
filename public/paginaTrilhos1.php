@@ -36,7 +36,7 @@
         </div></div>
 
     <footer>
-        <div id="barra">
+        <div id="barra1">
             <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
