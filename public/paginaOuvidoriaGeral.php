@@ -25,7 +25,7 @@
         <br>
         <div class="pad10">
           <div class="redonda1">
-              <a href="paginaOuvidoriaFuncionarios.html">
+              <a href="paginaOuvidoriaFuncionarios.php">
                 <div class="seta-baixo">
                   <p class="cor">Funcionários▼</p>
                 </div>
@@ -34,7 +34,7 @@
 
 
           <div class="redonda1">
-              <a href="paginaOuvidoriaClientes.html" >
+              <a href="paginaOuvidoriaClientes.php" >
                 <div class="seta-baixo">
                   <p class="cor">Clientes▼</p>
                 </div>
