@@ -1,2 +1,0 @@
-- [x] Alterar a verificação de acesso em paginaAlterarPerfil.php para usar comparação solta (!=) em vez de estrita (!==) para credencial_funcionario
-- [x] Testar o acesso após a alteração

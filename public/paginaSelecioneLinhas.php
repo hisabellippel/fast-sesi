@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selecione Linhas</title>
     <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/style2.css">
 </head>
 <body>
     <header>
@@ -20,53 +21,46 @@
             <h2>Linhas:</h2>
         </div>
 
-        <div class="quadradomaior2">
-            <div class="linhaso">
-                <div class="umdo">
-                    <h3>Selecione a Linha:</h3> 
+        <div class="selecionar">
+
+            <div class="selecionar2">
+
+                <div class="selecioneflecha">
+                    <h3> Selecione a Linha: </h3>
                     <img src="../asets/imagens/meio/setaabaixar.png" alt="">
-                    <div class="barrapequena">
-                        <div class="barrap"></div>
-                    </div>
                 </div>
 
-                <div class="quadrados">       
-                    <a href="paginaSelecioneLinhas1.php">
-                        <div class="quadradoslinhas">
-                            <p>Linha001</p>
-                        </div>
-                    </a>
+                <div class="selecionar3">
 
-                    <a href="paginaSelecioneLinhas2.php">
-                        <div class="quadradoslinhas">
-                            <p>Linha002</p>   
-                        </div>
-                    </a>
+                <a href="paginaSelecioneLinhas1.php"><p class="linhas2"> Linha 001</p></a>
+                <a href="paginaSelecioneLinhas2.php"><p class="linhas2"> Linha 002</p></a>
+                <a href="paginaSelecioneLinhas3.php"><p class="linhas2"> Linha 003</p></a>
+                <a href="paginaSelecioneLinhas4.php"><p class="linhas2"> Linha 004</p></a>
+                <a href="paginaSelecioneLinhas5.php"><p class="linhas2"> Linha 005</p></a>
 
-                    <a href="paginaSelecioneLinhas3.php">
-                        <div class="quadradoslinhas">
-                            <p>Linha003</p>
-                        </div>    
-                    </a>
-
-                    <a href="paginaSelecioneLinhas4.php">
-                        <div class="quadradoslinhas">
-                            <p>Linha004</p>
-                        </div>   
-                    </a>
-
-                    <a href="paginaSelecionelinhas5.php">
-                        <div class="quadradoslinhas">
-                            <p>Linha005</p>
-                        </div>   
-                    </a>
                 </div>
+
             </div>
+
+            <img src="../asets/imagens/meio/mapa.png" alt="">
+
+            <div class="velocidade">
+                <p> Velocidade</p>
+            </div>
+            <div class="passageiros">
+                <p>Passageiros em tempo real</p>
+            </div>
+            <div class="alertaseno">
+                <p>Alertas e Notificações</p>
+            </div>
+
+
         </div>
+
     </main>
 
     <footer> 
-        <div id="barra777">
+        <div id="barra">
             <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
