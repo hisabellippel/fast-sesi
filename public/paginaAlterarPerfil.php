@@ -64,7 +64,7 @@ if (isset($_GET['logout'])) {
         <p><a href="?logout=1">Sair</a></p>
          <p><a href="paginaCriarConta.php">Cadastrar Novo Funcionário</a></p>
 
-        <div class="pad6">
+        <div class="padAlterar">
             <?php
             $credencial_admin = $_SESSION['credencial_funcionario'];
 
