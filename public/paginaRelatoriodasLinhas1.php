@@ -26,7 +26,7 @@
         <br>
         <div class="pad16">
             <div class="linha">
-                <a href="paginaRelatoriodasLinhas2.html"><p class="linhas"> ▼ Linha 001 <hr class="new"><br></p></a>
+                <a href="paginaRelatoriodasLinhas2.php"><p class="linhas"> ▼ Linha 001 <hr class="new"><br></p></a>
                 <p class="linhas"> ▼ Linha 002 <hr class="new"><br></p>
                 <p class="linhas"> ▼ Linha 003 <hr class="new"><br></p>
                 <p class="linhas"> ▼ Linha 004 <hr class="new"><br></p>
