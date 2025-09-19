@@ -41,42 +41,82 @@ if (isset($_GET['logout'])) {
          <p><a href="paginaCriarConta.php">Cadastrar Novo Funcionário</a></p>
 
         <div class="pad6">
-            <div class="alterarPerfil">
-                <img src="../asets/imagens/meio/rostoAlterarPerfil.png" alt="">
+            <?php
+            $credencial_admin = $_SESSION['credencial_funcionario'];
 
-                <?php
-                $credencial = $_SESSION['credencial_funcionario'];
-                $sql = "SELECT * FROM funcionario WHERE credencial_funcionario = '$credencial'";
-                $result = $conn->query($sql);
+            // Fetch all employees
+            $sql = "SELECT * FROM funcionario";
+            $result = $conn->query($sql);
 
-                if ($result && $result->num_rows > 0) {
-                    $row = $result->fetch_assoc();
+            if ($result && $result->num_rows > 0) {
+                $admin_row = null;
+                $other_rows = [];
 
+                // Separate admin and others
+                while ($row = $result->fetch_assoc()) {
+                    if ($row['credencial_funcionario'] === $credencial_admin) {
+                        $admin_row = $row;
+                    } else {
+                        $other_rows[] = $row;
+                    }
+                }
+
+                echo '<div style="display:flex; flex-wrap: wrap;">';
+
+                // Render admin profile first
+                if ($admin_row) {
+                    $cpf = $admin_row['cpf_funcionario'];
+                    $senha_mascarada = str_repeat('*', 8);
+                    $cpf_formatted = substr($cpf, 0, 3) . '.' . substr($cpf, 3, 3) . '.' . substr($cpf, 6, 3) . '-' . substr($cpf, 9, 2);
+
+                    echo '<table border="1" style="margin-right: 20px; background-color: rgb(94, 156, 239); border-radius: 20px; color: aliceblue; width: 350px; height: 475px;">';
+                    echo '<tr><td colspan="2" style="text-align:center;"><img src="../asets/imagens/meio/rostoAlterarPerfil.png" alt=""></td></tr>';
+                    echo "<tr><td><strong>Nome:</strong></td><td>{$admin_row['nome_funcionario']}</td></tr>";
+                    echo "<tr><td><strong>Credencial:</strong></td><td>{$admin_row['credencial_funcionario']}</td></tr>";
+                    echo "<tr><td><strong>Telefone:</strong></td><td>{$admin_row['telefone_funcionario']}</td></tr>";
+                    echo "<tr><td><strong>Senha:</strong></td><td>{$senha_mascarada}</td></tr>";
+                    echo "<tr><td><strong>E-mail:</strong></td><td>{$admin_row['email_funcionario']}</td></tr>";
+                    echo "<tr><td><strong>CPF:</strong></td><td>{$cpf_formatted}</td></tr>";
+                    echo "<tr><td><strong>Salário:</strong></td><td>{$admin_row['salario_funcionario']}</td></tr>";
+                    echo '<tr><td colspan="2" style="text-align:center;">
+                            <a href="paginaAlterarPerfil2.php?credencial_funcionario=' . $admin_row['credencial_funcionario'] . '">
+                                <button type="button">Alterar Perfil:</button>
+                            </a>
+                          </td></tr>';
+                    echo '</table>';
+                }
+
+                // Render other employees
+                foreach ($other_rows as $row) {
                     $cpf = $row['cpf_funcionario'];
                     $senha_mascarada = str_repeat('*', 8);
-
                     $cpf_formatted = substr($cpf, 0, 3) . '.' . substr($cpf, 3, 3) . '.' . substr($cpf, 6, 3) . '-' . substr($cpf, 9, 2);
-                    
-                    echo "<p><strong>Nome:</strong> {$row['nome_funcionario']}</p>";
-                    echo "<p><strong>Credencial:</strong> {$row['credencial_funcionario']}</p>";
-                    echo "<p><strong>Telefone:</strong> {$row['telefone_funcionario']}</p>";
-                    echo "<p><strong>Senha:</strong> {$senha_mascarada}</p>";
-                    echo "<p><strong>E-mail:</strong> {$row['email_funcionario']}</p>";
-                    echo "<p><strong>CPF:</strong> {$cpf_formatted}</p>";
-                    echo "<p><strong>Salário:</strong> {$row['salario_funcionario']}</p>";
 
-
-                    echo '<div class="botao">
+                    echo '<table border="1" style="margin-right: 20px; background-color: rgb(94, 156, 239); border-radius: 20px; color: aliceblue; width: 350px; height: 475px;">';
+                    echo '<tr><td colspan="2" style="text-align:center;"><img src="../asets/imagens/meio/rostoAlterarPerfil.png" alt=""></td></tr>';
+                    echo "<tr><td><strong>Nome:</strong></td><td>{$row['nome_funcionario']}</td></tr>";
+                    echo "<tr><td><strong>Credencial:</strong></td><td>{$row['credencial_funcionario']}</td></tr>";
+                    echo "<tr><td><strong>Telefone:</strong></td><td>{$row['telefone_funcionario']}</td></tr>";
+                    echo "<tr><td><strong>Senha:</strong></td><td>{$senha_mascarada}</td></tr>";
+                    echo "<tr><td><strong>E-mail:</strong></td><td>{$row['email_funcionario']}</td></tr>";
+                    echo "<tr><td><strong>CPF:</strong></td><td>{$cpf_formatted}</td></tr>";
+                    echo "<tr><td><strong>Salário:</strong></td><td>{$row['salario_funcionario']}</td></tr>";
+                    echo '<tr><td colspan="2" style="text-align:center;">
                             <a href="paginaAlterarPerfil2.php?credencial_funcionario=' . $row['credencial_funcionario'] . '">
                                 <button type="button">Alterar Perfil:</button>
                             </a>
-                          </div>';
-                } else {
-                    echo "<p>Nenhum usuário encontrado com esta credencial.</p>";
+                          </td></tr>';
+                    echo '</table>';
                 }
-                ?>
-                <div class="letras"></div>
-            </div>
+
+                echo '</div>';
+            } else {
+                echo "<p>Nenhum usuário encontrado.</p>";
+            }
+            ?>
+
+            
+            <div class="letras"></div>
         </div>
     </div>
     
