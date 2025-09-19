@@ -881,10 +881,6 @@ a:hover {
     border-radius: 4px;
 }
 
-.barrapequena2 {
-    padding-bottom: 149%;
-}
-
 .barrap2 {
     content: '';
     position: absolute;
@@ -1272,7 +1268,7 @@ p.nova {
     max-width: 2000px;
     padding: 11px;
     color: aliceblue;
-  margin-top: -70px;
+  margin-top: 124px;
 }
 
 .erro {

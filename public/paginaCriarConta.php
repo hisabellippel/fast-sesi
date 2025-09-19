@@ -65,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
     <header>
         <div id="barraescura">
-            <a href="paginaAlterarPerfil.php"><img class="topo1" src="../asets/imagens/barraAcima/Flecha.png" alt=""></a>
+            <a href="paginaAlterarPerfil.php "><img class="topo1" src="../asets/imagens/barraAcima/Flecha.png" alt=""></a>
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
             <img class="imgtopo" src="../asets/imagens/meio/fotoFundoTrem.png" alt="">
         </div>
