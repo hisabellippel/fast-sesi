@@ -1,0 +1,69 @@
+.selecionar{
+    background-color: #5e9cef;
+    margin: 4%;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.selecionar2{
+    background-color: #4373b1;
+    border-radius: 30px 30px 30px 30px;
+    padding-top: 2px;
+    padding-bottom: 8px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.selecionar3{
+    background-color: #538cd6;
+    padding: 10px;
+    padding-bottom: 18px;
+    padding-top: 5px;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+.selecioneflecha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.linhas2{
+    background-color: #4373b1;
+    text-align: left;
+    padding-left: 10px;
+    border-radius: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: -10px;
+}
+
+.velocidade{
+    background-color: #4373b1;
+    text-align: left;
+    padding-left: 10px;
+    border-radius: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.passageiros{
+    background-color: #4373b1;
+    border-radius: 30px;
+    padding-left: 10px;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.alertaseno{
+    background-color: #4373b1;
+    padding-left: 10px;
+    text-align: left;
+    border-radius: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
