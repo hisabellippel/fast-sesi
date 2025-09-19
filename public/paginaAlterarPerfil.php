@@ -126,11 +126,16 @@ if (isset($_GET['logout'])) {
                     echo "<tr><td><strong>CPF:</strong></td><td>{$cpf_formatted}</td></tr>";
                     echo "<tr><td><strong>Salário:</strong></td><td>{$row['salario_funcionario']}</td></tr>";
                     echo '<tr><td colspan="2" style="text-align:center;">
+
                             <a href="paginaAlterarPerfil2.php?credencial_funcionario=' . $row['credencial_funcionario'] . '">
                                 <button type="button">Alterar Perfil:</button>
                             </a>
                           </td></tr>';
+                    echo '<tr><td colspan="2" style="text-align:center;">
+                            <a href="paginaDeletarPerfil.php?credencial_funcionario=' . $row['credencial_funcionario'] . '" onclick="return confirm(\'Tem certeza que deseja excluir este funcionário?\')">Excluir Funcionário</a>
+                          </td></tr>';
                     echo '</table>';
+
                 }
 
                 echo '</div>';
