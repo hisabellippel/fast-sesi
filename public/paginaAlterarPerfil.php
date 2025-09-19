@@ -2,6 +2,30 @@
 include "db.php";
 session_start();
 
+if (empty($_SESSION["credencial_funcionario"])) {
+    header("Location: paginaLogin.php?msg=expired");
+    exit;
+}
+
+// Always fetch user cargo from DB to ensure accuracy
+$credencial = $_SESSION['credencial_funcionario'];
+$sql = "SELECT cargo_funcionario FROM funcionario WHERE credencial_funcionario = '$credencial'";
+$result = $conn->query($sql);
+if ($result && $result->num_rows > 0) {
+    $row = $result->fetch_assoc();
+    $_SESSION['cargo_funcionario'] = $row['cargo_funcionario'];
+    // Debug: echo "Cargo: " . $_SESSION['cargo_funcionario'] . "<br>";
+} else {
+    echo "Erro ao verificar permissões.";
+    exit;
+}
+
+// Check if user is admin
+if ($_SESSION['cargo_funcionario'] !== 'ADM') {
+    echo "<div class='card'><p>Acesso negado. Apenas administradores podem acessar esta página.</p><p><a href='paginaMenuPrincipal.php'>Voltar ao menu principal</a></p></div>";
+    exit;
+}
+
 if (isset($_GET['logout'])) {
     session_destroy();
     header("Location: paginaLogin.php?msg=expired");
