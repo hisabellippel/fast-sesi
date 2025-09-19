@@ -1,77 +1,61 @@
+
+
 <?php
 include "db.php";
-session_start();
 
-if (empty($_SESSION["credencial_funcionario"])) {
-    echo "Sua sessão expirou. Por favor, faça login novamente.";
-    exit();
-}
+$credencial = "";
+$nome_funcionario = "";
+$cpf_funcionario = "";
+$email_funcionario = "";
+$telefone_funcionario = "";
+$salario_funcionario = "";
+$senha_funcionario = "";
+$funcao_funcionario = "";
 
-$credencial = $_SESSION['credencial_funcionario'];
+if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['credencial_funcionario'])) {
+    $credencial = $_GET['credencial_funcionario'];
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $nome_funcionario = $_POST['nome_funcionario'] ?? '';
-    $cpf_funcionario = $_POST['cpf_funcionario'] ?? '';
-    $email_funcionario = $_POST['email_funcionario'] ?? '';
-    $telefone_funcionario = $_POST['telefone_funcionario'] ?? '';
-    $salario_funcionario = $_POST['salario_funcionario'] ?? '';
-    $funcao_funcionario = $_POST['funcao_funcionario'] ?? '';
-    $nova_senha = $_POST['senha_funcionario'] ?? '';
-
-    $sql = "UPDATE funcionario SET 
-        nome_funcionario = ?,
-        cpf_funcionario = ?,
-        email_funcionario = ?,
-        telefone_funcionario = ?,
-        salario_funcionario = ?,
-        funcao_funcionario = ?";
-    
-    if (!empty($nova_senha)) {
-        $sql .= ", senha_funcionario = ?";
-    }
-
-    $sql .= " WHERE credencial_funcionario = ?";
-    
+    $sql = "SELECT * FROM funcionario WHERE credencial_funcionario = ?";
     $stmt = $conn->prepare($sql);
+    $stmt->bind_param("s", $credencial);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
-    $senha_para_db = $nova_senha;
-    
-    if (!empty($nova_senha)) {
-        $stmt->bind_param("ssssdssd", $nome_funcionario, $cpf_funcionario, $email_funcionario, $telefone_funcionario, $salario_funcionario, $funcao_funcionario, $senha_para_db, $credencial);
-    } else {
-        $stmt->bind_param("ssssdsd", $nome_funcionario, $cpf_funcionario, $email_funcionario, $telefone_funcionario, $salario_funcionario, $funcao_funcionario, $credencial);
+    if ($result && $result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+        $nome_funcionario = $row['nome_funcionario'];
+        $cpf_funcionario = $row['cpf_funcionario'];
+        $email_funcionario = $row['email_funcionario'];
+        $telefone_funcionario = $row['telefone_funcionario'];
+        $salario_funcionario = $row['salario_funcionario'];
+        $senha_funcionario = $row['senha_funcionario'];
+        $funcao_funcionario = $row['funcao_funcionario'];
     }
-    
-    if ($stmt->execute()) {
-        echo "Perfil atualizado com sucesso. <a href='paginaAlterarPerfil.php'>Ver Perfil.</a>";
-    } else {
-        echo "Erro ao atualizar perfil: " . $stmt->error;
-    }
-
     $stmt->close();
-    $conn->close();
-    exit();
 }
 
-$sql = "SELECT * FROM funcionario WHERE credencial_funcionario = '$credencial'";
-$result = $conn->query($sql);
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario'])) {
+    $credencial = $_POST['credencial_funcionario'];
+    $nome_funcionario = $_POST['nome_funcionario'];
+    $cpf_funcionario = $_POST['cpf_funcionario'];
+    $email_funcionario = $_POST['email_funcionario'];
+    $telefone_funcionario = $_POST['telefone_funcionario'];
+    $salario_funcionario = $_POST['salario_funcionario'];
+    $senha_funcionario = $_POST['senha_funcionario'];
+    $funcao_funcionario = $_POST['funcao_funcionario'];
 
-if ($result && $result->num_rows > 0) {
-    $row = $result->fetch_assoc();
-    $nome_funcionario = $row['nome_funcionario'];
-    $cpf_funcionario = $row['cpf_funcionario'];
-    $email_funcionario = $row['email_funcionario'];
-    $telefone_funcionario = $row['telefone_funcionario'];
-    $salario_funcionario = $row['salario_funcionario'];
-    $funcao_funcionario = $row['funcao_funcionario'];
-    $senha_funcionario = $row['senha_funcionario']; // A senha é carregada do banco de dados
-} else {
-    echo "Funcionário não encontrado.";
-    $conn->close();
-    exit();
+    $sql = "UPDATE funcionario SET nome_funcionario=?, cpf_funcionario=?, email_funcionario=?, telefone_funcionario=?, salario_funcionario=?, senha_funcionario=?, funcao_funcionario=? WHERE credencial_funcionario=?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("ssssdsss", $nome_funcionario, $cpf_funcionario, $email_funcionario, $telefone_funcionario, $salario_funcionario, $senha_funcionario, $funcao_funcionario, $credencial);
+
+    if ($stmt->execute()) {
+        echo "<script>alert('Perfil atualizado com sucesso!'); window.location.href='paginaAlterarPerfil.php';</script>";
+        exit;
+    } else {
+        echo "<script>alert('Erro ao atualizar o perfil.');</script>";
+    }
+    $stmt->close();
 }
-
-$conn->close();
 ?>
 
 <!DOCTYPE html>
