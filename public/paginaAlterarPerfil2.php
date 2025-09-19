@@ -7,7 +7,31 @@ if (empty($_SESSION["credencial_funcionario"])) {
     exit();
 }
 
-$credencial = $_SESSION['credencial_funcionario'];
+$credencial_logado = $_SESSION['credencial_funcionario'];
+
+// Always fetch user cargo from DB to ensure accuracy
+$sql = "SELECT cargo_funcionario FROM funcionario WHERE credencial_funcionario = '$credencial_logado'";
+$result = $conn->query($sql);
+if ($result && $result->num_rows > 0) {
+    $row = $result->fetch_assoc();
+    $_SESSION['cargo_funcionario'] = $row['cargo_funcionario'];
+} else {
+    echo "Erro ao verificar permissões.";
+    exit;
+}
+
+$is_admin = $_SESSION['cargo_funcionario'] === 'ADM';
+
+// Determine which profile to edit
+$credencial_to_edit = $credencial_logado; // default to own
+if ($is_admin && isset($_GET['credencial_funcionario'])) {
+    $credencial_to_edit = $_GET['credencial_funcionario'];
+} elseif (!$is_admin && isset($_GET['credencial_funcionario']) && $_GET['credencial_funcionario'] != $credencial_logado) {
+    echo "Acesso negado. Você só pode editar seu próprio perfil.";
+    exit();
+}
+
+$credencial = $credencial_to_edit;
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nome_funcionario = $_POST['nome_funcionario'] ?? '';
