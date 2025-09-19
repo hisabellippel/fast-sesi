@@ -1236,15 +1236,6 @@ p.nova {
     margin-bottom: 50PX;
    
 }
-
-#barra777{
-    background-color: rgb(25, 25, 146);
-    display: flex;
-    max-width: 2000px;
-    padding: 11px;
-    color: aliceblue;
-    margin-bottom: 0px;
-}
 .grafico2{
     height: 87px;
 }
