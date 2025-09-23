@@ -28,14 +28,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $pass = $_POST["password"] ?? ""; // inserir uma  password_hash
     
 
-    $stmt = $mysqli->prepare("SELECT nome_funcionario, credencial_funcionario, senha_funcionario FROM funcionario WHERE nome_funcionario=? AND credencial_funcionario=? AND senha_funcionario =? ");
-    $stmt->bind_param("sss", $nome, $cred, $pass);
+    $stmt = $mysqli->prepare("SELECT nome_funcionario, credencial_funcionario, senha_funcionario FROM funcionario WHERE nome_funcionario=? AND credencial_funcionario=?");
+    $stmt->bind_param("ss", $nome, $cred);
     $stmt->execute();
     $result = $stmt->get_result();
     $dados = $result->fetch_assoc();
     $stmt->close();
 
-    if ($dados) {
+     if ($dados && password_verify($pass, $dados["senha_funcionario"])) {
         $_SESSION["nome_funcionario"] = $dados["nome_funcionario"];
         $_SESSION["credencial_funcionario"] = $dados["credencial_funcionario"];
         header("Location: paginaMenuPrincipal.php");
