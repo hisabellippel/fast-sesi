@@ -17,24 +17,31 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $funcao  = $_POST['funcao_funcionario'] ?? "";
     $salario  = $_POST['salario_funcionario'] ?? "";
 
-  
+    
     if ($email !== $email2) {
         $erro = "Os e-mails não coincidem.";
     }
-
  
     elseif ($pass !== $pass2) {
         $erro = "As senhas não coincidem.";
     }
-
+    
+    elseif (strlen($cpf) !== 11) {
+        $erro = "O CPF deve ter exatamente 11 dígitos.";
+    }
+    elseif (strlen($credencial) !== 4) {
+        $erro = "A credencial deve ter exatamente 4 dígitos.";
+    }
+    
+    elseif (strlen($telefone) < 10) {
+        $erro = "O telefone deve ter pelo menos 10 dígitos.";
+    }
     else {
-        
-          $senhaHash = password_hash($pass, PASSWORD_DEFAULT);
- 
+        $senhaHash = password_hash($pass, PASSWORD_DEFAULT);
 
        
         $sql = "INSERT INTO funcionario 
-                (credencial_funcionario,nome_funcionario, cpf_funcionario, email_funcionario, senha_funcionario, telefone_funcionario, cargo_funcionario, funcao_funcionario, salario_funcionario)
+                (credencial_funcionario, nome_funcionario, cpf_funcionario, email_funcionario, senha_funcionario, telefone_funcionario, cargo_funcionario, funcao_funcionario, salario_funcionario)
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         $stmt = $conn->prepare($sql);
@@ -43,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if ($stmt->execute()) {
             $sucesso = "Novo registro criado com sucesso!";
         } else {
-            $erro = "Erro ao cadastrar " . $conn->error;
+            $erro = "Erro ao cadastrar: " . $conn->error;
         }
 
         $stmt->close();
@@ -52,10 +59,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $conn->close();
 }
 ?>
-
-
-
-
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -67,15 +70,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <header>
         <div id="barraescura">
             <a href="paginaAlterarPerfil.php "><img class="topo1" src="../asets/imagens/barraAcima/Flecha.png" alt=""></a>
-            <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
-            <img class="imgtopo" src="../asets/imagens/meio/fotoFundoTrem.png" alt="">
+            <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt=""/>
+            <img class="imgtopo" src="../asets/imagens/meio/fotoFundoTrem.png" alt=""/>
         </div>
     </header>
 
     <main>
         <div class="pad22">
             <div class="branca">
-                <img class="i" src="../asets/imagens/meio/perfil.png" alt="">
+                <img class="i" src="../asets/imagens/meio/perfil.png" alt=""/>
 
                 <?php if (!empty($erro)) { ?>
                     <div class="erro"><?= $erro ?></div>
@@ -86,69 +89,73 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <?php } ?>
 
                 <form method="POST">
-                      <div class="c1">
-                        <img class="imag" src="../asets/imagens/meio/CredencialLogo.png" alt="">
-                        <input type="text" name="credencial_funcionario" placeholder="Insira a credencial " required>
+                    <div class="c1">
+                        <img class="imag" src="../asets/imagens/meio/CredencialLogo.png" alt=""/>
+                        <input type="text" name="credencial_funcionario" placeholder="Insira a credencial " requiredrequired minlength="4" maxlength="4">
                     </div><br>
 
-
                     <div class="c1">
-                        <img class="imag" src="../asets/imagens/meio/nome.png" alt="">
+                        <img class="imag" src="../asets/imagens/meio/nome.png" alt=""/>
                         <input type="text" name="nome_funcionario" placeholder="Insira o nome " required>
                     </div><br>
 
                     <div class="c1">
-                        <img class="imag" src="../asets/imagens/meio/email.png" alt="">
+                        <img class="imag" src="../asets/imagens/meio/email.png" alt=""/>
                         <input type="email" name="email_funcionario" placeholder="Insira o email " required>
                     </div><br>
 
                     <div class="c1">
-                        <img class="imag" src="../asets/imagens/meio/email.png" alt="">
+                        <img class="imag" src="../asets/imagens/meio/email.png" alt=""/>
                         <input type="email" name="email_confirmar" placeholder="Confirme o email " required>
                     </div><br>
 
                     <div class="c1">
-                        <img class="imag" src="../asets/imagens/meio/senha.png" alt="">
+                        <img class="imag" src="../asets/imagens/meio/senha.png" alt=""/>
                         <input type="password" name="senha_funcionario" placeholder="Insira a senha " required>
                     </div><br>
 
                     <div class="c1">
-                        <img class="imag" src="../asets/imagens/meio/senha.png" alt="">
+                        <img class="imag" src="../asets/imagens/meio/senha.png" alt=""/>
                         <input type="password" name="senha_confirmar" placeholder="Repita a senha " required>
                     </div><br>
 
                     <div class="c1">
-                        <img class="imag" src="../asets/imagens/meio/cpf.png" alt="">
-                        <input type="text" name="cpf_funcionario" placeholder=" Insira o CPF  " required>
+                        <img class="imag" src="../asets/imagens/meio/cpf.png" alt=""/>
+                        <input type="text" name="cpf_funcionario" placeholder=" Insira o CPF " required minlength="11" maxlength="11">
                     </div><br>
 
-                     <div class="c1">
-                        <img class="imag" src="../asets/imagens/meio/TelefoneLogo.png" alt="">
-                        <input type="text" name="telefone_funcionario" placeholder=" Insira o telefone  " required>
+                    <div class="c1">
+                        <img class="imag" src="../asets/imagens/meio/TelefoneLogo.png" alt=""/>
+                        <input type="text" name="telefone_funcionario" placeholder=" Insira o telefone " required minlength="10">
                     </div><br>
 
-                     <div class="c1">
-                        <img class="imag" src="../asets/imagens/meio/Cargo.png" alt="">
-                        <input type="text" name="cargo_funcionario" placeholder="Insira o cargo " required>
+                    <div class="c1">
+                        <img class="imag" src="../asets/imagens/meio/Cargo.png" alt=""/>
+                         <div>
+            <input type="radio" id="adm" name="cargo_funcionario" value="ADM">
+            <label for="adm">ADM</label>
+        </div>
+        
+        <div>
+            <input type="radio" id="funcionario" name="cargo_funcionario" value="FUNCIONARIO">
+            <label for="funcionario">Funcionário</label>
+        </div>
                     </div><br>
 
-
-                      <div class="c1">
-                        <img class="imag" src="../asets/imagens/meio/Funcao.png" alt="">
-                        <input type="text" name="funcao_funcionario" placeholder=" Insira a função  " required>
+                    <div class="c1">
+                        <img class="imag" src="../asets/imagens/meio/Funcao.png" alt=""/>
+                        <input type="text" name="funcao_funcionario" placeholder=" Insira a função " required>
                     </div><br>
 
-                      <div class="c1">
-                        <img class="imag" src="../asets/imagens/meio/salario.png" alt="">
-                        <input type="text" name="salario_funcionario" placeholder=" Insira o salário  " required>
+                    <div class="c1">
+                        <img class="imag" src="../asets/imagens/meio/salario.png" alt=""/>
+                        <input type="text" name="salario_funcionario" placeholder=" Insira o salário " required>
                     </div><br>
 
                     <input type="submit" value="Cadastrar">
                 </form>
             </div>
         </div>
-
-       
     </main>
 </body>
 </html>

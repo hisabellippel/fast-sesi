@@ -95,12 +95,15 @@ if (isset($_GET['logout'])) {
 
                     echo '<table border="1" style="margin-right: 20px; background-color: rgb(94, 156, 239); border-radius: 20px; color: aliceblue; width: 350px; height: 475px;">';
                     echo '<tr><td colspan="2" style="text-align:center;"><img src="../asets/imagens/meio/rostoAlterarPerfil.png" alt=""></td></tr>';
-                    echo "<tr><td><strong>Nome:</strong></td><td>{$admin_row['nome_funcionario']}</td></tr>";
+                   
                     echo "<tr><td><strong>Credencial:</strong></td><td>{$admin_row['credencial_funcionario']}</td></tr>";
-                    echo "<tr><td><strong>Telefone:</strong></td><td>{$admin_row['telefone_funcionario']}</td></tr>";
-                    echo "<tr><td><strong>Senha:</strong></td><td>{$senha_mascarada}</td></tr>";
+                    echo "<tr><td><strong>Nome:</strong></td><td>{$admin_row['nome_funcionario']}</td></tr>";
                     echo "<tr><td><strong>E-mail:</strong></td><td>{$admin_row['email_funcionario']}</td></tr>";
+                    echo "<tr><td><strong>Senha:</strong></td><td>{$senha_mascarada}</td></tr>";
                     echo "<tr><td><strong>CPF:</strong></td><td>{$cpf_formatted}</td></tr>";
+                    echo "<tr><td><strong>Telefone:</strong></td><td>{$admin_row['telefone_funcionario']}</td></tr>";
+                    echo "<tr><td><strong>Cargo:</strong></td><td>{$admin_row['cargo_funcionario']}</td></tr>";
+                    echo "<tr><td><strong>Função:</strong></td><td>{$admin_row['funcao_funcionario']}</td></tr>";
                     echo "<tr><td><strong>Salário:</strong></td><td>{$admin_row['salario_funcionario']}</td></tr>";
                     echo '<tr><td colspan="2" style="text-align:center;">
                             <a href="paginaAlterarPerfil2.php?credencial_funcionario=' . $admin_row['credencial_funcionario'] . '">
@@ -118,12 +121,14 @@ if (isset($_GET['logout'])) {
 
                     echo '<table border="1" style="margin-right: 20px; background-color: rgb(94, 156, 239); border-radius: 20px; color: aliceblue; width: 350px; height: 475px;">';
                     echo '<tr><td colspan="2" style="text-align:center;"><img src="../asets/imagens/meio/rostoAlterarPerfil.png" alt=""></td></tr>';
-                    echo "<tr><td><strong>Nome:</strong></td><td>{$row['nome_funcionario']}</td></tr>";
                     echo "<tr><td><strong>Credencial:</strong></td><td>{$row['credencial_funcionario']}</td></tr>";
-                    echo "<tr><td><strong>Telefone:</strong></td><td>{$row['telefone_funcionario']}</td></tr>";
-                    echo "<tr><td><strong>Senha:</strong></td><td>{$senha_mascarada}</td></tr>";
+                    echo "<tr><td><strong>Nome:</strong></td><td>{$row['nome_funcionario']}</td></tr>";
                     echo "<tr><td><strong>E-mail:</strong></td><td>{$row['email_funcionario']}</td></tr>";
+                    echo "<tr><td><strong>Senha:</strong></td><td>{$senha_mascarada}</td></tr>";
                     echo "<tr><td><strong>CPF:</strong></td><td>{$cpf_formatted}</td></tr>";
+                    echo "<tr><td><strong>Telefone:</strong></td><td>{$row['telefone_funcionario']}</td></tr>";
+                    echo "<tr><td><strong>Cargo:</strong></td><td>{$row['cargo_funcionario']}</td></tr>";
+                    echo "<tr><td><strong>Função:</strong></td><td>{$row['funcao_funcionario']}</td></tr>";
                     echo "<tr><td><strong>Salário:</strong></td><td>{$row['salario_funcionario']}</td></tr>";
                     echo '<tr><td colspan="2" style="text-align:center;">
 
