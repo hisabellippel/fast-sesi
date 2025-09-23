@@ -24,7 +24,7 @@
         <br>
         <br>
           
-        <div class="pad14">
+        <div class="padRelatorio">
               <div class="linha">
                 <a href="paginaDesempenho2.php"><p class="linhas"> ▼ Linha 001 <hr class="new"><br></p></a>
                 <p class="linhas"> ▼ Linha 002 <hr class="new"><br></p>

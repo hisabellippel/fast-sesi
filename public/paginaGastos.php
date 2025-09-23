@@ -20,7 +20,7 @@
     <br>
     <main>
         
-        <div class="pad9">
+        <div class="padGastos">
         <div class="redonda31">
             <p>Gastos e gráficos</p>
         </div>
