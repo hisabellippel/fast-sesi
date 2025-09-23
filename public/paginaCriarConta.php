@@ -29,7 +29,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     else {
         
-       
+          $senhaHash = password_hash($pass, PASSWORD_DEFAULT);
+ 
 
        
         $sql = "INSERT INTO funcionario 
@@ -37,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         $stmt = $conn->prepare($sql);
-        $stmt->bind_param("isssssssi", $credencial, $name, $cpf, $email, $pass, $telefone, $cargo, $funcao, $salario);
+        $stmt->bind_param("isssssssi", $credencial, $name, $cpf, $email, $senhaHash, $telefone, $cargo, $funcao, $salario);
 
         if ($stmt->execute()) {
             $sucesso = "Novo registro criado com sucesso!";
