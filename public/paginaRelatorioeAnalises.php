@@ -25,7 +25,7 @@
         <br>
         <br>
 
-        <div class="pad2">
+        <div class="padRelatorio">
             
         <div class="redonda">
            <a href="paginaDesempenho1.php"><p class="cor">Dados sobre Desempenho</p></a>
