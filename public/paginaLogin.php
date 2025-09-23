@@ -21,15 +21,22 @@ if (isset($_GET['msg']) && $_GET['msg'] == 'expired') {
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $nome = $_POST["nome_funcionario"] ?? "";
     $cred = $_POST["credencial_funcionario"] ?? "";
-    $pass = $_POST["password"] ?? ""; // inserir uma  password_hash
-    
+    $pass = $_POST["password"] ?? ""; 
 
+    
     $stmt = $mysqli->prepare("SELECT nome_funcionario, credencial_funcionario, senha_funcionario FROM funcionario WHERE nome_funcionario=? AND credencial_funcionario=? AND senha_funcionario =? ");
     $stmt->bind_param("sss", $nome, $cred, $pass);
     $stmt->execute();
     $result = $stmt->get_result();
     $dados = $result->fetch_assoc();
     $stmt->close();
+
+    //password_verify
+    if (password_verify($pass, PASSWORD_DEFAULT) === $pass) {
+    echo 'Senha válida!';
+    } else {
+    echo 'Senha inválida';
+    }
 
     if ($dados) {
         $_SESSION["nome_funcionario"] = $dados["nome_funcionario"];

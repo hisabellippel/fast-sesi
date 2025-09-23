@@ -29,6 +29,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     elseif (strlen($cpf) !== 11) {
         $erro = "O CPF deve ter exatamente 11 dígitos.";
     }
+    elseif (strlen($credencial) !== 4) {
+        $erro = "A credencial deve ter exatamente 4 dígitos.";
+    }
     
     elseif (strlen($telefone) < 10) {
         $erro = "O telefone deve ter pelo menos 10 dígitos.";
@@ -88,7 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <form method="POST">
                     <div class="c1">
                         <img class="imag" src="../asets/imagens/meio/CredencialLogo.png" alt=""/>
-                        <input type="text" name="credencial_funcionario" placeholder="Insira a credencial " required>
+                        <input type="text" name="credencial_funcionario" placeholder="Insira a credencial " requiredrequired minlength="4" maxlength="4">
                     </div><br>
 
                     <div class="c1">
