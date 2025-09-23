@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ouvidoria Geral</title>
+    <link rel="stylesheet" href="../style/style2.css">
     <link rel="stylesheet" href="../style/styles.css">
 </head>
 <body>
@@ -23,7 +24,8 @@
             <h2 id="hs">Ouvidoria</h2>
         </div>
         <br>
-        <div class="pad10">
+        <div class="pad27">
+
           <div class="redonda1">
               <a href="paginaOuvidoriaFuncionarios.php">
                 <div class="seta-baixo">

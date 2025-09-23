@@ -1,7 +1,5 @@
 <?php
-// login.php
 
-// 1) Conexão
 $mysqli = new mysqli("localhost", "root", "root", "fast_sesi_sa");
 if ($mysqli->connect_errno) {
     die("Erro de conexão: " . $mysqli->connect_error);
@@ -9,7 +7,6 @@ if ($mysqli->connect_errno) {
 
 session_start();
 
-// 2) Logout
 if (isset($_GET['logout'])) {
     session_destroy();
     header("Location: paginaLogin.php");
@@ -17,7 +14,6 @@ if (isset($_GET['logout'])) {
     exit;
 }
 
-// 3) Login
 $msg = "";
 if (isset($_GET['msg']) && $_GET['msg'] == 'expired') {
     $msg = "Sua sessão foi expirada!";
