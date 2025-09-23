@@ -148,10 +148,6 @@ body {
     display: flex;
 }
 
-.pad{
-    margin-bottom: 24px;
-}
-
 .pad1{
     margin-bottom: 80px;
 }
@@ -1009,7 +1005,7 @@ p.nova {
 
 }
 
-#agrupar {
+.agrupar {
     display: flex;
     justify-content: center;
     align-items: stretch;

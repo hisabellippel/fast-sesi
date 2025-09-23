@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alertas e Notificações</title>
+    <link rel="stylesheet" href="../style/style2.css">
     <link rel="stylesheet" href="../style/styles.css">
 </head>
 
@@ -24,22 +25,26 @@
         <br>
         <br>
 
-
-        <div class="pad1">
-            <div class="redonda3">
-                <p class="alert-text">Alertas <span class="numero-vermelho">°1</span> <span class="simbolo-branco">▼</span></p>
+        
+        <div class="pad26">
+            <div class="redondacorrecao">
+                <div class="agrupar">
+                    <p class="maq">Alertas</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
+                </div>
             </div>
-
-            <div class="informacoes00">
+        
+            <div class="informacao2">
                 <p>Trilhos 4 e 5 em reforma.</p>
             </div>
+            <br>
+            <br>
 
-            <a href="paginaAlertaseNotificacoes3.php">
-            <div class="redonda3">
-            <p class="alert-text">Notificações <span class="numero-vermelho">°1</span> <span class="simbolo-branco">▼</span></p>
+            <div class="redondacorrecao">
+                <div class="agrupar">
+                    <p class="maq">Notificações</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
+                </div>
             </div>
-            </a>
-        </div>  
+        </div>
     </main>
 
     <footer>
