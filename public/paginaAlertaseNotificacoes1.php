@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alertas e Notificações</title>
     <link rel="stylesheet" href="../style/styles.css">
+     <link rel="stylesheet" href="../style/style2.css">
 </head>
 
 <body>
@@ -27,14 +28,14 @@
     <br>
 
     <div class="pad2">
-        <div class="redonda3">
+        <div class="redondaAlertas">
             <a href="paginaAlertaseNotificacoes2.php">
             <p class="alert-text">Alertas <span class="numero-vermelho">°1</span> <span class="simbolo-branco">▼</span></p>
             </a>
         </div>
             
 
-        <div class="redonda3">
+        <div class="redondaAlertas">
             <a href="paginaAlertaseNotificacoes3.php">
             <p class="alert-text">Notificações <span class="numero-vermelho">°1</span> <span class="simbolo-branco">▼</span></p></a>
         </div>

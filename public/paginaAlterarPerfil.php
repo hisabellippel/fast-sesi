@@ -40,6 +40,7 @@ if (isset($_GET['logout'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alterar Perfil</title>
     <link rel="stylesheet" href="../style/styles.css">
+     <link rel="stylesheet" href="../style/style2.css">
 </head>
 
 <body>
@@ -61,10 +62,13 @@ if (isset($_GET['logout'])) {
 
     <div id="fonte">
         <h1>Funcionários:</h1>
-        <p><a href="?logout=1">Sair</a></p>
-         <p><a href="paginaCriarConta.php">Cadastrar Novo Funcionário</a></p>
+        <div id= "sair">
+          <h1><a href="?logout=1">Sair</a></h1>
+       
+         <h1><a href="paginaCriarConta.php">Cadastrar Novo Funcionário</a></h1>
+         </div>
 
-        <div class="padAlterar">
+        <div id="padAlterar">
             <?php
             $credencial_admin = $_SESSION['credencial_funcionario'];
 
