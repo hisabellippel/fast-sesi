@@ -1,5 +1,9 @@
 # Projeto SA - Fast Sesi
 
+<p>
+  <img src="https://raw.githubusercontent.com/hisabellippel/fast-sesi/refs/heads/main/asets/imagens/barraAbaixo/logo.png" width="100" alt="accessibility text">
+</p>
+
 ## Integrantes
 Ana Luiza do Amaral, Gustavo Baumann, Hisabel Lippel e Julia Izabel
 
@@ -34,3 +38,7 @@ Antes de utilizar o sistema, é importante verificar se as variáveis no arquivo
 
 Execute o arquivo `db.sql` no banco de dados para criar o banco e adicionar um usuário e um cliente que será utilizado em operações básicas do sistema.
 
+
+<p>
+  <img src="https://raw.githubusercontent.com/hisabellippel/fast-sesi/refs/heads/main/asets/imagens/meio/kanban.png" width="700" alt="accessibility text">
+</p>
