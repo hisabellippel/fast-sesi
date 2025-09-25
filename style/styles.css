@@ -278,6 +278,15 @@ body {
     margin-bottom: 2px;
 }
 
+.pad29{
+    margin-bottom: 10px;
+}
+
+.pad30{
+    margin-bottom: 262px;
+    margin-top: 45px;
+}
+
 .im {
     width: 30px;
     height: 30px;

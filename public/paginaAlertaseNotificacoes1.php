@@ -19,15 +19,15 @@
     </header>
     <br>
     <br>
-
 <main>
     <div id="azul">
         <h2 id="hs">Alertas e Notificações</h2>
     </div>
     <br>
     <br>
+    <br>
 
-    <div class="pad2">
+    <div class="pad30">
         <div class="redondaAlertas">
             <a href="paginaAlertaseNotificacoes2.php">
             <p class="alert-text">Alertas <span class="numero-vermelho">°1</span> <span class="simbolo-branco">▼</span></p>
@@ -52,6 +52,7 @@
             <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
             <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
         </div>
+
     </footer>
 
 

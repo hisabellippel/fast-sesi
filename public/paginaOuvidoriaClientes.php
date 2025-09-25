@@ -13,7 +13,6 @@
         </div>
     </header>
     <br>
-    <br>
     <main>
     <div class="redondaofc">
         <div class="seta-baixo">

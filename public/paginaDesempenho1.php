@@ -22,7 +22,6 @@
             <h2 >Dados sobre desempenho e eficiência operacional</h2>
         </div>
         <br>
-        <br>
           
         <div class="padRelatorio">
               <div class="linha">

@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dados dos Funcionários</title>
     <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/styles2.css">
+
 </head>
 <body>
     <header>
@@ -13,15 +15,12 @@
         </div>
     </header>
     <br>
-    <br>
 <main>
     <div class="redondaofc">
-        
         <strong><p>Dados dos Funcionários</p></strong> 
-    
-</div>
+    </div>
 
-  <div class="pad3">
+  <div class="pad26">
 
     <div class="container-funcionarios">
    
@@ -101,8 +100,8 @@
                 <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
                 <h3>Fast.sesi</h3>
                 <a href="paginaNotificacoes.php"><img class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
-            <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
-            <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
+                <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
+                <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
             </div>
         </footer>
     

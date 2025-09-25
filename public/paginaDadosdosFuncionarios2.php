@@ -14,13 +14,12 @@
         </div>
     </header>
     <br>
-    <br>
 <main>
     <div class="redondaofc">
       <strong><p>Dados dos Funcionários</p></strong> 
     </div>
 
-  <div class="pad13">
+  <div class="pad24">
       <div class="container-funcionarios">
    
     <div class="lista-funcionarios">
@@ -73,8 +72,6 @@
     </div>
   </div>
     </div>
-  
-    <br>
 </main>
 
     <footer>
@@ -83,8 +80,8 @@
           <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
           <h3>Fast.sesi</h3>
           <a href="paginaNotificacoes.php"><img class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
-            <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
-            <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
+          <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
+          <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
       </div>
     </footer>
 </body>

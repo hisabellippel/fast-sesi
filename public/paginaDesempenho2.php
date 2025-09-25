@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desempenho</title>
     <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/styles2.css">
 </head>
 
 <body>
@@ -16,22 +17,19 @@
         </div>
     </header>
     <br>
-    <br>
     <main>
         <div id="azul">
             <h2 id="hs">Dados sobre desempenho e eficiência operacional</h2>
         </div>
-        <br>
-        <br>
 
-        <div class="pad15">
+        <div class="pad24">
             <div class="linha">
                 <div class="linha2">
                     <p class="linhas"> ▼ Linha 001<br></p>
-                    <p> ⚪ trilhos em ótimo estado </p>
-                    <p> ⚪ fazendo ótima metragem </p>
-                    <p> ⚪ sem acidentes </p>
-                    <p> ⚪ superlotação </p>
+                    <p> ⚪ Trilhos em ótimo estado </p>
+                    <p> ⚪ Fazendo ótima metragem </p>
+                    <p> ⚪ Sem acidentes </p>
+                    <p> ⚪ Superlotação </p>
                 </div>
                 <p class="linhas"> ▼ Linha 002 <hr class="new"><br></p>
                 <p class="linhas"> ▼ Linha 003 <hr class="new"><br></p>
@@ -39,10 +37,6 @@
                 <p class="linhas"> ▼ Linha 005 <hr class="new"><br></p>
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-
 
         <div id="barra">
             <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
@@ -56,5 +50,4 @@
 
 
 </body>
-
 </html>

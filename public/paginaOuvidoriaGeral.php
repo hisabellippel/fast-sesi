@@ -18,12 +18,10 @@
         </div>
     </header>
     <br>
-    <br>
   <main>
     <div id="azul">
             <h2 id="hs">Ouvidoria</h2>
         </div>
-        <br>
         <div class="pad27">
 
           <div class="redonda1">

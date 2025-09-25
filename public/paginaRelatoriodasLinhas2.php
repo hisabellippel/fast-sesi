@@ -24,11 +24,10 @@
             <h2 id="hs">Relatório das Linhas</h2>
         </div>
         <br>
-        <br>
+        <div class="pad29">
             <div class="linha">
                 <p class="linhas"> ▼ Linha 001 <hr class="new"><br></p>
                 <div class="linha2">
-                    <p class="linhas"> ▼ Linha 001<br></p>
                     <p> Nome da Linha: Escola do Moinho centro</p>
                     <p> Quantidade de passageiros: 1200 </p>
                     <p> Velocidade: 60km/h </p>
@@ -38,22 +37,20 @@
                 <p class="linhas"> ▼ Linha 002 <hr class="new"><br></p>
                 <p class="linhas"> ▼ Linha 003 <hr class="new"><br></p>
                 <p class="linhas"> ▼ Linha 004 <hr class="new"><br></p>
-                <p class="linhas"> ▼ Linha 005 <hr class="new"><br></p>
-               
             </div>
+        </div>    
+
+            <footer>
+                <div id="barra">
+                    <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
+                    <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
+                    <h3>Fast.sesi</h3>
+                    <a href="paginaNotificacoes.php"><img class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
+                    <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
+                    <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
+                </div>
+            </footer>
     </main>
-
-    <footer>
-        <div id="barra">
-            <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
-            <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
-            <h3>Fast.sesi</h3>
-            <a href="paginaNotificacoes.php"><img class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
-            <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
-            <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
-        </div>
-    </footer>
-
 </body>
 
 </html>

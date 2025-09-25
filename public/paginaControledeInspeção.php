@@ -8,7 +8,6 @@
 </head>
 
 <body>
-
     <header>
         <div id="barraescura">
              <a href="paginaMenuPrincipal.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
@@ -22,8 +21,7 @@
             <h2 id="hs">Controle de Inspeção:</h2>
         </div>
         <br>
-        <br>
-        <div class="pad1">
+        <div class="pad19">
             <div class="redonda">
                 <a href="paginaTrilhos1.php"><p class="cor">Trilhos</p></a>
             </div>
@@ -56,7 +54,6 @@
             <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
         </div>
     </footer>
-
 
 </body>
 
