@@ -26,7 +26,7 @@
         
         <br>
 
-        <div class="pad18">
+        <div class="padTrilhos2">
         
             <div class="redondaTrilhos444">
                 <p>Em manutenção:  ▼</p>
