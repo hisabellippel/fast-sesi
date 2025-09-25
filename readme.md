@@ -1,5 +1,5 @@
 # Projeto SA - Fast Sesi
-<img src="assets/logo.png" alt="Logotipo da Padaria" width="200"/>
+<img src="assets/barraAbaixo/logo.png" alt="Logotipo do nosso sistema de ferrovia" width="200"/>
 
 
 ## Integrantes
