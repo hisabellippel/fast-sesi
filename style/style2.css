@@ -92,3 +92,22 @@
     margin-top: 74%;
 
 }
+.boto {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #9a9b9a; 
+    color: white;
+    text-decoration: none; 
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.cor {
+    color: azure;
+ margin-top: 40px;
+}
+.cor1 {
+    color: azure;
+}
