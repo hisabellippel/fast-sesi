@@ -266,6 +266,18 @@ body {
     height: 400px;
 }
 
+.pad23{
+    margin-bottom: 58.2px;
+}
+
+.pad24{
+    margin-bottom: 15.3px;
+}
+
+.pad28{
+    margin-bottom: 2px;
+}
+
 .im {
     width: 30px;
     height: 30px;
@@ -1032,10 +1044,6 @@ p.nova {
     background: rgba(29, 75, 214, 0.3);
     z-index: 2;
     backdrop-filter: blur(6px);
-}
-
-.cor {
-    color: azure;
 }
 
 .informacoes00{

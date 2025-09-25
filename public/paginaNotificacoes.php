@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notificações</title>
     <link rel="stylesheet" href="../style/styles.css">
-    <script src="../scripts/login.js"></script>
+    <link rel="stylesheet" href="../style/style2.css">
+    
 </head>
 
 
@@ -25,7 +26,7 @@
     <br>
     <main>
         <div id="azul">
-            <h2 id="hs"> Menu Principal</h2>
+            <p id="hs"> Menu Principal</p>
         </div>
         <br>
         <br>
@@ -76,13 +77,17 @@
        
             <div class="Grande">
                 <div class="redond">
-                    <p>Notificações  </p>
+
+                    <p class="espaco">Notificações  </p>
+                    
                     </div>
-                <div class="redond2">
+               
                     <p class="cor">Você recebeu uma   </p>
-                    <p class="cor">ouvidoria anônima</p>
-                   <button class="botao2" onclick="redirecionar9()">Clique aqui para expandir </button>
-                </div>
+                    <p class="cor1">ouvidoria anônima</p>
+                   <a href="paginaOuvidoriaGeral.php" class="boto">
+                     Clique aqui para expandir
+                    </a>
+               
 
 
             </div>
