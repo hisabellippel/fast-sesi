@@ -159,3 +159,22 @@ padding-left: 42px;
 .padTrilhos2{
     margin-bottom: 113px;
 }
+.transparentet {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 50%;
+    height: 100%;
+    background: rgba(29, 75, 214, 0.3);
+    z-index: 2;
+    backdrop-filter: blur(6px);
+}
+.paratras2 {
+    z-index: 1;
+}
+.pad31{
+    margin-top: -5px;
+}
+.pad32{
+    margin-top: -10px;
+}
