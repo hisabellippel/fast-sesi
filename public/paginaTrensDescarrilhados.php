@@ -29,7 +29,7 @@
         <br>
         <br><br><br>
 
-        <div class="pad3">
+        <div class="padTrilhos2">
                 <div class="redonda3">
                     <a href="paginaTrensDescarrilhados2.php"><p class="cor">Linhas afetadas</p><p class="red"><strong>°1</strong></p>▼</a>
                 </div>
