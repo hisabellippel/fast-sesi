@@ -24,15 +24,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $pass = $_POST["password"] ?? ""; 
 
     
-    $stmt = $mysqli->prepare("SELECT nome_funcionario, credencial_funcionario, senha_funcionario FROM funcionario WHERE nome_funcionario=? AND credencial_funcionario=? AND senha_funcionario =? ");
-    $stmt->bind_param("sss", $nome, $cred, $pass);
+    $stmt = $mysqli->prepare("SELECT nome_funcionario, credencial_funcionario, senha_funcionario FROM funcionario WHERE nome_funcionario=? AND credencial_funcionario=?");
+    $stmt->bind_param("ss", $nome, $cred);
     $stmt->execute();
     $result = $stmt->get_result();
     $dados = $result->fetch_assoc();
     $stmt->close();
 
     //password_verify
-    if (password_verify($pass, PASSWORD_DEFAULT) === $pass) {
+    if (password_verify($pass, $dados["senha_funcionario"])) {
     echo 'Senha válida!';
     } else {
     echo 'Senha inválida';
@@ -47,14 +47,16 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $msg = "Usuário ou senha incorretos!";
     }
 }
-
 ?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/styles2.css">
+
 </head>
 <header>
     <div id="barraescura">
