@@ -11,5 +11,11 @@ Criando assim, a primeira ideia de nosso aplicativo para o gerenciamento de uma 
 
 Esse repositório contém um sistema de uma ferrovia onde o Administrador pode cadastrar novos usuários e excluílos, porém o usuário não pode cadastrar e excluir demais funcionários. É um trabalho para a SA - da matéria de Desenvolvimento de Sistemas.
 
+## Funcionalidades
+- Criação de funcionários;
+- Visualização de informações de funconários;
+- Edição de informação de funcionários;
+- Exclusão de funcionários;
+- Navegação dentro do app.
 
 
