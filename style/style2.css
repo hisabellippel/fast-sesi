@@ -105,12 +105,13 @@
 }
 
 .cor {
-    color: azure;
- margin-top: 40px;
+    color: rgb(255, 255, 255);
+    margin: 10%;
+    padding: 5%;
+    border-radius: 10px;
+    background-color: #7913138c; 
 }
-.cor1 {
-    color: azure;
-}
+
 
 #padAlterar{
 padding-left: 42px;

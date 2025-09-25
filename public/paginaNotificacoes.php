@@ -77,9 +77,12 @@
                     <p class="espaco">Notificações  </p>
                     
                     </div>
-               
-                    <p class="cor">Você recebeu uma</p>
-                    <p class="cor1">ouvidoria anônima</p>
+                    <div class="cor">
+                        <p>Você recebeu uma</p>
+                        <p>ouvidoria anônima</p>
+                    </div>
+                
+
                    <a href="paginaOuvidoriaGeral.php" class="boto">
                      Clique aqui para expandir
                     </a>
