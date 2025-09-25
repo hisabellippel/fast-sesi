@@ -1,6 +1,4 @@
 # Projeto SA - Fast Sesi
-<img src="assets/logo.png" alt="Logotipo da Padaria" width="200"/>
-
 
 ## Integrantes
 Ana Luiza do Amaral, Gustavo Baumann, Hisabel Lippel e Julia Izabel
@@ -18,4 +16,20 @@ Esse repositório contém um sistema de uma ferrovia onde o Administrador pode c
 - Exclusão de funcionários;
 - Navegação dentro do app.
 
+## Como conectar com o Banco de Dados
+Antes de utilizar o sistema, é importante verificar se as variáveis no arquivo `db.php` estão corretas para o seu servidor. Modifique principalmente as linhas a seguir com o usuário, senha e porta do MySql adequadas.
+
+```
+  $username = "João";
+  $password = "6768";
+  $credencial = "1234"
+```
+
+> [!IMPORTANT]
+> Sem os dados corretos, podem ocorrer erros ao acessar as páginas que utilizam conexão com banco de dados.
+> O banco de dados deve ser inserido na sua máquina para conseguir navegar dentro do App.
+
+## Script SQL
+
+Execute o arquivo `db.sql` no banco de dados para criar o banco e adicionar um usuário e um cliente que será utilizado em operações básicas do sistema.
 
