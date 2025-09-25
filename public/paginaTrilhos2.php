@@ -28,19 +28,19 @@
 
         <div class="pad18">
         
-            <div class="redonda3">
+            <div class="redondaTrilhos444">
                 <p>Em manutenção:  ▼</p>
             </div>
 
-            <div class="informacao2">
+            <div class="informacaoTrilhos">
                 <p>Linha1 - Em reforma <br>Linha1 - Em reforma <br>Linha1 - Em reforma <br>Linha1 - Em reforma <br>Linha1 - Em reforma <br></p>
                 </div>
 
-            <div class="redonda3">
+            <div class="redondaTrilhos444">
                 <p>Trilhos em risco:  ▼</p>
             </div>
 
-            <div class="informacao221">
+            <div class="informacaoTrilhos">
                 <p>Linha1 -Risco de rachadura <br>Linha1 - Sem risco de rachadura <br>Linha1 - Sem risco de rachadura<br>Linha1 - Sem risco de rachadura <br>Linha1 - Sem risco de rachadura </p>
             
             </div>
