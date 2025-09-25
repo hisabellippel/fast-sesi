@@ -1,6 +1,4 @@
 # Projeto SA - Fast Sesi
-<img src="assets/barraAbaixo/logo.png" alt="Logotipo do nosso sistema de ferrovia" width="200"/>
-
 
 ## Integrantes
 Ana Luiza do Amaral, Gustavo Baumann, Hisabel Lippel e Julia Izabel
