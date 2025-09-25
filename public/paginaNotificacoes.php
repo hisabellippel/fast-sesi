@@ -78,7 +78,7 @@
                     
                     </div>
                
-                    <p class="cor">Você recebeu uma   </p>
+                    <p class="cor">Você recebeu uma</p>
                     <p class="cor1">ouvidoria anônima</p>
                    <a href="paginaOuvidoriaGeral.php" class="boto">
                      Clique aqui para expandir

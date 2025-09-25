@@ -95,13 +95,13 @@
 .boto {
     display: inline-block;
     padding: 10px 15px;
-    background-color: #9a9b9a; 
+    background-color: #180c83; 
     color: white;
     text-decoration: none; 
-    border-radius: 10px;
+    border-radius: 50px;
     text-align: center;
     font-weight: bold;
-    margin-top: 40px;
+    margin: 10%;
 }
 
 .cor {
