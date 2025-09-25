@@ -38,7 +38,10 @@ Antes de utilizar o sistema, é importante verificar se as variáveis no arquivo
 
 Execute o arquivo `db.sql` no banco de dados para criar o banco e adicionar um usuário e um cliente que será utilizado em operações básicas do sistema.
 
-
 <p>
-  <img src="https://raw.githubusercontent.com/hisabellippel/fast-sesi/refs/heads/main/asets/imagens/meio/kanban.png" width="700" alt="accessibility text">
+  <img src="https://raw.githubusercontent.com/hisabellippel/fast-sesi/refs/heads/main/asets/imagens/meio/kanban.png" width="800" alt="Evolução do projeto">
 </p>
+
+## Evoluçaõ do projeto
+
+Neste quadro Kanban acima, você pode ver nossa evolução como equipe. Dentro dele está separados as principáis tarefas e seus membros atribuídos.
