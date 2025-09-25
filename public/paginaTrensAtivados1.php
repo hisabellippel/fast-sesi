@@ -25,36 +25,31 @@
         <br>
         <br>
 
-        <div class="pad3">
+        <div class="pad23">
 
             <div class="redonda">
                 <a href="paginaTrensativados2.php"><p class="cor">Altorre-Glaciaris</p></a>
                 
             </div>
-
-            
+            <br>
             <div class="redonda">
                   <a href="paginaTrensativados3.php">
                 <p class="cor">Ouro negro-Monte Claro</p></a>
             </div>
-           
-
-
-
-
+           <br>
             <div class="redonda">
                 <a href="paginaTrensAtivados4.php">
                 <p>Rio Verde-Eldoria</p>
                 </a>
             </div>
-
+            <br>
             <div class="redonda">
                 <a href="paginaTrensAtivados5.php">
                 <p>Coraluna-Marésia</p>
                 </a>
             </div>
 
-       </div>
+        </div>
 
     </main>
     <footer>

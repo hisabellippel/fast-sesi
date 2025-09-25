@@ -23,7 +23,6 @@
             <h2 id="hs">Trens ativados</h2>
         </div>
         <br>
-        <br>
 
         <div >
             <div class="redonda5">

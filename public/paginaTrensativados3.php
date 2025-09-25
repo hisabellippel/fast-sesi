@@ -23,10 +23,9 @@
             <h2 id="hs">Trens ativados</h2>
         </div>
         <br>
-        <br>
 
 
-        <div >
+        <div class = "pad 28">
             <div class="redonda5">
                 <a href="paginaTrensativados2.php"><p class="cor">Altorre-Glaciaris</p></a>
             </div>
