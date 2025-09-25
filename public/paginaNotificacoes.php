@@ -77,7 +77,7 @@
                     <p class="espaco">Notificações  </p>
                     
                     </div>
-                    <div class="cor">
+                    <div class="cor1">
                         <p>Você recebeu uma</p>
                         <p>ouvidoria anônima</p>
                     </div>

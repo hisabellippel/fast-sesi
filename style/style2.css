@@ -107,6 +107,12 @@
 .cor {
     color: rgb(255, 255, 255);
     margin: 10%;
+    border-radius: 10px;
+}
+
+.cor1 {
+    color: rgb(255, 255, 255);
+    margin: 10%;
     padding: 5%;
     border-radius: 10px;
     background-color: #7913138c; 
