@@ -29,14 +29,14 @@ Antes de utilizar o sistema, é importante verificar se as variáveis no arquivo
   $password = "6768";
   $credencial = "1234"
 ```
+## Script SQL
+
+Execute o arquivo `db.sql` no banco de dados para criar o banco e adicionar um usuário e um cliente que será utilizado em operações básicas do sistema.
 
 > [!IMPORTANT]
 > Sem os dados corretos, podem ocorrer erros ao acessar as páginas que utilizam conexão com banco de dados.
 > O banco de dados deve ser inserido na sua máquina para conseguir navegar dentro do App.
 
-## Script SQL
-
-Execute o arquivo `db.sql` no banco de dados para criar o banco e adicionar um usuário e um cliente que será utilizado em operações básicas do sistema.
 
 <p>
   <img src="https://raw.githubusercontent.com/hisabellippel/fast-sesi/refs/heads/main/asets/imagens/meio/kanban.png" width="800" alt="Evolução do projeto">
