@@ -22,7 +22,7 @@
     <div id="azul">
             <h2 id="hs">Ouvidoria</h2>
         </div>
-        <div class="pad27">
+        <div class="pad30">
 
           <div class="redonda1">
               <a href="paginaOuvidoriaFuncionarios.php">

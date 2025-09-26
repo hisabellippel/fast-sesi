@@ -18,7 +18,6 @@
         </div>
     </header>
     <br>
-    <br>
     <main>
         <div id="azul">
             <h2 id="hs">Relatório das Linhas</h2>

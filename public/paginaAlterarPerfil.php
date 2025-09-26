@@ -154,7 +154,7 @@ if (isset($_GET['logout'])) {
             ?>
 
             
-            <div class="letras"></div>
+            <div id="letrasAlterar"></div>
         </div>
     </div>
     

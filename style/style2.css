@@ -23,6 +23,10 @@
     margin-bottom: 24px;
 }
 
+.pad32{
+    margin-bottom: 35px;
+}
+
 .pad27{
     margin-bottom: 205px;
 }
@@ -95,22 +99,29 @@
 .boto {
     display: inline-block;
     padding: 10px 15px;
-    background-color: #9a9b9a; 
+    background-color: #180c83; 
     color: white;
     text-decoration: none; 
-    border-radius: 10px;
+    border-radius: 50px;
     text-align: center;
     font-weight: bold;
-    margin-top: 40px;
+    margin: 10%;
 }
 
 .cor {
-    color: azure;
- margin-top: 40px;
+    color: rgb(255, 255, 255);
+    margin: 10%;
+    border-radius: 10px;
 }
+
 .cor1 {
-    color: azure;
+    color: rgb(255, 255, 255);
+    margin: 10%;
+    padding: 5%;
+    border-radius: 10px;
+    background-color: #7913138c; 
 }
+
 
 #padAlterar{
 padding-left: 42px;
@@ -177,4 +188,24 @@ padding-left: 42px;
 }
 .pad32{
     margin-top: -10px;
+}
+
+#letrasAlterar{
+
+    color: whitesmoke;
+    padding: 7px;
+    text-align: justify;
+
+}
+
+.brancaAlterarPerfil2 {
+    border: 1px;
+    background-color: white;
+    text-align: center;
+    padding-left: 20px;
+    align-items: center;
+    border-radius: 30px 30px 50px 50px;
+    margin: 10px 60px 10px 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
