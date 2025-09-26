@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alertas Mecânicos</title>
+        <link rel="stylesheet" href="../style/style2.css">
     <link rel="stylesheet" href="../style/styles.css">
 </head>
 
@@ -24,7 +25,7 @@
         <br>
         <br>
 
-        <div class="pad2">
+        <div class="pad32">
             <div class="redonda">
                 <a href="paginaBotaodeEmergencia1.php"><p class="cor">Botão de Emergência▼</p></a>
             </div>
@@ -41,6 +42,10 @@
                 <a href="paginaResistoresdePotencia.php"><p class="cor">Resitores de potência▼</p></a>
             </div>
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
 
 
         <div id="barra">
