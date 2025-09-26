@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informações</title>
     <link rel="stylesheet" href="../style/styles.css">
-    <script src="../scripts/botoes.js"></script>
+    <link rel="stylesheet" href="../style/style2.css">
 </head>
 
 
@@ -73,19 +73,26 @@
         <br>
         <img class="im" src="../asets/imagens/barraAbaixo/logo.png" alt="">
         <br><br>
-        <button class="botao2" onclick="redirecionar2()">Início ▼ </button>
-            <br><br>
-            <button class="botao2" onclick="redirecionar3()">Linhas ▼ </button>
-            <br><br>
-            <button class="botao2" onclick="redirecionar4()">Trens Ativados ▼ </button>
-            <br><br>
-            <button class="botao2" onclick="redirecionar5()">Controle de Inspenção ▼ </button>
-            <br><br>
-            <button class="botao2" onclick="redirecionar6()">Relatório e Análises ▼ </button>
-             <br><br>
-            <button class="botao2" onclick="redirecionar7()">Ouvidoria ▼ </button>
-             <br><br>
-            <button class="botao2" onclick="redirecionar8()">Alertas e Notificações ▼ </button>
+       
+      <a href="paginaMenuPrincipal.php" class="bot2">Início ▼</a>
+    <br><br>
+
+    <a href="paginaLinhas.php" class="bot2">Linhas ▼</a>
+    <br><br>
+
+    <a href="paginaTrens.php" class="bot2">Trens Ativados ▼</a>
+    <br><br>
+
+    <a href="paginaInspec.php" class="bot2">Controle de Inspeção ▼</a>
+    <br><br>
+
+    <a href="paginaRelatorios.php" class="bot2">Relatório e Análises ▼</a>
+    <br><br>
+
+    <a href="paginuvidoria.php" class="bot2">Ouvidoria ▼</a>
+    <br><br>
+
+    <a href="paginaAlertas.php" class="bot2">Alertas e Notificações ▼</a>
        
     </div>
    
