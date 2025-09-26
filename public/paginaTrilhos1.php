@@ -25,9 +25,8 @@
             <h2 id="hs">Trilhos:</h2>
         </div>
         <br>
-        <br>
 
-        <div class="pad10">
+        <div class="pad">
             <div class="redonda">
             <a href="paginaTrilhos2.php"><p class="cor">Em manutenção:  ▼</p></a>
         </div>
