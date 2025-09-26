@@ -14,7 +14,6 @@
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
-    <br>
 <main>
     <div class="redondaofc">
         <strong><p>Dados dos Funcionários</p></strong> 
