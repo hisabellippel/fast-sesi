@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Botão de Emergência</title>
+    <link rel="stylesheet" href="../style/style2.css">
     <link rel="stylesheet" href="../style/styles.css">
 </head>
 
@@ -26,10 +27,10 @@
         <br>
         <br>
 
-        <div class="pad10">
+        <div class="pad25">
             <div class="redondacorrecao">
                 <div id="agrupar">
-                    <p class="maq">Maquinista</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
+                    <p class="maq">Maquinista</p>
                 </div>
             </div>
         
