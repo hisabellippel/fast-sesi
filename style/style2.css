@@ -197,3 +197,15 @@ padding-left: 42px;
     text-align: justify;
 
 }
+
+.brancaAlterarPerfil2 {
+    border: 1px;
+    background-color: white;
+    text-align: center;
+    padding-left: 20px;
+    align-items: center;
+    border-radius: 30px 30px 50px 50px;
+    margin: 10px 60px 10px 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

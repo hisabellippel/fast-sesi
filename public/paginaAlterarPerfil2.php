@@ -71,6 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alterar Perfil</title>
     <link rel="stylesheet" href="../style/styles.css">
+      <link rel="stylesheet" href="../style/style2.css">
 </head>
 <body>
     <header>
@@ -82,7 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
         </div>
     </header>
     <main>
-        <div class="branca1">
+        <div class="brancaAlterarPerfil2">
             <img class="i" src="../asets/imagens/meio/perfil.png" alt="">
             <form method="post" action="">
                 <input type="hidden" name="credencial_funcionario" value="<?php echo htmlspecialchars($credencial); ?>">
