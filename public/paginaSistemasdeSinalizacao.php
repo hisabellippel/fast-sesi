@@ -34,7 +34,7 @@
             </div>
             <br>
             <div class="redonda">
-                <a href="paginaPlacasSinalizar.php"><p class="cor">Placas de sinalização▼</p></a>
+                <a href="paginaPlacasSinalizar.php"> <p class="cor">Placas de sinalização▼</p> </a>
             </div>
             <br>
             <div class="redonda">

@@ -26,7 +26,7 @@
         <br>
 
         <div class="redonda">
-            <p class="cor">Sinaleiros ▼ <span class="numero-vermelho">°1</p></a> 
+            <p class="cor">Sinaleiros ▼ <span class="numero-vermelho">°1</span></p>
         </div>
         <div class="informacao22222">
             <p>Linha 5 necessita de troca de material devido ao contato excessivo com rolamentos</p>
@@ -34,15 +34,15 @@
         
 
         <div class="redonda">
-            <p>Placas de sinalização ▼</p>
+            <a href="paginaPlacasSinalizar.php"> <p class="cor">Placas de sinalização ▼ </p></a>
         </div>
 
         <div class="redonda">
-             <a href="paginaSistemadeSinalizacao2.php"> <p class="cor"><p class="cor">CBTC (Communication-Based Train Control) ▼  <span class="numero-vermelho">°1</p></a> </p></a>
+            <a href="paginaCBTC.php"><p class="cor">CBTC (Communication-Based Train Control) ▼ <span class="numero-vermelho">°1</span></p></a>
         </div>
 
         <div class="redonda">
-            <p>Intertravamento ▼</p>
+            <a href="paginaIntertravamento.php"><p class="cor">Intertravamento ▼</p></a>
         </div>
         
 
