@@ -26,20 +26,19 @@
         <br>
 
         <div class="redonda">
-            <p class="cor">Sinaleiros ▼ <span class="numero-vermelho">°1</p></a> 
+            <a href="paginaSinaleiros.php"> <p class="cor" style="color: white;">Sinaleiros ▼ <span class="numero-vermelho" style="color: white;">°1</span></p></a>
         </div>
         
-
         <div class="redonda">
-            <p>Placas de sinalização ▼</p>
+            <a href="paginaPlacasSinalizar.php"> >Placas de sinalização ▼</p>  <span class="numero-vermelho">°1</span></a>
         </div>
 
         <div class="redonda">
-             <a href="paginaSistemadeSinalizacao2.php"> <p class="cor"><p class="cor">CBTC (Communication-Based Train Control) ▼  <span class="numero-vermelho">°1</p></a> </p></a>
+            <a href="paginaSistemadeSinalizacao2.php"> <p class="cor">CBTC (Communication-Based Train Control) ▼ <span class="numero-vermelho">°1</span></p></a>
         </div>
 
         <div class="redonda">
-            <p>Intertravamento ▼</p>
+            <a href="paginaIntertravamento.php"><p>Intertravamento ▼</p></a>
         </div>
         <div class="informacao22222">
             <p>nenhum problema relatado</p>

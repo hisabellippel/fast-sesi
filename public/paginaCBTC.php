@@ -26,16 +26,18 @@
         <br>
 
         <div class="redonda">
-            <p class="cor">Sinaleiros ▼ <span class="numero-vermelho">°1</p></a> 
+
+           <a href="paginaSinaleiros.php">  <p  <p class="cor" style="color: white;">Sinaleiros ▼  <span class="numero-vermelho">°1</span></p></a>
         </div>
+        
         
 
         <div class="redonda">
-            <p>Placas de sinalização ▼</p>
+            <a href="paginaPlacasSinalizar.php"> <p style="color: white;">Placas de sinalização ▼</p> </a>
         </div>
 
         <div class="redonda">
-             <a href="paginaSistemadeSinalizacao2.php"> <p class="cor"><p class="cor">CBTC (Communication-Based Train Control) ▼  <span class="numero-vermelho">°1</p></a> </p></a>
+              <p class="cor" style="color: white;">CBTC (Communication-Based Train Control) ▼  <span class="numero-vermelho" style="color: white;">°1</span></p>
         </div>
         <div class="informacao22222">
             <p>Falha na comunicação via satélite da linha 4</p>
@@ -43,7 +45,7 @@
         
 
         <div class="redonda">
-            <p>Intertravamento ▼</p>
+          <a href="paginaIntertravamento.php">  <p style="color: white;">Intertravamento ▼</p> </a>
         </div>
         
 
