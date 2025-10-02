@@ -26,7 +26,7 @@
         <br>
 
         <div class="redonda">
-            <p>Sinaleiros luminosos▼ </p>
+            <p class="cor">Sinaleiros ▼ <span class="numero-vermelho">°1</p></a> 
         </div>
         <div class="informacao22222">
             <p>Linha 5 necessita de troca de material devido ao contato excessivo com rolamentos</p>
@@ -38,7 +38,7 @@
         </div>
 
         <div class="redonda">
-            <p>CBTC (communication-Based Train Control)▼ </p>
+             <a href="paginaSistemadeSinalizacao2.php"> <p class="cor"><p class="cor">CBTC (Communication-Based Train Control) ▼  <span class="numero-vermelho">°1</p></a> </p></a>
         </div>
 
         <div class="redonda">

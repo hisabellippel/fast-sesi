@@ -28,19 +28,21 @@
         <br>
         <div class="pad21">
             <div class="redonda">
-                <a href="paginaSinaleiros.php"><p class="cor">Sinaleiros ▼</p></a>
+                <a href="paginaSinaleiros.php">
+            <p class="cor">Sinaleiros ▼ <span class="numero-vermelho">°1</p></a> 
+            
             </div>
             <br>
             <div class="redonda">
-                <a href="paginaSistemadeSinalizacao2.php"><p class="cor">Placas de sinalização▼</p></a>
+                <a href="paginaPlacasSinalizar.php"><p class="cor">Placas de sinalização▼</p></a>
             </div>
             <br>
             <div class="redonda">
-                <a href="paginaSistemadeSinalizacao2.php"><p class="cor">CBTC (communication-Based Train Control)▼</p></a>
+                <a href="paginaCBTC.php"> <p class="cor"><p class="cor">CBTC (Communication-Based Train Control) ▼  <span class="numero-vermelho">°1</p></a> </p></a>
             </div>
             <br>
             <div class="redonda">
-                <a href="paginaSistemadeSinalizacao2.php"><p class="cor">Intertravamento▼</p></a>
+                <a href="paginaIntertravamento.php"><p class="cor">Intertravamento▼</p></a>
             </div>
         </div>
 

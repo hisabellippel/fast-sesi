@@ -33,9 +33,6 @@
         <div class="redonda">
             <p>Placas de sinalização ▼</p>
         </div>
-        <div class="informacao22222">
-            <p>nenhum problema relatado</p>
-        </div>
 
         <div class="redonda">
              <a href="paginaSistemadeSinalizacao2.php"> <p class="cor"><p class="cor">CBTC (Communication-Based Train Control) ▼  <span class="numero-vermelho">°1</p></a> </p></a>
@@ -44,7 +41,9 @@
         <div class="redonda">
             <p>Intertravamento ▼</p>
         </div>
-        
+        <div class="informacao22222">
+            <p>nenhum problema relatado</p>
+        </div>
         
 
 <br><br><br><br><br><br>
