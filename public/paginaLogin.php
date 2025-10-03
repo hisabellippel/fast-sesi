@@ -1,6 +1,5 @@
 <?php
 
-include "../src/Auth.php";
 include "../src/User.php";
 
 $mysqli = new mysqli("localhost", "root", "root", "fast_sesi_sa");
