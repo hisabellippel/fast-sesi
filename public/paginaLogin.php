@@ -1,7 +1,5 @@
 <?php
 
-include "../src/User.php";
-
 $mysqli = new mysqli("localhost", "root", "root", "fast_sesi_sa");
 if ($mysqli->connect_errno) {
     die("Erro de conexão: " . $mysqli->connect_error);
