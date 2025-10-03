@@ -11,7 +11,8 @@ CREATE TABLE funcionario(
     telefone_funcionario varchar(45) NOT NULL,
     cargo_funcionario ENUM ( 'ADM', 'FUNCIONARIO') NOT NULL,
     funcao_funcionario varchar(45) NOT NULL,
-    salario_funcionario INT NOT NULL
+    salario_funcionario INT NOT NULL,
+    foto_funcionario varchar(255) DEFAULT 'default.jpg'
 );
 
 CREATE TABLE trilhos(
