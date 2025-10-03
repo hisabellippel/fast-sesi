@@ -6,6 +6,34 @@ body {
     margin: 0;
 }
 
+.main-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container-gastos {
+    margin: 20px 0 40px 0;
+    padding: 15px;
+    background-color: rgba(183, 201, 240, 0.7);
+    border-radius: 20px;
+}
+
+.container-graficos {
+    margin: 20px 0 40px 0;
+    padding: 15px;
+    background-color: rgba(183, 201, 240, 0.7);
+    border-radius: 20px;
+}
+
+.grafico2-large {
+    height: 200px !important;
+    width: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
 .logo{
     width: 50px;
     height: 50px;
