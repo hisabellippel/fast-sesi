@@ -289,10 +289,22 @@ padding-left: 42px;
     z-index: 1;
 }
 
-.linha {
+.linhaGastos {
     background-color: rgb(142, 174, 245);
     margin: 10%;
     border-radius: 30px;
     font-size: smaller;
-    padding-top: 5px;
+    padding-top: 4px;
+    padding: 60px;
+}
+.linhaGastos2 {
+    background-color: rgb(142, 174, 245);
+    
+    border-radius: 30px;
+    font-size: smaller;
+    padding-top: 4px;
+   
+   justify-content: center;
+   padding-left: 30px;
+   margin-right:  55px;
 }

@@ -27,7 +27,7 @@
             <br>
             <div class="gastos55">
                 <br>
-                 <div class="linha">
+                 <div class="linhaGastos2">
                 <p class="gastos"> ▼Funcionários</p>
                 <h6 >Salário Operacionais: R$ 2.200,00 p/pessoa</h6>
                 <h6 >Salário da Limpeza: R$ 1.600,00 p/pessoa</h6>
@@ -47,7 +47,7 @@
         </div>
         <div class="informacao23">
             
-              <div class="linha">
+              <div class="linhaGastos">
                  <img class="grafico2" src="../asets/imagens/meio/grafico1.png" alt="">
             
                 
