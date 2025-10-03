@@ -37,7 +37,7 @@
         </div>
 
         <div class="redonda">
-              <p class="cor" style="color: white;">CBTC (Communication-Based Train Control) ▼  <span class="numero-vermelho" style="color: white;">°1</span></p>
+              <p class="cor" style="color: white;">CBTC (Communication-Based Train Control) ▼  <span class="numero-vermelho" style="color: red">°1</span></p>
         </div>
         <div class="informacao22222">
             <p>Falha na comunicação via satélite da linha 4</p>
