@@ -25,9 +25,8 @@
                 <p>Gastos <p class="red"></p>
             </div>
             <div class="container-gastos">
-                <div class="gastos2">
-                    <br>
-                    <p class="gastos"> ▼Funcionários</p>
+                <p class="gastos"> ▼Funcionários</p>
+                <div class="gastos-scroll">
                     <h6 class="gastos3">Salário Operacionais: R$ 2.200,00 p/pessoa</h6>
                     <h6 class="gastos3">Salário da Limpeza: R$ 1.600,00 p/pessoa</h6>
                     <h6 class="gastos3">Salário dos Maquinistas:R$ 1.600,00 p/pessoa.</h6>
