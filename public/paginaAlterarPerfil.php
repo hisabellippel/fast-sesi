@@ -71,7 +71,6 @@ if (isset($_GET['logout'])) {
         <div id="padAlterar">
             <?php
             $credencial_admin = $_SESSION['credencial_funcionario'];
--
             $sql = "SELECT * FROM funcionario";
             $result = $conn->query($sql);
 
@@ -79,7 +78,6 @@ if (isset($_GET['logout'])) {
                 $admin_row = null;
                 $other_rows = [];
 
-                -
                 while ($row = $result->fetch_assoc()) {
                     if ($row['credencial_funcionario'] === $credencial_admin) {
                         $admin_row = $row;
@@ -89,7 +87,6 @@ if (isset($_GET['logout'])) {
                 }
 
                 echo '<div style="display:flex; flex-wrap: wrap;">';
--
                 if ($admin_row) {
                     $cpf = $admin_row['cpf_funcionario'];
                     $senha_mascarada = str_repeat('*', 8);
