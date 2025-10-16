@@ -13,7 +13,7 @@
     <header>
         <div id="barraescura">
              <a href="paginaControledeInspeção.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
-            <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
+            <img class="topo2"  src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
     <br>
