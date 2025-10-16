@@ -12,6 +12,7 @@ $salario_funcionario = "";
 $senha_funcionario = "";
 $funcao_funcionario = "";
 $cargo_funcionario = "";
+$foto_funcionario = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['credencial_funcionario'])) {
     $credencial = $_GET['credencial_funcionario'];
@@ -33,10 +34,50 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['credencial_funcionario']
         $cargo_funcionario = $row['cargo_funcionario'];
         $funcao_funcionario = $row['funcao_funcionario'];
         $salario_funcionario = $row['salario_funcionario'];
+        $foto_funcionario = $row['foto_funcionario'];
         
         
     }
     $stmt->close();
+}
+
+if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES["foto_funcionario"])){
+    $target_dir = "../uploads/";
+    $target_file = $target_dir . basename($_FILES["foto_funcionario"]["name"]);
+    $uploadOk = 1;
+    $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
+
+    $check = getimagesize($_FILES["foto_funcionario"]["tmp_name"]);
+    if ($check !== false){
+        $uploadOK = 1;
+    }else{
+        echo "O arquivo não é uma imagem.";
+        $uploadOK = 0;
+    }
+
+    if($_FILES["foto_funcionario"]["size"] > 500000){
+        echo " Imagem muito pesada para o sistema. ";
+        $uploadOk = 0;
+    }
+
+    if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"){
+        echo(" Desculpe, só aceitamos JPG, JPEG e PNG. ");
+        $uploadOk = 0;
+    }
+
+    if ($uploadOk == 0){
+        echo "Desculpe seu arquivo não foi enviado.";
+    }else{
+        if(move_uploaded_file($_FILES["foto_funcionario"]["tmp_name"], $target_file)){
+            $user -> updateProfilePic($_SESSION['user_id'], basename($_FILES['foto_funcionario']["name"]));
+            header("Location: dashboard.php");
+
+        }else{
+            echo "Desculpa houve algum erro no envio.";
+        }
+    }
+
+
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario'])) {
@@ -49,10 +90,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
     $salario_funcionario = $_POST['salario_funcionario'];
     $cargo_funcionario = $_POST['cargo_funcionario'];
     $funcao_funcionario = $_POST['funcao_funcionario'];
+    $foto_funcionario = $_POST['foto_funcionario'];
 
-    $sql = "UPDATE funcionario SET nome_funcionario=?, cpf_funcionario=?, email_funcionario=?, telefone_funcionario=?, salario_funcionario=?, senha_funcionario=?, funcao_funcionario=? WHERE credencial_funcionario=?";
+    $sql = "UPDATE funcionario SET nome_funcionario=?, cpf_funcionario=?, email_funcionario=?, telefone_funcionario=?, salario_funcionario=?, senha_funcionario=?, funcao_funcionario=?, foto_funcionario=? WHERE credencial_funcionario=?";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ssssdsss", $nome_funcionario, $cpf_funcionario, $email_funcionario, $telefone_funcionario, $salario_funcionario, $senha_funcionario, $funcao_funcionario, $credencial);
+    $stmt->bind_param("ssssdsss", $nome_funcionario, $cpf_funcionario, $email_funcionario, $telefone_funcionario, $salario_funcionario, $senha_funcionario, $funcao_funcionario, $foto_funcionario, $credencial);
 
     if ($stmt->execute()) {
         echo "<script>alert('Perfil atualizado com sucesso!'); window.location.href='paginaAlterarPerfil.php';</script>";
@@ -162,6 +204,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
                     <input type="number" step="0.01" name="salario_funcionario" id="salario_funcionario" placeholder="Insira seu salário:" value="<?php echo htmlspecialchars($salario_funcionario); ?>" required>
                 </div>
 
+                <div class="c2">
+                <label for="foto_funcionario"></label><br>
+                 <h2>Upload de Foto:</h2>
+                <input type="file" name="foto_perfil" required>
+                
+                </div>
                 <br>
 
                

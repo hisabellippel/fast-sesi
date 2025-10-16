@@ -7,7 +7,7 @@ if (empty($_SESSION["credencial_funcionario"])) {
     exit;
 }
 
-// Always fetch user cargo and name from DB to ensure accuracy
+
 $credencial = $_SESSION['credencial_funcionario'];
 $sql = "SELECT nome_funcionario, cargo_funcionario FROM funcionario WHERE credencial_funcionario = '$credencial'";
 $result = $conn->query($sql);
@@ -20,7 +20,7 @@ if ($result && $result->num_rows > 0) {
     exit;
 }
 
-// Check if user is João (credencial 1234) and admin
+
 if ($_SESSION['credencial_funcionario'] != '1234' || $_SESSION['cargo_funcionario'] !== 'ADM') {
     echo "<div class='card'><p>Acesso negado. Apenas João, administrador, pode acessar esta página.</p><p><a href='paginaMenuPrincipal.php'>Voltar ao menu principal</a></p></div>";
     exit;
@@ -71,8 +71,6 @@ if (isset($_GET['logout'])) {
         <div id="padAlterar">
             <?php
             $credencial_admin = $_SESSION['credencial_funcionario'];
-
-            // Fetch all employees
             $sql = "SELECT * FROM funcionario";
             $result = $conn->query($sql);
 
@@ -80,7 +78,6 @@ if (isset($_GET['logout'])) {
                 $admin_row = null;
                 $other_rows = [];
 
-                // Separate admin and others
                 while ($row = $result->fetch_assoc()) {
                     if ($row['credencial_funcionario'] === $credencial_admin) {
                         $admin_row = $row;
@@ -90,8 +87,6 @@ if (isset($_GET['logout'])) {
                 }
 
                 echo '<div style="display:flex; flex-wrap: wrap;">';
-
-                // Render admin profile first
                 if ($admin_row) {
                     $cpf = $admin_row['cpf_funcionario'];
                     $senha_mascarada = str_repeat('*', 8);
@@ -109,6 +104,7 @@ if (isset($_GET['logout'])) {
                     echo "<tr><td><strong>Cargo:</strong></td><td>{$admin_row['cargo_funcionario']}</td></tr>";
                     echo "<tr><td><strong>Função:</strong></td><td>{$admin_row['funcao_funcionario']}</td></tr>";
                     echo "<tr><td><strong>Salário:</strong></td><td>{$admin_row['salario_funcionario']}</td></tr>";
+                    echo "<tr><td><strong>Salário:</strong></td><td>{$admin_row['foto_funcionario']}</td></tr>";
                     echo '<tr><td colspan="2" style="text-align:center;">
                             <a href="paginaAlterarPerfil2.php?credencial_funcionario=' . $admin_row['credencial_funcionario'] . '">
                                 <button type="button">Alterar Perfil:</button>
@@ -117,7 +113,7 @@ if (isset($_GET['logout'])) {
                     echo '</table>';
                 }
 
-                // Render other employees
+              
                 foreach ($other_rows as $row) {
                     $cpf = $row['cpf_funcionario'];
                     $senha_mascarada = str_repeat('*', 8);
@@ -134,6 +130,7 @@ if (isset($_GET['logout'])) {
                     echo "<tr><td><strong>Cargo:</strong></td><td>{$row['cargo_funcionario']}</td></tr>";
                     echo "<tr><td><strong>Função:</strong></td><td>{$row['funcao_funcionario']}</td></tr>";
                     echo "<tr><td><strong>Salário:</strong></td><td>{$row['salario_funcionario']}</td></tr>";
+                    echo "<tr><td><strong>Salário:</strong></td><td>{$row['foto_funcionario']}</td></tr>";
                     echo '<tr><td colspan="2" style="text-align:center;">
 
                             <a href="paginaAlterarPerfil2.php?credencial_funcionario=' . $row['credencial_funcionario'] . '">
