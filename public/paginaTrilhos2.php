@@ -29,7 +29,7 @@
         <div class="padTrilhos2">
         
             <div class="redondaTrilhos444">
-                <p>Em manutenção:  ▼</p>
+                <p>Em manutenção:   ▼</p>
             </div>
 
             <div class="informacaoTrilhos">
