@@ -61,6 +61,6 @@ Ela atua como um intermediário (proxy) que consulta o ViaCEP e retorna os dados
 - CResponde apenas em formato JSON.
 
 ## ViaCep - API - Testes
-⚫ Crie uma nova requisição GET;
-⚫ URL: http://localhost:3000/cep/01001000;
-⚫ Envie e veja o JSON retornado.
+- Crie uma nova requisição GET;
+- URL: http://localhost:3000/cep/01001000;
+- Envie e veja o JSON retornado.
