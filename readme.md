@@ -55,3 +55,9 @@ Ela pode ser usada em sistemas internos, automações e integrações que necess
 - Registro de logs de envio;
 - Suporte a autenticação SMTP (usuário/senha, TLS/SSL).
 
+## SMTP API - Limitações
+- O desempenho depende do servidor SMTP utilizado;
+- Pode haver limite de envio diário imposto pelo provedor;
+- O tamanho máximo de anexos pode ser limitado (geralmente <25MB);
+- Não há fila de envio (e-mails são enviados sincronicamente);
+- Requer autenticação válida do servidor SMTP configurado.
