@@ -45,22 +45,3 @@ Execute o arquivo `db.sql` no banco de dados para criar o banco e adicionar um u
 ## Evolução do projeto
 Neste quadro Kanban acima, você pode ver nossa evolução como equipe. Dentro dele está separados as principáis tarefas e seus membros atribuídos.
 
-## ViaCep - API
-Ela atua como um intermediário (proxy) que consulta o ViaCEP e retorna os dados formatados para seu sistema.
-
-## ViaCep - API - Funcionalidades
-- Consulta de endereços por CEP;
-- Respostas em JSON;
-- Tratamento de erros e CEPs inválidos;
-- Código limpo e fácil de integrar.
-
-## ViaCep - API - Limitações
-- Depende do serviço ViaCEP (requisições externas);
-- Se o ViaCEP estiver fora do ar, a API também não funcionará;
-- Não armazena histórico de consultas;
-- CResponde apenas em formato JSON.
-
-## ViaCep - API - Testes
-- Crie uma nova requisição GET;
-- URL: http://localhost:3000/cep/01001000;
-- Envie e veja o JSON retornado.
