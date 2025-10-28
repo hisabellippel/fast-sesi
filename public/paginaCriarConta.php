@@ -1,3 +1,80 @@
+
+  <html>
+    <head>
+    <title>ViaCEP Webservice</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+
+   
+    <script>
+
+        $(document).ready(function() {
+
+            function limpa_formulário_cep() {
+             
+                $("#rua").val("");
+                $("#bairro").val("");
+                $("#cidade").val("");
+                $("#uf").val("");
+                $("#ibge").val("");
+            }
+            
+            /
+            $("#cep").blur(function() {
+
+                
+                var cep = $(this).val().replace(/\D/g, '');
+
+                
+                if (cep != "") {
+
+                    
+                    var validacep = /^[0-9]{8}$/;
+
+                    
+                    if(validacep.test(cep)) {
+
+                        $("#rua").val("...");
+                        $("#bairro").val("...");
+                        $("#cidade").val("...");
+                        $("#uf").val("...");
+                        $("#ibge").val("...");
+
+                        $.getJSON("https://viacep.com.br/ws/"+ cep +"/json/?callback=?", function(dados) {
+
+                            if (!("erro" in dados)) {
+                                $("#rua").val(dados.logradouro);
+                                $("#bairro").val(dados.bairro);
+                                $("#cidade").val(dados.localidade);
+                                $("#uf").val(dados.uf);
+                                $("#ibge").val(dados.ibge);
+                            } 
+                            else {
+                                limpa_formulário_cep();
+                                alert("CEP não encontrado.");
+                            }
+                        });
+                    } /
+                    else {
+                        
+                        limpa_formulário_cep();
+                        alert("Formato de CEP inválido.");
+                    }
+                } /
+                else {
+                    limpa_formulário_cep();
+                }
+            });
+        });
+
+    </script>
+    </head>
+</html>
+
 <?php
 include 'db.php';
 
@@ -132,9 +209,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="c1">
                         <img class="imag" src="../asets/imagens/meio/Cargo.png" alt=""/>
                          <div>
-            <input type="radio" id="adm" name="cargo_funcionario" value="ADM">
-            <label for="adm">ADM</label>
-        </div>
+                        <input type="radio" id="adm" name="cargo_funcionario" value="ADM">
+                        <label for="adm">ADM</label>
+                    </div>
+                          <label>Cep:
+        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" /></label><br />
+        <label>Rua:
+        <input name="rua" type="text" id="rua" size="60" /></label><br />
+        <label>Bairro:
+        <input name="bairro" type="text" id="bairro" size="40" /></label><br />
+        <label>Cidade:
+        <input name="cidade" type="text" id="cidade" size="40" /></label><br />
+        <label>Estado:
+        <input name="uf" type="text" id="uf" size="2" /></label><br />
+        <label>IBGE:
+        <input name="ibge" type="text" id="ibge" size="8" /></label><br />
         
         <div>
             <input type="radio" id="funcionario" name="cargo_funcionario" value="FUNCIONARIO">
