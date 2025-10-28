@@ -43,5 +43,15 @@ Execute o arquivo `db.sql` no banco de dados para criar o banco e adicionar um u
 </p>
 
 ## Evoluçaõ do projeto
-
 Neste quadro Kanban acima, você pode ver nossa evolução como equipe. Dentro dele está separados as principáis tarefas e seus membros atribuídos.
+
+## SMTP API – Envio de E-mails via Servidor SMTP
+Esta API fornece uma interface simples para envio de e-mails através de um servidor SMTP configurado.
+Ela pode ser usada em sistemas internos, automações e integrações que necessitam enviar notificações, relatórios ou mensagens automáticas por e-mail.
+
+## SMTP API - Funcionalidades
+- Envio de e-mails em formato texto simples e HTML;
+- Suporte a anexos (opcional);
+- Registro de logs de envio;
+- Suporte a autenticação SMTP (usuário/senha, TLS/SSL).
+
