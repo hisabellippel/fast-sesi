@@ -149,7 +149,7 @@
     margin-right: 5%;
 }
 #barra1 {
-    background-color: rgb(25, 25, 146);
+    background-color:rgb(136, 144, 153);
     display: flex;
     max-width: 2000px;
     padding: 11px;
@@ -170,13 +170,13 @@
 }
 
 .cor {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     margin: 10%;
     border-radius: 10px;
 }
 
 .cor1 {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     margin: 10%;
     padding: 5%;
     border-radius: 10px;
@@ -272,7 +272,7 @@ padding-left: 42px;
 }
 
 #barraGastos {
-    background-color: rgb(25, 25, 146);
+    background-color:rgb(136, 144, 153);
     display: flex;
     max-width: 2000px;
     padding: 11px;
