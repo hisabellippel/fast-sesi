@@ -104,7 +104,6 @@ if (isset($_GET['logout'])) {
                     echo "<tr><td><strong>Cargo:</strong></td><td>{$admin_row['cargo_funcionario']}</td></tr>";
                     echo "<tr><td><strong>Função:</strong></td><td>{$admin_row['funcao_funcionario']}</td></tr>";
                     echo "<tr><td><strong>Salário:</strong></td><td>{$admin_row['salario_funcionario']}</td></tr>";
-                    echo "<tr><td><strong>Salário:</strong></td><td>{$admin_row['foto_funcionario']}</td></tr>";
                     echo '<tr><td colspan="2" style="text-align:center;">
                             <a href="paginaAlterarPerfil2.php?credencial_funcionario=' . $admin_row['credencial_funcionario'] . '">
                                 <button type="button">Alterar Perfil:</button>
@@ -130,7 +129,6 @@ if (isset($_GET['logout'])) {
                     echo "<tr><td><strong>Cargo:</strong></td><td>{$row['cargo_funcionario']}</td></tr>";
                     echo "<tr><td><strong>Função:</strong></td><td>{$row['funcao_funcionario']}</td></tr>";
                     echo "<tr><td><strong>Salário:</strong></td><td>{$row['salario_funcionario']}</td></tr>";
-                    echo "<tr><td><strong>Salário:</strong></td><td>{$row['foto_funcionario']}</td></tr>";
                     echo '<tr><td colspan="2" style="text-align:center;">
 
                             <a href="paginaAlterarPerfil2.php?credencial_funcionario=' . $row['credencial_funcionario'] . '">
