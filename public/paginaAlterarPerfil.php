@@ -61,12 +61,16 @@ if (isset($_GET['logout'])) {
     </header>
 
     <div id="fonte">
+        <style></style>
+
+        
         <h1>Funcionários:</h1>
         <div id= "sair">
           <h1><a href="?logout=1">Sair</a></h1>
        
          <h1><a href="paginaCriarConta.php">Cadastrar Novo Funcionário</a></h1>
          </div>
+         
 
         <div id="padAlterar">
             <?php
