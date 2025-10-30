@@ -108,6 +108,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     <?php else: ?>
         <?php if ($msg): ?><p class="msg"><?= $msg ?></p><?php endif; ?>
+        <p>Você já está logado. <a href="?logout=1">Sair</a></p>
     <?php endif; ?>
 
     <footer>

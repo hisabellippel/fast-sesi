@@ -91,9 +91,10 @@ if (isset($_GET['logout'])) {
                     $cpf = $admin_row['cpf_funcionario'];
                     $senha_mascarada = str_repeat('*', 8);
                     $cpf_formatted = substr($cpf, 0, 3) . '.' . substr($cpf, 3, 3) . '.' . substr($cpf, 6, 3) . '-' . substr($cpf, 9, 2);
+                    $img_src = ($admin_row['foto_funcionario'] && $admin_row['foto_funcionario'] != 'default.jpg') ? "../uploads/" . htmlspecialchars($admin_row['foto_funcionario']) : "../asets/imagens/meio/rostoAlterarPerfil.png";
 
                     echo '<table border="1" style="margin-right: 20px; background-color: rgb(94, 156, 239); border-radius: 20px; color: aliceblue; width: 350px; height: 475px;">';
-                    echo '<tr><td colspan="2" style="text-align:center;"><img src="../asets/imagens/meio/rostoAlterarPerfil.png" alt=""></td></tr>';
+                    echo '<tr><td colspan="2" style="text-align:center;"><img src="' . $img_src . '" alt="" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;"></td></tr>';
                    
                     echo "<tr><td><strong>Credencial:</strong></td><td>{$admin_row['credencial_funcionario']}</td></tr>";
                     echo "<tr><td><strong>Nome:</strong></td><td>{$admin_row['nome_funcionario']}</td></tr>";
@@ -117,9 +118,10 @@ if (isset($_GET['logout'])) {
                     $cpf = $row['cpf_funcionario'];
                     $senha_mascarada = str_repeat('*', 8);
                     $cpf_formatted = substr($cpf, 0, 3) . '.' . substr($cpf, 3, 3) . '.' . substr($cpf, 6, 3) . '-' . substr($cpf, 9, 2);
+                    $img_src = ($row['foto_funcionario'] && $row['foto_funcionario'] != 'default.jpg') ? "../uploads/" . htmlspecialchars($row['foto_funcionario']) : "../asets/imagens/meio/rostoAlterarPerfil.png";
 
                     echo '<table border="1" style="margin-right: 20px; background-color: rgb(94, 156, 239); border-radius: 20px; color: aliceblue; width: 350px; height: 475px;">';
-                    echo '<tr><td colspan="2" style="text-align:center;"><img src="../asets/imagens/meio/rostoAlterarPerfil.png" alt=""></td></tr>';
+                    echo '<tr><td colspan="2" style="text-align:center;"><img src="' . $img_src . '" alt="" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;"></td></tr>';
                     echo "<tr><td><strong>Credencial:</strong></td><td>{$row['credencial_funcionario']}</td></tr>";
                     echo "<tr><td><strong>Nome:</strong></td><td>{$row['nome_funcionario']}</td></tr>";
                     echo "<tr><td><strong>E-mail:</strong></td><td>{$row['email_funcionario']}</td></tr>";

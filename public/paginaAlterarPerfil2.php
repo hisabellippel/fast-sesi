@@ -1,5 +1,3 @@
-
-
 <?php
 include "db.php";
 
@@ -41,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['credencial_funcionario']
     $stmt->close();
 }
 
-if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES["foto_funcionario"])){
+if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES["foto_funcionario"]) && !empty($_FILES["foto_funcionario"]["tmp_name"])){
     $target_dir = "../uploads/";
     $target_file = $target_dir . basename($_FILES["foto_funcionario"]["name"]);
     $uploadOk = 1;
@@ -49,10 +47,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES["foto_funcionario"])){
 
     $check = getimagesize($_FILES["foto_funcionario"]["tmp_name"]);
     if ($check !== false){
-        $uploadOK = 1;
+        $uploadOk = 1;
     }else{
         echo "O arquivo não é uma imagem.";
-        $uploadOK = 0;
+        $uploadOk = 0;
     }
 
     if($_FILES["foto_funcionario"]["size"] > 500000){
@@ -69,18 +67,24 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES["foto_funcionario"])){
         echo "Desculpe seu arquivo não foi enviado.";
     }else{
         if(move_uploaded_file($_FILES["foto_funcionario"]["tmp_name"], $target_file)){
-            $user -> updateProfilePic($_SESSION['user_id'], basename($_FILES['foto_funcionario']["name"]));
-            header("Location: dashboard.php");
-
+            $filename = basename($_FILES["foto_funcionario"]["name"]);
+            $sql = "UPDATE funcionario SET foto_funcionario=? WHERE credencial_funcionario=?";
+            $stmt = $conn->prepare($sql);
+            $stmt->bind_param("ss", $filename, $_POST['credencial_funcionario']);
+            if ($stmt->execute()) {
+                echo "<script>alert('Foto atualizada com sucesso!'); window.location.href='paginaAlterarPerfil.php';</script>";
+                exit;
+            } else {
+                echo "Erro ao atualizar foto no banco.";
+            }
+            $stmt->close();
         }else{
             echo "Desculpa houve algum erro no envio.";
         }
     }
-
-
 }
 
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario'])) {
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario']) && !isset($_FILES["foto_funcionario"])) {
     $credencial = $_POST['credencial_funcionario'];
     $nome_funcionario = $_POST['nome_funcionario'];
     $email_funcionario = $_POST['email_funcionario'];
@@ -126,8 +130,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
     </header>
     <main>
         <div class="brancaAlterarPerfil2">
-            <img class="i" src="../asets/imagens/meio/perfil.png" alt="">
-            <form method="post" action="">
+            <?php
+            $img_src = ($foto_funcionario && $foto_funcionario != 'default.jpg') ? "../uploads/" . htmlspecialchars($foto_funcionario) : "../asets/imagens/meio/rostoAlterarPerfil.png";
+            echo '<div style="text-align:center; margin-bottom: 20px;"><img src="' . $img_src . '" alt="Foto de Perfil" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;"></div>';
+            ?>
+            <form method="post" action="" enctype="multipart/form-data">
                 <input type="hidden" name="credencial_funcionario" value="<?php echo htmlspecialchars($credencial); ?>">
 
                 <div class="c2">
@@ -207,7 +214,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
                 <div class="c2">
                 <label for="foto_funcionario"></label><br>
                  <h2>Upload de Foto:</h2>
-                <input type="file" name="foto_perfil" required>
+                <input type="file" name="foto_funcionario" accept="image/*">
                 
                 </div>
                 <br>
