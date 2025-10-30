@@ -2,6 +2,7 @@
 include "db.php";
 
 $credencial = "";
+$credencial_funcionario = "";
 $nome_funcionario = "";
 $cpf_funcionario = "";
 $email_funcionario = "";
@@ -39,53 +40,9 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['credencial_funcionario']
     $stmt->close();
 }
 
-if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES["foto_funcionario"]) && !empty($_FILES["foto_funcionario"]["tmp_name"])){
-    $target_dir = "../uploads/";
-    $target_file = $target_dir . basename($_FILES["foto_funcionario"]["name"]);
-    $uploadOk = 1;
-    $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
-
-    $check = getimagesize($_FILES["foto_funcionario"]["tmp_name"]);
-    if ($check !== false){
-        $uploadOk = 1;
-    }else{
-        echo "O arquivo não é uma imagem.";
-        $uploadOk = 0;
-    }
-
-    if($_FILES["foto_funcionario"]["size"] > 500000){
-        echo " Imagem muito pesada para o sistema. ";
-        $uploadOk = 0;
-    }
-
-    if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"){
-        echo(" Desculpe, só aceitamos JPG, JPEG e PNG. ");
-        $uploadOk = 0;
-    }
-
-    if ($uploadOk == 0){
-        echo "Desculpe seu arquivo não foi enviado.";
-    }else{
-        if(move_uploaded_file($_FILES["foto_funcionario"]["tmp_name"], $target_file)){
-            $filename = basename($_FILES["foto_funcionario"]["name"]);
-            $sql = "UPDATE funcionario SET foto_funcionario=? WHERE credencial_funcionario=?";
-            $stmt = $conn->prepare($sql);
-            $stmt->bind_param("ss", $filename, $_POST['credencial_funcionario']);
-            if ($stmt->execute()) {
-                echo "<script>alert('Foto atualizada com sucesso!'); window.location.href='paginaAlterarPerfil.php';</script>";
-                exit;
-            } else {
-                echo "Erro ao atualizar foto no banco.";
-            }
-            $stmt->close();
-        }else{
-            echo "Desculpa houve algum erro no envio.";
-        }
-    }
-}
-
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario']) && !isset($_FILES["foto_funcionario"])) {
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario'])) {
     $credencial = $_POST['credencial_funcionario'];
+    $credencial_funcionario = $credencial;
     $nome_funcionario = $_POST['nome_funcionario'];
     $email_funcionario = $_POST['email_funcionario'];
     $senha_funcionario = $_POST['senha_funcionario'];
@@ -94,19 +51,50 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
     $salario_funcionario = $_POST['salario_funcionario'];
     $cargo_funcionario = $_POST['cargo_funcionario'];
     $funcao_funcionario = $_POST['funcao_funcionario'];
-    $foto_funcionario = $_POST['foto_funcionario'];
 
-    $sql = "UPDATE funcionario SET nome_funcionario=?, cpf_funcionario=?, email_funcionario=?, telefone_funcionario=?, salario_funcionario=?, senha_funcionario=?, funcao_funcionario=?, foto_funcionario=? WHERE credencial_funcionario=?";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ssssdsss", $nome_funcionario, $cpf_funcionario, $email_funcionario, $telefone_funcionario, $salario_funcionario, $senha_funcionario, $funcao_funcionario, $foto_funcionario, $credencial);
-
-    if ($stmt->execute()) {
-        echo "<script>alert('Perfil atualizado com sucesso!'); window.location.href='paginaAlterarPerfil.php';</script>";
-        exit;
-    } else {
-        echo "<script>alert('Erro ao atualizar o perfil.');</script>";
+    // Fetch current foto_funcionario from database
+    $sql_current = "SELECT foto_funcionario FROM funcionario WHERE credencial_funcionario = ?";
+    $stmt_current = $conn->prepare($sql_current);
+    $stmt_current->bind_param("s", $credencial);
+    $stmt_current->execute();
+    $result_current = $stmt_current->get_result();
+    $current_foto = '';
+    if ($result_current && $result_current->num_rows > 0) {
+        $row_current = $result_current->fetch_assoc();
+        $current_foto = $row_current['foto_funcionario'];
     }
-    $stmt->close();
+    $stmt_current->close();
+
+    $uploadOk = 1;
+    $filename = $current_foto; // Default to current
+
+    if (isset($_FILES["foto_funcionario"]) && !empty($_FILES["foto_funcionario"]["tmp_name"])) {
+        $target_dir = __DIR__ . '/../uploads/';
+        $original_name = basename($_FILES["foto_funcionario"]["name"]);
+        $filename = time() . '_' . $original_name;
+        $target_file = $target_dir . $filename;
+
+        if (move_uploaded_file($_FILES["foto_funcionario"]["tmp_name"], $target_file)) {
+            // Success
+        } else {
+            echo "Erro no upload: " . $_FILES["foto_funcionario"]["error"];
+            $uploadOk = 0;
+        }
+    }
+
+    if ($uploadOk == 1) {
+        $sql = "UPDATE funcionario SET nome_funcionario=?, cpf_funcionario=?, email_funcionario=?, telefone_funcionario=?, salario_funcionario=?, senha_funcionario=?, funcao_funcionario=?, foto_funcionario=? WHERE credencial_funcionario=?";
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("ssssdssss", $nome_funcionario, $cpf_funcionario, $email_funcionario, $telefone_funcionario, $salario_funcionario, $senha_funcionario, $funcao_funcionario, $filename, $credencial);
+
+        if ($stmt->execute()) {
+            echo "<script>alert('Perfil atualizado com sucesso!'); window.location.href='paginaAlterarPerfil.php';</script>";
+            exit;
+        } else {
+            echo "Erro ao atualizar o perfil.";
+        }
+        $stmt->close();
+    }
 }
 ?>
 
@@ -132,7 +120,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
         <div class="brancaAlterarPerfil2">
             <?php
             $img_src = ($foto_funcionario && $foto_funcionario != 'default.jpg') ? "../uploads/" . htmlspecialchars($foto_funcionario) : "../asets/imagens/meio/rostoAlterarPerfil.png";
-            echo '<div style="text-align:center; margin-bottom: 20px;"><img src="' . $img_src . '" alt="Foto de Perfil" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;"></div>';
+            echo '<div style="text-align:center; margin-bottom: 20px;"><img id="previewImg" src="' . $img_src . '" alt="Foto de Perfil" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;"></div>';
             ?>
             <form method="post" action="" enctype="multipart/form-data">
                 <input type="hidden" name="credencial_funcionario" value="<?php echo htmlspecialchars($credencial); ?>">
@@ -214,8 +202,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
                 <div class="c2">
                 <label for="foto_funcionario"></label><br>
                  <h2>Upload de Foto:</h2>
-                <input type="file" name="foto_funcionario" accept="image/*">
-                
+                <input type="file" id="fotoInput" name="foto_funcionario" accept="image/*">
+
                 </div>
                 <br>
 
@@ -237,5 +225,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
             </div>
         </footer>
     </main>
+
+    <script>
+        document.getElementById('fotoInput').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('previewImg').src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
 </body>
 </html>
