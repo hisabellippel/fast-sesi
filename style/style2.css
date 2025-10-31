@@ -308,3 +308,13 @@ padding-left: 42px;
    padding-left: 30px;
    margin-right:  55px;
 }
+
+.botoes{
+    background-color:  rgb(72, 117, 201);
+    display: flex;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    margin: 15px;
+    padding: 12px;
+    justify-content: center
+}
