@@ -350,7 +350,7 @@ body {
     padding: 11px;
     color: aliceblue;
     margin-bottom: 0px;
-
+    position: absolute;
 }
 
 .alterarPerfil {
