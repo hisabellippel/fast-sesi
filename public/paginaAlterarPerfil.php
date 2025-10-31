@@ -61,12 +61,16 @@ if (isset($_GET['logout'])) {
     </header>
 
     <div id="fonte">
+        <style></style>
+
+        
         <h1>Funcionários:</h1>
         <div id= "sair">
           <h1><a href="?logout=1">Sair</a></h1>
        
          <h1><a href="paginaCriarConta.php">Cadastrar Novo Funcionário</a></h1>
          </div>
+         
 
         <div id="padAlterar">
             <?php
@@ -93,7 +97,7 @@ if (isset($_GET['logout'])) {
                     $cpf_formatted = substr($cpf, 0, 3) . '.' . substr($cpf, 3, 3) . '.' . substr($cpf, 6, 3) . '-' . substr($cpf, 9, 2);
                     $img_src = ($admin_row['foto_funcionario'] && $admin_row['foto_funcionario'] != 'default.jpg') ? "../uploads/" . htmlspecialchars($admin_row['foto_funcionario']) : "../asets/imagens/meio/rostoAlterarPerfil.png";
 
-                    echo '<table border="1" style="margin-right: 20px; background-color: rgb(94, 156, 239); border-radius: 20px; color: aliceblue; width: 350px; height: 475px;">';
+                    echo '<table border="1" style="margin-right: 20px; background-color: rgb(59, 226, 9); border-radius: 20px; color: aliceblue; width: 350px; height: 475px;">';
                     echo '<tr><td colspan="2" style="text-align:center;"><img src="' . $img_src . '" alt="" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;"></td></tr>';
                    
                     echo "<tr><td><strong>Credencial:</strong></td><td>{$admin_row['credencial_funcionario']}</td></tr>";
@@ -120,7 +124,7 @@ if (isset($_GET['logout'])) {
                     $cpf_formatted = substr($cpf, 0, 3) . '.' . substr($cpf, 3, 3) . '.' . substr($cpf, 6, 3) . '-' . substr($cpf, 9, 2);
                     $img_src = ($row['foto_funcionario'] && $row['foto_funcionario'] != 'default.jpg') ? "../uploads/" . htmlspecialchars($row['foto_funcionario']) : "../asets/imagens/meio/rostoAlterarPerfil.png";
 
-                    echo '<table border="1" style="margin-right: 20px; background-color: rgb(94, 156, 239); border-radius: 20px; color: aliceblue; width: 350px; height: 475px;">';
+                    echo '<table border="1" style="margin-right: 20px; background-color: rgb(131, 168, 241); border-radius: 20px; color: aliceblue; width: 350px; height: 475px;">';
                     echo '<tr><td colspan="2" style="text-align:center;"><img src="' . $img_src . '" alt="" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;"></td></tr>';
                     echo "<tr><td><strong>Credencial:</strong></td><td>{$row['credencial_funcionario']}</td></tr>";
                     echo "<tr><td><strong>Nome:</strong></td><td>{$row['nome_funcionario']}</td></tr>";
