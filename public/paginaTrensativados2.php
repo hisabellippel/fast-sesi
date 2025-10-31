@@ -25,7 +25,7 @@
         <br>
 
         <div >
-            <div class="redonda5">
+            <div class="redonda">
                 <p>Altorre-Glaciaris</p>
             </div>
             
