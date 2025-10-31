@@ -26,7 +26,6 @@
     border-radius: 20px;
 }
 
-/* Remove background and border-radius from original containers */
 .informacao2, .informacao23 {
     margin: 0 !important;
     padding: 0 !important;
@@ -36,7 +35,6 @@
     z-index: auto !important;
 }
 
-/* New container styles for wrapping existing divs */
 .gastos-container {
     background-color: rgba(183, 201, 240, 0.7);
     border-radius: 20px;
@@ -310,5 +308,15 @@ padding-left: 42px;
 }
 
 #fundotitulo{
-background-color: rgb(131, 168, 241);
+    background-color: rgb(131, 168, 241);
+}
+
+.botoes{
+    background-color:  rgb(72, 117, 201);
+    display: flex;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    margin: 15px;
+    padding: 12px;
+    justify-content: center
 }
