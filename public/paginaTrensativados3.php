@@ -26,13 +26,11 @@
 
 
         <div class = "pad 28">
-            <div class="redonda5">
+            <div class="redonda">
                 <a href="paginaTrensativados2.php"><p class="cor">Altorre-Glaciaris</p></a>
             </div>
             
-             
-
-            <div class="redonda5">
+            <div class="redonda">
                 <p>Ouro negro-monte Claro</p>
             </div>
 
