@@ -1,10 +1,12 @@
 body {
-    background-color: rgb(174, 201, 252);
+    background-color: rgb(230, 230, 230);
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
     margin: 0;
+    color: rgb(255, 255, 255);
 }
+
 
 .main-container {
     max-width: 900px;
@@ -55,7 +57,7 @@ body {
 }
 
 #barraescura {
-    background-color: rgb(25, 25, 146);
+    background-color: rgb(136, 144, 153);
     display: flex;
 }
 
@@ -93,7 +95,7 @@ body {
 }
 
 ::-webkit-input-placeholder {
-    color: rgb(14, 13, 13);
+    color: rgb(0, 0, 0);
 }
 
 #img {
@@ -123,7 +125,7 @@ body {
 }
 
 #azul {
-    background-color: rgb(25, 25, 146);
+    background-color:  rgb(72, 117, 201);
     display: flex;
     justify-content: center;
     color: aliceblue;
@@ -157,10 +159,10 @@ body {
 }
 
 .redonda {
-    background-color: rgb(25, 25, 146);
+    background-color:  rgb(72, 117, 201);
     display: flex;
-    color: rgb(255, 255, 255);
-    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
     margin: 15px;
     padding: 12px;
     justify-content: center
@@ -342,13 +344,13 @@ body {
 }
 
 #barra {
-    background-color: rgb(25, 25, 146);
+    background-color:  rgb(136, 144, 153);
     display: flex;
     max-width: 2000px;
     padding: 11px;
     color: aliceblue;
     margin-bottom: 0px;
-
+    position: absolute;
 }
 
 .alterarPerfil {
@@ -483,10 +485,10 @@ body {
 }
 
 .redonda1 {
-    background-color: rgb(25, 25, 146);
+    background-color:  rgb(72, 117, 201);
     display: flex;
     color: rgb(255, 255, 255);
-    border-radius: 100px;
+    border-radius: 40px;
     margin-top: 30px;
     margin-right: 30px;
     margin-left: 30px;
@@ -496,10 +498,10 @@ body {
 }
 
 .redonda4 {
-    background-color: rgb(25, 25, 146);
+    background-color:  rgb(72, 117, 201);
     display: flex;
     color: rgb(255, 255, 255);
-    border-radius: 100px;
+    border-radius: 40px;
     margin-top: 30px;
     margin-right: 30px;
     margin-left: 30px;
@@ -509,10 +511,10 @@ body {
 }
 
 .redonda7 {
-    background-color: rgb(25, 25, 146);
+    background-color: rgb(72, 117, 201);
     display: flex;
     color: rgb(255, 255, 255);
-    border-radius: 100px;
+    border-radius: 40px;
     margin-top: 30px;
     margin-right: 30px;
     margin-left: 30px;
@@ -522,10 +524,10 @@ body {
 }
 
 .redonda6 {
-    background-color: rgb(25, 25, 146);
+    background-color:  rgb(72, 117, 201);
     display: flex;
     color: rgb(255, 255, 255);
-    border-radius: 100px;
+    border-radius: 40px;
     margin-top: 30px;
     margin-right: 30px;
     margin-left: 30px;
@@ -539,12 +541,14 @@ body {
     border-style: solid;
     border: 0px;
     background-color: rgb(108, 140, 211, 0.7);
-    border-radius: 35px;
-    margin-left: 30px;
-    margin-right: 30px;
-    padding-top: 10px;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 60px;
     padding-bottom: 1px;
     position: relative;
+    margin-top: -55px;
+    padding-top: 30px;
     z-index: -1;
 }
 
@@ -624,10 +628,10 @@ body {
 
 
 .redonda5 {
-    background-color: rgb(25, 25, 146);
+    background-color: rgb(72, 117, 201);
     display: flex;
     color: rgb(255, 255, 255);
-    border-radius: 100px;
+    border-radius: 15px;
     margin-top: 30px;
     margin-right: 30px;
     margin-left: 30px;
@@ -637,9 +641,9 @@ body {
 }
 
 .redonda3 {
-    background-color: rgb(25, 25, 146);
+    background-color: rgb(72, 117, 201);
     color: rgb(255, 255, 255);
-    border-radius: 100px;
+    border-radius: 40px;
     margin-top: 30px;
     margin-right: 30px;
     margin-left: 30px;
@@ -712,12 +716,12 @@ body {
 }
 
 a:link {
-    color: white;
+    color: rgb(255, 250, 250);
     text-decoration: none;
 }
 
 a:hover {
-    color: rgb(32, 13, 175);
+    color: rgb(255, 255, 255);
 }
 
 .informacao3 {
@@ -817,10 +821,10 @@ a:hover {
 }
 
 .redondaofc {
-    background-color: rgb(25, 25, 146);
+    background-color:  rgb(72, 117, 201);
     display: flex;
     color: rgb(255, 255, 255);
-    border-radius: 100px;
+    border-radius: 40px;
     margin-top: 30px;
     margin-right: 30px;
     margin-left: 30px;
@@ -975,9 +979,9 @@ a:hover {
 }
 
 .redonda31 {
-    background-color: rgb(25, 25, 146);
+    background-color: rgb(72, 117, 201);
     color: rgb(255, 255, 255);
-    border-radius: 100px;
+    border-radius: 40px;
     margin-top: 30px;
     margin-right: 30px;
     margin-left: 30px;
@@ -997,7 +1001,7 @@ a:hover {
 
 
 #barraouvidoria {
-    background-color: rgb(25, 25, 146);
+    background-color: rgb(136, 144, 153);
     display: flex;
     max-width: 2000px;
     padding: 10;
@@ -1018,7 +1022,7 @@ a:hover {
 }
 
 #barrabotao {
-    background-color: rgb(25, 25, 146);
+    background-color: rgb(136, 144, 153);
     display: flex;
     max-width: 2000px;
     padding: 10px;
@@ -1027,9 +1031,9 @@ a:hover {
 }
 
 .redondacorrecao {
-    background-color: rgb(25, 25, 146);
+    background-color:  rgb(72, 117, 201);
     color: rgb(255, 255, 255);
-    border-radius: 100px;
+    border-radius: 40px;
     margin-top: 30px;
     margin-right: 30px;
     margin-left: 30px;
@@ -1088,28 +1092,28 @@ p.nova {
     height: 70px;
 }
 .redonda8 {
-    background-color: rgb(25, 25, 146);
+    background-color: rgb(72, 117, 201);
     display: flex;
     color: rgb(255, 255, 255);
-    border-radius: 50px;
+    border-radius: 20px;
     margin: 27px;
     padding: 12px;
     justify-content: center
 }
 .redonda9 {
-    background-color: rgb(25, 25, 146);
+    background-color: rgb(72, 117, 201);
     display: flex;
     color: rgb(255, 255, 255);
-    border-radius: 50px;
+    border-radius: 20px;
     margin: 36px;
     padding: 12px;
     justify-content: center
 }
 .redonda10 {
-    background-color: rgb(25, 25, 146);
+    background-color: rgb(72, 117, 201);
     display: flex;
     color: rgb(255, 255, 255);
-    border-radius: 50px;
+    border-radius: 20px;
     margin: 53px;
     padding: 15px;
     justify-content: center
@@ -1133,9 +1137,9 @@ p.nova {
    
 }
 .redonda33 {
-    background-color: rgb(25, 25, 146);
+    background-color: rgb(72, 117, 201);
     color: rgb(255, 255, 255);
-    border-radius: 100px;
+    border-radius: 40px;
     margin-top: 10px;
     margin-right: 30px;
     margin-left: 30px;
@@ -1195,7 +1199,7 @@ p.nova {
 
 
 #barra00 {
-    background-color: rgb(25, 25, 146);
+    background-color:rgb(136, 144, 153);
     display: flex;
     max-width: 2000px;
     padding: 11px;
@@ -1206,22 +1210,20 @@ p.nova {
 }
 
 .redonda20 {
-    background-color: rgb(25, 25, 146);
+    background-color:  rgb(72, 117, 201);
     color: rgb(255, 255, 255);
-    border-radius: 100px;
-   
+    border-radius: 40px;
     margin-right: 30px;
     margin-left: 30px;
-    
     padding: 10px;
     justify-content: center;
-     height: 70px; 
+    height: 70px; 
     margin-top: -40px;
     
 }
 
 #barra01 {
-    background-color: rgb(25, 25, 146);
+    background-color: rgb(136, 144, 153);
     display: flex;
     max-width: 2000px;
     padding: 11px;
@@ -1232,16 +1234,14 @@ p.nova {
 }
 
 .redonda21 {
-    background-color: rgb(25, 25, 146);
+    background-color:  rgb(72, 117, 201);
     color: rgb(255, 255, 255);
-    border-radius: 100px;
-   
+    border-radius: 40px;
     margin-right: 30px;
     margin-left: 30px;
-    
     padding: 10px;
     justify-content: center;
-     height: 70px; 
+    height: 70px; 
     margin-top: -40px;
     
 }
@@ -1280,7 +1280,7 @@ p.nova {
 }
 
 #barra778{
- background-color: rgb(25, 25, 146);
+ background-color: rgb(157, 164, 171);
     display: flex;
     max-width: 2000px;
     padding: 11px;
@@ -1301,11 +1301,6 @@ p.nova {
     margin: 10px 0;
 }
 
-.sair{
-    margin: 12px 12px 10px 10px;
-    border-style: solid;
-
-}
 
 .padRelatorio{
     margin-bottom: 137px;

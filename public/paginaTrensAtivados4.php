@@ -38,7 +38,7 @@
 
             
 
-            <div class="redonda5">
+            <div class="redonda">
                 <p class="cor">Rio verde eldoria</p></a>
             </div>
             <div class="informacao">
