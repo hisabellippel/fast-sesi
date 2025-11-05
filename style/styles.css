@@ -5,6 +5,8 @@ body {
     padding: 0;
     margin: 0;
     color: rgb(255, 255, 255);
+    height: 824px ;
+    width: 430px;
 }
 
 
@@ -544,7 +546,7 @@ body {
     border-radius: 10px;
     margin-left: 15px;
     margin-right: 15px;
-    margin-bottom: 60px;
+    margin-bottom: 37px;
     padding-bottom: 1px;
     position: relative;
     margin-top: -55px;
@@ -1310,4 +1312,19 @@ p.nova {
 .padGastos{
     margin-bottom: 110px;
     margin-top: 45px;
+}
+
+.informacao5 {
+    border-style: solid;
+    border: 0px;
+    background-color: rgb(108, 140, 211, 0.7);
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 58px;
+    padding-bottom: 1px;
+    position: relative;
+    margin-top: -55px;
+    padding-top: 30px;
+    z-index: -1;
 }

@@ -41,7 +41,7 @@
             <div class="redonda">
                 <a href="paginaTrensativados5.php"><p class="cor">Coralua-Maresia</p></a>
             </div>
-            <div class="informacao">
+            <div class="informacao5">
                <p>Localização: Vale dos Pinheiros <br> Distância percorrida: 100km <br> Passageiros: 19.800 <br> Velocidade: 65km/h <br> Maquinista: Camila Santos</p>
             </div>
 
