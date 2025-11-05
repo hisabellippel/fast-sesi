@@ -27,24 +27,28 @@
     <br>
     <br>
 
-    <div class="pad30">
-        <div class="redondaAlertas">
-            <a href="paginaAlertaseNotificacoes2.php">
-            <p class="alert-text">Alertas <span class="numero-vermelho">°1</span> <span class="simbolo-branco">▼</span></p>
-            </a>
-        </div>
-            
+    <div class ="redondaequadrada">
+        <a href="paginaAlertaseNotificacoes2.php">
+           
+     <div class =  "letrabranca">
+        
+         <p class="maq">Alertas</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
+         </div>
 
-        <div class="redondaAlertas">
-            <a href="paginaAlertaseNotificacoes3.php">
-            <p class="alert-text">Notificações <span class="numero-vermelho">°1</span> <span class="simbolo-branco">▼</span></p></a>
-        </div>
     </div>
 
-</main>
+        <div class ="redondaequadrada">
+        <a href="paginaAlertaseNotificacoes3.php">
+           
+     <div class =  "letrabranca">
+        
+         <p class="maq">Notificações</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
+         </div>
 
+    </div>
     <footer>
-        <div id="barra">
+        
+       <div class="barranova2">
             <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
@@ -52,9 +56,9 @@
             <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
             <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
         </div>
-
     </footer>
-
 
 </body>
 </html>
+
+

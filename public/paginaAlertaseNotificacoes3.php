@@ -22,32 +22,44 @@
         <div id="azul">
             <h2 id="hs">Alertas e Notificações</h2>
         </div>
-        <br>
-        <br>
-        
-        <div class="pad25">
-            <div class="redondacorrecao">
-                <div class="agrupar">
-                    <p class="maq">Alertas</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
-                </div>
-            </div>
-        
 
-            <div class="redondacorrecao">
-                <div class="agrupar">
-                    <p class="maq">Notificações</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
-                </div>
+
+        <div class ="redondaequadrada">
+        <a href="paginaAlertaseNotificacoes2.php">
+           
+     <div class =  "letrabranca">
+        
+         <p class="maq">Alertas</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
+         </div>
+
+    </div>
+
+
+        
+        <div class ="redondaequadrada">
+
+            <div class =  "letrabranca">
+            <p class="maq">Notificações</p><p class="nova"><p class="nova2">▼</p>
             </div>
-            <div class="informacao2">
-                <br>
-            <br>
-                <p>Botão de emergencia acionado na linha 1<</p>
-            </div>
-        </div>
-    </main>
+   </div>
+    <div class = "informacao">
+    <p>Botão de emergencia acionado na linha 1</p>
+
+
+    </div>
+   </div>
     
+
+        
+       
+        
+            
+
+          
+    </main>
+
     <footer>
-        <div id="barra">
+        <div class="barranova">
             <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
@@ -58,5 +70,4 @@
     </footer>
 
 </body>
-
 </html>
