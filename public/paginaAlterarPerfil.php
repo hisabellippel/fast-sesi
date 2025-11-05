@@ -67,11 +67,19 @@ if (isset($_GET['logout'])) {
         <h1>Funcionários:</h1>
         <div id= "sair">
             <div class="botoes">
-            <h1><a href="?logout=1">Sair</a></h1>
+           
             </div>
             <div class="botoes">
-            <h1 ><a href="paginaCriarConta.php">Cadastrar Novo Funcionário</a></h1>
+            <h1 >
+                <div class = "cinza">
+            
             </div>
+            </div>
+         </div>
+
+         <div id="botoes_novos">
+            <button onclick="window.location.href='?logout=1'">Sair</button>
+            <button onclick="window.location.href='paginaCriarConta.php'">Cadastrar Novo Funcionário</button>
          </div>
          
 
