@@ -1,80 +1,4 @@
 
-  <html>
-    <head>
-    <title>ViaCEP Webservice</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-    
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-            crossorigin="anonymous"></script>
-
-   
-    <script>
-
-        $(document).ready(function() {
-
-            function limpa_formulário_cep() {
-             
-                $("#rua").val("");
-                $("#bairro").val("");
-                $("#cidade").val("");
-                $("#uf").val("");
-                $("#ibge").val("");
-            }
-            
-            /
-            $("#cep").blur(function() {
-
-                
-                var cep = $(this).val().replace(/\D/g, '');
-
-                
-                if (cep != "") {
-
-                    
-                    var validacep = /^[0-9]{8}$/;
-
-                    
-                    if(validacep.test(cep)) {
-
-                        $("#rua").val("...");
-                        $("#bairro").val("...");
-                        $("#cidade").val("...");
-                        $("#uf").val("...");
-                        $("#ibge").val("...");
-
-                        $.getJSON("https://viacep.com.br/ws/"+ cep +"/json/?callback=?", function(dados) {
-
-                            if (!("erro" in dados)) {
-                                $("#rua").val(dados.logradouro);
-                                $("#bairro").val(dados.bairro);
-                                $("#cidade").val(dados.localidade);
-                                $("#uf").val(dados.uf);
-                                $("#ibge").val(dados.ibge);
-                            } 
-                            else {
-                                limpa_formulário_cep();
-                                alert("CEP não encontrado.");
-                            }
-                        });
-                    } /
-                    else {
-                        
-                        limpa_formulário_cep();
-                        alert("Formato de CEP inválido.");
-                    }
-                } /
-                else {
-                    limpa_formulário_cep();
-                }
-            });
-        });
-
-    </script>
-    </head>
-</html>
-
 <?php
 include 'db.php';
 
@@ -93,6 +17,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $cargo  = $_POST['cargo_funcionario'] ?? "";
     $funcao  = $_POST['funcao_funcionario'] ?? "";
     $salario  = $_POST['salario_funcionario'] ?? "";
+    $cep = $_POST['cep'] ?? "";
+
+    // Consulta API ViaCEP
+    $url = "https://viacep.com.br/ws/" . $cep . "/json/";
+    $dados_json = @file_get_contents($url);
+    $dados = json_decode($dados_json, true);
 
     
     if ($email !== $email2) {
@@ -128,6 +58,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $sucesso = "Novo registro criado com sucesso!";
         } else {
             $erro = "Erro ao cadastrar: " . $conn->error;
+        }
+
+        if ($dados && !isset($dados['erro'])) {
+        echo "<h2>Resultado da Pesquisa</h2>";
+        echo "<p><b>CEP:</b> {$dados['cep']}<br>";
+        echo "<b>Logradouro:</b> {$dados['logradouro']}<br>";
+        echo "<b>Bairro:</b> {$dados['bairro']}<br>";
+        echo "<b>Cidade:</b> {$dados['localidade']}<br>";
+        echo "<b>UF:</b> {$dados['uf']}</p>";
+        } else {
+        echo "CEP inválido ou não encontrado.";
         }
 
         $stmt->close();
@@ -212,23 +153,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <input type="radio" id="adm" name="cargo_funcionario" value="ADM">
                         <label for="adm">ADM</label>
                     </div>
-                          <label>Cep:
-        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" /></label><br />
-        <label>Rua:
-        <input name="rua" type="text" id="rua" size="60" /></label><br />
-        <label>Bairro:
-        <input name="bairro" type="text" id="bairro" size="40" /></label><br />
-        <label>Cidade:
-        <input name="cidade" type="text" id="cidade" size="40" /></label><br />
-        <label>Estado:
-        <input name="uf" type="text" id="uf" size="2" /></label><br />
-        <label>IBGE:
-        <input name="ibge" type="text" id="ibge" size="8" /></label><br />
-        
-        <div>
-            <input type="radio" id="funcionario" name="cargo_funcionario" value="FUNCIONARIO">
-            <label for="funcionario">Funcionário</label>
-        </div>
+       
+                    <div>
+                        <input type="radio" id="funcionario" name="cargo_funcionario" value="FUNCIONARIO">
+                        <label for="funcionario">Funcionário</label>
+                    </div>
                     </div><br>
 
                     <div class="c1">
@@ -239,6 +168,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="c1">
                         <img class="imag" src="../asets/imagens/meio/salario.png" alt=""/>
                         <input type="text" name="salario_funcionario" placeholder=" Insira o salário " required>
+                    </div><br>
+
+                    <div class="c1">
+                        <img class="imag" src="" alt=""/>
+                        <input type="text" id="cep" name="cep" placeholder="Buscar CEP" required>
                     </div><br>
 
                     <input type="submit" value="Cadastrar">
