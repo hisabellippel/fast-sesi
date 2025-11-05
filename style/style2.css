@@ -338,3 +338,35 @@ padding-left: 42px;
     padding: 44px;
     text-align: justify;
 }
+
+.letrabranca{
+
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.redondaequadrada{
+ background-color:  rgb(72, 117, 201);
+    display: flex;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    margin: 15px;
+    padding: 12px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+.barranova{
+ background-color: rgb(136, 144, 153);
+    display: flex;
+    max-width: 2000px;
+    padding: 11px;
+    color: aliceblue;
+   margin-top: 305px;
+   height: 60px;
+   margin-bottom: 20px;
+}
