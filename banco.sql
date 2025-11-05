@@ -2,17 +2,24 @@ CREATE DATABASE fast_sesi_sa;
 USE fast_sesi_sa;
 
 CREATE TABLE funcionario(
-    id_funcionario INT primary key AUTO_INCREMENT NOT NULL,
-    credencial_funcionario INT  NOT NULL,
-    nome_funcionario varchar(120) NOT NULL,
-    email_funcionario varchar(45) NOT NULL,
-    senha_funcionario varchar(255) NOT NULL,
-    cpf_funcionario varchar(11) NOT NULL,
-    telefone_funcionario varchar(45) NOT NULL,
-    cargo_funcionario ENUM ( 'ADM', 'FUNCIONARIO') NOT NULL,
-    funcao_funcionario varchar(45) NOT NULL,
+    id_funcionario INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    credencial_funcionario INT NOT NULL,
+    nome_funcionario VARCHAR(120) NOT NULL,
+    email_funcionario VARCHAR(45) NOT NULL,
+    senha_funcionario VARCHAR(255) NOT NULL,
+    cpf_funcionario VARCHAR(11) NOT NULL,
+    telefone_funcionario VARCHAR(45) NOT NULL,
+    cargo_funcionario ENUM('ADM', 'FUNCIONARIO') NOT NULL,
+    funcao_funcionario VARCHAR(45) NOT NULL,
     salario_funcionario INT NOT NULL,
-    foto_funcionario varchar(255) DEFAULT 'default.jpg'
+    foto_funcionario VARCHAR(255) DEFAULT 'default.jpg',
+    cep_funcionario VARCHAR(9),
+    logradouro_funcionario VARCHAR(120),
+    numero_funcionario VARCHAR(10),
+    complemento_funcionario VARCHAR(60),
+    bairro_funcionario VARCHAR(60),
+    cidade_funcionario VARCHAR(60),
+    uf_funcionario CHAR(2)
 );
 
 CREATE TABLE trilhos(
