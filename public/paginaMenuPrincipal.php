@@ -45,6 +45,7 @@
             <div class="redonda">
                 <a href="paginaAlertaseNotificacoes1.php"><p class="cor">Alertas e Notificações</p></a>
             </div>
+            <br>
         </div>
     </main>
     <footer>
