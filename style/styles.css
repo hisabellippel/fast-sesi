@@ -55,7 +55,8 @@ body {
     display: flex;
     width: 100px;
     height: 100px;
-    margin: 40% 100% 5% 40%;
+    padding-top: 250px;
+    margin-left: 37%;
 }
 
 #barraescura {
@@ -352,7 +353,6 @@ body {
     padding: 11px;
     color: aliceblue;
     margin-bottom: 0px;
-    position: absolute;
 }
 
 .alterarPerfil {
@@ -1351,4 +1351,3 @@ p.nova {
    height: 60px;
 
 }
-

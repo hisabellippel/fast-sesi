@@ -11,7 +11,7 @@
 
     <header>
         <div id="barraescura">
-            <a class = "sair" href="paginaLogin.php?logout=1"><button type="submit">SAIR</button></a>
+            <a class ="sair" href="paginaLogin.php?logout=1"><button type="submit">SAIR</button></a>
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
