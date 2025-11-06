@@ -12,7 +12,7 @@
 
     <header>
         <div id="barraescura">
-             <a href="paginaControledeInspeção.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+             <a href="paginaSistemadeFrenagem1.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
@@ -24,8 +24,7 @@
         </div>
         <br>
         <br>
-
-        <div class = "pad33">
+        <div class="pad">
             <a href="paginaSistemadeFrenagem2.php">
                 <div class="redonda">
                     <p class="cor">Vazamento de fluido de freio▼</p>
@@ -38,11 +37,12 @@
                 </div>
             </a>
 
-            <a href="paginaSistemadeFrenagem4.php">
-                <div class="redonda">
-                    <p class="cor">Desgate de componentes</p><p class="red"><strong>°1</strong></p>▼
-                </div>
-            </a>
+            <div class="redonda">
+                <p>Desgate de componentes <p class="red"><strong>°1</strong></p> ▼</p>
+            </div>
+            <div class="informacao">
+                <p>Detectado desgaste em pastilhas e discos de freio durante inspeção. Recomenda-se substituição preventiva nas próximas 200 horas de operação.</p>
+            </div>
 
             <a href="paginaSistemadeFrenagem5.php">
                 <div class="redonda">
@@ -51,6 +51,7 @@
             </a>
         </div>
 
+    <br>
         <div id="barra">
             <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
