@@ -55,7 +55,8 @@ body {
     display: flex;
     width: 100px;
     height: 100px;
-    margin: 40% 100% 5% 40%;
+    padding-top: 250px;
+    margin-left: 37%;
 }
 
 #barraescura {

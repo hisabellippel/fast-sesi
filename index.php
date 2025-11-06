@@ -20,10 +20,6 @@
             
         </div>
 
-        <div class="posicionar">
-            <img src="asets/imagens/meio/construçãodefundo.png" alt="">
-        </div>
-
     </main>
     
 </body>
