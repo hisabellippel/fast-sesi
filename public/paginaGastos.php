@@ -25,6 +25,22 @@
             <p>Gastos e gráficos</p>
         </div>
         <div class="informacao178">
+                   <div id= "sair">
+            <div class="botoes">
+           
+            </div>
+            <div class="botoes">
+            <h1 >
+                <div class = "cinza">
+            
+            </div>
+            </div>
+         </div>
+
+         <div id="botoes_novos">
+            <button onclick="window.location.href='?logout=1'">▼ Funcionários</button><br>
+            <button onclick="window.location.href='paginaCriarConta.php'">▼ Ferrovia</button>
+         </div>
             <br>
             <button class="botao2" onclick="redirecionar()">▼ Funcionários</button>
             <br><br>

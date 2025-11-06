@@ -349,7 +349,7 @@ padding-left: 42px;
 
 
 .redondaequadrada{
- background-color:  rgb(72, 117, 201);
+    background-color:  rgb(72, 117, 201);
     display: flex;
     color: rgb(0, 0, 0);
     border-radius: 20px;
@@ -361,7 +361,7 @@ padding-left: 42px;
 
 
 .barranova{
- background-color: rgb(136, 144, 153);
+    background-color: rgb(136, 144, 153);
     display: flex;
     max-width: 2000px;
     padding: 11px;
@@ -373,7 +373,7 @@ padding-left: 42px;
 
 
 .barranova2{
-background-color: rgb(136, 144, 153);
+    background-color: rgb(136, 144, 153);
     display: flex;
     max-width: 2000px;
     padding: 11px;
@@ -383,6 +383,25 @@ background-color: rgb(136, 144, 153);
    margin-bottom: 20px;
 }
 
-.pad33{
-    margin-bottom: 500px;
+.clique{
+    background-color: #a8a7a7;
+    color: #333;
+    padding: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    box-shadow: 10px 10px 10px rgb(138, 137, 137);
 }
+
+.clique2{
+    color: #333;
+    padding: 2px;
+    margin-left: 70px;
+    margin-right: 70px;
+    border-radius: 10px;
+}
+
+
+
+
