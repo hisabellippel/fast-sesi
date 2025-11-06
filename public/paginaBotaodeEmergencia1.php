@@ -25,12 +25,12 @@
         <br>
         <br>
 
-        <div class="pad8">
-            <div class="redonda3">
+        <div class="pad10">
+            <div class="redonda">
                 <a href="paginaBotaodeEmergencia2.php"><p class="cor">Maquinista▼</p></a>
             </div>
 
-            <div class="redonda3">
+            <div class="redonda">
                 <a href="paginaBotaodeEmergencia3.php"><p class="cor">Bagageiro▼</p></a>
             </div>
         </div>
@@ -48,7 +48,5 @@
         </div>
     </footer>
 
-
 </body>
-
 </html>
