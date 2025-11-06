@@ -1,4 +1,3 @@
-
 <?php
 include 'db.php';
 
@@ -18,57 +17,36 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $funcao  = $_POST['funcao_funcionario'] ?? "";
     $salario  = $_POST['salario_funcionario'] ?? "";
     $cep = $_POST['cep'] ?? "";
+    $logradouro = $_POST['logradouro'] ?? "";
+    $numero = $_POST['numero'] ?? "";
+    $bairro = $_POST['bairro'] ?? "";
+    $cidade = $_POST['cidade'] ?? "";
+    $uf = $_POST['uf'] ?? "";
 
-    // Consulta API ViaCEP
-    $url = "https://viacep.com.br/ws/" . $cep . "/json/";
-    $dados_json = @file_get_contents($url);
-    $dados = json_decode($dados_json, true);
-
-    
     if ($email !== $email2) {
         $erro = "Os e-mails não coincidem.";
-    }
- 
-    elseif ($pass !== $pass2) {
+    } elseif ($pass !== $pass2) {
         $erro = "As senhas não coincidem.";
-    }
-    
-    elseif (strlen($cpf) !== 11) {
+    } elseif (strlen($cpf) !== 11) {
         $erro = "O CPF deve ter exatamente 11 dígitos.";
-    }
-    elseif (strlen($credencial) !== 4) {
+    } elseif (strlen($credencial) !== 4) {
         $erro = "A credencial deve ter exatamente 4 dígitos.";
-    }
-    
-    elseif (strlen($telefone) < 10) {
+    } elseif (strlen($telefone) < 10) {
         $erro = "O telefone deve ter pelo menos 10 dígitos.";
-    }
-    else {
+    } else {
         $senhaHash = password_hash($pass, PASSWORD_DEFAULT);
 
-       
         $sql = "INSERT INTO funcionario 
-                (credencial_funcionario, nome_funcionario, cpf_funcionario, email_funcionario, senha_funcionario, telefone_funcionario, cargo_funcionario, funcao_funcionario, salario_funcionario)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                (credencial_funcionario, nome_funcionario, cpf_funcionario, email_funcionario, senha_funcionario, telefone_funcionario, cargo_funcionario, funcao_funcionario, salario_funcionario, cep, logradouro, numero, bairro, cidade, uf)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         $stmt = $conn->prepare($sql);
-        $stmt->bind_param("isssssssi", $credencial, $name, $cpf, $email, $senhaHash, $telefone, $cargo, $funcao, $salario);
+        $stmt->bind_param("isssssssisissss", $credencial, $name, $cpf, $email, $senhaHash, $telefone, $cargo, $funcao, $salario, $cep, $logradouro, $numero, $bairro, $cidade, $uf);
 
         if ($stmt->execute()) {
             $sucesso = "Novo registro criado com sucesso!";
         } else {
             $erro = "Erro ao cadastrar: " . $conn->error;
-        }
-
-        if ($dados && !isset($dados['erro'])) {
-        echo "<h2>Resultado da Pesquisa</h2>";
-        echo "<p><b>CEP:</b> {$dados['cep']}<br>";
-        echo "<b>Logradouro:</b> {$dados['logradouro']}<br>";
-        echo "<b>Bairro:</b> {$dados['bairro']}<br>";
-        echo "<b>Cidade:</b> {$dados['localidade']}<br>";
-        echo "<b>UF:</b> {$dados['uf']}</p>";
-        } else {
-        echo "CEP inválido ou não encontrado.";
         }
 
         $stmt->close();
@@ -81,13 +59,36 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Cadastro de Funcionário</title>
     <link rel="stylesheet" href="../style/styles.css">
+
+    <script>
+        async function buscarCEP() {
+            const cep = document.getElementById('cep').value.replace(/\D/g, '');
+            if (cep.length === 8) {
+                try {
+                    const resposta = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+                    const dados = await resposta.json();
+
+                    if (!dados.erro) {
+                        document.getElementById('logradouro').value = dados.logradouro;
+                        document.getElementById('bairro').value = dados.bairro;
+                        document.getElementById('cidade').value = dados.localidade;
+                        document.getElementById('uf').value = dados.uf;
+                    } else {
+                        alert("CEP não encontrado!");
+                    }
+                } catch (e) {
+                    alert("Erro ao buscar o CEP!");
+                }
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
         <div id="barraescura">
-            <a href="paginaAlterarPerfil.php "><img class="topo1" src="../asets/imagens/barraAcima/Flecha.png" alt=""></a>
+            <a href="paginaAlterarPerfil.php"><img class="topo1" src="../asets/imagens/barraAcima/Flecha.png" alt=""></a>
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt=""/>
             <img class="imgtopo" src="../asets/imagens/meio/fotoFundoTrem.png" alt=""/>
         </div>
@@ -109,70 +110,90 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <form method="POST">
                     <div class="c1">
                         <img class="imag" src="../asets/imagens/meio/CredencialLogo.png" alt=""/>
-                        <input type="text" name="credencial_funcionario" placeholder="Insira a credencial " requiredrequired minlength="4" maxlength="4">
+                        <input type="text" name="credencial_funcionario" placeholder="Insira a credencial" required minlength="4" maxlength="4">
                     </div><br>
 
                     <div class="c1">
                         <img class="imag" src="../asets/imagens/meio/nome.png" alt=""/>
-                        <input type="text" name="nome_funcionario" placeholder="Insira o nome " required>
+                        <input type="text" name="nome_funcionario" placeholder="Insira o nome" required>
                     </div><br>
 
                     <div class="c1">
                         <img class="imag" src="../asets/imagens/meio/email.png" alt=""/>
-                        <input type="email" name="email_funcionario" placeholder="Insira o email " required>
+                        <input type="email" name="email_funcionario" placeholder="Insira o email" required>
                     </div><br>
 
                     <div class="c1">
                         <img class="imag" src="../asets/imagens/meio/email.png" alt=""/>
-                        <input type="email" name="email_confirmar" placeholder="Confirme o email " required>
+                        <input type="email" name="email_confirmar" placeholder="Confirme o email" required>
                     </div><br>
 
                     <div class="c1">
                         <img class="imag" src="../asets/imagens/meio/senha.png" alt=""/>
-                        <input type="password" name="senha_funcionario" placeholder="Insira a senha " required>
+                        <input type="password" name="senha_funcionario" placeholder="Insira a senha" required>
                     </div><br>
 
                     <div class="c1">
                         <img class="imag" src="../asets/imagens/meio/senha.png" alt=""/>
-                        <input type="password" name="senha_confirmar" placeholder="Repita a senha " required>
+                        <input type="password" name="senha_confirmar" placeholder="Repita a senha" required>
                     </div><br>
 
                     <div class="c1">
                         <img class="imag" src="../asets/imagens/meio/cpf.png" alt=""/>
-                        <input type="text" name="cpf_funcionario" placeholder=" Insira o CPF " required minlength="11" maxlength="11">
+                        <input type="text" name="cpf_funcionario" placeholder="Insira o CPF" required minlength="11" maxlength="11">
                     </div><br>
 
                     <div class="c1">
                         <img class="imag" src="../asets/imagens/meio/TelefoneLogo.png" alt=""/>
-                        <input type="text" name="telefone_funcionario" placeholder=" Insira o telefone " required minlength="10">
+                        <input type="text" name="telefone_funcionario" placeholder="Insira o telefone" required minlength="10">
                     </div><br>
 
                     <div class="c1">
                         <img class="imag" src="../asets/imagens/meio/Cargo.png" alt=""/>
-                         <div>
-                        <input type="radio" id="adm" name="cargo_funcionario" value="ADM">
-                        <label for="adm">ADM</label>
-                    </div>
-       
-                    <div>
-                        <input type="radio" id="funcionario" name="cargo_funcionario" value="FUNCIONARIO">
-                        <label for="funcionario">Funcionário</label>
-                    </div>
+                        <div>
+                            <input type="radio" id="adm" name="cargo_funcionario" value="ADM" required>
+                            <label for="adm">ADM</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="funcionario" name="cargo_funcionario" value="FUNCIONARIO" required>
+                            <label for="funcionario">Funcionário</label>
+                        </div>
                     </div><br>
 
                     <div class="c1">
                         <img class="imag" src="../asets/imagens/meio/Funcao.png" alt=""/>
-                        <input type="text" name="funcao_funcionario" placeholder=" Insira a função " required>
+                        <input type="text" name="funcao_funcionario" placeholder="Insira a função" required>
                     </div><br>
 
                     <div class="c1">
                         <img class="imag" src="../asets/imagens/meio/salario.png" alt=""/>
-                        <input type="text" name="salario_funcionario" placeholder=" Insira o salário " required>
+                        <input type="text" name="salario_funcionario" placeholder="Insira o salário" required>
+                    </div><br>
+
+                   
+                    <div class="c1">
+                        <img class="imag" src="../asets/imagens/meio/salario.png" alt=""/>
+                        <input type="text" id="cep" name="cep" placeholder="CEP" required onblur="buscarCEP()">
                     </div><br>
 
                     <div class="c1">
-                        <img class="imag" src="" alt=""/>
-                        <input type="text" id="cep" name="cep" placeholder="Buscar CEP" required>
+                        <input type="text" id="logradouro" name="logradouro" placeholder="Rua" required>
+                    </div><br>
+
+                    <div class="c1">
+                        <input type="text" id="numero" name="numero" placeholder="Número" required>
+                    </div><br>
+
+                    <div class="c1">
+                        <input type="text" id="bairro" name="bairro" placeholder="Bairro" required>
+                    </div><br>
+
+                    <div class="c1">
+                        <input type="text" id="cidade" name="cidade" placeholder="Cidade" required>
+                    </div><br>
+
+                    <div class="c1">
+                        <input type="text" id="uf" name="uf" placeholder="UF" maxlength="2" required>
                     </div><br>
 
                     <input type="submit" value="Cadastrar">
