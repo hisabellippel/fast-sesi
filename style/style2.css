@@ -540,3 +540,12 @@ background-color: rgb(136, 144, 153);
     margin-top: 90px;
     border-radius: 100px;
 }
+
+.sensor3{
+    padding: 20px;
+    background-color: rgb(31, 155, 27);
+    margin-left: 300px;
+    margin-right: 90px;
+    margin-top: -35px;
+    border-radius: 100px;
+}
