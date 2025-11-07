@@ -27,7 +27,7 @@
         <div class="informacao178">
      
 
-         <div id="botoes_novos">
+         <div id="botoes_novos2">
             <button onclick="window.location.href='paginaCriarConta.php'">▼ Funcionários</button>
             <button onclick="window.location.href='paginaCriarConta.php'">▼ Ferrovia</button>
             
