@@ -459,4 +459,37 @@ background-color: rgb(136, 144, 153);
    margin-bottom: 20px;
 }
 
+.Eixosbarra4{
+background-color: rgb(136, 144, 153);
+    display: flex;
+    max-width: 1000px;
+    padding: 11px;
+    color: aliceblue;
+   margin-top: 170px;
+   height: 60px;
+   margin-bottom: 20px;
+}
 
+
+.Eixosbarra5{
+background-color: rgb(136, 144, 153);
+    display: flex;
+    max-width: 1000px;
+    padding: 11px;
+    color: aliceblue;
+   margin-top: 170px;
+   height: 60px;
+   margin-bottom: 20px;
+}
+
+
+.Eixosbarra6{
+background-color: rgb(136, 144, 153);
+    display: flex;
+    max-width: 1000px;
+    padding: 11px;
+    color: aliceblue;
+   margin-top: 190px;
+   height: 60px;
+   margin-bottom: 20px;
+}
