@@ -43,8 +43,8 @@
 
         <br>
 
-        <div>
-            <p>Ultima verificação: <p id="data"></p></p>
+        <div class="verificacao">
+            <p >Ultima verificação: <p id="data"></p></p>
         </div>
 
         <div class="sensores1">
@@ -59,14 +59,6 @@
             <p>Sensor 1: </p>
         </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <br>
     <br>
 
