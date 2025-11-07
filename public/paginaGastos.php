@@ -29,7 +29,7 @@
 
          <div id="botoes_novos2">
             <form method="post">
-        <button type="submit" name="btn">Funcionários</button>
+        <button type="submit" name="btn">▼Funcionários</button>
         </form>
 
         <?php
@@ -38,7 +38,7 @@
         exit();
         }
         ?>
-            <button onclick="window.location.href='paginaCriarConta.php'">Funcionários</button>
+            
             <button onclick="window.location.href='paginaCriarConta.php'">▼ Ferrovia</button>
             <button onclick="window.location.href='paginaCriarConta.php'">▼ Materiais</button>
             <button onclick="window.location.href='paginaCriarConta.php'">▼ Manutenções</button>
