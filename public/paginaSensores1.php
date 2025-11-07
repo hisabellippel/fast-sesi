@@ -5,6 +5,7 @@
     <title>Sensores</title>
     <link rel="stylesheet" href="../style/styles.css">
     <link rel="stylesheet" href="../style/style2.css">
+    <script src="../scripts/script.js"></script>
     <source src="login.js" type="">
 </head>
 
@@ -40,6 +41,24 @@
             <div class="sensor3"></div>
         </div>
 
+        <br>
+
+        <div>
+            <p>Ultima verificação: <p id="data"></p></p>
+        </div>
+
+        <div class="sensores1">
+            <p>Sensor 1: </p>
+        </div>
+
+        <div class="sensores2">
+            <p>Sensor 1: </p>
+        </div>
+
+        <div class="sensores3">
+            <p>Sensor 1: </p>
+        </div>
+
     <br>
     <br>
     <br>
@@ -50,13 +69,7 @@
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+
            
          
         <div id="barra">
