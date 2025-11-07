@@ -21,18 +21,29 @@
     <main>
         
         <div class="padGastos">
-        <div class="redonda31">
+        <div class="redonda">
             <p>Gastos e gráficos</p>
         </div>
-        <div class="informacao178"><br>
+        <div class="informacao"><br>
      
 
          <div id="botoes_novos2">
-            <button onclick="window.location.href='paginaCriarConta.php'">▼ Funcionários</button>
+            <form method="post">
+        <button type="submit" name="btn">▼Funcionários</button>
+        </form>
+
+        <?php
+        if (isset($_POST['btn'])) {
+        header("Location: paginaGastos2.php");
+        exit();
+        }
+        ?>
+            
             <button onclick="window.location.href='paginaCriarConta.php'">▼ Ferrovia</button>
             <button onclick="window.location.href='paginaCriarConta.php'">▼ Materiais</button>
             <button onclick="window.location.href='paginaCriarConta.php'">▼ Manutenções</button>
             <button onclick="window.location.href='paginaCriarConta.php'">▼ Consumo de Energia</button>
+          
             
             
          </div>
