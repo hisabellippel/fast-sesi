@@ -13,7 +13,7 @@
         </div>
     </header>
     <main>
-    <div class="redondaofc">
+    <div class="redonda5">
         <div class="seta-baixo">
         <strong><p>Clientes</p></strong> </p><p>▼</p></p> 
     </div>

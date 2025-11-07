@@ -1,9 +1,8 @@
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gastos</title>
+   <link rel="stylesheet" href="../style/style2.css">
     <link rel="stylesheet" href="../style/styles.css">
-     <link rel="stylesheet" href="../style/style2.css">
-    
     <source src="login.js" type="">
 </head>
 
@@ -23,7 +22,7 @@
         <div class="redonda">
             <p>Gastos <p class="red"></p>
         </div>
-        <div class="informacao23">
+        <div class="informacao">
             <br>
             <div class="gastos55">
                 <br>
@@ -45,7 +44,7 @@
         <div class="redonda">
             <p>Gráficos</p>
         </div>
-        <div class="informacao23">
+        <div class="informacao">
             
               <div class="linhaGastos">
                  <img class="grafico2" src="../asets/imagens/meio/grafico1.png" alt="">

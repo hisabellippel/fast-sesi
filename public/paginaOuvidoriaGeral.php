@@ -10,38 +10,37 @@
     
     <header>
          <div id="barraescura">
-           
             <a href="paginaMenuPrincipal.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
-
-
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
     <br>
+    <br>
   <main>
-    <div id="azul">
+        <div id="azul">
             <h2 id="hs">Ouvidoria</h2>
         </div>
-        <div class="pad30">
+        <br>
+        <br>
 
-          <div class="redonda1">
+        <div class="pad6">
+
+            <div class="redonda">
               <a href="paginaOuvidoriaFuncionarios.php">
-                <div class="seta-baixo">
                   <p class="cor">Funcionários▼</p>
-                </div>
               </a>
             </div>
 
+          <br>
+          <br>
 
-          <div class="redonda1">
+            <div class="redonda">
               <a href="paginaOuvidoriaClientes.php" >
-                <div class="seta-baixo">
                   <p class="cor">Clientes▼</p>
-                </div>
               </a>
             </div>
         </div>
-        
+        <br>
   </main>
 
   <footer>
