@@ -422,7 +422,7 @@ background-color: rgb(136, 144, 153);
    
     display: flex;              
     flex-direction: column;     
-    gap: 15px;                 
+    gap: 30px;                 
     margin: 10px 0;
     align-items: center; 
 }
