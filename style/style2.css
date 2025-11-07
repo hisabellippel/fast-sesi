@@ -419,23 +419,33 @@ background-color: rgb(136, 144, 153);
 
 }
 #botoes_novos2 {
-   
-    display: flex;              
-    flex-direction: column;     
-    gap: 22.2px;                 
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
     margin: 10px 0;
     align-items: center; 
-   
 }
+
+#botoes_novos2 form {
+    width: 80%;             
+    max-width: 300px;      
+}
+
 #botoes_novos2 button {
+    width: 100%;            
     background-color: gray;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 0;        
     border-radius: 5px;
     cursor: pointer;
     font-size: 15px;
-    
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+#botoes_novos2 button:hover {
+    background-color: #5a5a5a;
 }
 
 .Eixosbarra2{
