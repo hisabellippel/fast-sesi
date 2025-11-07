@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Frenagem</title>
     <link rel="stylesheet" href="../style/styles.css">
-    <source src="login.js" type="">
 </head>
 
 <body>
@@ -25,31 +24,37 @@
         <br>
         <br>
 
-        <div class = "pad33">
+        <div class = "pad3">
             <a href="paginaSistemadeFrenagem2.php">
-                <div class="redonda">
+                <div class="redonda5">
                     <p class="cor">Vazamento de fluido de freio▼</p>
                 </div>
             </a>
 
             <a href="paginaSistemadeFrenagem3.php">
-                <div class="redonda">
+                <div class="redonda5">
                     <p class="cor">Ar no sistema</p><p class="red"><strong>°1</strong></p>▼
                 </div>
             </a>
 
             <a href="paginaSistemadeFrenagem4.php">
-                <div class="redonda">
+                <div class="redonda5">
                     <p class="cor">Desgate de componentes</p><p class="red"><strong>°1</strong></p>▼
                 </div>
             </a>
 
             <a href="paginaSistemadeFrenagem5.php">
-                <div class="redonda">
+                <div class="redonda5">
                     <p class="cor">Falhas operacionais e elétricas▼</p></p>
                 </div>
             </a>
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
 
         <div id="barra">
             <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
@@ -63,5 +68,4 @@
 
 
 </body>
-
 </html>

@@ -23,26 +23,30 @@
             <h2 id="hs">Eixos ferroviários</h2>
         </div>
         
+
         <div class ="redondaequadrada">
-
-            <div class =  "letrabranca">
-            <p class="maq">Trincas por Fadiga</p><p class="nova"><p class="nova2">▼</p>
-            </div>
-   </div>
-   <div class = "informacao">
-    <p>Trinca encontrada na linha 7 devido a tensões cíclicas</p>
-
-   </div>
-
-    <div class ="redondaequadrada">
-        <a href="paginaEixosFerroviarios3.php">
+        <a href="paginaEixosFerroviarios2.php">
     <div class =  "letrabranca">
         
-         <p class="maq">Desgaste mecânico</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
+         <p class="maq">Trincas por fadiga</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
          </div>
 
     </div>
 
+
+
+        <div class ="redondaequadrada">
+
+            <div class =  "letrabranca">
+            <p class="maq">Desgaste mecânico</p><p class="nova"><p class="nova2">▼</p>
+            </div>
+   </div>
+   <div class = "informacao">
+    <p>Linha 5 necessita de troca de material devido ao contato excessivo com rolamentos</p>
+
+   </div>
+
+    
 
     <div class ="redondaequadrada">
         <a href="paginaEixosFerroviarios4.php">
@@ -54,13 +58,7 @@
     </div>
 
    
-        
-           
-     
-        
-       
-        
-            
+             
 
           
     </main>
