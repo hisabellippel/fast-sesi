@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gastos</title>
+    <link rel="stylesheet" href="../style/style2.css">
     <link rel="stylesheet" href="../style/styles.css">
-    <script src="../scripts/botoes.js"></script>
 </head>
 
 <body>
@@ -25,32 +25,14 @@
             <p>Gastos e gráficos</p>
         </div>
         <div class="informacao178">
-                   <div id= "sair">
-            <div class="botoes">
-           
-            </div>
-            <div class="botoes">
-            <h1 >
-                <div class = "cinza">
-            
-            </div>
-            </div>
-         </div>
 
          <div id="botoes_novos">
-            <button onclick="window.location.href='?logout=1'">▼ Funcionários</button><br>
+          <button onclick="window.location.href='paginaCriarConta.php'">▼ Funcionários</button>
             <button onclick="window.location.href='paginaCriarConta.php'">▼ Ferrovia</button>
+            <button onclick="window.location.href='paginaCriarConta.php'">▼ Materiais</button>
+            <button onclick="window.location.href='paginaCriarConta.php'">▼ Manutenções</button>
+            <button onclick="window.location.href='paginaCriarConta.php'">▼ Consumo de Energia</button>
          </div>
-            <br>
-            <button class="botao2" onclick="redirecionar()">▼ Funcionários</button>
-            <br><br>
-            <button class="botao2" onclick="redirecionar11()"> ▼ Ferrovia</button>
-            <br><br>
-            <button class="botao2" onclick="redirecionar12()">▼ Materiais</button>
-            <br><br>
-            <button class="botao2" onclick="redirecionar13()">▼ Manutenções</button>
-            <br><br>
-            <button class="botao2" onclick="redirecionar14()">▼ Consumo de Energia</button>
            
         </div>
         </div>
