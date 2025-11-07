@@ -15,8 +15,6 @@
     </header>
     <br>
     <br>
-    <br>
-    <br>
     <main>
         <div id="azul">
             <h2 id="hs">Botão de Emergência</h2>
@@ -36,7 +34,8 @@
                 </div>
             </a>
         </div>
-
+    <br>
+    <br>
     </main>
 
     <footer>
