@@ -407,6 +407,17 @@ padding-left: 42px;
     margin-left: 0px;
 }
 
+#eixosBarra{
+background-color: rgb(136, 144, 153);
+    display: flex;
+    max-width: 2000px;
+    padding: 11px;
+    color: aliceblue;
+   margin-top: 297px;
+   height: 60px;
+   margin-bottom: 20px;
+
+}
 
 
 
@@ -419,9 +430,6 @@ padding-left: 42px;
 
 
 
-
-
-teste
 
 
 
