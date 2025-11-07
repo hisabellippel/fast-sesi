@@ -39,7 +39,7 @@
 
 
     <div class ="redondaequadrada">
-        <a href="paginaTrensDescarrilhados3.php">
+        <a href="paginaEixosFerroviarios3.php">
     <div class =  "letrabranca">
         
          <p class="maq">Desgaste mecânico</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
@@ -49,7 +49,7 @@
 
 
     <div class ="redondaequadrada">
-        <a href="paginaTrensDescarrilhados4.php">
+        <a href="paginaEixosFerroviarios4.php">
     <div class =  "letrabranca">
         
          <p class="maq">Problemas de manutenção</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
