@@ -21,10 +21,10 @@
     <main>
         
         <div class="padGastos">
-        <div class="redonda">
+        <div class="redonda22">
             <p>Gastos e gráficos</p>
         </div>
-        <div class="informacao"><br>
+        <div class="informacao4"><br>
      
 
          <div id="botoes_novos2">
@@ -38,12 +38,47 @@
         exit();
         }
         ?>
-            
-            <button onclick="window.location.href='paginaCriarConta.php'">▼ Ferrovia</button>
-            <button onclick="window.location.href='paginaCriarConta.php'">▼ Materiais</button>
-            <button onclick="window.location.href='paginaCriarConta.php'">▼ Manutenções</button>
-            <button onclick="window.location.href='paginaCriarConta.php'">▼ Consumo de Energia</button>
-          
+         <form method="post">
+        <button type="submit" name="btn">▼Ferrovia</button>
+        </form>
+
+        <?php
+        if (isset($_POST['btn'])) {
+        header("Location: paginaGastos3.php");
+        exit();
+        }
+        ?>
+         <form method="post">
+        <button type="submit" name="btn">▼Materiais</button>
+        </form>
+
+        <?php
+        if (isset($_POST['btn'])) {
+        header("Location: paginaGastos4.php");
+        exit();
+        }
+        ?>
+         <form method="post">
+        <button type="submit" name="btn">▼Manutenções</button>
+        </form>
+
+        <?php
+        if (isset($_POST['btn'])) {
+        header("Location: paginaGastos5.php");
+        exit();
+        }
+        ?>
+         <form method="post">
+        <button type="submit" name="btn">▼Consumo de Energia</button>
+        </form>
+
+        <?php
+        if (isset($_POST['btn'])) {
+        header("Location: paginaGastos6.php");
+        exit();
+        }
+        ?>
+      
             
             
          </div>
