@@ -1,10 +1,9 @@
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alertas Mecânicos</title>
-        <link rel="stylesheet" href="../style/style2.css">
+    <link rel="stylesheet" href="../style/style2.css">
     <link rel="stylesheet" href="../style/styles.css">
 </head>
 
@@ -20,7 +19,7 @@
     <br>
     <main>
         <div id="azul">
-            <h2 id="hs">Alertas Mecânicos:</h2>
+            <h2 id="hs">Alertas Mecânicos</h2>
         </div>
         <br>
         <br>
@@ -45,9 +44,9 @@
         <br>
         <br>
         <br>
-        <br>
+    </main>
 
-
+    <footer>
         <div id="barra">
             <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
@@ -56,9 +55,7 @@
             <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
             <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
         </div>
-    </main>
-
+    </footer>
 
 </body>
-
 </html>
