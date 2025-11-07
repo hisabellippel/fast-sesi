@@ -1,16 +1,13 @@
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trilhos</title>
     <link rel="stylesheet" href="../style/styles.css">
-     <link rel="stylesheet" href="../style/style2.css">
-    <source src="login.js" type="">
+    <link rel="stylesheet" href="../style/style2.css">
 </head>
 
 <body>
-
     <header>
         <div id="barraescura">
              <a href="paginaControledeInspeção.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
@@ -19,21 +16,22 @@
     </header>
     <br>
     <br>
-    <main>
-        
+    <main> 
         <div id="azul">
-            <h2 id="hs">Trilhos:</h2>
+            <h2 id="hs">Trilhos</h2>
         </div>
         <br>
 
-        <div class="pad">
+        <div class="pad3">
             <div class="redonda">
-            <a href="paginaTrilhos2.php"><p class="cor">Em manutenção:  ▼</p></a>
+                <a href="paginaTrilhos2.php"><p class="cor">Em manutenção▼</p></a>
+            </div>
+            <br>
+            <div class="redonda">
+                <a href="paginaTrilhos3.php"><p class="cor">Trilhos em risco▼</p></a>
+            </div>
         </div>
-
-        <div class="redonda">
-            <a href="paginaTrilhos2.php"><p class="cor">Trilhos em risco:  ▼</p></a>
-        </div></div>
+    </main>
 
     <footer>
         <div id="barra1">
@@ -45,9 +43,6 @@
             <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
         </div>
     </footer>
-    </main>
-
 
 </body>
-
 </html>

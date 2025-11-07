@@ -1,5 +1,4 @@
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,30 +20,28 @@
     <br>
     <main>
         <div id="azul">
-            <h2 id="hs">Trilhos:</h2>
+            <h2 id="hs">Trilhos</h2>
         </div>
         
         <br>
+        <br>
 
-        <div class="padTrilhos2">
+        <div class="pad34">
         
-            <div class="redondaTrilhos444">
-                <p>Em manutenção:   ▼</p>
+            <div class="redonda">
+                <p>Em manutenção▼</p>
             </div>
-
-            <div class="informacaoTrilhos">
+            <div class="informacao">
                 <p>Linha1 - Em reforma <br>Linha1 - Em reforma <br>Linha1 - Em reforma <br>Linha1 - Em reforma <br>Linha1 - Em reforma <br></p>
+            </div>
+
+            <a href="paginaTrilhos3.php">
+                <div class="redonda">
+                    <p>Trilhos em risco▼</p>
                 </div>
-
-            <div class="redondaTrilhos444">
-                <p>Trilhos em risco:  ▼</p>
-            </div>
-
-            <div class="informacaoTrilhos">
-                <p>Linha1 -Risco de rachadura <br>Linha1 - Sem risco de rachadura <br>Linha1 - Sem risco de rachadura<br>Linha1 - Sem risco de rachadura <br>Linha1 - Sem risco de rachadura </p>
-            
-            </div>
+            </a>
         </div>
+    </main>
 
     <footer>
         <div id="barra">
@@ -56,9 +53,6 @@
             <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
         </div>
     </footer>
-    </main>
-
 
 </body>
-
 </html>
