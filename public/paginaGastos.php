@@ -24,23 +24,22 @@
         <div class="redonda31">
             <p>Gastos e gráficos</p>
         </div>
-        <div class="informacao178">
+        <div class="informacao178"><br>
      
 
          <div id="botoes_novos2">
             <button onclick="window.location.href='paginaCriarConta.php'">▼ Funcionários</button>
             <button onclick="window.location.href='paginaCriarConta.php'">▼ Ferrovia</button>
+            <button onclick="window.location.href='paginaCriarConta.php'">▼ Materiais</button>
+            <button onclick="window.location.href='paginaCriarConta.php'">▼ Manutenções</button>
+            <button onclick="window.location.href='paginaCriarConta.php'">▼ Consumo de Energia</button>
             
             
          </div>
 
           
          
-            <button onclick="window.location.href='paginaCriarConta.php'">▼ Ferrovia</button>
-            <button onclick="window.location.href='paginaCriarConta.php'">▼ Materiais</button>
-            <button onclick="window.location.href='paginaCriarConta.php'">▼ Manutenções</button>
-            <button onclick="window.location.href='paginaCriarConta.php'">▼ Consumo de Energia</button>
-         </div>
+          
            
         </div>
         </div>
