@@ -24,18 +24,20 @@
         </div>
         
         <div class ="redondaequadrada">
+        <a href="paginaResistoresdePotencia2.php">
+           
+     <div class =  "letrabranca">
+        
+         <p class="maq">Falhas térmicas</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
+         </div>
 
-            <div class =  "letrabranca">
-            <p class="maq">Falhas térmicas</p><p class="nova"><p class="nova2">▼</p>
-            </div>
-   </div>
-   <div class = "informacao">
-    <p>Risco de sobreaquicimento da linha 9, que pode ocasionar em deformação física.</p>
-
-  </div>
+    </div>
 
 
-   <div class ="redondaequadrada">
+   
+
+
+ <div class ="redondaequadrada">
         <a href="paginaResistoresdePotencia3.php">
            
      <div class =  "letrabranca">
@@ -46,15 +48,17 @@
     </div>
 
 
- <div class ="redondaequadrada">
-        <a href="paginaResistoresdePotencia4.php">
-           
-     <div class =  "letrabranca">
-        
-         <p class="maq">Erros de Projeto</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
-         </div>
 
-    </div>
+     <div class ="redondaequadrada">
+
+            <div class =  "letrabranca">
+            <p class="maq">Erros de Projeto</p><p class="nova"><p class="nova2">▼</p>
+            </div>
+   </div>
+   <div class = "informacao">
+    <p>Na linha 6 foi identificado um uso de resistor com potência inferior ás necessidades do circuito.</p>
+
+  </div>
 
     
      

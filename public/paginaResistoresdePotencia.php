@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resistores de Potência</title>
     <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/style2.css">
     <source src="login.js" type="">
 </head>
 
@@ -26,19 +27,41 @@
         <br>
         <br>
 
-        <div class="pad11">
-            <div class="redonda">
-                <a href="paginaResistoresdePotencia2.php"><p class="cor">Falhas térmicas</p><p class="red"><strong>°1</strong></p>▼</a>
-            </div>
+       <div class ="redondaequadrada">
+        <a href="paginaResistoresdePotencia2.php">
+           
+     <div class =  "letrabranca">
+        
+         <p class="maq">Falhas térmicas</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
+         </div>
 
-            <div class="redonda">
-                <a href="paginaResistoresdePotencia2.php"><p class="cor">Problemas estruturais</p><p class="red"><strong>°2</strong></p>▼</a>
-            </div>
+    </div>
 
-            <div class="redonda">
-                <a href="paginaResistoresdePotencia2.php"><p class="cor">Erros de Projeto</p><p class="red"><strong>°1</strong></p>▼</a>
-            </div>
-        </div>
+
+    <div class ="redondaequadrada">
+        <a href="paginaResistoresdePotencia3.php">
+           
+     <div class =  "letrabranca">
+        
+         <p class="maq">Problemas estruturais</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
+         </div>
+
+    </div>
+
+    
+
+    <div class ="redondaequadrada">
+        <a href="paginaResistoresdePotencia4.php">
+           
+     <div class =  "letrabranca">
+        
+         <p class="maq">Erros de Projeto</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
+         </div>
+
+    </div>
+
+    
+    
 
     </main>
 
