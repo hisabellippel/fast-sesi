@@ -22,9 +22,11 @@
         <div id="azul">
             <h2 id="hs">Sensores</h2>
         </div>
+        <br>
        
+ 
+        <img class="caminho" src="../asets/imagens/meio/caminho.png" height= "170px" width="400" alt="" >
 
-        <img class="caminho" src="../asets/imagens/meio/caminho.png" alt="">
 
         <div>
             <div class="sensor1"></div>
