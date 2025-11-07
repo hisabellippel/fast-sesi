@@ -1,5 +1,4 @@
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +6,7 @@
     <link rel="stylesheet" href="../style/styles.css">
     <source src="login.js" type="">
 </head>
+
 
 <body>
 
@@ -25,17 +25,10 @@
        
         <br>
         <br>
-            <div class="pad19">
-                <div class="linha">
-                    <a href="paginaSensores2.php"><p class="sensores"> ▼ Sensores de roda <hr class="new"><br></p></a>
-                    <a href="paginaSensores2.php"><p class="sensores"> ▼ Sensores eletromagnéticos <hr class="new"><br></p></a>
-                    <a href="paginaSensores2.php"><p class="sensores"> ▼ Sensor de temperatura <hr class="new"><br></p></a>
-                    <a href="paginaSensores2.php"><p class="sensores"> ▼ Sensor DPS <hr class="new"><br></p></a>
-                    <a href="paginaSensores2.php"><p class="sensores"> ▼ Sensor TDM <hr class="new"><br></p></a>
-                    <a href="paginaSensores2.php"><p class="sensores"> ▼ Sensores de fibra ótica <hr class="new"><br></p></a>
-                    <a href="paginaSensores2.php"><p class="sensores"> ▼ Sensores de contato <hr class="new"><br></p></a>
-                </div>
-            </div>
+
+        <img class="caminho" src="../asets/imagens/meio/caminho.png" alt="">
+
+           
          
         <div id="barra">
             <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
