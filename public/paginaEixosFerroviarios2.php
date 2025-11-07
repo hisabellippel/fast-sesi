@@ -34,27 +34,24 @@
 
    </div>
 
-   <div class ="redondaequadrada">
+    <div class ="redondaequadrada">
+        <a href="paginaEixosFerroviarios3.php">
+    <div class =  "letrabranca">
+        
+         <p class="maq">Desgaste mecânico</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
+         </div>
 
-            <div class =  "letrabranca">
-            <p class="maq">Desgaste mecânico</p><p class="nova"><p class="nova2">▼</p>
-            </div>
-   </div>
-   <div class = "informacao">
-    <p>Linha 5 necessita de troca de material devido ao contato excessivo com rolamentos</p>
+    </div>
 
-   </div>
 
-   <div class ="redondaequadrada">
+    <div class ="redondaequadrada">
+        <a href="paginaEixosFerroviarios4.php">
+    <div class =  "letrabranca">
+        
+         <p class="maq">Problemas de manutenção</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
+         </div>
 
-            <div class =  "letrabranca">
-            <p class="maq">Problemas de manutenção</p><p class="nova"><p class="nova2">▼</p>
-            </div>
-   </div>
-   <div class = "informacao">
-    <p>Linha 1 precisa de troca do eixo, foi encontrado uma deformação</p>
-
-   </div>
+    </div>
 
    
         
