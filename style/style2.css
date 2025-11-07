@@ -425,6 +425,7 @@ background-color: rgb(136, 144, 153);
     gap: 30px;                 
     margin: 10px 0;
     align-items: center; 
+    align-items: center;
 }
 #botoes_novos2 button {
     background-color: gray;
@@ -433,6 +434,7 @@ background-color: rgb(136, 144, 153);
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 15px;
     font-size: 15px;
 }
 
