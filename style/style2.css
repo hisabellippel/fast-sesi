@@ -516,3 +516,27 @@ background-color: rgb(136, 144, 153);
    height: 60px;
    margin-bottom: 20px;
 }
+
+.caminho{
+    position: absolute;
+    margin-left: -205px;
+    z-index: -1;
+}
+
+.sensor1{
+    padding: 20px;
+    background-color: crimson;
+    margin-left: 90px;
+    margin-right: 320px;
+    margin-top: 1px;
+    border-radius: 100px;
+}
+
+.sensor2{
+    padding: 20px;
+    background-color: rgb(20, 113, 220);
+    margin-left: 90px;
+    margin-right: 320px;
+    margin-top: 90px;
+    border-radius: 100px;
+}
