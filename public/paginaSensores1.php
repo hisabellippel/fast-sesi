@@ -26,6 +26,16 @@
 
         <img class="caminho" src="../asets/imagens/meio/caminho.png" alt="">
 
+        <div>
+            <div class="sensor1"></div>
+        </div>
+        <div>
+            <div class="sensor2"></div>
+        </div>
+        <div>
+            <div class="sensor3"></div>
+        </div>
+
            
          
         <div id="barra">
