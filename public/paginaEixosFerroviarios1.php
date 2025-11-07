@@ -3,46 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eixos ferroviários</title>
+    <title>Trens Descarrilhados</title>
     <link rel="stylesheet" href="../style/styles.css">
+     <link rel="stylesheet" href="../style/style2.css">
 </head>
 
 <body>
 
     <header>
         <div id="barraescura">
-             <a href="paginaControledeInspeção.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+            
+            <a href="paginaAlertasMecanicos.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
     <br>
     <br>
-    <main>
-        <div id="azul">
-            <h2 id="hs">Eixos ferroviários</h2>
-        </div>
-        <br>
-        <br>
+<main>
+    <div id="azul">
+        <h2 id="hs">Eixos ferroviários</h2>
+    </div>
+    <br>
+    <br>
+    <br>
 
-       
-        <div class="pad">
+    <div class ="redondaequadrada">
+        <a href="paginaEixosFerroviarios2.php">
+           
+     <div class =  "letrabranca">
+        
+         <p class="maq">Trincas por fadiga</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
+         </div>
 
-        <div class="redonda">
-            <a href="paginaEixosFerroviarios2.php"><p class="cor">Trincas por Fadiga</p><p class="red"><strong>°1</strong></p>▼</a>
-        </div>
-        <br>
+    </div>
 
-        <div class="redonda">
-            <a href="paginaEixosFerroviarios2.php"><p class="cor">Desgaste mecânico</p><p class="red"><strong>°1</strong></p>▼</a>
-        </div>
-        <br>
 
-        <div class="redonda">
-            <a href="paginaEixosFerroviarios2.htmphpl"><p class="cor">Problemas de manutenção</p><p class="red"><strong>°2</strong></p>▼</a>
-        </div>
-        </div>
+    <div class ="redondaequadrada">
+        <a href="paginaTrensDescarrilhados3.php">
+    <div class =  "letrabranca">
+        
+         <p class="maq">Desgaste mecânico</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
+         </div>
 
-        <div id="barra">
+    </div>
+
+
+    <div class ="redondaequadrada">
+        <a href="paginaTrensDescarrilhados4.php">
+    <div class =  "letrabranca">
+        
+         <p class="maq">Problemas de manutenção</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
+         </div>
+
+    </div>
+
+        
+    <footer>
+        
+       <div class="barranova2">
             <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
@@ -50,9 +68,7 @@
             <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
             <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
         </div>
-    </main>
-
+    </footer>
 
 </body>
-
 </html>
