@@ -23,8 +23,6 @@
             <h2 id="hs">Sensores</h2>
         </div>
        
-        <br>
-        <br>
 
         <img class="caminho" src="../asets/imagens/meio/caminho.png" alt="">
 
