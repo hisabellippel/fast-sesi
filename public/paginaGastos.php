@@ -25,9 +25,17 @@
             <p>Gastos e gráficos</p>
         </div>
         <div class="informacao178">
+     
 
          <div id="botoes_novos">
-          <button onclick="window.location.href='paginaCriarConta.php'">▼ Funcionários</button>
+            <button onclick="window.location.href='paginaCriarConta.php'">▼ Funcionários</button>
+            <button onclick="window.location.href='paginaCriarConta.php'">▼ Ferrovia</button>
+            
+            
+         </div>
+
+          
+         
             <button onclick="window.location.href='paginaCriarConta.php'">▼ Ferrovia</button>
             <button onclick="window.location.href='paginaCriarConta.php'">▼ Materiais</button>
             <button onclick="window.location.href='paginaCriarConta.php'">▼ Manutenções</button>
