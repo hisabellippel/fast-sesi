@@ -8,33 +8,43 @@
 </head>
 
 <body>
+
     <header>
         <div id="barraescura">
-             <a href="paginaControledeInspeção.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+             <a href="paginaTrilhos1.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
     <br>
     <br>
-    <main> 
+    <main>
         <div id="azul">
             <h2 id="hs">Trilhos</h2>
         </div>
+        
+        <br>
         <br>
 
-        <div class="pad3">
+        <div class="pad35">
+        
+            <a href="paginaTrilhos2.php">
+                <div class="redonda">
+                    <p>Em manutenção▼</p>
+                </div>
+            </a>
+            
             <div class="redonda">
-                <a href="paginaTrilhos2.php"><p class="cor">Em manutenção▼</p></a>
+                <p>Trilhos em risco▼</p>
             </div>
-            <br>
-            <div class="redonda">
-                <a href="paginaTrilhos3.php"><p class="cor">Trilhos em risco▼</p></a>
+
+            <div class="informacao">
+                <p>Linha1 -Risco de rachadura <br>Linha1 - Sem risco de rachadura <br>Linha1 - Sem risco de rachadura<br>Linha1 - Sem risco de rachadura <br>Linha1 - Sem risco de rachadura </p>
             </div>
         </div>
     </main>
 
     <footer>
-        <div id="barra1">
+        <div id="barra">
             <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
