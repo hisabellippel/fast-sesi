@@ -435,3 +435,28 @@ background-color: rgb(136, 144, 153);
     cursor: pointer;
     font-size: 15px;
 }
+
+.Eixosbarra2{
+background-color: rgb(136, 144, 153);
+    display: flex;
+    max-width: 1000px;
+    padding: 11px;
+    color: aliceblue;
+   margin-top: 170px;
+   height: 60px;
+   margin-bottom: 20px;
+}
+
+
+.Eixosbarra3{
+background-color: rgb(136, 144, 153);
+    display: flex;
+    max-width: 1000px;
+    padding: 11px;
+    color: aliceblue;
+   margin-top: 132px;
+   height: 60px;
+   margin-bottom: 20px;
+}
+
+
