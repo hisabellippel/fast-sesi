@@ -493,3 +493,26 @@ background-color: rgb(136, 144, 153);
    height: 60px;
    margin-bottom: 20px;
 }
+
+
+.TrensBarra{
+background-color: rgb(136, 144, 153);
+    display: flex;
+    max-width: 1000px;
+    padding: 11px;
+    color: aliceblue;
+   margin-top: 400px;
+   height: 60px;
+   margin-bottom: 20px;
+}
+
+.TrensBarra2{
+background-color: rgb(136, 144, 153);
+    display: flex;
+    max-width: 1000px;
+    padding: 11px;
+    color: aliceblue;
+   margin-top: 420px;
+   height: 60px;
+   margin-bottom: 20px;
+}
