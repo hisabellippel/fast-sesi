@@ -1,5 +1,4 @@
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +8,6 @@
 </head>
 
 <body>
-
     <header>
         <div id="barraescura">
              <a href="paginaBotaodeEmergencia1.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
@@ -28,25 +26,22 @@
         <br>
 
         <div class="pad25">
-            <div class="redondacorrecao">
-                <div id="agrupar">
+            <div class="redonda">
                     <p class="maq">Maquinista</p>
-                </div>
             </div>
-        
-            <div class="informacao2">
+            <div class="informacao">
                 <p>Botão acionado na linha dois</p>
             </div>
             <br>
             <br>
 
             <a href="paginaBotaodeEmergencia3.php">
-                <div class="redonda3">
+                <div class="redonda">
                     <p>Bagageiro▼</p>
                 </div>
             </a>
         </div>
-  
+    <br>
     </main>
 
     <footer>
