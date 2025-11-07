@@ -421,7 +421,7 @@ background-color: rgb(136, 144, 153);
 #botoes_novos2 {
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 17.2px;
     margin: 10px 0;
     align-items: center; 
 }

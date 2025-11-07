@@ -29,7 +29,7 @@
 
          <div id="botoes_novos2">
             <form method="post">
-        <button type="submit" name="btn">▼Funcionários</button>
+        <button type="submit" name="btn">Funcionários ▼</button>
         </form>
 
         <?php
@@ -39,7 +39,7 @@
         }
         ?>
          <form method="post">
-        <button type="submit" name="btn">▼Ferrovia</button>
+        <button type="submit" name="btn">Ferrovia ▼</button>
         </form>
 
         <?php
@@ -49,7 +49,7 @@
         }
         ?>
          <form method="post">
-        <button type="submit" name="btn">▼Materiais</button>
+        <button type="submit" name="btn">Materiais ▼</button>
         </form>
 
         <?php
@@ -59,7 +59,7 @@
         }
         ?>
          <form method="post">
-        <button type="submit" name="btn">▼Manutenções</button>
+        <button type="submit" name="btn">Manutenções ▼</button>
         </form>
 
         <?php
@@ -69,7 +69,7 @@
         }
         ?>
          <form method="post">
-        <button type="submit" name="btn">▼Consumo de Energia</button>
+        <button type="submit" name="btn">Consumo de Energia ▼</button>
         </form>
 
         <?php
