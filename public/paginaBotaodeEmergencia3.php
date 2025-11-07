@@ -1,5 +1,4 @@
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
 </head>
 
 <body>
-
     <header>
         <div id="barraescura">
              <a href="paginaBotaodeEmergencia1.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
@@ -21,33 +19,31 @@
         <div id="azul">
             <h2 id="hs">Botão de emergência</h2>
         </div>
-        
         <br>
         <br>
         <br>
-
-        <div class="pad11">
+        <div class="pad2">
             <a href="paginaBotaodeEmergencia2.html">
-                <div class="redondacorrecao">
-                    <div id="agrupar">    
-                        <p class="maq">Maquinista</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
-                    </div>
+                <div class="redonda">
+                    <p class="maq">Maquinista</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
                 </div>
             </a>
             
-            <div class="redonda3">
+            <div class="redonda">
                 <p>Bagageiro▼</p>
             </div>
 
-            <div class="informacao2222">
+            <div class="informacao">
                 <p>Nenhum acionamento relatado.</p>
             </div>
         </div>
     </main>
 
+    <br>
+
     <footer>
         <div id="barra">
-            <a href="paginainformacoes.html"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
+            <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
             <a href="paginaNotificacoes.php"><img class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
@@ -56,7 +52,5 @@
         </div>
     </footer>
 
-
 </body>
-
 </html>

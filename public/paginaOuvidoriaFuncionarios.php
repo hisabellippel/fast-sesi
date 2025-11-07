@@ -15,7 +15,7 @@
     
     <main>
 
-        <div class="redondaofc">
+        <div class="redonda5">
             <div class="seta-baixo">
             <strong><p>Funcionários</p></strong> </p><p>▼</p></p> 
         </div>

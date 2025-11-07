@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sensores</title>
     <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/style2.css">
     <source src="login.js" type="">
 </head>
 
@@ -23,6 +24,7 @@
             <h2 id="hs">Sensores</h2>
         </div>
         <br>
+        <br>
        
  
         <img class="caminho" src="../asets/imagens/meio/caminho.png" height= "170px" width="400" alt="" >
@@ -38,6 +40,31 @@
             <div class="sensor3"></div>
         </div>
 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
            
          
         <div id="barra">
