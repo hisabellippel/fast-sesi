@@ -21,6 +21,8 @@
 
         <div class="selecionar">
 
+        <img src="../asets/imagens/meio/trem.png" height= "50px" width="70" alt="Trem" class="trem-animado" />
+
         <img src="../asets/imagens/meio/linha3.png" height= "150px" width="370" alt="">
 
             <div class="selecionar2">
