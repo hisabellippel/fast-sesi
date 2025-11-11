@@ -7,6 +7,29 @@
     <link rel="stylesheet" href="../style/style2.css">
     <script src="../scripts/script.js"></script>
     <source src="login.js" type="">
+    <style>
+
+  .notificacao {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2b6cb0;
+    color: white;
+    padding: 16px 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    z-index: 9999;
+    font-family: Arial, sans-serif;
+  }
+
+  .notificacao.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
 </head>
 
 
@@ -17,6 +40,8 @@
              <a href="paginaControledeInspeção.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
             <a href="paginaNotificacoes.php"><img class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
         </div>
+
+        
     </header>
     <br>
     <br>
@@ -30,6 +55,9 @@
  
         <img class="caminho" src="../asets/imagens/meio/caminho.png" height= "170px" width="400" alt="" >
 
+        <div id="notificacao" class="notificacao">
+        Os dados dos sensores foram atualizados!
+        </div>
 
         <div>
             <div class="sensor1"></div>
@@ -52,15 +80,26 @@
         </div>
 
         <div class="sensores2">
-            <p>Sensor 1: </p>
+            <p>Sensor 2: </p>
         </div>
 
         <div class="sensores3">
-            <p>Sensor 1: </p>
+            <p>Sensor 3: </p>
         </div>
 
     <br>
     <br>
+
+    <script>
+    window.addEventListener('load', function() {
+      const notif = document.getElementById('notificacao');
+      notif.classList.add('mostrar');
+
+      setTimeout(() => {
+        notif.classList.remove('mostrar');
+      }, 4000);
+    });
+  </script>
 
            
          

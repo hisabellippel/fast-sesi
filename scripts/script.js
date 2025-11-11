@@ -4,3 +4,4 @@ function myTimer() {
   const d = new Date();
   document.getElementById("data").innerHTML = d.toLocaleTimeString();
 }
+

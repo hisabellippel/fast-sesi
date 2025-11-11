@@ -15,6 +15,10 @@
     </header>
 <br>
      <main>
+        <div id="notificacao" class="notificacao">
+        Os dados da linha 5 foram atualizados!
+        </div>
+        
         <div id="azul">
             <h2>Linhas:</h2>
         </div>
@@ -56,6 +60,16 @@
 
 
         </div>
+            <script>
+            window.addEventListener('load', function() {
+            const notif = document.getElementById('notificacao');
+            notif.classList.add('mostrar');
+
+        setTimeout(() => {
+            notif.classList.remove('mostrar');
+            }, 4000);
+            });
+        </script>
 
     </main>
 
