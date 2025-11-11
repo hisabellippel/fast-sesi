@@ -22,7 +22,7 @@
         
      <div class="padGastos">
   <div class="redonda22">
-    <p>Gastos e gráficos</p>
+    <p class="gastoss">Gastos e Gráficos</p>
   </div>
 
   <div class="informacao4"><br>
