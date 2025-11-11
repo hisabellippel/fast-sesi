@@ -1,11 +1,14 @@
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gastos</title>
+    <title>Gastos4</title>
+
+    <link rel="stylesheet" href="../style/style2.css">
     <link rel="stylesheet" href="../style/styles.css">
-    <source src="login.js" type="">
+  
+    
 </head>
 
 <body>
@@ -16,56 +19,37 @@
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
-    <br>
-    
+
     <main>
-     
-
-        <div class="redonda3">
-            <p>Gastos <p class="red"></p>
+        <div class="redonda">
+            <p class="gastoss">Gastos</p>
         </div>
-        <div class="informacao23">
+
+        <div class="informacao" id="dados-gastos">
+            <h2 class="titulo">▼ Materiais</h2>
+            <p data-func="Infraestrutura">Reposição de dormentes de concreto: R$2.500,00</p>
+            <p data-func="Materiais de Lastro">Brita para nivelamento: R$300,00</p>
+            <p data-func="Material Rodante">Rodas de aço novas: R$20.000,00</p>
+            <p data-func="Combustível e Energia">Diesel: R$166.665,00</p>
+            <p data-func="Engenharia">Salário dos Engenheiros Ferroviários: R$ 3600,00 p/pessoa</p>
+            <p data-func="Lubrificação e Insumos">Óleo e graxas: R$8.333,50</p>
+        </div>
+
+        <div class="redonda">
+            <p class="gastoss">Gráficos</p>
+        </div>
+
+        <div class="informacao">
             <br>
-            <div class="gastos2">
-                <br>
-                <p class="gastos"> ▼Materiais</p>
-                <h6 class="gastos3">Reposição de dormentes de concreto: R$2.500,00</h6>
-                <h6 class="gastos3">Brita para nivelamento: R$300,00</h6>
-                <h6 class="gastos3">Rodas de aço novas: R$20.000,00</h6>
-                <h6 class="gastos3">Diesel: R$166.665,00</h6>
-                <h6 class="gastos3">Óleo e graxas: R$8.333,50</h6>
-            
-                
-            </div>
-            
-
-          
-            
+            <canvas id="graficoGastos"></canvas>
         </div>
-
-        <div class="redonda3">
-            <p>Gráficos</p>
-        </div>
-        <div class="informacao2">
-            <br>
-            <img class= "grafico4" src="../asets/imagens/meio/grafico4.png" alt="">
-              
-        </div>
-
-      <br><br>
-
-        <div id="barra">
-            <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
-            <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
-            <h3>Fast.sesi</h3>
-            <a href="paginaNotificacoes.php"><img class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
-            <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
-            <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
-        </div>
-       
     </main>
 
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="../scripts/grafico.js"></script>
+    
 
 </body>
-
 </html>
+
