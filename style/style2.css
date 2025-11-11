@@ -639,3 +639,17 @@ background-color: rgb(136, 144, 153);
     position: relative;
 }
 
+
+
+.barraResistores{
+
+
+background-color:  rgb(136, 144, 153);
+    display: flex;
+    
+    padding: 11px;
+    color: aliceblue;
+    margin-bottom: 1200px;
+
+    
+}
