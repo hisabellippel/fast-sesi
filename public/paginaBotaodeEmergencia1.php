@@ -1,15 +1,20 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Botão de Emergência</title>
+    <title>Resistores de Potência</title>
     <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/style2.css">
+    <source src="login.js" type="">
 </head>
 
 <body>
+
     <header>
         <div id="barraescura">
-             <a href="paginaAlertasMecanicos.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+            <a href="paginaAlertasMecanicos.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
@@ -21,25 +26,38 @@
         </div>
         <br>
         <br>
-        <div class="pad6">
-            <a href="paginaBotaodeEmergencia2.php">
-                <div class="redonda">
-                    <p class="cor">Maquinista</p><p class="red"><strong>°1</strong></p>▼
-                </div>
-            </a>    
 
-            <a href="paginaBotaodeEmergencia3.php">
-                <div class="redonda">
-                    <p class="cor">Bagageiro</p><p class="red"><strong>°1</strong></p>▼
-                </div>
-            </a>
-        </div>
-    <br>
-    <br>
+       <div class ="redondaequadrada">
+        <a href="paginaBotaodeEmergencia2.php">
+           
+     <div class =  "letrabranca">
+        
+         <p class="maq">Maquinista</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
+         </div>
+
+    </div>
+
+
+    <div class ="redondaequadrada">
+        <a href="paginaBotaodeEmergencia3.php">
+           
+     <div class =  "letrabranca">
+        
+         <p class="maq">Bagageiro</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
+         </div>
+
+    </div>
+
+    
+
+   
+    
+    
+
     </main>
 
     <footer>
-        <div id="barra">
+        <div class="barraEmergencia">
             <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
@@ -50,4 +68,5 @@
     </footer>
 
 </body>
-</html>
+
+</php>

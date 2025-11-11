@@ -696,3 +696,32 @@ background-color: rgb(136, 144, 153);
 
 
 }
+
+
+
+.barraEmergencia{
+background-color: rgb(136, 144, 153);
+    display: flex;
+    max-width: 1000px;
+    padding: 11px;
+    color: aliceblue;
+   margin-top: 310px;
+   height: 60px;
+   margin-bottom: 20px;
+
+
+}
+
+
+.barraEmergencia2{
+background-color: rgb(136, 144, 153);
+    display: flex;
+    max-width: 1000px;
+    padding: 11px;
+    color: aliceblue;
+   margin-top: 310px;
+   height: 60px;
+   margin-bottom: 20px;
+
+
+}
