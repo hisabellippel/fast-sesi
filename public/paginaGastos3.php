@@ -1,11 +1,14 @@
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gastos</title>
+    <title>Gastos3</title>
+
+    <link rel="stylesheet" href="../style/style2.css">
     <link rel="stylesheet" href="../style/styles.css">
-    <source src="login.js" type="">
+  
+    
 </head>
 
 <body>
@@ -16,54 +19,37 @@
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
-    <br>
-    
+
     <main>
-     
-
-        <div class="redonda3">
-            <p>Gastos <p class="red"></p>
+        <br>
+        <div class="redonda">
+            <p class="gastoss">Gastos</p>
         </div>
-        <div class="informacao23">
+
+        <div class="informacao" id="dados-gastos">
+            <h2 class="titulo">▼ Ferrovia</h2>
+            <p data-func="Infraestrutura">Novo metro de ponte ferroiária: R$10.000,00</p>
+            <p data-func="Sinalização">Troca da sinalização na linhas 2: R$15.000,00</p>
+            <p data-func="Obras Ferroviárias">Nova passagem de nível com sinalização: R$30.000,00</p>
+            
             <br>
-            <div class="gastos2">
-                <br>
-                <p class="gastos"> ▼Ferrovia</p>
-                <h6 class="gastos3">Novo metro de ponte ferroiária: R$10.000,00</h6>
-                <h6 class="gastos3">Troca da sinalização na linhas 2: 15.000,00</h6>
-                <h6 class="gastos3">Nova passagem de nível com sinalização: 30.000,00</h6>
-            
-                
-            </div>
-            
-
-          
-            
+        </div>
+<br>
+        <div class="redonda">
+            <p class="gastoss">Gráficos</p>
         </div>
 
-        <div class="redonda3">
-            <p>Gráficos</p>
-        </div>
-        <div class="informacao2">
+        <div class="informacao">
             <br>
-            <img class= "grafico3" src="../asets/imagens/meio/grafico3.1.png" alt="">
-               
+            <canvas id="graficoGastos"></canvas>
         </div>
-
-      <br><br>
-
-        <div id="barra">
-            <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
-            <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
-            <h3>Fast.sesi</h3>
-            <a href="paginaNotificacoes.php"><img class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
-            <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
-            <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
-        </div>
-       
     </main>
 
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="../scripts/grafico.js"></script>
+    
 
 </body>
-
 </html>
+
