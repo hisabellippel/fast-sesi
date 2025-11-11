@@ -7,29 +7,7 @@
     <link rel="stylesheet" href="../style/style2.css">
     <script src="../scripts/script.js"></script>
     <source src="login.js" type="">
-    <style>
 
-  .notificacao {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #2b6cb0;
-    color: white;
-    padding: 16px 24px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    z-index: 9999;
-    font-family: Arial, sans-serif;
-  }
-
-  .notificacao.mostrar {
-    opacity: 1;
-    transform: translateY(0);
-  }
-</style>
 </head>
 
 
