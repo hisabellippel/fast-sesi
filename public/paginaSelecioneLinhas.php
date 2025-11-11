@@ -23,6 +23,8 @@
 
         <div class="selecionar">
 
+        <img src="../asets/imagens/meio/caminho.png" height= "150px" width="370" alt="">
+
             <div class="selecionar2">
 
                 <div class="selecioneflecha">
@@ -41,8 +43,6 @@
                 </div>
 
             </div>
-
-            <img src="../asets/imagens/meio/mapa.png" alt="">
 
             <div class="velocidade">
                 <p> Velocidade</p>
