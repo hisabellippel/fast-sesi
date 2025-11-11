@@ -153,11 +153,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <img class="imag" src="../asets/imagens/meio/cargo.png" alt=""/>
                         <div>
                             <input type="radio" id="adm" name="cargo_funcionario" value="ADM" required>
-                            <label for="adm"><p class="gastoss2">ADM</p></label>
+                            <label for="adm"><p class="gastoss2">ADM </p></label>
                         </div>
+                        
                         <div>
                             <input type="radio" id="funcionario" name="cargo_funcionario" value="FUNCIONARIO" required>
-                            <label for="funcionario">Funcionário</label>
+                            <label for="funcionario"><p class="gastoss2"> Funcionário</p></label>
                         </div>
                     </div><br>
 
