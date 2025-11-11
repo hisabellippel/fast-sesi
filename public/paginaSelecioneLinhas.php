@@ -5,6 +5,35 @@
     <title>Selecione Linhas</title>
     <link rel="stylesheet" href="../style/styles.css">
     <link rel="stylesheet" href="../style/style2.css">
+    <style>
+  .container-trem {
+    position: relative;
+    width: 100%;
+    height: 100px; /* altura da área onde o trem se move */
+    overflow: hidden;
+    pointer-events: none; /* não interfere com cliques em outros elementos */
+  }
+
+  .trem-animado {
+    position: absolute;
+    padding-bottom: 640px;
+    width: 80px; /* ajuste conforme o tamanho da imagem */
+    bottom: 0;
+    animation: trem-mover 6s ease-in-out infinite alternate;
+  }
+
+  @keyframes trem-mover {
+    0% {
+      left: 50;
+      transform: scaleX(1);
+    }
+    100% {
+      left: calc(90% - 80px);
+      transform: scaleX(1);
+    }
+  }
+</style>
+
 </head>
 <body>
     <header>
@@ -22,6 +51,8 @@
         </div>
 
         <div class="selecionar">
+
+        <img src="../asets/imagens/meio/trem.png" height= "50px" width="70" alt="Trem" class="trem-animado" />
 
         <img src="../asets/imagens/meio/caminho.png" height= "150px" width="370" alt="">
 
