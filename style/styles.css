@@ -418,9 +418,10 @@ body {
 }
 
 .im2 {
-    width: 50px;
-    height: 50px;
-    margin-left: 80px;
+    width: 70px;
+    height: 70px;
+    padding-left: 300px;
+    margin-top: -10px;
 }
 
 #fonte {
@@ -428,8 +429,9 @@ body {
 }
 
 .im3 {
-    width: 50px;
+    width: 77px;
     height: 50px;
+    padding-left: 140px;
 }
 
 .im4 {
