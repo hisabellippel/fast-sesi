@@ -2,7 +2,7 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "root";
 $dbname = "fast_sesi_sa";
 
 $conn = new mysqli($servername, $username, $password, $dbname);

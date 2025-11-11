@@ -16,7 +16,7 @@
     <header>
         <div id="barraescura">
             <a href="paginaGastos.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
-            <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
+            <a href="paginaNotificacoes.php"><img class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
         </div>
     </header>
 <br><br><br>
