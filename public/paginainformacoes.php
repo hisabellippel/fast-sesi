@@ -72,22 +72,22 @@
       <a href="paginaMenuPrincipal.php" class="bot2">Início ▼</a>
     <br><br>
 
-    <a href="paginaLinhas.php" class="bot2">Linhas ▼</a>
+    <a href="paginaSelecioneLinhas.php" class="bot2">Linhas ▼</a>
     <br><br>
 
-    <a href="paginaTrens.php" class="bot2">Trens Ativados ▼</a>
+    <a href="paginaTrensAtivados1.php" class="bot2">Trens Ativados ▼</a>
     <br><br>
 
-    <a href="paginaInspec.php" class="bot2">Controle de Inspeção ▼</a>
+    <a href="paginaControledeInspeção.php" class="bot2">Controle de Inspeção ▼</a>
     <br><br>
 
-    <a href="paginaRelatorios.php" class="bot2">Relatório e Análises ▼</a>
+    <a href="paginaRelatorioeAnalises.php" class="bot2">Relatório e Análises ▼</a>
     <br><br>
 
-    <a href="paginuvidoria.php" class="bot2">Ouvidoria ▼</a>
+    <a href="paginaOuvidoriaGeral.php" class="bot2">Ouvidoria ▼</a>
     <br><br>
 
-    <a href="paginaAlertas.php" class="bot2">Alertas e Notificações ▼</a>
+    <a href="paginaAlertaseNotificacoes1.php" class="bot2">Alertas e Notificações ▼</a>
        
     </div>
    
