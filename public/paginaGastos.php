@@ -20,75 +20,61 @@
     <br>
     <main>
         
-        <div class="padGastos">
-        <div class="redonda22">
-            <p>Gastos e gráficos</p>
-        </div>
-        <div class="informacao4"><br>
-     
+     <div class="padGastos">
+  <div class="redonda22">
+    <p>Gastos e gráficos</p>
+  </div>
 
-         <div id="botoes_novos2">
-            <form method="post">
-        <button type="submit" name="btn">Funcionários ▼</button>
-        </form>
+  <div class="informacao4"><br>
 
-        <?php
-        if (isset($_POST['btn'])) {
-        header("Location: paginaGastos2.php");
-        exit();
+    <div id="botoes_novos2">
+
+      <form method="post">
+        <button type="submit" name="pagina" value="2">Funcionários ▼</button>
+      </form>
+
+      <form method="post">
+        <button type="submit" name="pagina" value="3">Ferrovia ▼</button>
+      </form>
+
+      <form method="post">
+        <button type="submit" name="pagina" value="4">Materiais ▼</button>
+      </form>
+
+      <form method="post">
+        <button type="submit" name="pagina" value="5">Manutenções ▼</button>
+      </form>
+
+      <form method="post">
+        <button type="submit" name="pagina" value="6">Consumo de Energia ▼</button>
+      </form>
+
+      <?php
+      if (isset($_POST['pagina'])) {
+        switch ($_POST['pagina']) {
+          case '2':
+            header("Location: paginaGastos2.php");
+            break;
+          case '3':
+            header("Location: paginaGastos3.php");
+            break;
+          case '4':
+            header("Location: paginaGastos4.php");
+            break;
+          case '5':
+            header("Location: paginaGastos5.php");
+            break;
+          case '6':
+            header("Location: paginaGastos6.php");
+            break;
         }
-        ?>
-         <form method="post">
-        <button type="submit" name="btn">Ferrovia ▼</button>
-        </form>
-
-        <?php
-        if (isset($_POST['btn'])) {
-        header("Location: paginaGastos3.php");
         exit();
-        }
-        ?>
-         <form method="post">
-        <button type="submit" name="btn">Materiais ▼</button>
-        </form>
+      }
+      ?>
+    </div>
+  </div>
+</div>
 
-        <?php
-        if (isset($_POST['btn'])) {
-        header("Location: paginaGastos4.php");
-        exit();
-        }
-        ?>
-         <form method="post">
-        <button type="submit" name="btn">Manutenções ▼</button>
-        </form>
-
-        <?php
-        if (isset($_POST['btn'])) {
-        header("Location: paginaGastos5.php");
-        exit();
-        }
-        ?>
-         <form method="post">
-        <button type="submit" name="btn">Consumo de Energia ▼</button>
-        </form>
-
-        <?php
-        if (isset($_POST['btn'])) {
-        header("Location: paginaGastos6.php");
-        exit();
-        }
-        ?>
-      
-            
-            
-         </div>
-
-          
-         
-          
-           
-        </div>
-        </div>
         <br>
    
         <div id="barra">

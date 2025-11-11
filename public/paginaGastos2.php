@@ -40,6 +40,7 @@
         </div>
 
         <div class="informacao">
+            <br>
             <canvas id="graficoGastos"></canvas>
         </div>
     </main>
