@@ -16,12 +16,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $cargo  = $_POST['cargo_funcionario'] ?? "";
     $funcao  = $_POST['funcao_funcionario'] ?? "";
     $salario  = $_POST['salario_funcionario'] ?? "";
-    $cep = $_POST['cep'] ?? "";
-    $logradouro = $_POST['logradouro'] ?? "";
-    $numero = $_POST['numero'] ?? "";
-    $bairro = $_POST['bairro'] ?? "";
-    $cidade = $_POST['cidade'] ?? "";
-    $uf = $_POST['uf'] ?? "";
+    $cep = $_POST['cep_funcionario'] ?? "";
+    $logradouro = $_POST['logradouro_funcionario'] ?? "";
+    $numero = $_POST['numero_funcionario'] ?? "";
+    $bairro = $_POST['bairro_funcionario'] ?? "";
+    $cidade = $_POST['cidade_funcionario'] ?? "";
+    $uf = $_POST['uf_funcionario'] ?? "";
 
     if ($email !== $email2) {
         $erro = "Os e-mails não coincidem.";
@@ -37,11 +37,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $senhaHash = password_hash($pass, PASSWORD_DEFAULT);
 
         $sql = "INSERT INTO funcionario 
-                (credencial_funcionario, nome_funcionario, cpf_funcionario, email_funcionario, senha_funcionario, telefone_funcionario, cargo_funcionario, funcao_funcionario, salario_funcionario, cep, logradouro, numero, bairro, cidade, uf)
+                (credencial_funcionario, nome_funcionario, cpf_funcionario, email_funcionario, senha_funcionario, telefone_funcionario, cargo_funcionario, funcao_funcionario, salario_funcionario, cep_funcionario, logradouro_funcionario, numero_funcionario, bairro_funcionario, cidade_funcionario, uf_funcionario)
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         $stmt = $conn->prepare($sql);
-        $stmt->bind_param("isssssssisissss", $credencial, $name, $cpf, $email, $senhaHash, $telefone, $cargo, $funcao, $salario, $cep, $logradouro, $numero, $bairro, $cidade, $uf);
+        $stmt->bind_param("isssssssissssss", $credencial, $name, $cpf, $email, $senhaHash, $telefone, $cargo, $funcao, $salario, $cep, $logradouro, $numero, $bairro, $cidade, $uf);
 
         if ($stmt->execute()) {
             $sucesso = "Novo registro criado com sucesso!";
@@ -174,27 +174,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                    
                     <div class="c1">
                         <img class="imag" src="../asets/imagens/meio/salario.png" alt=""/>
-                        <input type="text" id="cep" name="cep" placeholder="CEP" required onblur="buscarCEP()">
+                        <input type="text" id="cep" name="cep_funcionario" placeholder="CEP" required onblur="buscarCEP()">
                     </div><br>
 
                     <div class="c1">
-                        <input type="text" id="logradouro" name="logradouro" placeholder="Rua" required>
+                        <input type="text" id="logradouro" name="logradouro_funcionario" placeholder="Rua" required>
                     </div><br>
 
                     <div class="c1">
-                        <input type="text" id="numero" name="numero" placeholder="Número" required>
+                        <input type="text" id="numero" name="numero_funcionario" placeholder="Número" required>
                     </div><br>
 
                     <div class="c1">
-                        <input type="text" id="bairro" name="bairro" placeholder="Bairro" required>
+                        <input type="text" id="bairro" name="bairro_funcionario" placeholder="Bairro" required>
                     </div><br>
 
                     <div class="c1">
-                        <input type="text" id="cidade" name="cidade" placeholder="Cidade" required>
+                        <input type="text" id="cidade" name="cidade_funcionario" placeholder="Cidade" required>
                     </div><br>
 
                     <div class="c1">
-                        <input type="text" id="uf" name="uf" placeholder="UF" maxlength="2" required>
+                        <input type="text" id="uf" name="uf_funcionario" placeholder="UF" maxlength="2" required>
                     </div><br>
 
                     <input type="submit" value="Cadastrar">
