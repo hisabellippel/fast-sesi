@@ -11,13 +11,12 @@ if (isset($_GET['q'])) {
     
     $rotas = [
         'linhas' => 'paginaSelecioneLinhas.php',
-        'trens' => 'paginaTrens.php',
-        'inspecao' => 'paginaInspecao.php',
-        'relatorio' => 'paginaRelatorio.php',
-        'analises' => 'paginaRelatorio.php',
-        'ouvidoria' => 'paginaOuvidoria.php',
-        'alertas' => 'paginaAlertas.php',
-        'notificacoes' => 'paginaAlertas.php',
+        'trens' => 'paginaTrensAtivados1.php',
+        'inspecao' => 'paginaControledeInspeção.php',
+        'relatorio' => 'paginaRelatorioeAnalises.php',
+        'ouvidoria' => 'paginaOuvidoriaGeral.php',
+        'alertas' => 'paginaAlertaseNotificacoes2.php',
+        'notificacoes' => 'paginaAlertaseNotificacoes3.php',
         'gastos' => 'paginaGastos.php',
     ];
 
