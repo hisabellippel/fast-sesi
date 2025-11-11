@@ -642,14 +642,57 @@ background-color: rgb(136, 144, 153);
 
 
 .barraResistores{
-
-
-background-color:  rgb(136, 144, 153);
+background-color: rgb(136, 144, 153);
     display: flex;
-    
+    max-width: 1000px;
     padding: 11px;
     color: aliceblue;
-    margin-bottom: 1200px;
+   margin-top: 190px;
+   height: 60px;
+   margin-bottom: 20px;
 
-    
+
+}
+
+
+.barraResistores2{
+background-color: rgb(136, 144, 153);
+    display: flex;
+    max-width: 1000px;
+    padding: 11px;
+    color: aliceblue;
+   margin-top: 170px;
+   height: 60px;
+   margin-bottom: 20px;
+
+
+}
+
+
+
+.barraResistores3{
+background-color: rgb(136, 144, 153);
+    display: flex;
+    max-width: 1000px;
+    padding: 11px;
+    color: aliceblue;
+   margin-top: 130px;
+   height: 60px;
+   margin-bottom: 20px;
+
+
+}
+
+
+.barraResistores4{
+background-color: rgb(136, 144, 153);
+    display: flex;
+    max-width: 1000px;
+    padding: 11px;
+    color: aliceblue;
+   margin-top: 170px;
+   height: 60px;
+   margin-bottom: 20px;
+
+
 }
