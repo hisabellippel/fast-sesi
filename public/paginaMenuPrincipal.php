@@ -11,7 +11,7 @@
 
     <header>
         <div id="barraescura">
-            <a class ="sair" href="paginaLogin.php?logout=1"><button type="submit">SAIR</button></a>
+            <a href="paginaLogin.php?logout=1"><button class ="sair" type="submit">SAIR</button></a>
             <a href="paginaNotificacoes.php"><img class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
         </div>
     </header>
@@ -20,7 +20,6 @@
         <div id="azul">
             <h2 id="hs"> Menu Principal</h2>
         </div>
-        <br>
         <div class="pad">
             <div class="redonda">
             <a href="paginaSelecioneLinhas.php"><p class="cor">Linhas</p></a>

@@ -420,7 +420,7 @@ body {
 .im2 {
     width: 70px;
     height: 70px;
-    padding-left: 300px;
+    padding-left: 280px;
     margin-top: -10px;
 }
 
@@ -432,11 +432,13 @@ body {
     width: 77px;
     height: 50px;
     padding-left: 140px;
+    margin-top:5px;
 }
 
 .im4 {
     width: 50px;
     height: 50px;
+    margin-top: 5px;
 }
 
 .paratras {
@@ -1359,4 +1361,13 @@ p.nova {
     margin-bottom: 222px;
 }
     
-
+.sair{
+    background-color:  rgb(108, 140, 211);
+    border-color:  rgba(90, 121, 187);
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 10px;
+    box-shadow: #5e9cef;
+}
