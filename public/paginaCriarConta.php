@@ -150,10 +150,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </div><br>
 
                     <div class="c1">
-                        <img class="imag" src="../asets/imagens/meio/Cargo.png" alt=""/>
+                        <img class="imag" src="../asets/imagens/meio/cargo.png" alt=""/>
                         <div>
                             <input type="radio" id="adm" name="cargo_funcionario" value="ADM" required>
-                            <label for="adm">ADM</label>
+                            <label for="adm"><p class="gastoss2">ADM</p></label>
                         </div>
                         <div>
                             <input type="radio" id="funcionario" name="cargo_funcionario" value="FUNCIONARIO" required>
@@ -167,33 +167,38 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </div><br>
 
                     <div class="c1">
-                        <img class="imag" src="../asets/imagens/meio/salario.png" alt=""/>
+                        <img class="imag" src="../asets/imagens/meio/Salario.png" alt=""/>
                         <input type="text" name="salario_funcionario" placeholder="Insira o salário" required>
                     </div><br>
 
                    
                     <div class="c1">
-                        <img class="imag" src="../asets/imagens/meio/salario.png" alt=""/>
+                        <img class="imag" src="../asets/imagens/meio/CEP.png" alt=""/>
                         <input type="text" id="cep" name="cep_funcionario" placeholder="CEP" required onblur="buscarCEP()">
                     </div><br>
 
                     <div class="c1">
+                        <img class="imag" src="../asets/imagens/meio/Rua.png" alt=""/>
                         <input type="text" id="logradouro" name="logradouro_funcionario" placeholder="Rua" required>
                     </div><br>
 
                     <div class="c1">
+                        <img class="imag" src="../asets/imagens/meio/Numero.png" alt=""/>
                         <input type="text" id="numero" name="numero_funcionario" placeholder="Número" required>
                     </div><br>
 
                     <div class="c1">
+                        <img class="imag" src="../asets/imagens/meio/Bairro.png" alt=""/>
                         <input type="text" id="bairro" name="bairro_funcionario" placeholder="Bairro" required>
                     </div><br>
 
                     <div class="c1">
+                        <img class="imag" src="../asets/imagens/meio/Cidade.png" alt=""/>
                         <input type="text" id="cidade" name="cidade_funcionario" placeholder="Cidade" required>
                     </div><br>
 
                     <div class="c1">
+                        <img class="imag" src="../asets/imagens/meio/Rua.png" alt=""/>
                         <input type="text" id="uf" name="uf_funcionario" placeholder="UF" maxlength="2" required>
                     </div><br>
 
