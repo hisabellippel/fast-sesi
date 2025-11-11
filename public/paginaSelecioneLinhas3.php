@@ -21,7 +21,7 @@
 
         <div class="selecionar">
 
-        <img src="../asets/imagens/meio/linha2.png" height= "150px" width="370" alt="">
+        <img src="../asets/imagens/meio/linha3.png" height= "150px" width="370" alt="">
 
             <div class="selecionar2">
 
