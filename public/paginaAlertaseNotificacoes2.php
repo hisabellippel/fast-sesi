@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alertas e Notificações</title>
-    <link rel="stylesheet" href="../style/style2.css">
     <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/style2.css">
 </head>
 
 <body>
@@ -43,17 +43,11 @@
          </div>
 
     </div>
-
-        
-       
-        
-            
-
           
     </main>
 
     <footer>
-        <div class="barranova">
+        <div class="barra">
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
             <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
