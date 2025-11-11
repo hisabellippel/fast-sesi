@@ -9,15 +9,14 @@
   .container-trem {
     position: relative;
     width: 100%;
-    height: 100px; /* altura da área onde o trem se move */
+    height: 100px;
     overflow: hidden;
-    pointer-events: none; /* não interfere com cliques em outros elementos */
+    pointer-events: none; 
   }
 
   .trem-animado {
     position: absolute;
     padding-bottom: 640px;
-    width: 80px; /* ajuste conforme o tamanho da imagem */
     bottom: 0;
     animation: trem-mover 6s ease-in-out infinite alternate;
   }
@@ -87,6 +86,7 @@
 
 
         </div>
+        <br>
 
     </main>
 
