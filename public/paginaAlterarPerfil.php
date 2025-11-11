@@ -31,6 +31,23 @@ if (isset($_GET['logout'])) {
     header("Location: paginaLogin.php?msg=expired");
     exit;
 }
+
+$message = "";
+if (isset($_GET['delete']) && isset($_GET['credencial_funcionario'])) {
+    $credencial = $_GET['credencial_funcionario'];
+    $sql = "SELECT * FROM funcionario WHERE credencial_funcionario = '$credencial'";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        $sql = "DELETE FROM funcionario WHERE credencial_funcionario = '$credencial'";
+        if ($conn->query($sql) === TRUE) {
+            $message = "Funcionário excluído com sucesso!";
+        } else {
+            $message = "Erro ao excluir: " . $conn->error;
+        }
+    } else {
+        $message = "Funcionário não encontrado!";
+    }
+}
 ?>
 
 <html lang="en">
@@ -65,6 +82,7 @@ if (isset($_GET['logout'])) {
 
         
         <h1>Funcionários:</h1>
+        <?php if (!empty($message)) echo "<p style='color: red;'>$message</p>"; ?>
         <div id= "sair">
             <div class="botoes">
            
@@ -153,7 +171,9 @@ if (isset($_GET['logout'])) {
                             </a>
                           </td></tr>';
                     echo '<tr><td colspan="2" style="text-align:center;">
-                            <a href="paginaDeletarPerfil.php?credencial_funcionario=' . $row['credencial_funcionario'] . '" onclick="return confirm(\'Tem certeza que deseja excluir este funcionário?\')">Excluir Funcionário</a>
+                            <a href="?delete=1&credencial_funcionario=' . $row['credencial_funcionario'] . '" onclick="return confirm(\'Tem certeza que deseja excluir este funcionário?\')">
+                                <button type="button">Excluir Perfil</button>
+                            </a>
                           </td></tr>';
                     echo '</table>';
 
