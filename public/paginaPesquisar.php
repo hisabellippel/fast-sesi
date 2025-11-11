@@ -3,69 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pesquisar</title>
+    <title>Alertas e Notificações</title>
+    <link rel="stylesheet" href="../style/style2.css">
     <link rel="stylesheet" href="../style/styles.css">
-    <script src="../scripts/botoes.js"></script>
 </head>
 
 <body>
 
     <header>
-      
-    <div class="paratras">
         <div id="barraescura">
-            <a href="paginaMenuPrincipal.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+            <a href="paginaAlertaseNotificacoes1.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
             <img class="topo2" src="../asets/imagens/barraAcima/tradutor.png" alt="">
         </div>
     </header>
     <br>
     <br>
     <main>
-        <br>
-        <div id="azul">
-            <h2 id="hs"> Menu Principal</h2>
-        </div>
-        <br>
-        <br>
-        <div class="pad18">
-        <div class="redonda8">
-            <p>Linhas</p>
-        </div>
-
-        <div class="redonda8">
-            <p>Trens</p>
-        </div>
-
-        <div class="redonda8">
-            <p>Controle de inspeção </p>
-        </div>
-
-        <div class="redonda8">
-            <p>Relatório e análises </p>
-        </div>
-
-        <div class="redonda8">
-            <p>Ouvidoria </p>
-        </div>
-
-        <div class="redonda8">
-            <p>Alertas e Notificações </p>
-        </div>
-        </div>
-      
-    </main>
-    </div>
+        <br><br>
+       <div class="pesquisa5">
    
-    <div class="transparente1">
-        
-            
-            <div class="redond">
-            <p>Pesquisar 🔎  </p>
-            </div>
+    <h1>Pesquisar 🔎</h1>
 
-        
-    </div>
-    
+
+    <form action="pesquisa.php" method="get" class="form-pesquisa" autocomplete="off">
+      <input
+        type="text"
+        id="c-pesquisa"
+        name="q"
+        placeholder="Digite (ex: linhas, trens, relatórios...)"
+        list="sugestoes"
+        required
+      >
+      <datalist id="sugestoes">
+        <option value="linhas">
+        <option value="trens">
+        <option value="inspecao">
+        <option value="relatorio">
+        <option value="analises">
+        <option value="ouvidoria">
+        <option value="alertas">
+        <option value="notificacoes">
+        <option value="gastos">
+      </datalist>
+      <button type="submit">Buscar</button>
+    </form>
+
+
+    <p class="secao">Digite exatamente o nome da seção desejada.</p>
+  </div>
+
+
+
+          
+    </main>
+
+    <footer>
+        <div class="pad1">
+        <div class="barranova">
+            <a href="paginainformacoes.php"><img class="topo1" src="../asets/imagens/barraAbaixo/barras.png" alt=""></a>
+            <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
+            <h3>Fast.sesi</h3>
+            <a href="paginaNotificacoes.php"><img class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
+            <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
+            <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
+        </div>
+        </div>
+    </footer>
+
 </body>
-
 </html>
