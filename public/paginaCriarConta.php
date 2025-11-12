@@ -207,9 +207,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="c1">
                         <img class="imag3" src="../asets/imagens/meio/uf.png" alt=""/>
                         <input type="text" id="uf" name="uf_funcionario" placeholder="UF" maxlength="2" required>
-                    </div><br>
+                    </div>
 
-                    <input type="submit" value="Cadastrar">
+                    <input type="submit" value="Cadastrar" class="btn-cadastrar"><br>
+
+                   
                 </form>
             </div>
         </div>
