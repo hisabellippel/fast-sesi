@@ -33,18 +33,18 @@
 
             <a href="paginaSistemadeFrenagem3.php">
                 <div class="redonda">
-                    <p class="cor">Ar no sistema</p><p class="red"><strong>°1</strong></p>▼
+                    <p class="cor">Ar no sistema</p><p class="red"><strong>°1</strong></p><p class="cor">▼</p>
                 </div>
             </a>
 
             <a href="paginaSistemadeFrenagem4.php">
                 <div class="redonda">
-                    <p class="cor">Desgate de componentes</p><p class="red"><strong>°1</strong></p>▼
+                    <p class="cor">Desgate de componentes</p><p class="red"><strong>°1</strong></p><p class="cor">▼</p>
                 </div>
             </a>
 
             <div class="redonda">
-                <p>Falhas operacionais e elétricas ▼</p>
+                <p class="cor">Falhas operacionais e elétricas ▼</p>
             </div>
             <div class="informacao">
                 <p>Registradas falhas operacionais e elétricas no sistema de frenagem. Equipe de manutenção acionada para diagnóstico e correção imediata.</p>
