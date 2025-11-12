@@ -31,6 +31,8 @@
                 </a>
             </div>
 
+            <br>
+
             <div class ="redonda">
                 <div class =  "letrabranca">
                     <p class="maq">Notificações</p><p class="nova"><p class="nova2">▼</p>
