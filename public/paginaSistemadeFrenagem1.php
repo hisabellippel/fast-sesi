@@ -27,25 +27,25 @@
         <div class = "pad3">
             <a href="paginaSistemadeFrenagem2.php">
                 <div class="redonda5">
-                    <p class="gastoss">Vazamento de fluido de freio▼</p>
+                    <p class="gastoss">Vazamento de fluido de freio ▼</p>
                 </div>
             </a>
 
             <a href="paginaSistemadeFrenagem3.php">
                 <div class="redonda5">
-                    <p class="gastoss">Ar no sistema</p><p class="red"><strong>°1</strong></p>▼
+                    <p class="gastoss">Ar no sistema</p><p class="red"><strong>°1 </strong></p> <p> ▼</p>
                 </div>
             </a>
 
             <a href="paginaSistemadeFrenagem4.php">
                 <div class="redonda5">
-                    <p class="gastoss">Desgate de componentes</p><p class="red"><strong>°1</strong></p>▼
+                    <p class="gastoss">Desgate de componentes</p><p class="red"><strong>°1</strong></p><p> ▼</p>
                 </div>
             </a>
 
             <a href="paginaSistemadeFrenagem5.php">
                 <div class="redonda5">
-                    <p class="gastoss">Falhas operacionais e elétricas▼</p></p>
+                    <p class="gastoss">Falhas operacionais e elétricas ▼</p></p>
                 </div>
             </a>
         </div>
