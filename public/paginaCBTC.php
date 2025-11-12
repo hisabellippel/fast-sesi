@@ -23,7 +23,7 @@
         <br>
 
         <div class="redonda">
-           <a href="paginaSinaleiros.php">  <p  <p class="cor" style="color: white;">Sinaleiros ▼  <span class="numero-vermelho">°1</span></p></a>
+           <a href="paginaSinaleiros.php">    <p class="cor" style="color: white;">Sinaleiros   <span class="numero-vermelho">°1</span></p></a><p class="cor">▼</p>
         </div>
         
         <div class="redonda">
@@ -31,7 +31,7 @@
         </div>
 
         <div class="redonda">
-              <p class="cor" style="color: white;">CBTC (Communication-Based Train Control) ▼  <span class="numero-vermelho" style="color: red">°1</span></p>
+              <p class="cor" style="color: white;">CBTC (Communication-Based Train Control)  <span class="numero-vermelho" style="color: red">°1</span></p><p class="cor">▼</p>
         </div>
         <div class="informacao">
             <p>Falha na comunicação via satélite da linha 4</p>
