@@ -23,7 +23,7 @@
         <br>
 
         <div class="redonda">
-            <p class="cor">Sinaleiros ▼ <span class="numero-vermelho">°1</span></p>
+            <p class="cor">Sinaleiros <span class="numero-vermelho">°1</span></p><p class="cor">▼</p>
         </div>
         <div class="informacao">
             <p>Linha 5 necessita de troca de material devido ao contato excessivo com rolamentos</p>
@@ -35,7 +35,7 @@
         </div>
 
         <div class="redonda">
-            <a href="paginaCBTC.php"><p class="cor">CBTC (Communication-Based Train Control) ▼ <span class="numero-vermelho">°1</span></p></a>
+            <a href="paginaCBTC.php"><p class="cor">CBTC (Communication-Based Train Control) <span class="numero-vermelho">°1</span></p></a><p class="cor">▼</p>
         </div>
 
         <div class="redonda">
