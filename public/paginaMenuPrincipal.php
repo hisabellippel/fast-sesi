@@ -39,7 +39,7 @@
         </div>
         <div class="lado">
             <div class="red2">
-                <img src="../asets/imagens/meio/linhas.png" alt="" height= "100px" width= "120px">
+                <img src="../asets/imagens/meio/controledeinspecaomenu.png" alt="" height= "100px" width= "120px">
                 <a href="paginaControledeInspeção.php"><p class="cormenu">Controle de inspeção</p></a>
             </div>
 
