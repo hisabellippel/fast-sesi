@@ -30,19 +30,19 @@
         
 
         <div class="redonda">
-            <p>Placas de sinalização ▼</p>
+            <p class="cor">Placas de sinalização ▼</p>
         </div>
         <div class="informacao">
             <p>Nenhum problema relatado</p>
         </div>
 
         <div class="redonda">
-          <a href="paginaCBTC.php"><p class="cor">CBTC (Communication-Based Train Control) ▼ <span class="numero-vermelho">°1</span></p></a>
+          <a href="paginaCBTC.php"><p class="cor">CBTC(Communication-Based Train Control)<span class="numero-vermelho">°1</span></p></a>
         
         </div>
 
         <div class="redonda">
-            <a href="paginaIntertravamento.php"><p class="cor">Intertravamento ▼</p></a>
+            <a href="paginaIntertravamento.php"><p class="cor">Intertravamento </p></a>
         </div>
         
         <br>

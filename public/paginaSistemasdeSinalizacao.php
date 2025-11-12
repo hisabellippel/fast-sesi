@@ -24,7 +24,7 @@
         <div class="pad18">
             <div class="redonda">
                 <a href="paginaSinaleiros.php">
-            <p class="cor">Sinaleiros ▼ <span class="numero-vermelho">°1</p></a> 
+            <p class="cor">Sinaleiros  <span class="numero-vermelho">°1</p></a> <p class="cor">▼</p>
             </div>
 
             <br>
@@ -36,7 +36,7 @@
             <br>
 
             <div class="redonda">
-                <a href="paginaCBTC.php"> <p class="cor"><p class="cor">CBTC (Communication-Based Train Control) ▼  <span class="numero-vermelho">°1</p></a> </p></a>
+                <a href="paginaCBTC.php"> <p class="cor"><p class="cor">CBTC (Communication-Based Train Control)<span class="numero-vermelho">°1</p></a> </p></a><p class="cor">▼</p>
             </div>
 
             <br>
