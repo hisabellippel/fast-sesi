@@ -841,7 +841,7 @@ background-color: rgb(136, 144, 153);
    
 }
 .pad1{
-    padding-top: 50px;
+    padding-top: 4px;
 }
 
 .notificacao {
@@ -928,6 +928,9 @@ background-color: rgb(136, 144, 153);
 .btn-cadastrar:active {
     transform: scale(0.97);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.pad333{
+    margin-bottom: 70px;
 }
 
 

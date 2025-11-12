@@ -26,7 +26,7 @@
         <br>
         <br>
 
-        <div class="pad3">
+        <div class="pad333">
         
             <div class="redonda">
                 <p class="gastoss">Em manutenção▼</p>
