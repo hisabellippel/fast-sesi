@@ -785,13 +785,17 @@ background-color: rgb(136, 144, 153);
   }
 .pesquisa5 {
   background: rgba(255, 255, 255, 0.15);
-  padding: 40px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 33px;
+  padding-bottom: 33px;
   border-radius: 20px;
   backdrop-filter: blur(8px);
   text-align: center;
   width: 90%;
   max-width: 400px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin-left: 20px;
 }
 
 
@@ -803,7 +807,6 @@ background-color: rgb(136, 144, 153);
 
 
 .form-pesquisa {
-  display: flex;
   gap: 10px;
   justify-content: center;
 }
