@@ -8,7 +8,6 @@
 </head>
 
 <body>
-
     <header>
         <div id="barraescura">
              <a href="paginaTrilhos1.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
@@ -25,22 +24,28 @@
         <br>
         <br>
 
-        <div class="pad35">
-        
+        <div class="pad3">
             <a href="paginaTrilhos2.php">
                 <div class="redonda">
-                    <p>Em manutenção▼</p>
+                    <p class="gastoss">Em manutenção▼</p>
                 </div>
             </a>
             
-            <div class="redonda">
-                <p>Trilhos em risco▼</p>
-            </div>
+            <br>
+            <br>
 
-            <div class="informacao">
-                <p>Linha1 -Risco de rachadura <br>Linha1 - Sem risco de rachadura <br>Linha1 - Sem risco de rachadura<br>Linha1 - Sem risco de rachadura <br>Linha1 - Sem risco de rachadura </p>
+            <div class="redonda">
+                <p class="gastoss">Trilhos em risco▼</p>
+            </div>
+            <div class="informacao5">
+                <p>Linha 001 - Risco de rachadura <br>Linha 002 - Sem risco de rachadura <br>Linha 003 - Sem risco de rachadura<br>Linha 004 - Sem risco de rachadura <br>Linha 005 - Sem risco de rachadura </p>
             </div>
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
     </main>
 
     <footer>

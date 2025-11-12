@@ -12,7 +12,7 @@
 
     <header>
         <div id="barraescura">
-             <a href="paginaTrilhos1.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+            <a href="paginaTrilhos1.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
             <a href="paginaNotificacoes.php"><img class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
         </div>
     </header>
@@ -26,21 +26,26 @@
         <br>
         <br>
 
-        <div class="pad34">
+        <div class="pad3">
         
             <div class="redonda">
-                <p>Em manutenção▼</p>
+                <p class="gastoss">Em manutenção▼</p>
             </div>
-            <div class="informacao">
+            <div class="informacao5">
                 <p>Linha1 - Em reforma <br>Linha1 - Em reforma <br>Linha1 - Em reforma <br>Linha1 - Em reforma <br>Linha1 - Em reforma <br></p>
             </div>
 
+            <br>
+            <br>
+
             <a href="paginaTrilhos3.php">
                 <div class="redonda">
-                    <p>Trilhos em risco▼</p>
+                    <p class="gastoss">Trilhos em risco▼</p>
                 </div>
             </a>
         </div>
+        <br>
+        <br>
     </main>
 
     <footer>
