@@ -1,5 +1,4 @@
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +9,9 @@
 </head>
 
 <body>
-
     <header>
         <div id="barraescura">
             <a href="paginaAlertasMecanicos.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
-
             <a href="paginaNotificacoes.php"><img class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
         </div>
     </header>
@@ -26,38 +23,34 @@
         </div>
         <br>
         <br>
+        <br>
+        <br>
 
-       <div class ="redondaequadrada">
-        <a href="paginaBotaodeEmergencia2.php">
-           
-     <div class =  "letrabranca">
-        
-         <p class="maq">Maquinista</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
-         </div>
+        <div class="pad7">
+            <div class ="redonda">
+                <a href="paginaBotaodeEmergencia2.php">
+                    <div class="letrabranca">
+                        <p class="maq">Maquinista</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
+                    </div>
+                </a>
+            </div>
 
-    </div>
+            <br>
+            <br>
 
-
-    <div class ="redondaequadrada">
-        <a href="paginaBotaodeEmergencia3.php">
-           
-     <div class =  "letrabranca">
-        
-         <p class="maq">Bagageiro</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
-         </div>
-
-    </div>
-
-    
-
-   
-    
-    
-
-    </main>
-
+            <div class ="redonda">
+                <a href="paginaBotaodeEmergencia3.php">
+                    <div class= "letrabranca">
+                        <p class="maq">Bagageiro</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
+                    </div>
+                </a>    
+            </div>
+        </div>
+        <br>
+        <br>
+</main>
     <footer>
-        <div class="barra">
+        <div id="barra">
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
             <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
@@ -66,5 +59,4 @@
     </footer>
 
 </body>
-
-</php>
+</html>

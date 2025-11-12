@@ -23,24 +23,26 @@
         </div>
         <br>
         <br>
+        <br>
 
-        <div class="pad32">
+        <div class="pad3">
             <div class="redonda">
-                <a href="paginaBotaodeEmergencia1.php"><p class="cor">Botão de Emergência▼</p></a>
+                <a href="paginaBotaodeEmergencia1.php"><p class="gastoss">Botão de Emergência▼</p></a>
             </div>
 
             <div class="redonda">
-                <a href="paginaEixosFerroviarios1.php"><p class="cor">Eixos ferroviários▼</p></a>
+                <a href="paginaEixosFerroviarios1.php"><p class="gastoss">Eixos ferroviários▼</p></a>
             </div>
 
             <div class="redonda">
-                <a href="paginaSistemadeFrenagem1.php"><p class="cor">Sistema de frenagem▼</p></a>
+                <a href="paginaSistemadeFrenagem1.php"><p class="gastoss">Sistema de frenagem▼</p></a>
             </div>
 
             <div class="redonda">
-                <a href="paginaResistoresdePotencia.php"><p class="cor">Resitores de potência▼</p></a>
+                <a href="paginaResistoresdePotencia.php"><p class="gastoss">Resitores de potência▼</p></a>
             </div>
         </div>
+        <br>
         <br>
         <br>
         <br>
