@@ -27,7 +27,7 @@
         <div class="pad">
 
             <div class="redonda">
-                <p>Vazamento de fluido de freio ▼</p>
+                <p class="cor">Vazamento de fluido de freio ▼</p>
             </div>
             <div class="informacao">
                 <p>Linha 5 necessita de troca de material devido ao contato excessivo com rolamentos</p>
@@ -35,13 +35,13 @@
             
             <a href="paginaSistemadeFrenagem3.php">
                 <div class="redonda">
-                    <p class="cor">Ar no sistema</p><p class="red"><strong>°1</strong></p>▼
+                    <p class="cor">Ar no sistema</p><p class="red"><strong>°1</strong></p><p class="cor">▼</p>
                 </div>
             </a>
 
             <a href="paginaSistemadeFrenagem4.php">
                 <div class="redonda">
-                    <p class="cor">Desgate de componentes</p><p class="red"><strong>°1</strong></p>▼
+                    <p class="cor">Desgate de componentes</p><p class="red"><strong>°1</strong></p><p class="cor">▼</p>
                 </div>
             </a>
 
