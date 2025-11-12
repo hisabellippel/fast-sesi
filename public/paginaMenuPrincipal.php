@@ -39,18 +39,18 @@
         </div>
         <div class="lado">
             <div class="red2">
-                <img src="../asets/imagens/meio/controledeinspecaomenu.png" alt="" height= "100px" width= "120px">
+                <img src="../asets/imagens/meio/analisemenu.png" alt="" height= "100px" width= "120px">
                 <a href="paginaControledeInspeção.php"><p class="cormenu">Controle de inspeção</p></a>
             </div>
 
             <div class="red3">
-                <img src="../asets/imagens/meio/linhas.png" alt="" height= "100px" width= "120px">
+                <img src="../asets/imagens/meio/controledeinspecaomenu.png" alt="" height= "100px" width= "120px">
                 <a href="paginaRelatorioeAnalises.php"><p class="cormenu">Relatório e análises </p></a>
             </div>
         </div>
         <div class="lado">
             <div class="red4">
-                <img src="../asets/imagens/meio/linhas.png" alt="" height= "100px" width= "120px">
+                <img src="../asets/imagens/meio/ouvidoriamenu.png" alt="" height= "100px" width= "120px">
                 <a href="paginaOuvidoriaGeral.php"><p class="cormenu">Ouvidoria</p></a>
             </div>
 
