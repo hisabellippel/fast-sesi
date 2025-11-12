@@ -70,3 +70,48 @@
 
 </body>
 </html>
+
+/*.pesquisa5 {
+  background: rgba(255, 255, 255, 0.15);
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 33px;
+  padding-bottom: 33px;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin-left: 20px;
+}
+.c-pesquisa h1 {
+  margin-bottom: 25px;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+.form-pesquisa {
+  gap: 10px;
+  justify-content: center;
+}
+.form-pesquisa input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: 1em;
+}
+.form-pesquisa button {
+  background: white;
+  color: #1d4bd6;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.form-pesquisa button:hover {
+  background: #f2f2f2;
+}*//

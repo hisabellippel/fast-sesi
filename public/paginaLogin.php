@@ -102,7 +102,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     
                     <br>
     
-                    <button type="submit">Entrar</button>
+                    <button class = "sair" type="submit">Entrar</button>
                 </form>
         </div>
 
