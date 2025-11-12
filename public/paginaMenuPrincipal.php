@@ -55,7 +55,7 @@
             </div>
 
             <div class="red5">
-                <img src="../asets/imagens/meio/linhas.png" alt="" height= "100px" width= "120px">
+                <img src="../asets/imagens/meio/alertamenu.png" alt="" height= "100px" width= "120px">
                 <a href="paginaAlertaseNotificacoes1.php"><p class="cormenu">Alertas e Notificações</p></a>
             </div>
             <br>
