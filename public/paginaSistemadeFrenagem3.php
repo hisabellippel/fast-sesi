@@ -32,7 +32,7 @@
             </a>
 
             <div class="redonda">
-                <p>Ar no sistema <p class="red"><strong>°1</strong></p> ▼</p>
+                <p class="cor">Ar no sistema <p class="red"><strong>°1</strong></p> <p class="cor">▼</p>
             </div>
             <div class="informacao">
                 <p>Todos os componentes do freio a ar e do sistema eletrônico de controle foram inspecionados e estão operando dentro dos parâmetros de segurança.</p>
@@ -40,7 +40,7 @@
 
             <a href="paginaSistemadeFrenagem4.php">
                 <div class="redonda">
-                    <p class="cor">Desgate de componentes</p><p class="red"><strong>°1</strong></p>▼
+                    <p class="cor">Desgate de componentes</p><p class="red"><strong>°1</strong></p><p class="cor">▼</p>
                 </div>
             </a>
 
