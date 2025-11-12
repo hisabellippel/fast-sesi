@@ -33,12 +33,12 @@
 
             <a href="paginaSistemadeFrenagem3.php">
                 <div class="redonda">
-                    <p class="cor">Ar no sistema</p><p class="red"><strong>°1</strong></p>▼
+                    <p class="cor">Ar no sistema</p><p class="red"><strong>°1</strong></p><p class="cor">▼</p>
                 </div>
             </a>
 
             <div class="redonda">
-                <p>Desgate de componentes <p class="red"><strong>°1</strong></p> ▼</p>
+                <p class="cor">Desgate de componentes <p class="red"><strong>°1</strong></p> <p class="cor">▼</p>
             </div>
             <div class="informacao">
                 <p>Detectado desgaste em pastilhas e discos de freio durante inspeção. Recomenda-se substituição preventiva nas próximas 200 horas de operação.</p>
