@@ -23,7 +23,7 @@
 
         <div class="pad3"></div>
             <div class="redonda">
-                <a href="paginaSinaleiros.php"> <p class="cor" style="color: white;">Sinaleiros ▼ <span class="numero-vermelho" style="color: red;">°1</span></p></a>
+                <a href="paginaSinaleiros.php"> <p class="cor" style="color: white;">Sinaleiros  <span class="numero-vermelho" style="color: red;">°1</span></p></a><p class="cor">▼</p>
             </div>
             
             <div class="redonda">
@@ -31,7 +31,7 @@
             </div>
             
             <div class="redonda">
-                <a href="paginaSistemadeSinalizacao2.php"> <p class="cor">CBTC (Communication-Based Train Control) ▼ <span class="numero-vermelho">°1</span></p></a>
+                <a href="paginaSistemadeSinalizacao2.php"> <p class="cor">CBTC (Communication-Based Train Control)  <span class="numero-vermelho">°1</span></p></a><p class="cor">▼</p>
             </div>
 
             <div class="redonda">
