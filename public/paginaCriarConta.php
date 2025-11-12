@@ -110,7 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                 <form method="POST">
                     <div class="c1">
-                        <img class="imag" src="../asets/imagens/meio/CredencialLogo.png" alt=""/>
+                        <img class="imag3" src="../asets/imagens/meio/CredencialLogo.png" alt=""/>
                         <input type="text" name="credencial_funcionario" placeholder="Insira a credencial" required minlength="4" maxlength="4">
                     </div><br>
 
@@ -145,25 +145,31 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </div><br>
 
                     <div class="c1">
-                        <img class="imag" src="../asets/imagens/meio/TelefoneLogo.png" alt=""/>
+                        <img class="imag3" src="../asets/imagens/meio/TelefoneLogo.png" alt=""/>
                         <input type="text" name="telefone_funcionario" placeholder="Insira o telefone" required minlength="10">
-                    </div><br>
+                    </div>
+
+                 <div class="cargo">
+        <div class="cargo">
+            <img class="c-img" src="../asets/imagens/meio/cargo.png" alt="Cargo" />
+
+            <div class="c-opcoes">
+            <label class="c-opcoes2">
+            <input type="radio" name="cargo_funcionario" value="ADM" required>
+            <span>ADM</span>
+            </label>
+
+            <label class="c-opcoes2">
+            <input type="radio" name="cargo_funcionario" value="Funcionário">
+            <span>Funcionário</span>
+            </label>
+        </div>
+            </div>
+
+                    </div>
 
                     <div class="c1">
-                        <img class="imag" src="../asets/imagens/meio/cargo.png" alt=""/>
-                        <div>
-                            <input type="radio" id="adm" name="cargo_funcionario" value="ADM" required>
-                            <label for="adm"><p class="gastoss2">ADM </p></label>
-                        </div>
-                        
-                        <div>
-                            <input type="radio" id="funcionario" name="cargo_funcionario" value="FUNCIONARIO" required>
-                            <label for="funcionario"><p class="gastoss2"> Funcionário</p></label>
-                        </div>
-                    </div><br>
-
-                    <div class="c1">
-                        <img class="imag" src="../asets/imagens/meio/Funcao.png" alt=""/>
+                        <img class="imag3" src="../asets/imagens/meio/Funcao.png" alt=""/>
                         <input type="text" name="funcao_funcionario" placeholder="Insira a função" required>
                     </div><br>
 
@@ -199,7 +205,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </div><br>
 
                     <div class="c1">
-                        <img class="imag" src="../asets/imagens/meio/Rua.png" alt=""/>
+                        <img class="imag3" src="../asets/imagens/meio/uf.png" alt=""/>
                         <input type="text" id="uf" name="uf_funcionario" placeholder="UF" maxlength="2" required>
                     </div><br>
 
