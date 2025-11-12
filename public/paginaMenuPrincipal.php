@@ -4,6 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Principal</title>
     <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/style3.css">
+    <style>
+        body{
+            background-color:  rgb(255, 255, 255);
+        }
+    </style>
 </head>
 
 <body>
@@ -20,28 +26,31 @@
         <div id="azul">
             <h2 id="hs"> Menu Principal</h2>
         </div>
-        <div class="pad">
-            <div class="redonda">
+        <div class="lado">
+            <div class="red">
+                img
             <a href="paginaSelecioneLinhas.php"><p class="cor">Linhas</p></a>
             </div>
 
-            <div class="redonda">
+            <div class="red1">
                 <a href="paginaTrensAtivados1.php"><p class="cor">Trens</p></a>
             </div>
-
-            <div class="redonda">
+        </div>
+        <div class="lado">
+            <div class="red2">
                 <a href="paginaControledeInspeção.php"><p class="cor">Controle de inspeção</p></a>
             </div>
 
-            <div class="redonda">
+            <div class="red3">
                 <a href="paginaRelatorioeAnalises.php"><p class="cor">Relatório e análises </p></a>
             </div>
-
-            <div class="redonda">
+        </div>
+        <div class="lado">
+            <div class="red4">
                 <a href="paginaOuvidoriaGeral.php"><p class="cor">Ouvidoria</p></a>
             </div>
 
-            <div class="redonda">
+            <div class="red5">
                 <a href="paginaAlertaseNotificacoes1.php"><p class="cor">Alertas e Notificações</p></a>
             </div>
             <br>
