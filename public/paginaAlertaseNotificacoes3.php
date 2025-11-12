@@ -20,9 +20,9 @@
         <div id="azul">
             <h2 id="hs">Alertas e Notificações</h2>
         </div>
+        <br><br><br>
 
-
-        <div class="pad6">
+        <div class="pad7">
             <div class ="redonda">
                 <a href="paginaAlertaseNotificacoes2.php">
                     <div class =  "letrabranca">
@@ -31,6 +31,7 @@
                 </a>
             </div>
 
+            <br>
             <br>
 
             <div class ="redonda">
@@ -42,8 +43,7 @@
                 <p>Botão de emergencia acionado na linha 1</p>
             </div>
         </div>
-    
-          
+        <br>
     </main>
 
     <footer>
