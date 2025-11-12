@@ -31,7 +31,7 @@
                 <p>Trilhos 4 e 5 em reforma.</p>
             </div>
 
-            <div class ="redondaequadrada">
+            <div class ="redonda">
                 <a href="paginaAlertaseNotificacoes3.php">
                     <div class =  "letrabranca">
                         <p class="maq">Notificações</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
