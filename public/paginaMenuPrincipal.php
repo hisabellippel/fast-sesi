@@ -25,39 +25,42 @@
         <div id="azul">
             <h2 id="hs"> Menu Principal</h2>
         </div>
-        <div class="lado">
-            <div class="red">
-                <img src="../asets/imagens/meio/linhas.png" alt="" height= "60px" width= "80px">
-                <a href="paginaSelecioneLinhas.php"><p class="cormenu">Linhas</p></a>
-            </div>
 
-            <div class="red1">
-                <img src="../asets/imagens/meio/tremmenu.png" alt="" height= "60px" width= "80px">
-                <a href="paginaTrensAtivados1.php"><p class="cormenu">Trens</p></a>
-            </div>
-        </div>
-        <div class="lado">
-            <div class="red2">
-                <img src="../asets/imagens/meio/analisemenu.png" alt="" height= "50px" width= "50px">
-                <a href="paginaControledeInspeção.php"><p class="cormenu">Controle de inspeção</p></a>
-            </div>
+        <div class="fundo">
+            <div class="lado">
+                <div class="red">
+                    <img src="../asets/imagens/meio/linhas.png" alt="" height= "60px" width= "80px">
+                    <a href="paginaSelecioneLinhas.php"><p class="cormenu">Linhas</p></a>
+                </div>
 
-            <div class="red3">
-                <img src="../asets/imagens/meio/controledeinspecaomenu.png" alt="" height= "50px" width= "60px">
-                <a href="paginaRelatorioeAnalises.php"><p class="cormenu">Relatório e análises </p></a>
+                <div class="red1">
+                    <img src="../asets/imagens/meio/tremmenu.png" alt="" height= "60px" width= "80px">
+                    <a href="paginaTrensAtivados1.php"><p class="cormenu">Trens</p></a>
+                </div>
             </div>
-        </div>
-        <div class="lado">
-            <div class="red4">
-                <img src="../asets/imagens/meio/ouvidoriamenu.png" alt="" height= "60px" width= "60px">
-                <a href="paginaOuvidoriaGeral.php"><p class="cormenu">Ouvidoria</p></a>
-            </div>
+            <div class="lado">
+                <div class="red2">
+                    <img src="../asets/imagens/meio/analisemenu.png" alt="" height= "50px" width= "50px">
+                    <a href="paginaControledeInspeção.php"><p class="cormenu">Controle de inspeção</p></a>
+                </div>
 
-            <div class="red5">
-                <img src="../asets/imagens/meio/alertamenu.png" alt="" height= "60px" width= "60px">
-                <a href="paginaAlertaseNotificacoes1.php"><p class="cormenu">Alertas e Notificações</p></a>
+                <div class="red3">
+                    <img src="../asets/imagens/meio/controledeinspecaomenu.png" alt="" height= "60px" width= "60px">
+                    <a href="paginaRelatorioeAnalises.php"><p class="cormenu">Relatório e análises </p></a>
+                </div>
             </div>
-            <br>
+            <div class="lado">
+                <div class="red4">
+                    <img src="../asets/imagens/meio/ouvidoriamenu.png" alt="" height= "60px" width= "60px">
+                    <a href="paginaOuvidoriaGeral.php"><p class="cormenu">Ouvidoria</p></a>
+                </div>
+
+                <div class="red5">
+                    <img src="../asets/imagens/meio/alertamenu.png" alt="" height= "60px" width= "60px">
+                    <a href="paginaAlertaseNotificacoes1.php"><p class="cormenu">Alertas e Notificações</p></a>
+                </div>
+                <br>
+            </div>
         </div>
     </main>
     <footer>
