@@ -99,7 +99,45 @@
 .fundo{
     background-color:   #f0efef;
     border-radius: 30px 30px 0px 0px;
-    padding-top: 50px;
+    padding-top: 20px;
     margin-top: 30px;
     padding-bottom: 10px;
+}
+
+
+.c-pesquisa h1 {
+  margin-bottom: 25px;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+
+.form-pesquisa {
+  justify-content: center;
+}
+
+
+.form-pesquisa input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: 1em;
+}
+
+
+.form-pesquisa button {
+  background: rgb(139, 168, 248);
+  color: #1658af;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.form-pesquisa button:hover {
+  background: #f2f2f2;
 }

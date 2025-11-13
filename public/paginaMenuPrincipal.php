@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Principal</title>
     <link rel="stylesheet" href="../style/styles.css">
-    <link rel="stylesheet" href="../style/style2.css">
     <link rel="stylesheet" href="../style/style3.css">
     <style>
         body{
@@ -29,37 +28,28 @@
 
         <div class="fundo">
 
-        <div class="pesquisa5">
-   
-    <h1>Pesquisar 🔎</h1>
-
-
-    <form action="pesquisa.php" method="get" class="form-pesquisa" autocomplete="off">
-      <input
-        type="text"
-        id="c-pesquisa"
-        name="q"
-        placeholder="Digite (ex: linhas, trens, relatórios...)"
-        list="sugestoes"
-        required
-      >
-      <datalist id="sugestoes">
-        <option value="linhas">
-        <option value="trens">
-        <option value="inspecao">
-        <option value="relatorio">
-        <option value="analises">
-        <option value="ouvidoria">
-        <option value="alertas">
-        <option value="notificacoes">
-        <option value="gastos">
-      </datalist>
-      <button type="submit">Buscar</button>
-    </form>
-
-
-    <p class="secao">Digite exatamente o nome da seção desejada.</p>
-  </div>
+            <form action="pesquisa.php" method="get" class="form-pesquisa" autocomplete="off">
+            <input
+                type="text"
+                id="c-pesquisa"
+                name="q"
+                placeholder="Digite (ex: linhas, trens, relatórios...)"
+                list="sugestoes"
+                required
+            >
+            <datalist id="sugestoes">
+                <option value="linhas">
+                <option value="trens">
+                <option value="inspecao">
+                <option value="relatorio">
+                <option value="analises">
+                <option value="ouvidoria">
+                <option value="alertas">
+                <option value="notificacoes">
+                <option value="gastos">
+            </datalist>
+            <button type="submit">Buscar</button>
+            </form>
 
             <div class="lado">
                 <div class="red">
