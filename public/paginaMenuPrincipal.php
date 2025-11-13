@@ -27,6 +27,30 @@
         </div>
 
         <div class="fundo">
+
+            <form action="pesquisa.php" method="get" class="form-pesquisa" autocomplete="off">
+            <input
+                type="text"
+                id="c-pesquisa"
+                name="q"
+                placeholder="Digite (ex: linhas, trens, relatórios...)"
+                list="sugestoes"
+                required
+            >
+            <datalist id="sugestoes">
+                <option value="linhas">
+                <option value="trens">
+                <option value="inspecao">
+                <option value="relatorio">
+                <option value="analises">
+                <option value="ouvidoria">
+                <option value="alertas">
+                <option value="notificacoes">
+                <option value="gastos">
+            </datalist>
+            <button type="submit">Buscar</button>
+            </form>
+
             <div class="lado">
                 <div class="red">
                     <img src="../asets/imagens/meio/linhas.png" alt="" height= "60px" width= "80px">
