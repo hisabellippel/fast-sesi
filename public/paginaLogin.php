@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <header>
     <div id="barraescura">
         <div  id="nav-itens">
-            <img class="topoTradutor" src="../asets/imagens/barraAcima/tradutor.png" alt="">
+            <h3 class="barralogin">Login</h3>
         </div>
         <img class="imgtopo" src="../asets/imagens/meio/fotoFundoTrem.png" alt="">
     </div>
@@ -70,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <body>
     <?php if (empty($_SESSION["credencial_funcionario"])): ?>
        
-        <div class="login-login">
+        <div class="login">
             
                 <form class="branca1" method="POST">
                 <img class="i" src="../asets/imagens/meio/perfil.png" alt="">
