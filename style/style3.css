@@ -121,7 +121,7 @@
 .form-pesquisa input {
   flex: 1;
   padding: 10px 14px;
-  border-radius: 25px;
+  border-radius: 20px;
   border: none;
   outline: none;
   font-size: 1em;
@@ -132,7 +132,7 @@
   background: rgb(139, 168, 248);
   color: #1658af;
   border: none;
-  border-radius: 25px;
+  border-radius: 20px;
   padding: 10px 20px;
   font-weight: 600;
   cursor: pointer;
