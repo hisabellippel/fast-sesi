@@ -353,7 +353,7 @@ body {
 }
 
 #barra {
-    background-color:  rgb(136, 144, 153);
+    background-color: rgb(136, 144, 153);
     display: flex;
     max-width: 2000px;
     padding: 11px;
@@ -361,7 +361,14 @@ body {
     margin-bottom: 0px;
     border-radius: 20px 20px 0px 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 9999;
 }
+
 
 .alterarPerfil {
     margin: 25px;

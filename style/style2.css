@@ -952,11 +952,6 @@ background-color: rgb(136, 144, 153);
         position:sticky;top:0;z-index:30
     }
 
-    main{
-        max-width:920px;
-        margin:18px auto;
-        padding: 0px;
-    }
 
     .atualizacao{
       background:linear-gradient(90deg, rgba(43,110,246,0.12), rgba(16,185,129,0.06));
@@ -1053,10 +1048,6 @@ background-color: rgb(136, 144, 153);
         color:var(--muted)
     }
 
-
-    @media(min-width:700px){
-      body{padding-bottom:40px}
-      .appbar .titulolinhas{font-size:18px}
-      .atualizacao .textodes{font-size:18px}
-    }
-
+.paddese{
+    margin-bottom: 165px;
+}

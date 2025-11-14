@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../style/style2.css">
   
 
-   <style> *{box-sizing:border-box}
+   <style>
     html,body{height:100%}
     body{
       margin:0;
@@ -29,7 +29,8 @@
         </div>
   </header>
 
-  <main>
+  <main><br>
+  <div class="paddese">
     <section class="atualizacao">
       <div>
         <div class="textodes">Dados sobre desempenho e eficiência operacional</div>
@@ -114,19 +115,20 @@
           <div class="item"><span class="estado certo"></span>Fluxo regular</div>
         </div>
       </article>
+      <br>
 
     </section>
+    </div>
   </main>
-<footer>
-  <div class="paddese">
+
+  
  <div id="barra">
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
             <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
             <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
         </div>
-      </div>
-      </footer>
+  
  <script src="../scripts/desempenho.js"></script>
 </body>
 </html>
