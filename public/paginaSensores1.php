@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="../style/style2.css">
     <script src="../scripts/script.js"></script>
     <source src="login.js" type="">
+    <style>
+        main{
+            padding: 0px;
+        }
+    </style>
 
 </head>
 
@@ -31,41 +36,40 @@
         <br>
        
  
-            <img class="caminho" src="../asets/imagens/meio/caminho.png" height= "170px" width="400" alt="" >
+        <img class="caminho" src="../asets/imagens/meio/caminho.png" height= "170px" width="400" alt="" >
 
-            <div id="notificacao" class="notificacao">
-            Os dados dos sensores foram atualizados!
-            </div>
+        <div id="notificacao" class="notificacao">
+        Os dados dos sensores foram atualizados!
+        </div>
 
-            <div>
-                <div class="sensor1"></div>
-            </div>
-            <div>
-                <div class="sensor2"></div>
-            </div>
-            <div>
-                <div class="sensor3"></div>
-            </div>
+        <div>
+            <div class="sensor1"></div>
+        </div>
+        <div>
+            <div class="sensor2"></div>
+        </div>
+        <div>
+            <div class="sensor3"></div>
+        </div>
 
-            <br>
+        <br>
 
-            <div class="verificacao">
-                <p >Ultima verificação: <p id="data"></p></p>
-            </div>
+        <div class="verificacao">
+            <p >Ultima verificação: <p id="data"></p></p>
+        </div>
 
-            <div class="sensores1">
-                <p>Sensor 1: </p>
-            </div>
+        <div class="sensores1">
+            <p>Sensor 1: </p>
+        </div>
 
-            <div class="sensores2">
-                <p>Sensor 2: </p>
-            </div>
+        <div class="sensores2">
+            <p>Sensor 2: </p>
+        </div>
 
-            <div class="sensores3">
-                <p>Sensor 3: </p>
-            </div>
+        <div class="sensores3">
+            <p>Sensor 3: </p>
+        </div>
 
-    <br>
     <br>
 
     <script>

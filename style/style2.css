@@ -532,7 +532,7 @@ background-color: rgb(136, 144, 153);
 .caminho{
     position: absolute;
     margin-left: -205px;
-    z-index: -1;
+    z-index: -11;
 }
 
 .sensor1{
@@ -955,7 +955,8 @@ background-color: rgb(136, 144, 153);
     main{
         max-width:920px;
         margin:18px auto;
-        padding:0 16px}
+        padding: 0px;
+    }
 
     .atualizacao{
       background:linear-gradient(90deg, rgba(43,110,246,0.12), rgba(16,185,129,0.06));
