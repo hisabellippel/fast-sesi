@@ -3,7 +3,8 @@
     margin: 4%;
     border-radius: 30px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
 }
 
 .main-container {
