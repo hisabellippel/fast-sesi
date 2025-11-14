@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle de Inspeção</title>
     <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/style3.css">
 </head>
 
 <body>
@@ -20,26 +21,54 @@
         <div id="azul">
             <h2 id="hs">Controle de Inspeção:</h2>
         </div>
+        <div class="fundo">
+
         <br>
-        <div class="pad19">
-            <div class="redonda">
-                <a href="paginaTrilhos1.php"><p class="cor">Trilhos</p></a>
-            </div>
+            
+         <form action="pesquisa.php" method="get" class="form-pesquisa" autocomplete="off">
+            <input
+                type="text"
+                id="c-pesquisa"
+                name="q"
+                placeholder="Digite (ex: linhas, trens, relatórios...)"
+                list="sugestoes"
+                required
+            >
+            <datalist id="sugestoes">
+                <option value="linhas">
+                <option value="trens">
+                <option value="inspecao">
+                <option value="relatorio">
+                <option value="analises">
+                <option value="ouvidoria">
+                <option value="alertas">
+                <option value="notificacoes">
+                <option value="gastos">
+            </datalist>
+            <button type="submit">Buscar</button>
+            </form>
 
-            <div class="redonda">
-                <a href="paginaAlertasMecanicos.php"><p class="cor">Alertas mecânicos</p></a>
-            </div>
+            <div class="lado">
+                <div class="red0">
+                    <img src="../asets/imagens/meio/trilhos.png" alt="" height= "60px" width= "80px">
+                    <a href="paginaTrilhos1.php"><p class="cormenu">Trilhos</p></a>
+                </div>
 
-            <div class="redonda">
-                <a href="paginaSistemasdeSinalizacao.php"><p class="cor">Sistema de sinalização</p></a>
+                <div class="red11">
+                    <img src="../asets/imagens/meio/alertasmec.png" alt="" height= "70px" width= "70px">
+                    <a href="paginaAlertasMecanicos.php"><p class="cormenu">Alertas Mecânicos</p></a>
+                </div>
             </div>
+            <div class="lado">
+                <div class="red22">
+                    <img src="../asets/imagens/meio/sinalizacao.png" alt="" height= "50px" width= "50px">
+                    <a href="paginaSistemasdeSinalizacao.php"><p class="cormenu">Sistema de sinalização</p></a>
+                </div>
 
-            <div class="redonda">
-                <a href="paginaSensores1.php"><p class="cor">Sensores</p></a>
-            </div>
-
-            <div class="redonda">
-                <a href="paginaTrensDescarrilhados.php"><p class="cor">Trens descarrilhados</p></a>
+                <div class="red33">
+                    <img src="../asets/imagens/meio/sensor.png" alt="" height= "60px" width= "80px">
+                    <a href="paginaSensores1.php"><p class="cormenu">Sensores</p></a>
+                </div>
             </div>
         </div>
     </main>

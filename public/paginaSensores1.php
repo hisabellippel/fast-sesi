@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="../style/style2.css">
     <script src="../scripts/script.js"></script>
     <source src="login.js" type="">
+    <style>
+        main{
+            padding: 0px;
+        }
+    </style>
 
 </head>
 
@@ -65,7 +70,6 @@
             <p>Sensor 3: </p>
         </div>
 
-    <br>
     <br>
 
     <script>

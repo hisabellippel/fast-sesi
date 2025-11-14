@@ -49,15 +49,14 @@
             </div>
 
             <div class="velocidade">
-                <p> Velocidade</p>
+                <p> Velocidade: </p>
             </div>
             <div class="passageiros">
-                <p>Passageiros em tempo real</p>
+                <p>Passageiros em tempo real: 545 </p>
             </div>
             <div class="alertaseno">
-                <p>Alertas e Notificações</p>
+                <p>Alertas e Notificações: Nenhum </p>
             </div>
-            <br>
 
 
         </div>
