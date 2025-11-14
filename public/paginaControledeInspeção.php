@@ -21,9 +21,30 @@
         <div id="azul">
             <h2 id="hs">Controle de Inspeção:</h2>
         </div>
-        <br>
         <div class="fundo">
-            <div>
+            
+         <form action="pesquisa.php" method="get" class="form-pesquisa" autocomplete="off">
+            <input
+                type="text"
+                id="c-pesquisa"
+                name="q"
+                placeholder="Digite (ex: linhas, trens, relatórios...)"
+                list="sugestoes"
+                required
+            >
+            <datalist id="sugestoes">
+                <option value="linhas">
+                <option value="trens">
+                <option value="inspecao">
+                <option value="relatorio">
+                <option value="analises">
+                <option value="ouvidoria">
+                <option value="alertas">
+                <option value="notificacoes">
+                <option value="gastos">
+            </datalist>
+            <button type="submit">Buscar</button>
+            </form>
 
             <div class="lado">
                 <div class="red">
@@ -37,18 +58,18 @@
                 </div>
             </div>
             <div class="lado">
-                <div class="red2">
+                <div class="red22">
                     <img src="../asets/imagens/meio/sinalizacao.png" alt="" height= "50px" width= "50px">
                     <a href="paginaSistemasdeSinalizacao.php"><p class="cormenu">Sistema de sinalização</p></a>
                 </div>
 
-                <div class="red3">
+                <div class="red33">
                     <img src="../asets/imagens/meio/sensor.png" alt="" height= "60px" width= "80px">
                     <a href="paginaSensores1.php"><p class="cormenu">Sensores</p></a>
                 </div>
             </div>
             <div class="lado">
-                <div class="red4">
+                <div class="red44">
                     <img src="../asets/imagens/meio/tremdesca.png" alt="" height= "60px" width= "80px">
                     <a href="paginaTrensDescarrilhados.php"><p class="cormenu">Trens descarrilhados</p></a>
                 </div>

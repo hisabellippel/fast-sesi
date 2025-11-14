@@ -11,7 +11,7 @@
     border-radius: 40px;
     margin-right: 5px;
     margin-left: 5px;
-    padding: 40px 10px 40px 10px;
+    padding: 40px 30px 40px 30px;
     justify-content: center;
     height: 70px;
 }
@@ -33,17 +33,6 @@
     border-radius: 40px;
     margin-right: 10px;
     margin-left: 10px;
-    padding: 40px 40px 40px 40px;
-    justify-content: center;
-    height: 70px;
-}
-
-.red11{
-    background-color:   rgb(229, 229, 230);
-    color: black;
-    border-radius: 40px;
-    margin-right: 5px;
-    margin-left: 5px;
     padding: 40px 40px 40px 40px;
     justify-content: center;
     height: 70px;
@@ -72,6 +61,29 @@
     height: 70px;
 }
 
+.red22 {
+    background-color:   rgb(229, 229, 230);
+    color: black;
+    border-radius: 40px;
+    margin-right: 10px;
+    margin-left: 25px;
+    padding: 40px 15px 40px 15px;
+    justify-content: center;
+    height: 70px;
+}
+
+.red33 {
+    background-color:  rgb(229, 229, 230);
+    color: black;
+    border-radius: 40px;
+    margin-right: 20px;
+    margin-left: 10px;
+    padding: 40px 40px 40px 40px;
+    justify-content: center;
+    height: 70px;
+}
+
+
 .red4 {
     background-color:   rgb(229, 229, 230);
     color: black;
@@ -79,6 +91,18 @@
     margin-right: 10px;
     margin-left: 25px;
     padding: 40px 50px 40px 50px;
+    justify-content: center;
+    height: 70px;
+}
+
+.red44 {
+    background-color:   rgb(229, 229, 230);
+    color: black;
+    border-radius: 40px;
+    margin-right: 10px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+    padding: 20px 110px 20px 110px;
     justify-content: center;
     height: 70px;
 }
