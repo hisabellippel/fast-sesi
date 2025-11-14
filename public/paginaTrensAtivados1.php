@@ -39,13 +39,13 @@
            <br>
             <div class="redonda">
                 <a href="paginaTrensAtivados4.php">
-                <p>Rio Verde-Eldoria</p>
+                <p class="cor">Rio Verde-Eldoria</p>
                 </a>
             </div>
             <br>
             <div class="redonda">
                 <a href="paginaTrensAtivados5.php">
-                <p>Coraluna-Marésia</p>
+                <p class="cor">Coraluna-Marésia</p>
                 </a>
             </div>
 

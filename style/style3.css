@@ -2,78 +2,80 @@
     color: black;
     font-size: small;
     margin-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .red {
-    background-color:  rgb(237, 239, 240);
+    background-color:  rgb(229, 229, 230);
     color: black;
     border-radius: 40px;
     margin-right: 10px;
     margin-left: 25px;
-    padding: 50px 40px 50px 40px;
+    padding: 40px 40px 40px 40px;
     justify-content: center;
     height: 70px;
 }
 
 .red1 {
-    background-color:  rgb(237, 239, 240);
+    background-color:   rgb(229, 229, 230);
     color: black;
     border-radius: 40px;
     margin-right: 10px;
     margin-left: 10px;
-    padding: 50px 40px 50px 40px;
+    padding: 40px 40px 40px 40px;
     justify-content: center;
     height: 70px;
 }
 
 .red2 {
-    background-color:  rgb(237, 239, 240);
+    background-color:   rgb(229, 229, 230);
     color: black;
     border-radius: 40px;
     margin-right: 10px;
     margin-left: 25px;
-    padding: 50px 30px 50px 30px;
+    padding: 40px 20px 40px 20px;
     justify-content: center;
     height: 70px;
 }
 
 .red3 {
-    background-color:  rgb(237, 239, 240);
+    background-color:  rgb(229, 229, 230);
     color: black;
     border-radius: 40px;
     margin-right: 20px;
     margin-left: 10px;
-    padding: 50px 37px 50px 37px;
+    padding: 40px 27px 40px 27px;
     justify-content: center;
     height: 70px;
 }
 
 .red4 {
-    background-color:  rgb(237, 239, 240);
+    background-color:   rgb(229, 229, 230);
     color: black;
     border-radius: 40px;
     margin-right: 10px;
     margin-left: 25px;
-    padding: 50px 50px 50px 50px;
+    padding: 40px 50px 40px 50px;
     justify-content: center;
     height: 70px;
 }
 
 .red5 {
-    background-color:  rgb(237, 239, 240);
+    background-color:    rgb(229, 229, 230);
     color: black;
     border-radius: 40px;
     margin-right: 20px;
     margin-left: 10px;
     margin-bottom: 15px;
-    padding: 50px 30px 50px 30px;
+    padding: 40px 25px 40px 20px;
     justify-content: center;
     height: 70px;
 }
 
 .lado{
     display: flex;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 
 .weather {
@@ -92,4 +94,51 @@
 .city {
       font-size: 1.3em;
       margin-bottom: 5px;
+}
+
+.fundo{
+    background-color:   #f0efef;
+    border-radius: 30px 30px 0px 0px;
+    padding-top: 20px;
+    margin-top: 30px;
+    padding-bottom: 5px;
+    z-index: -10;
+}
+
+
+.c-pesquisa h1 {
+  margin-bottom: 25px;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+
+.form-pesquisa {
+  justify-content: center;
+}
+
+
+.form-pesquisa input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 1em;
+}
+
+
+.form-pesquisa button {
+  background: rgb(139, 168, 248);
+  color: #1658af;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.form-pesquisa button:hover {
+  background: #f2f2f2;
 }

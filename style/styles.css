@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(255, 255, 255);
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
@@ -9,6 +9,12 @@ body {
     width: 430px;
 }
 
+.barralogin{
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 10px;
+    padding-left: 185px;
+}
 
 .main-container {
     max-width: 900px;
@@ -62,6 +68,9 @@ body {
 #barraescura {
     background-color: rgb(136, 144, 153);
     display: flex;
+    padding-bottom: 5px;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
 #nav-itens{
@@ -123,8 +132,8 @@ body {
     align-items: center;
     border-radius: 30px 30px 50px 50px;
     margin: 105px 60px 193px 60px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 2px;
 }
 
 #azul {
@@ -350,6 +359,8 @@ body {
     padding: 11px;
     color: aliceblue;
     margin-bottom: 0px;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
 .alterarPerfil {

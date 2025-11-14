@@ -21,8 +21,8 @@ if ($result && $result->num_rows > 0) {
 }
 
 
-if ($_SESSION['credencial_funcionario'] != '1234' || $_SESSION['cargo_funcionario'] !== 'ADM') {
-    echo "<div class='card'><p>Acesso negado. Apenas João, administrador, pode acessar esta página.</p><p><a href='paginaMenuPrincipal.php'>Voltar ao menu principal</a></p></div>";
+if ( $_SESSION['cargo_funcionario'] !== 'ADM') {
+    echo "<div class='card'><p>Acesso negado. Apenas administradores, podem acessar esta página.</p><p><a href='paginaMenuPrincipal.php'>Voltar ao menu principal</a></p></div>";
     exit;
 }
 
