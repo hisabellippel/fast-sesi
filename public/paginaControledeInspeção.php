@@ -23,7 +23,7 @@
         </div>
         <br>
         <div class="fundo">
-            <div class="pad19">
+            <div>
 
             <div class="lado">
                 <div class="red">
@@ -31,8 +31,8 @@
                     <a href="paginaTrilhos1.php"><p class="cormenu">Trilhos</p></a>
                 </div>
 
-                <div class="red1">
-                    <img src="../asets/imagens/meio/alertasmec.png" alt="" height= "70px" width= "80px">
+                <div class="red11">
+                    <img src="../asets/imagens/meio/alertasmec.png" alt="" height= "70px" width= "70px">
                     <a href="paginaAlertasMecanicos.php"><p class="cormenu">Alertas Mecânicos</p></a>
                 </div>
             </div>
