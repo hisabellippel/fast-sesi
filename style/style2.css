@@ -768,7 +768,7 @@ background-color: rgb(136, 144, 153);
 
   .trem-animado {
     position: absolute;
-    padding-bottom: 645px;
+    padding-bottom: 610px;
     bottom: 0;
     animation: trem-mover 6s ease-in-out infinite alternate;
   }
