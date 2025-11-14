@@ -1,4 +1,4 @@
-document.querySelectorAll('.chev').forEach(btn => {
+document.querySelectorAll('.botaodese').forEach(btn => {
   btn.addEventListener('click', () => {
     const id = btn.getAttribute('data-target');
     const el = document.getElementById('items-' + id);
