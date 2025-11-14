@@ -1,9 +1,9 @@
 .selecionar{
-    background-color: #5e9cef;
+    background-color: #f0efef;
     margin: 4%;
     border-radius: 30px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .main-container {
@@ -66,7 +66,7 @@
 }
 
 .selecionar2{
-    background-color: #4373b1;
+    background-color:   rgb(229, 229, 230);
     border-radius: 30px 30px 30px 30px;
     padding-top: 2px;
     padding-bottom: 8px;
@@ -95,7 +95,7 @@
 }
 
 .selecionar3{
-    background-color: #538cd6;
+    background-color:   rgb(208, 208, 209);
     padding: 10px;
     padding-bottom: 18px;
     padding-top: 5px;
@@ -111,7 +111,7 @@
 }
 
 .linhas2{
-    background-color: #4373b1;
+    background-color:  rgb(229, 229, 230);
     text-align: left;
     padding-left: 10px;
     border-radius: 30px;

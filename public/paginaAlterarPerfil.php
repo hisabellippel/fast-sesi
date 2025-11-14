@@ -22,7 +22,7 @@ if ($result && $result->num_rows > 0) {
 
 
 if ( $_SESSION['cargo_funcionario'] !== 'ADM') {
-    echo "<div class='card'><p>Acesso negado. Apenas administradores, podem acessar esta página.</p><p><a href='paginaMenuPrincipal.php'>Voltar ao menu principal</a></p></div>";
+    echo "<div class='card'><p>Acesso negado. Apenas administradores </p><p><a href='paginaMenuPrincipal.php'>Voltar ao menu principal</a></p></div>";
     exit;
 }
 
