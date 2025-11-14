@@ -18,6 +18,7 @@ if (isset($_GET['q'])) {
         'alertas' => 'paginaAlertaseNotificacoes2.php',
         'notificacoes' => 'paginaAlertaseNotificacoes3.php',
         'gastos' => 'paginaGastos.php',
+        'trens descarrilhados' =>'paginaTrensDescarrilhados.php'
     ];
 
     if (array_key_exists($busca, $rotas)) {
