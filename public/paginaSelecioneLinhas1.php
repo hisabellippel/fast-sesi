@@ -53,10 +53,10 @@
                 <p> Velocidade: </p>
             </div>
             <div class="passageiros">
-                <p>Passageiros em tempo real: <p class="numero-vermelho"> 824 </p></p>
+                <p>Passageiros em tempo real:  824 </p>
             </div>
             <div class="alertaseno">
-                <p>Alertas e Notificações: <p class="numero-vermelho"> Nenhum </p></p>
+                <p>Alertas e Notificações:  Nenhum </p>
             </div>
 
 
