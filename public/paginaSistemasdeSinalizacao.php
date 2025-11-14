@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Sinalização</title>
     <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/style3.css">
 </head>
 
 <body>
@@ -19,33 +20,58 @@
         <div id="azul">
             <h2 id="hs">Sistema de sinalização:</h2>
         </div>
+
+
+        <div class="fundo">
+
         <br>
-        <br>
-        <div class="pad18">
-            <div class="redonda">
-                <a href="paginaSinaleiros.php">
-            <p class="cor">Sinaleiros  <span class="numero-vermelho">°1</p></a> <p class="cor">▼</p>
+            
+         <form action="pesquisa.php" method="get" class="form-pesquisa" autocomplete="off">
+            <input
+                type="text"
+                id="c-pesquisa"
+                name="q"
+                placeholder="Digite (ex: linhas, trens, relatórios...)"
+                list="sugestoes"
+                required
+            >
+            <datalist id="sugestoes">
+                <option value="linhas">
+                <option value="trens">
+                <option value="inspecao">
+                <option value="relatorio">
+                <option value="analises">
+                <option value="ouvidoria">
+                <option value="alertas">
+                <option value="notificacoes">
+                <option value="gastos">
+            </datalist>
+            <button type="submit">Buscar</button>
+            </form>
+
+            <div class="lado">
+                <div class="red000">
+                    <img src="../asets/imagens/meio/botaoemergencia.png" alt="" height= "60px" width= "60px">
+                    <a href="paginaSinaleiros.php"><p class="cormenu">Sinaleiros</p></a>
+                </div>
+
+                <div class="red1111">
+                    <img src="../asets/imagens/meio/eixos.png" alt="" height= "70px" width= "70px">
+                    <a href="paginaPlacasSinalizar.php"><p class="cormenu">Placas de Sinalização</p></a>
+                </div>
             </div>
+            <div class="lado">
+                <div class="red2222">
+                    <img src="../asets/imagens/meio/frenagem.png" alt="" height= "50px" width= "60px">
+                    <a href="paginaCBTC.php"><p class="cormenu">CBTC</p></a>
+                </div>
 
-            <br>
-
-            <div class="redonda">
-                <a href="paginaPlacasSinalizar.php"> <p class="cor">Placas de sinalização▼</p> </a>
-            </div>
-
-            <br>
-
-            <div class="redonda">
-                <a href="paginaCBTC.php"> <p class="cor"><p class="cor">CBTC (Communication-Based Train Control)<span class="numero-vermelho">°1</p></a> </p></a><p class="cor">▼</p>
-            </div>
-
-            <br>
-
-            <div class="redonda">
-                <a href="paginaIntertravamento.php"><p class="cor">Intertravamento▼</p></a>
+                <div class="red3333">
+                    <img src="../asets/imagens/meio/potencia.png" alt="" height= "60px" width= "70px">
+                    <a href="paginaIntertravamento.php"><p class="cormenu">Intertravamento</p></a>
+                </div>
             </div>
         </div>
-        <br> <br>
     </main>
 
     <footer>
