@@ -70,7 +70,7 @@
             </div>
             <div class="lado">
                 <div class="red44">
-                    <img src="../asets/imagens/meio/tremdesca.png" alt="" height= "60px" width= "80px">
+                    <img src="../asets/imagens/meio/tremdesca.png" alt="" height= "50px" width= "80px">
                     <a href="paginaTrensDescarrilhados.php"><p class="cormenu">Trens descarrilhados</p></a>
                 </div>
             </div>
