@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trens Ativados</title>
     <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/style3.css">
     <source src="login.js" type="">
 </head>
 
@@ -25,32 +26,32 @@
         <br>
         <br>
 
-        <div class="pad23">
+        <div class="fundo">
+            <div class="pad23">
 
-            <div class="redonda">
-                <a href="paginaTrensativados2.php"><p class="cor">Altorre-Glaciaris</p></a>
-                
-            </div>
-            <br>
-            <div class="redonda">
-                  <a href="paginaTrensativados3.php">
-                <p class="cor">Ouro negro-Monte Claro</p></a>
-            </div>
-           <br>
-            <div class="redonda">
-                <a href="paginaTrensAtivados4.php">
-                <p class="cor">Rio Verde-Eldoria</p>
-                </a>
-            </div>
-            <br>
-            <div class="redonda">
-                <a href="paginaTrensAtivados5.php">
-                <p class="cor">Coraluna-Marésia</p>
-                </a>
-            </div>
+                <div class="redonda">
+                    <a href="paginaTrensativados2.php"><p class="cor">Altorre-Glaciaris</p></a>
+                    
+                </div>
+                <div class="redonda">
+                    <a href="paginaTrensativados3.php">
+                    <p class="cor">Ouro negro-Monte Claro</p></a>
+                </div>
+                <div class="redonda">
+                    <a href="paginaTrensAtivados4.php">
+                    <p class="cor">Rio Verde-Eldoria</p>
+                    </a>
+                </div>
+                <div class="redonda">
+                    <a href="paginaTrensAtivados5.php">
+                    <p class="cor">Coraluna-Marésia</p>
+                    </a>
+                </div>
 
+                <br>
+
+            </div>
         </div>
-
     </main>
     <footer>
         <div id="barra">
