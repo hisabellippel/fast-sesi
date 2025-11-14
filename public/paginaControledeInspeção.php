@@ -22,6 +22,8 @@
             <h2 id="hs">Controle de Inspeção:</h2>
         </div>
         <div class="fundo">
+
+        <br>
             
          <form action="pesquisa.php" method="get" class="form-pesquisa" autocomplete="off">
             <input
@@ -47,7 +49,7 @@
             </form>
 
             <div class="lado">
-                <div class="red">
+                <div class="red0">
                     <img src="../asets/imagens/meio/trilhos.png" alt="" height= "60px" width= "80px">
                     <a href="paginaTrilhos1.php"><p class="cormenu">Trilhos</p></a>
                 </div>
@@ -66,12 +68,6 @@
                 <div class="red33">
                     <img src="../asets/imagens/meio/sensor.png" alt="" height= "60px" width= "80px">
                     <a href="paginaSensores1.php"><p class="cormenu">Sensores</p></a>
-                </div>
-            </div>
-            <div class="lado">
-                <div class="red44">
-                    <img src="../asets/imagens/meio/tremdesca.png" alt="" height= "50px" width= "80px">
-                    <a href="paginaTrensDescarrilhados.php"><p class="cormenu">Trens descarrilhados</p></a>
                 </div>
             </div>
         </div>
