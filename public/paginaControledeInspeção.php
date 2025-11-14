@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle de Inspeção</title>
     <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/style3.css">
 </head>
 
 <body>
@@ -21,25 +22,36 @@
             <h2 id="hs">Controle de Inspeção:</h2>
         </div>
         <br>
-        <div class="pad19">
-            <div class="redonda">
-                <a href="paginaTrilhos1.php"><p class="cor">Trilhos</p></a>
-            </div>
+        <div class="fundo">
+            <div class="pad19">
 
-            <div class="redonda">
-                <a href="paginaAlertasMecanicos.php"><p class="cor">Alertas mecânicos</p></a>
-            </div>
+            <div class="lado">
+                <div class="red">
+                    <img src="../asets/imagens/meio/trilhos.png" alt="" height= "60px" width= "80px">
+                    <a href="paginaTrilhos1.php"><p class="cormenu">Trilhos</p></a>
+                </div>
 
-            <div class="redonda">
-                <a href="paginaSistemasdeSinalizacao.php"><p class="cor">Sistema de sinalização</p></a>
+                <div class="red1">
+                    <img src="../asets/imagens/meio/alertasmec.png" alt="" height= "70px" width= "80px">
+                    <a href="paginaAlertasMecanicos.php"><p class="cormenu">Alertas Mecânicos</p></a>
+                </div>
             </div>
+            <div class="lado">
+                <div class="red2">
+                    <img src="../asets/imagens/meio/sinalizacao.png" alt="" height= "50px" width= "50px">
+                    <a href="paginaSistemasdeSinalizacao.php"><p class="cormenu">Sistema de sinalização</p></a>
+                </div>
 
-            <div class="redonda">
-                <a href="paginaSensores1.php"><p class="cor">Sensores</p></a>
+                <div class="red3">
+                    <img src="../asets/imagens/meio/sensor.png" alt="" height= "60px" width= "80px">
+                    <a href="paginaSensores1.php"><p class="cormenu">Sensores</p></a>
+                </div>
             </div>
-
-            <div class="redonda">
-                <a href="paginaTrensDescarrilhados.php"><p class="cor">Trens descarrilhados</p></a>
+            <div class="lado">
+                <div class="red4">
+                    <img src="../asets/imagens/meio/tremdesca.png" alt="" height= "60px" width= "80px">
+                    <a href="paginaTrensDescarrilhados.php"><p class="cormenu">Trens descarrilhados</p></a>
+                </div>
             </div>
         </div>
     </main>
