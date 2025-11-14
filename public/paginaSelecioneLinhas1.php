@@ -58,7 +58,6 @@
             <div class="alertaseno">
                 <p>Alertas e Notificações</p>
             </div>
-            <br>
 
 
         </div>
