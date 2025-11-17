@@ -352,22 +352,6 @@ select {
     border: 1px solid #ccc;
 }
 
-.save-btn {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    background: #4a89ff;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.save-btn:hover {
-    background: #2a6ae4;
-}
-
 .switch {
     position: relative;
     width: 44px;
@@ -403,7 +387,7 @@ select {
 }
 
 input:checked + .slider {
-    background-color: #4a89ff;
+    background-color: #4879d4;
 }
 
 input:checked + .slider:before {
@@ -411,7 +395,7 @@ input:checked + .slider:before {
 }
 
 .visu{
-    background-color: #4783f1;
+    background-color: #467de4;
     padding: 10px;
     border-radius: 5px;
     color: white;
@@ -419,4 +403,12 @@ input:checked + .slider:before {
 
 .preto{
     color: black;
+}
+
+.sele{
+    padding: 10px 30px 10px 10px;
+    align-items: start;
+    background-color: #5188ee;
+    color: white;
+    border-radius: 4px;
 }

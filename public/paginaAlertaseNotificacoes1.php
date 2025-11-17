@@ -60,7 +60,7 @@
 
             <div class="setting-item">
                 <span>Idioma</span>
-                <select>
+                <select class="sele">
                     <option>Português</option>
                     <option>Inglês</option>
                     <option>Espanhol</option>
@@ -69,7 +69,7 @@
 
             <div class="setting-item">
                 <span>Permições ADM</span>
-                <select>
+                <select class="sele">
                     <option>Todas</option>
                     <option>Personalizada</option>
                     <option>Nenhuma</option>
@@ -78,7 +78,7 @@
 
             <div class="setting-item">
                 <span>Permições FUNC</span>
-                <select>
+                <select class="sele">
                     <option>Todas</option>
                     <option>Personalizada</option>
                     <option>Nenhuma</option>
