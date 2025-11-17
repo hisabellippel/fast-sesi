@@ -18,10 +18,14 @@
     <header>
         <div id="barraescura">
             <a href="paginaLogin.php?logout=1"><button class ="sair" type="submit">SAIR</button></a>
-            <a href="paginaNotificacoes.php"><img class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
+            <img id="im2" class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt="">
     </header>
     <br>
     <main>
+
+            <div id="alertaNotificacao" class="alerta">
+            Você não possui nenhuma notificação
+            </div>
         <div id="azul">
             <h2> Menu Principal</h2>
         </div>
@@ -86,6 +90,17 @@
                 <br>
             </div>
         </div>
+        <script>
+                    document.getElementById("im2").addEventListener("click", function() {
+                const alerta = document.getElementById("alertaNotificacao");
+                
+                alerta.classList.add("show");
+
+                setTimeout(() => {
+                    alerta.classList.remove("show");
+                }, 2500); // desaparece após 2,5s
+            });
+        </script>
     </main>
     <footer>
          <div id="barra">
