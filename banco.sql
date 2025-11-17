@@ -99,6 +99,15 @@ CREATE TABLE trens_descarrilhados(
     FOREIGN KEY (nome_trem_descarrilhado) REFERENCES trens(id_trem)
 );
 
-INSERT INTO funcionario ( credencial_funcionario, nome_funcionario, cpf_funcionario, email_funcionario, senha_funcionario,
+INSERT INTO funcionario (credencial_funcionario, nome_funcionario, cpf_funcionario, email_funcionario, senha_funcionario,
     telefone_funcionario, cargo_funcionario, funcao_funcionario, salario_funcionario)
-VALUES ('1234', 'João', '08068776931', 'adm_joao@gmail.com', '6768', '47997794533', 'ADM', 'Gerente', '10000')
+VALUES
+('1234', 'João', '08068776931', 'adm_joao@gmail.com', '6768', '47997794533', 'ADM', 'Gerente', '10000'),
+
+('2222', 'Pedro Almeida', '12345678901', 'pedro.almeida@gmail.com', 'pedro22', '47999880011', 'FUNCIONARIO', 'Motorista', '2800'),
+
+('3333', 'José Carvalho', '98765432100', 'jose.carvalho@gmail.com', 'jose33', '47999776655', 'FUNCIONARIO', 'Motorista', '2600'),
+
+('4444', 'Marcos Silva', '56789012345', 'marcos.silva@gmail.com', 'marcos44', '47999665544', 'FUNCIONARIO', 'Motorista', '3200'),
+
+('5555', 'Rafael Santos', '10293847566', 'rafael.santos@gmail.com', 'rafa55', '47999554433', 'FUNCIONARIO', 'Motorista', '3000');
