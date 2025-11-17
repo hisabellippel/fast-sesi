@@ -24,8 +24,7 @@
     <br>
 
     <div class="fundo2">
-
-            <h2>Configurações</h2>
+        <br>
 
             <div class="setting-item">
                 <span>Notificações</span>
@@ -36,7 +35,7 @@
             </div>
 
             <div class="setting-item">
-                <span>Modo Escuro</span>
+                <span>Localização</span>
                 <label class="switch">
                     <input type="checkbox">
                     <span class="slider"></span>
@@ -44,7 +43,15 @@
             </div>
 
             <div class="setting-item">
-                <span>Som</span>
+                <span>Vibração</span>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+             <div class="setting-item">
+                <span>Atualizações Automáticas</span>
                 <label class="switch">
                     <input type="checkbox" checked>
                     <span class="slider"></span>
@@ -76,6 +83,13 @@
                     <option>Personalizada</option>
                     <option>Nenhuma</option>
                 </select>
+            </div>
+
+            <div class="setting-item">
+                <span>Fast-Sesi</span>
+                    <a href="paginaAlertaseNotificacoes2.php">
+                        <p class="visu">Visualizar</p>
+                    </a>
             </div>
 
 </div>
