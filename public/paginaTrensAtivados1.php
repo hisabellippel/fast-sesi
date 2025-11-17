@@ -1,68 +1,196 @@
-<html lang="en">
-
+<!doctype html>
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trens Ativados</title>
-    <link rel="stylesheet" href="../style/styles.css">
-    <link rel="stylesheet" href="../style/style3.css">
-    <source src="login.js" type="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Trens Ativados</title>
+  <link rel="stylesheet" href="../style/styles.css">
+  <link rel="stylesheet" href="../style/style2.css">
+  
+
+   <style>
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:linear-gradient(180deg, #eef4ff 0%, var(--bg) 100%);
+      color:#0f172a;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding-bottom:84px; 
+    }
+</style>
 </head>
-
 <body>
-
-    <header>
-        <div id="barraescura">
-            <a href="paginaMenuPrincipal.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+ 
+  <header>
+   <div id="barraescura">
+            <a href="paginaRelatorioeAnalises.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt="">
             <a href="paginaNotificacoes.php"><img class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
         </div>
-    </header>
-    <br>
-    <br>
-    <main>
-        <div id="azul">
-            <h2 id="hs">Trens ativados:</h2>
-        </div>
-        <br>
-        <br>
+  </header>
 
-        <div class="fundo">
-            <div class="pad23">
+  <main><br>
+  <div class="paddese">
+   
+     <div id="azul">
+            <h2 id="hs">Trens ativados</h2>
+        </div><BR>
 
-                <div class="redonda">
-                    <a href="paginaTrensativados2.php"><p class="cor">Altorre-Glaciaris</p></a>
-                    
-                </div>
-                <div class="redonda">
-                    <a href="paginaTrensativados3.php">
-                    <p class="cor">Ouro negro-Monte Claro</p></a>
-                </div>
-                <div class="redonda">
-                    <a href="paginaTrensAtivados4.php">
-                    <p class="cor">Rio Verde-Eldoria</p>
-                    </a>
-                </div>
-                <div class="redonda">
-                    <a href="paginaTrensAtivados5.php">
-                    <p class="cor">Coraluna-Marésia</p>
-                    </a>
-                </div>
+    <section class="linhasde">
 
-                <br>
+   <article class="linhade2" data-line="1">
+  <div class="nomede">
+    <div class="titulolinhas">Altorre-Glaciari­s</div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <button class="botaodese" aria-expanded="true" data-target="1">▾</button>
+    </div>
+  </div>
 
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div id="barra">
+  <div class="items" id="items-1">
+
+    <div class="item">
+      <span class="estado certo"></span>
+      Localização: <strong>Orbitalis</strong>
+    </div>
+
+    <div class="item">
+      <span class="estado certo"></span>
+      Distância percorrida: <strong>90 km</strong>
+    </div>
+
+    <div class="item">
+      <span class="estado certo"></span>
+      Passageiros: <strong>15.000</strong>
+    </div>
+
+    <div class="item">
+      <span class="estado certo"></span>
+      Motorista: <strong>Lucas Pacheco</strong>
+    </div>
+
+  </div>
+</article>
+
+
+    
+   <article class="linhade2" data-line="2">
+  <div class="nomede">
+    <div class="titulolinhas">Ouro negro — Monte Claro</div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <button class="botaodese" aria-expanded="false" data-target="2">▸</button>
+    </div>
+  </div>
+
+  <div class="items" id="items-2" style="display:none">
+
+    <div class="item">
+      <span class="estado certo"></span>
+      Localização: <strong>Metrópolis Leste</strong>
+    </div>
+
+    <div class="item">
+      <span class="estado certo"></span>
+      Distância percorrida: <strong>115 km</strong>
+    </div>
+
+    <div class="item">
+      <span class="estado certo"></span>
+      Passageiros: <strong>22.500</strong>
+    </div>
+
+    <div class="item">
+      <span class="estado certo"></span>
+      Maquinista: <strong>Fernanda Costa</strong>
+    </div>
+
+  </div>
+</article>
+
+
+<article class="linhade2" data-line="3">
+  <div class="nomede">
+    <div class="titulolinhas">Rio Verde Eldoria</div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <button class="botaodese" aria-expanded="false" data-target="3">▸</button>
+    </div>
+  </div>
+
+  <div class="items" id="items-3" style="display:none">
+
+    <div class="item">
+      <span class="estado certo"></span>
+      Localização: <strong>Corredor Sul</strong>
+    </div>
+
+    <div class="item">
+      <span class="estado certo"></span>
+      Distância percorrida: <strong>80 km</strong>
+    </div>
+
+    <div class="item">
+      <span class="estado certo"></span>
+      Passageiros: <strong>13.200</strong>
+    </div>
+
+    <div class="item">
+      <span class="estado certo"></span>
+      Maquinista: <strong>Bruno Silva</strong>
+    </div>
+
+  </div>
+</article>
+
+
+<article class="linhade2" data-line="4">
+  <div class="nomede">
+    <div class="titulolinhas">Coralua — Maresia</div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <button class="botaodese" aria-expanded="false" data-target="4">▸</button>
+    </div>
+  </div>
+
+  <div class="items" id="items-4" style="display:none">
+
+    <div class="item">
+      <span class="estado certo"></span>
+      Localização: <strong>Vale dos Pinheiros</strong>
+    </div>
+
+    <div class="item">
+      <span class="estado certo"></span>
+      Distância percorrida: <strong>100 km</strong>
+    </div>
+
+    <div class="item">
+      <span class="estado certo"></span>
+      Passageiros: <strong>19.800</strong>
+    </div>
+
+    <div class="item">
+      <span class="estado certo"></span>
+      Velocidade: <strong>65 km/h</strong>
+    </div>
+
+    <div class="item">
+      <span class="estado certo"></span>
+      Maquinista: <strong>Camila Santos</strong>
+    </div>
+
+  </div>
+</article>
+
+    </section>
+    </div>
+  </main>
+
+  
+ <div id="barra">
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
             <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
             <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
         </div>
-    </footer>
-
-
+  
+ <script src="../scripts/desempenho.js"></script>
 </body>
-
 </html>
