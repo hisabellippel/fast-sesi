@@ -23,7 +23,7 @@
     <br>
     <main>
         <div id="azul">
-            <h2 id="hs"> Menu Principal</h2>
+            <h2> Menu Principal</h2>
         </div>
 
         <div class="fundo">
