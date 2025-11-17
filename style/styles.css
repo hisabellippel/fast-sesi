@@ -137,7 +137,8 @@ body {
 }
 
 #azul {
-    background-color:  rgb(72, 117, 201);
+    background: linear-gradient(to left, rgb(45, 85, 160),rgb(80, 127, 214));
+    box-shadow: 5px 5px 20px rgb(72, 117, 201);
     display: flex;
     justify-content: center;
     color: aliceblue;
