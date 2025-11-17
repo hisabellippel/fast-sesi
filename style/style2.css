@@ -845,7 +845,7 @@ background-color: rgb(136, 144, 153);
     padding-top: 4px;
 }
 
-.notificacao {
+.notificacao{
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -859,12 +859,12 @@ background-color: rgb(136, 144, 153);
     transition: opacity 0.5s ease, transform 0.5s ease;
     z-index: 9999;
     font-family: Arial, sans-serif;
-  }
+}
 
-  .notificacao.mostrar {
+.notificacao.mostrar {
     opacity: 1;
     transform: translateY(0);
-  }
+}
   .gastoss2 {
     color: rgb(8, 8, 8);
     text-align: center;
