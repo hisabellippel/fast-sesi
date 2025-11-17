@@ -31,12 +31,10 @@
 
   <main><br>
   <div class="paddese">
-    <section class="atualizacao">
-      <div>
-        <div class="textodes">Dados sobre desempenho e eficiência operacional</div>
-        <small>Visão geral atualizada — Última leitura: <strong>Agora</strong></small>
-      </div>
-    </section>
+   
+     <div id="azul">
+            <h2 id="hs">Dados sobre desempenho e eficiência operacional</h2>
+        </div><BR>
 
     <section class="linhasde">
 
