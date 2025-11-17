@@ -90,7 +90,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <header>
         <div id="barraescura">
             <a href="paginaAlterarPerfil.php"><img class="topo1" src="../asets/imagens/barraAcima/Flecha.png" alt=""></a>
-            <a href="paginaNotificacoes.php"><img class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
+            <a href="paginaNotificacoes.php"><img id="im2" class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
             <img class="imgtopo" src="../asets/imagens/meio/fotoFundoTrem.png" alt=""/>
         </div>
     </header>
@@ -215,6 +215,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </form>
             </div>
         </div>
+
+        <script>
+                document.getElementById("im2").addEventListener("click", function() {
+                const alerta = document.getElementById("alertaNotificacao");
+                
+                alerta.classList.add("show");
+
+                setTimeout(() => {
+                    alerta.classList.remove("show");
+                }, 2000);
+            });
+        </script>
     </main>
 </body>
 </html>

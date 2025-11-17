@@ -91,14 +91,14 @@
             </div>
         </div>
         <script>
-                    document.getElementById("im2").addEventListener("click", function() {
+                document.getElementById("im2").addEventListener("click", function() {
                 const alerta = document.getElementById("alertaNotificacao");
                 
                 alerta.classList.add("show");
 
                 setTimeout(() => {
                     alerta.classList.remove("show");
-                }, 2500); // desaparece após 2,5s
+                }, 2000);
             });
         </script>
     </main>

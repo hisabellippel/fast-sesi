@@ -16,7 +16,7 @@
     <header>
         <div id="barraescura">
             <a href="paginaGastos.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
-            <a href="paginaNotificacoes.php"><img class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
+            <a href="paginaNotificacoes.php"><img id="im2" class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
         </div>
     </header>
 <br>
@@ -43,6 +43,18 @@
             <canvas id="graficoGastos"></canvas>
         </div>
     </main>
+
+    <script>
+                document.getElementById("im2").addEventListener("click", function() {
+                const alerta = document.getElementById("alertaNotificacao");
+                
+                alerta.classList.add("show");
+
+                setTimeout(() => {
+                    alerta.classList.remove("show");
+                }, 2000);
+            });
+        </script>
 
     
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
