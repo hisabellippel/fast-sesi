@@ -16,7 +16,7 @@
 <br>
     <main>
 
-        <div id="notificacao" class="notificacao">
+        <div class="notificacao">
         Os dados da linha 1 foram atualizados!
         </div>
 
