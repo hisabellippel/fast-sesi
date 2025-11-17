@@ -21,101 +21,63 @@
 </style>
 </head>
 <body>
-  <header>
-   <div id="barraescura">
-            <a href="paginaMenuPrincipal.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt="">
-            <a href="paginaNotificacoes.php"><img class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
+    <header>
+        <div id="barraescura">
+            <a href="paginaAlertasMecanicos.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+            <a href="paginaNotificacoes.php"><img id="im2" class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
         </div>
-  </header>
-
-  <main><br>
-  <div class="paddese">
-   
-     <div id="azul">
-            <h2 id="hs">Eixos Ferroviarios</h2>
-        </div><BR><br>
-
-    <section class="linhasde">
-
-   <article class="linhade2" data-line="1">
-  <div class="nomede">
-    <div class="titulolinhas">Trincas por Fadiga</div>
-    <div style="display:flex;align-items:center;gap:8px">
-      <button class="botaodese" aria-expanded="true" data-target="1">▾</button>
+    </header>
+    <br>
+    <br>
+<main>
+    <div id="azul">
+        <h2 id="hs">Eixos ferroviários</h2>
     </div>
-  </div>
+    <br>
+    <br>
 
-  <div class="items" id="items-1">
+    <div class="pad36">
+        <div class ="redonda">
+            <a href="paginaEixosFerroviarios2.php">
+                <div class="letrabranca">
+                    <p class="maq">Trincas por fadiga</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
+                </div>
+            </a>    
+        </div>
 
-    <div class="item">
-      <span class="estado errado"></span>
-      Linha 005: <strong>Trinca encontrada devido a tensões cíclicas</strong>
+        <br>
+
+        <div class ="redonda">
+            <a href="paginaEixosFerroviarios3.php">
+                <div class="letrabranca">
+                    <p class="maq">Desgaste mecânico</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
+                </div>
+            </a>
+        </div>
+
+        <br>
+
+        <div class ="redonda">
+            <a href="paginaEixosFerroviarios4.php">
+                <div class="letrabranca">
+                    <p class="maq">Problemas de manutenção</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
+                </div>
+            </a>    
+        </div>
     </div>
+    <br><br><br><br><br><br><br><br>
+</main>
+<script>
+                document.getElementById("im2").addEventListener("click", function() {
+                const alerta = document.getElementById("alertaNotificacao");
+                
+                alerta.classList.add("show");
 
-     <div class="item">
-      <span class="estado certo"></span>
-      <strong>Restante das linhas sem trincas</strong>
-    </div>
-
-  </div>
-</article>
-<br>
-
-    
-   <article class="linhade2" data-line="2">
-  <div class="nomede">
-    <div class="titulolinhas">Desgaste Mecânico</div>
-    <div style="display:flex;align-items:center;gap:8px">
-      <button class="botaodese" aria-expanded="false" data-target="2">▸</button>
-    </div>
-  </div>
-
-  <div class="items" id="items-2" style="display:none">
-
-    <div class="item">
-      <span class="estado errado"></span>
-      Linha 003: <strong>Necessita de troca de material devido ao contato excessivo com rolamentos</strong>
-    </div>
-
-    <div class="item">
-      <span class="estado certo"></span>
-      <strong>Restante das linhas sem desgate mecânico</strong>
-    </div>
-
-   
-  </div>
-</article>
-<br>
-
-<article class="linhade2" data-line="3">
-  <div class="nomede">
-    <div class="titulolinhas">Problemas de Manutenção</div>
-    <div style="display:flex;align-items:center;gap:8px">
-      <button class="botaodese" aria-expanded="false" data-target="3">▸</button>
-    </div>
-  </div>
-
-  <div class="items" id="items-3" style="display:none">
-
-   <div class="item">
-      <span class="estado errado"></span>
-      Linha 001: <strong>Precisa de troca do eixo, foi encontrado uma deformação</strong>
-    </div>
-
-    <div class="item">
-      <span class="estado certo"></span>
-      <strong>Restante das linhas sem problemas de manutenção</strong>
-    </div>
-
-  </div>
-</article>
-
-
-
-
-    </section>
-    </div>
-  </main>
+                setTimeout(() => {
+                    alerta.classList.remove("show");
+                }, 2000);
+            });
+        </script>
 
   
  <div id="barra">

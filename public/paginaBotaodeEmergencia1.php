@@ -21,10 +21,10 @@
 </style>
 </head>
 <body>
-  <header>
-   <div id="barraescura">
-            <a href="paginaAlertasMecanicos.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt="">
-            <a href="paginaNotificacoes.php"><img class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
+    <header>
+        <div id="barraescura">
+            <a href="paginaAlertasMecanicos.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+            <a href="paginaNotificacoes.php"><img id="im2" class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
         </div>
   </header>
 
@@ -52,36 +52,33 @@
       Botão acionado: <strong>linha 002</strong>
     </div>
 
-    
+            <br>
+            <br>
 
-  </div>
-</article>
+            <div class ="redonda">
+                <a href="paginaBotaodeEmergencia3.php">
+                    <div class= "letrabranca">
+                        <p class="maq">Bagageiro</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
+                    </div>
+                </a>    
+            </div>
+        </div>
+        <br>
+        <br>
+        <script>
+                document.getElementById("im2").addEventListener("click", function() {
+                const alerta = document.getElementById("alertaNotificacao");
+                
+                alerta.classList.add("show");
 
-<br><br>
-    
- <article class="linhade2" data-line="2">
-  <div class="nomede">
-    <div class="titulolinhas">Bagageiro</div>
-    <div style="display:flex;align-items:center;gap:8px">
-      <button class="botaodese" aria-expanded="false" data-target="2">▸</button>
-    </div>
-  </div>
-
-  <div class="items" id="items-2" style="display:none">
-
-    <div class="item">
-      <span class="estado certo"></span>
-       <strong>Nenhum acionamento relatado</strong>
-    </div>
-  </div>
-</article>
-
-    </section>
-    </div>
-  </main>
-
-  
- <div id="barra">
+                setTimeout(() => {
+                    alerta.classList.remove("show");
+                }, 2000);
+            });
+        </script>
+</main>
+    <footer>
+        <div id="barra">
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
             <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>

@@ -111,7 +111,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
     <header>
         <div id="barraescura">
             <div id="nav-itens">
-                <a href="paginaNotificacoes.php"><img class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
+                <a href="paginaNotificacoes.php"><img id="im2" class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
             </div>
             <img class="imgtopo" src="../asets/imagens/meio/fotoFundoTrem.png" alt="">
         </div>
@@ -215,6 +215,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
             </form>
         </div>
 
+
         <footer>
             <div id="barra">
                 <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
@@ -237,5 +238,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
             }
         });
     </script>
+    <script>
+                document.getElementById("im2").addEventListener("click", function() {
+                const alerta = document.getElementById("alertaNotificacao");
+                
+                alerta.classList.add("show");
+
+                setTimeout(() => {
+                    alerta.classList.remove("show");
+                }, 2000);
+            });
+        </script>
 </body>
 </html>

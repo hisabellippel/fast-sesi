@@ -73,7 +73,7 @@ if (isset($_GET['delete']) && isset($_GET['credencial_funcionario'])) {
     <header>
         <div id="barraescura">
            <a href="paginaMenuPrincipal.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
-            <a href="paginaNotificacoes.php"><img class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
+            <a href="paginaNotificacoes.php"><img id="im2" class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
         </div>
     </header>
 
@@ -189,6 +189,18 @@ if (isset($_GET['delete']) && isset($_GET['credencial_funcionario'])) {
             <div id="letrasAlterar2"></div>
         </div>
     </div>
+
+    <script>
+                document.getElementById("im2").addEventListener("click", function() {
+                const alerta = document.getElementById("alertaNotificacao");
+                
+                alerta.classList.add("show");
+
+                setTimeout(() => {
+                    alerta.classList.remove("show");
+                }, 2000);
+            });
+        </script>
     
     <footer>
         <div id="barra">
