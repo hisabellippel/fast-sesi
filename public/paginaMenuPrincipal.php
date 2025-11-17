@@ -80,8 +80,8 @@
                 </div>
 
                 <div class="red5">
-                    <img src="../asets/imagens/meio/alertamenu.png" alt="" height= "60px" width= "60px">
-                    <a href="paginaAlertaseNotificacoes1.php"><p class="cormenu">Alertas e Notificações</p></a>
+                    <img src="../asets/imagens/meio/configuracao.png" alt="" height= "60px" width= "60px">
+                    <a href="paginaAlertaseNotificacoes1.php"><p class="cormenu">Configurações</p></a>
                 </div>
                 <br>
             </div>
