@@ -441,6 +441,7 @@ body {
     height: 70px;
     padding-left: 280px;
     margin-top: -10px;
+    cursor: pointer;
 }
 
 #fonte {
@@ -1390,3 +1391,23 @@ p.nova {
     margin: 10px;
     box-shadow: #5e9cef;
 }
+
+.alerta {
+    position: fixed;
+    top: 20px;
+    right: 80px;
+    background:  rgb(108, 140, 211, 0.7);
+    color: #fff;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .5s ease;
+    z-index: 9999;
+}
+.alerta.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
