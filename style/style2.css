@@ -433,7 +433,7 @@ background-color: rgb(136, 144, 153);
 
 #botoes_novos2 button {
     width: 100%;            
-    background-color: gray;
+    background-color: rgb(201, 198, 198);
     color: white;
     border: none;
     padding: 12px 0;        

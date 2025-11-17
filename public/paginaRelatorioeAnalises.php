@@ -23,7 +23,6 @@
             <h2 id="hs">Relatório e Análises</h2>
         </div>
         <br>
-        <br>
 
          <div class="fundo">
 
@@ -64,6 +63,8 @@
                     <img src="../asets/imagens/meio/relatorio.png" alt="" height= "50px" width= "50px">
                     <a href="paginaRelatoriodasLinhas1.php"><p class="cormenu">Relatório das Linhas</p></a>
                 </div>
+
+                <br>
 
         </div>
         <footer>
