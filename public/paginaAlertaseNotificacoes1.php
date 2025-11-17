@@ -5,6 +5,7 @@
     <title>Alertas e Notificações</title>
     <link rel="stylesheet" href="../style/styles.css">
     <link rel="stylesheet" href="../style/style2.css">
+    <link rel="stylesheet" href="../style/style3.css">
 </head>
 
 <body>
@@ -18,32 +19,67 @@
     <br>
 <main>
     <div id="azul">
-        <h2 id="hs">Alertas e Notificações</h2>
+        <h2 id="hs">Configurações</h2>
     </div>
     <br>
-    <br>
-    <br>
 
-    <div class="pad6">
-        <div class ="redonda5">
-            <a href="paginaAlertaseNotificacoes2.php">
-                <div class =  "letrabranca">
-                    <p class="maq">Alertas</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
-                </div>
-            </a>    
-        </div>
+    <div class="fundo2">
 
-        <br>
-        <br>
+            <h2>Configurações</h2>
 
-        <div class ="redonda5">
-            <a href="paginaAlertaseNotificacoes3.php"> 
-                <div class =  "letrabranca">
-                    <p class="maq">Notificações</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
-                </div>
-            </a>    
-        </div>
-    </div>    
+            <div class="setting-item">
+                <span>Notificações</span>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="setting-item">
+                <span>Modo Escuro</span>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="setting-item">
+                <span>Som</span>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="setting-item">
+                <span>Idioma</span>
+                <select>
+                    <option>Português</option>
+                    <option>Inglês</option>
+                    <option>Espanhol</option>
+                </select>
+            </div>
+
+            <div class="setting-item">
+                <span>Permições ADM</span>
+                <select>
+                    <option>Todas</option>
+                    <option>Personalizada</option>
+                    <option>Nenhuma</option>
+                </select>
+            </div>
+
+            <div class="setting-item">
+                <span>Permições FUNC</span>
+                <select>
+                    <option>Todas</option>
+                    <option>Personalizada</option>
+                    <option>Nenhuma</option>
+                </select>
+            </div>
+
+</div>
+
 </main>
 
 <footer>
