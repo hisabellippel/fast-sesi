@@ -5,6 +5,7 @@
     <title>Alertas e Notificações</title>
     <link rel="stylesheet" href="../style/styles.css">
     <link rel="stylesheet" href="../style/style2.css">
+    <link rel="stylesheet" href="../style/style3.css">
 </head>
 
 <body>
@@ -18,27 +19,27 @@
     <br>
     <main>
         <div id="azul">
-            <h2 id="hs">Alertas e Notificações</h2>
+            <h2 id="hs">Oque é a Fest-Sesi</h2>
         </div>
-        
-        <div class="pad6">
-            <div class ="redonda">
-                <div class =  "letrabranca">
-                    <p class="maq">Alertas</p><p class="nova"><p class="nova2">▼</p>
-                </div>
-            </div>
-            <div class = "informacao5">
-                <p>Trilhos 4 e 5 em reforma.</p>
-            </div>
 
-            <div class ="redonda">
-                <a href="paginaAlertaseNotificacoes3.php">
-                    <div class =  "letrabranca">
-                        <p class="maq">Notificações</p><p class="nova"><strong>°1</strong></p><p class="nova2">▼</p>
-                    </div>
-                </a>
-            </div>
-        </div>    
+        <div class="fundo2">
+            <br>
+            <p class="preto"><strong>Nosso aplicativo foi criado para otimizar e modernizar a gestão ferroviária em Joinville, reunindo em um só lugar todas as informações necessárias para uma operação eficiente e segura.
+                </strong><br><br>
+                Com ele, profissionais e equipes têm acesso rápido a informações essenciais da operação, acompanhando em tempo real dados sobre 
+                vias, ativos, manutenções, ocorrências e fluxos de trabalho.
+                Com uma interface intuitiva, o sistema oferece monitoramento atualizado, registro de atividades, controle de manutenção, gestão de equipes e relatórios inteligentes, 
+                garantindo mais eficiência, segurança e organização em toda a operação ferroviária.
+                <br><br><strong>
+                Prático, intuitivo e completo — tudo o que você precisa para gerenciar a ferrovia de forma mais ágil e confiável.</strong></p>
+
+                <br>
+                <br>
+        </div>
+
+
+        
+    
     </main>
 
     <footer>
