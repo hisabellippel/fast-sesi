@@ -42,16 +42,15 @@ if (!isset($_SESSION["credencial_funcionario"])) {
 
                 <div class="selecioneflecha">
                     <h3> Selecione a Linha: </h3>
-                    <img src="../asets/imagens/meio/setaabaixar.png" alt="">
                 </div>
 
                 <div class="selecionar3">
 
-                <a href="paginaSelecioneLinhas1.php"><p class="linhas2"> Linha 001</p></a>
-                <a href="paginaSelecioneLinhas2.php"><p class="linhas2"> Linha 002</p></a>
-                <a href="paginaSelecioneLinhas3.php"><p class="linhas2"> Linha 003</p></a>
-                <a href="paginaSelecioneLinhas4.php"><p class="linhas2"> Linha 004</p></a>
-                <a href="paginaSelecioneLinhas5.php"><p class="linhas2"> Linha 005</p></a>
+                    <a href="paginaSelecioneLinhas1.php"><p class="linhas2">Linha 001</p></a>
+                    <a href="paginaSelecioneLinhas2.php"><p class="linhas2">Linha 002</p></a>
+                    <a href="paginaSelecioneLinhas3.php"><p class="linhas2">Linha 003</p></a>
+                    <a href="paginaSelecioneLinhas4.php"><p class="linhas2">Linha 004</p></a>
+                    <a href="paginaSelecioneLinhas5.php"><p class="linhas2">Linha 005</p></a>
 
                 </div>
 
