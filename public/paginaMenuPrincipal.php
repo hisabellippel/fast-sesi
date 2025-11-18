@@ -56,9 +56,10 @@
             </form>
 
             <div class="lado">
-                <div class="red">
+                <a href="paginaSelecioneLinhas.php">
+                    <div class="red">
                     <img src="../asets/imagens/meio/linhas.png" alt="" height= "60px" width= "80px">
-                    <a href="paginaSelecioneLinhas.php"><p class="cormenu">Linhas</p></a>
+                    <p class="cormenu">Linhas</p></a>
                 </div>
 
                 <div class="red1">

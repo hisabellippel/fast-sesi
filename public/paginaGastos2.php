@@ -32,7 +32,7 @@
             <p data-func="Maquinistas">Salário dos Maquinistas: R$ 1600,00 p/pessoa</p>
             <p data-func="Técnicos de Manutenção">Salário dos Técnicos de Manutenção: R$ 2300,00 p/pessoa</p>
             <p data-func="Engenheiros">Salário dos Engenheiros Ferroviários: R$ 3600,00 p/pessoa</p>
-            <p data-func="Controlador de Tráfego">Controlador de Tráfego: R$ 1518,00 p/pessoa</p>
+            <p data-func="Controlador de Tráfego">Controlador de Tráfego: R$ 1618,00 p/pessoa</p>
         </div>
 
         <div class="redonda">

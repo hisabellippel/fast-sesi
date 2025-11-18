@@ -1,6 +1,6 @@
 <?php
 
-$mysqli = new mysqli("localhost", "root", "root", "fast_sesi_sa");
+$mysqli = new mysqli("localhost", "root", "", "fast_sesi_sa");
 if ($mysqli->connect_errno) {
     die("Erro de conexão: " . $mysqli->connect_error);
 }
