@@ -46,15 +46,16 @@ if (!isset($_SESSION["credencial_funcionario"])) {
                 required
             >
             <datalist id="sugestoes">
-                <option value="linhas">
-                <option value="trens">
-                <option value="inspecao">
-                <option value="relatorio">
-                <option value="analises">
-                <option value="ouvidoria">
-                <option value="alertas">
-                <option value="notificacoes">
-                <option value="gastos">
+                <option value="Linhas">
+                <option value="Trens">
+                <option value="Inspecao">
+                <option value="Relatorio">
+                <option value="Configuracao">
+                <option value="Sensores">
+                <option value="Gastos">
+                <option value="Trilhos">
+                <option value="Alertas">
+                <option value="Sinalizacao">
             </datalist>
             <button type="submit">Buscar</button>
             </form>

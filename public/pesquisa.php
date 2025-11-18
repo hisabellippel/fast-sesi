@@ -24,11 +24,12 @@ if (isset($_GET['q'])) {
         'trens' => 'paginaTrensAtivados1.php',
         'inspecao' => 'paginaControledeInspeção.php',
         'relatorio' => 'paginaRelatorioeAnalises.php',
-        'ouvidoria' => 'paginaOuvidoriaGeral.php',
-        'alertas' => 'paginaAlertaseNotificacoes2.php',
-        'notificacoes' => 'paginaAlertaseNotificacoes3.php',
+        'configuracao' => 'paginaAlertaseNotificacoes1.php',
         'gastos' => 'paginaGastos.php',
-        'trens descarrilhados' =>'paginaTrensDescarrilhados.php'
+        'sensores' => 'paginaSensores1.php',
+        'trilhos' =>'paginaTrilhos1.php',
+        'alertas' =>'paginaAlertasMecanicos.php',
+        'sinalizacao' =>'paginaSistemasdeSinalizacao.php'
     ];
 
     if (array_key_exists($busca, $rotas)) {
