@@ -41,7 +41,7 @@ if (!isset($_SESSION["credencial_funcionario"])) {
             <h2> Menu Principal</h2>
         </div>
 
-        <div class="fundo">
+        <div class="fundomenu">
 
             <form action="pesquisa.php" method="get" class="form-pesquisa" autocomplete="off">
             <input
