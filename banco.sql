@@ -116,4 +116,4 @@ VALUES
 ('Ouro negro — Monte Claro', 75, 22500, 'Metrópolis Leste', 115, '2025-11-18 09:15:00', 'Média', 500, 1, 'Freio revisado', 3),
 ('Rio Verde Eldoria', 90, 13200, 'Corredor Sul', 80, '2025-11-18 10:00:00', 'Alta', 520, 0, 'Nenhuma', 4),
 ('Coralua — Maresia', 70, 19800, 'Vale dos Pinheiros', 100, '2025-11-18 11:10:00', 'Média', 480, 2, 'Falha elétrica leve', 5),
-('Linha Central', 85, 16000, 'Fluxo alto', 36, '2025-11-18 12:00:00', 'Alta', 560, 0, 'Nenhuma', 1); -- Linha de inserção adicional para completar o bloco
+('Linha Central', 85, 16000, 'Fluxo alto', 36, '2025-11-18 12:00:00', 'Alta', 560, 0, 'Nenhuma', 1); 

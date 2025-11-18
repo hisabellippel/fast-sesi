@@ -2,68 +2,122 @@
 session_start();
 require_once 'db.php';
 
-if (!isset($_SESSION["credencial_funcionario"]) || $_SERVER["REQUEST_METHOD"] != "POST") {
+if (!isset($_SESSION["credencial_funcionario"])) {
     header("Location: paginaLogin.php?msg=expired");
     exit;
 }
 
+if ($_SERVER["REQUEST_METHOD"] !== "POST") {
+    header("Location: paginaTrensAtivados.php?msg=invalid_method");
+    exit;
+}
 
-$id_linhas = filter_input(INPUT_POST, 'id_linhas', FILTER_SANITIZE_NUMBER_INT);
-$nome_linhas = filter_input(INPUT_POST, 'nome_linhas', FILTER_SANITIZE_STRING);
-$velocidade_linhas = filter_input(INPUT_POST, 'velocidade_linhas', FILTER_SANITIZE_NUMBER_INT);
-$passageiros_linhas = filter_input(INPUT_POST, 'passageiros_linhas', FILTER_SANITIZE_NUMBER_INT);
-$avisos_linhas = filter_input(INPUT_POST, 'avisos_linhas', FILTER_SANITIZE_STRING);
-$distancia_linhas = filter_input(INPUT_POST, 'distancia_linhas', FILTER_SANITIZE_NUMBER_INT);
-$motorista_linhas = filter_input(INPUT_POST, 'motorista_linhas', FILTER_SANITIZE_NUMBER_INT);
-$horario_linhas = filter_input(INPUT_POST, 'horario_linhas', FILTER_SANITIZE_STRING);
-$eficiencia_eletrica_linhas = filter_input(INPUT_POST, 'eficiencia_eletrica_linhas', FILTER_SANITIZE_STRING);
-$consumo_energia_linhas = filter_input(INPUT_POST, 'consumo_energia_linhas', FILTER_SANITIZE_NUMBER_INT);
-$acidentes_linhas = filter_input(INPUT_POST, 'acidentes_linhas', FILTER_SANITIZE_NUMBER_INT);
-$falhas_tecnicas_linhas = filter_input(INPUT_POST, 'falhas_tecnicas_linhas', FILTER_SANITIZE_STRING);
+$id_linhas = isset($_POST['id_linhas']) ? (int)$_POST['id_linhas'] : null;
 
+$required_fields = ['nome_linhas', 'velocidade_linhas', 'passageiros_linhas', 'avisos_linhas', 'distancia_linhas', 'motorista_linhas', 'horario_linhas', 'eficiencia_eletrica_linhas', 'consumo_energia_linhas', 'acidentes_linhas'];
+
+foreach ($required_fields as $field) {
+    if (!isset($_POST[$field]) || empty(trim($_POST[$field])) && $_POST[$field] !== '0') {
+        header("Location: " . ($id_linhas ? "adicionar_editar_linha.php?id=$id_linhas&msg=missing_fields" : "adicionar_editar_linha.php?msg=missing_fields"));
+        exit;
+    }
+}
+
+$nome_linhas = trim($_POST['nome_linhas']);
+$velocidade_linhas = (int)$_POST['velocidade_linhas'];
+$passageiros_linhas = (int)$_POST['passageiros_linhas'];
+$avisos_linhas = trim($_POST['avisos_linhas']);
+$distancia_linhas = (float)$_POST['distancia_linhas'];
+$motorista_linhas = (int)$_POST['motorista_linhas'];
+$horario_linhas = trim($_POST['horario_linhas']);
+$eficiencia_eletrica_linhas = trim($_POST['eficiencia_eletrica_linhas']);
+$consumo_energia_linhas = (float)$_POST['consumo_energia_linhas'];
+$acidentes_linhas = (int)$_POST['acidentes_linhas'];
+$falhas_tecnicas_linhas = isset($_POST['falhas_tecnicas_linhas']) ? trim($_POST['falhas_tecnicas_linhas']) : null;
 
 if ($id_linhas) {
-   
-    $sql = "UPDATE linhas SET 
+
+    $sql = "UPDATE linhas SET
                 nome_linhas = ?, 
                 velocidade_linhas = ?, 
                 passageiros_linhas = ?, 
                 avisos_linhas = ?, 
                 distancia_linhas = ?, 
-                horario_linhas = ?,
-                eficiencia_eletrica_linhas = ?,
-                consumo_energia_linhas = ?,
-                acidentes_linhas = ?,
-                falhas_tecnicas_linhas = ?,
-                motorista_linhas = ?
+                motorista_linhas = ?, 
+                horario_linhas = ?, 
+                eficiencia_eletrica_linhas = ?, 
+                consumo_energia_linhas = ?, 
+                acidentes_linhas = ?, 
+                falhas_tecnicas_linhas = ?
             WHERE id_linhas = ?";
     
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("siiisisisisi", 
-        $nome_linhas, $velocidade_linhas, $passageiros_linhas, $avisos_linhas, $distancia_linhas, 
-        $horario_linhas, $eficiencia_eletrica_linhas, $consumo_energia_linhas, $acidentes_linhas, 
-        $falhas_tecnicas_linhas, $motorista_linhas, $id_linhas);
-    
-    $msg = $stmt->execute() ? "editado_sucesso" : "erro_edicao";
+    if (!$stmt) {
+        die("Erro na preparação do UPDATE: " . $conn->error);
+    }
+
+    $stmt->bind_param(
+        "siissisdsiis", 
+        $nome_linhas, 
+        $velocidade_linhas, 
+        $passageiros_linhas, 
+        $avisos_linhas, 
+        $distancia_linhas, 
+        $motorista_linhas, 
+        $horario_linhas, 
+        $eficiencia_eletrica_linhas, 
+        $consumo_energia_linhas, 
+        $acidentes_linhas, 
+        $falhas_tecnicas_linhas, 
+        $id_linhas
+    );
+
+    $success_msg = "Linha editada com sucesso!";
+    $error_msg = "Erro ao editar a linha: ";
 
 } else {
-    
-    $sql = "INSERT INTO linhas 
-                (nome_linhas, velocidade_linhas, passageiros_linhas, avisos_linhas, distancia_linhas, horario_linhas, eficiencia_eletrica_linhas, consumo_energia_linhas, acidentes_linhas, falhas_tecnicas_linhas, motorista_linhas) 
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+
+    $sql = "INSERT INTO linhas (
+                nome_linhas, velocidade_linhas, passageiros_linhas, avisos_linhas, 
+                distancia_linhas, motorista_linhas, horario_linhas, eficiencia_eletrica_linhas, 
+                consumo_energia_linhas, acidentes_linhas, falhas_tecnicas_linhas
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
     
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("siiisisisis", 
-        $nome_linhas, $velocidade_linhas, $passageiros_linhas, $avisos_linhas, $distancia_linhas, 
-        $horario_linhas, $eficiencia_eletrica_linhas, $consumo_energia_linhas, $acidentes_linhas, 
-        $falhas_tecnicas_linhas, $motorista_linhas);
+    if (!$stmt) {
+        die("Erro na preparação do INSERT: " . $conn->error);
+    }
 
-    $msg = $stmt->execute() ? "adicionado_sucesso" : "erro_adicao";
+    $stmt->bind_param(
+        "siissisdsii", 
+        $nome_linhas, 
+        $velocidade_linhas, 
+        $passageiros_linhas, 
+        $avisos_linhas, 
+        $distancia_linhas, 
+        $motorista_linhas, 
+        $horario_linhas, 
+        $eficiencia_eletrica_linhas, 
+        $consumo_energia_linhas, 
+        $acidentes_linhas, 
+        $falhas_tecnicas_linhas
+    );
+
+    $success_msg = "Nova linha adicionada com sucesso!";
+    $error_msg = "Erro ao adicionar a linha: ";
 }
 
-$conn->close();
-
-
-header("Location: paginaTrensAtivados.php?msg=" . $msg);
-exit;
+if ($stmt->execute()) {
+    $stmt->close();
+    $conn->close();
+    header("Location: paginaTrensAtivados.php?msg=" . urlencode($success_msg));
+    exit;
+} else {
+    $error_details = $error_msg . $stmt->error;
+    $stmt->close();
+    $conn->close();
+    $redirect_url = $id_linhas ? "adicionar_editar_linha.php?id=$id_linhas&msg=" . urlencode($error_details) : "adicionar_editar_linha.php?msg=" . urlencode($error_details);
+    header("Location: " . $redirect_url);
+    exit;
+}
 ?>
