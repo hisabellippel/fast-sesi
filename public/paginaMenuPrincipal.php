@@ -27,7 +27,7 @@ if (!isset($_SESSION["credencial_funcionario"])) {
 
     <header>
         <div id="barraescura">
-            <a href="paginaLogin.php?logout=1"><button class ="sair" type="submit">SAIR</button></a>
+            <a href="paginaLogin.php?logout=1"><img id="im6" class="im6" src="../asets/imagens/barraAcima/Saída.png" alt=""></a>
             <img id="im2" class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt="">
     </header>
     <br>
@@ -52,15 +52,13 @@ if (!isset($_SESSION["credencial_funcionario"])) {
                 required
             >
             <datalist id="sugestoes">
-                <option value="linhas">
-                <option value="trens">
-                <option value="inspecao">
-                <option value="relatorio">
-                <option value="analises">
-                <option value="ouvidoria">
-                <option value="alertas">
-                <option value="notificacoes">
-                <option value="gastos">
+                <option value="Linhas">
+                <option value="Trens">
+                <option value="Inspecao">
+                <option value="Relatorio">
+                <option value="Alertas">
+                <option value="Notificacoes">
+                <option value="Gastos">
             </datalist>
             <button type="submit">Buscar</button>
             </form>
@@ -73,30 +71,38 @@ if (!isset($_SESSION["credencial_funcionario"])) {
                 </div>
 
                 <div class="red1">
-                    <img src="../asets/imagens/meio/tremmenu.png" alt="" height= "60px" width= "80px">
-                    <a href="paginaTrensAtivados1.php"><p class="cormenu">Trens</p></a>
+                    <a href="paginaTrensAtivados1.php">
+                        <img src="../asets/imagens/meio/tremmenu.png" alt="" height= "60px" width= "80px">
+                        <p class="cormenu">Trens</p>
+                    </a>
                 </div>
             </div>
             <div class="lado">
                 <div class="red2">
-                    <img src="../asets/imagens/meio/analisemenu.png" alt="" height= "50px" width= "50px">
-                    <a href="paginaControledeInspeção.php"><p class="cormenu">Controle de inspeção</p></a>
+                    <a href="paginaControledeInspeção.php">
+                        <img src="../asets/imagens/meio/analisemenu.png" alt="" height= "50px" width= "50px">
+                        <p class="cormenu">Controle de inspeção</p>
+                    </a>
                 </div>
 
                 <div class="red3">
-                    <img src="../asets/imagens/meio/controledeinspecaomenu.png" alt="" height= "60px" width= "60px">
-                    <a href="paginaRelatorioeAnalises.php"><p class="cormenu">Relatório e análises </p></a>
+                    <a href="paginaRelatorioeAnalises.php">
+                        <img src="../asets/imagens/meio/controledeinspecaomenu.png" alt="" height= "60px" width= "60px">
+                        <p class="cormenu">Relatório e análises </p>
+                    </a>
                 </div>
             </div>
             <div class="lado">
                 <div class="red4">
-                    <img src="../asets/imagens/meio/sensor.png" alt="" height= "50px" width= "60px">
-                    <a href="paginaSensores1.php"><p class="cormenu">Sensores</p></a>
+                    <a href="paginaSensores1.php">
+                        <img src="../asets/imagens/meio/sensor.png" alt="" height= "50px" width= "60px">
+                        <p class="cormenu">Sensores</p>
+                    </a>
                 </div>
 
                 <div class="red5">
                     <img src="../asets/imagens/meio/perfil2.png" alt="" height= "60px" width= "60px">
-                    <a href="paginaFuncionarios.php"><p class="cormenu">Funcionários</p></a>
+                    <a href="paginaFuncionarios.php.php"><p class="cormenu">Funcionários</p></a>
                 </div>
                 <br>
             </div>
