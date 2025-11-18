@@ -60,18 +60,24 @@ if (!isset($_SESSION["credencial_funcionario"])) {
             </form>
 
                 <div class="red6">
-                    <img src="../asets/imagens/meio/desempenho.png" alt="" height= "60px" width= "80px">
-                    <a href="paginaDesempenho.php"><p class="cormenu">Dados sobre Desempenho</p></a>
+                    <a href="paginaDesempenho.php">
+                        <img src="../asets/imagens/meio/desempenho.png" alt="" height= "60px" width= "80px">
+                        <p class="cormenu">Dados sobre Desempenho</p>
+                    </a>
                 </div>
 
                 <div class="red6">
-                    <img src="../asets/imagens/meio/gastos.png" alt="" height= "60px" width= "60px">
-                    <a href="paginaGastos.php"><p class="cormenu">Gastos</p></a>
+                    <a href="paginaGastos.php">
+                        <img src="../asets/imagens/meio/gastos.png" alt="" height= "60px" width= "60px">
+                        <p class="cormenu">Gastos</p>
+                    </a>
                 </div>
 
                 <div class="red6">
-                    <img src="../asets/imagens/meio/relatorio.png" alt="" height= "50px" width= "50px">
-                    <a href="paginaRelatoriodasLinhas1.php"><p class="cormenu">Relatório das Linhas</p></a>
+                    <a href="paginaRelatoriodasLinhas1.php">
+                        <img src="../asets/imagens/meio/relatorio.png" alt="" height= "50px" width= "50px">
+                        <p class="cormenu">Relatório das Linhas</p>
+                    </a>
                 </div>
 
                 <br>

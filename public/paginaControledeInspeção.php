@@ -46,39 +46,36 @@ if (!isset($_SESSION["credencial_funcionario"])) {
                 required
             >
             <datalist id="sugestoes">
-                <option value="linhas">
-                <option value="trens">
-                <option value="inspecao">
-                <option value="relatorio">
-                <option value="analises">
-                <option value="ouvidoria">
-                <option value="alertas">
-                <option value="notificacoes">
-                <option value="gastos">
+                <option value="Trens">
+                <option value="Inspecao">
+                <option value="Relatorio">
+                <option value="Alertas">
+                <option value="Notificacoes">
+                <option value="Gastos">
             </datalist>
             <button type="submit">Buscar</button>
             </form>
 
-            <div class="lado">
-                <div class="red0">
-                    <img src="../asets/imagens/meio/trilhos.png" alt="" height= "60px" width= "80px">
-                    <a href="paginaTrilhos1.php"><p class="cormenu">Trilhos</p></a>
+            
+                <div class="red6">
+                    <a href="paginaTrilhos1.php">
+                        <img src="../asets/imagens/meio/trilhos.png" alt="" height= "60px" width= "80px">
+                        <p class="cormenu">Trilhos</p>
+                    </a>
                 </div>
 
-                <div class="red11">
-                    <img src="../asets/imagens/meio/alertasmec.png" alt="" height= "70px" width= "70px">
-                    <a href="paginaAlertasMecanicos.php"><p class="cormenu">Alertas Mecânicos</p></a>
+                <div class="red6">
+                    <a href="paginaAlertasMecanicos.php">
+                        <img src="../asets/imagens/meio/alertasmec.png" alt="" height= "70px" width= "70px">
+                        <p class="cormenu">Alertas Mecânicos</p>
+                    </a>
                 </div>
-            </div>
-            <div class="lado">
-                <div class="red22">
-                    <img src="../asets/imagens/meio/sinalizacao.png" alt="" height= "50px" width= "50px">
-                    <a href="paginaSistemasdeSinalizacao.php"><p class="cormenu">Sistema de sinalização</p></a>
-                </div>
-
-                <div class="red33">
-                    <img src="../asets/imagens/meio/sensor.png" alt="" height= "60px" width= "80px">
-                    <a href="paginaSensores1.php"><p class="cormenu">Sensores</p></a>
+            
+                <div class="red6">
+                    <a href="paginaSistemasdeSinalizacao.php">
+                        <img src="../asets/imagens/meio/sinalizacao.png" alt="" height= "50px" width= "50px">
+                        <p class="cormenu">Sistema de sinalização</p>
+                    </a>
                 </div>
             </div>
         </div>
