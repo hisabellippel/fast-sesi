@@ -85,14 +85,6 @@ CREATE TABLE botao_emergencia(
     FOREIGN KEY (linha_botao_emergencia) REFERENCES linhas(id_linhas)
 );
 
-CREATE TABLE ouvidoria(
-    id_ouvidoria int primary key AUTO_INCREMENT NOT NULL,
-    nome_cliente varchar (45),
-    observacoes_ouvidoria varchar (45) NOT NULL,
-    nome_funcionario INT,
-    FOREIGN KEY (nome_funcionario) REFERENCES funcionario(id_funcionario)
-);
-
 CREATE TABLE trens_descarrilhados(
     id_trem_descarrilhado INT primary key AUTO_INCREMENT NOT NULL,
     nome_trem_descarrilhado INT,
