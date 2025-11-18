@@ -8,64 +8,130 @@ if (!isset($_SESSION["credencial_funcionario"])) {
 
 ?>
 
-<html lang="en">
-
+<!doctype html>
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Frenagem</title>
-    <link rel="stylesheet" href="../style/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sistema de Frenagem </title>
+  <link rel="stylesheet" href="../style/styles.css">
+  <link rel="stylesheet" href="../style/style2.css">
+  
+
+   <style>
+    body{
+      color:#0f172a;
+    }
+</style>
 </head>
-
 <body>
-
-    <header>
-        <div id="barraescura">
-             <a href="paginaAlertasMecanicos.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+  <header>
+   <div id="barraescura">
+            <a href="paginaAlertasMecanicos.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt="">
             <a href="paginaNotificacoes.php"><img id="im2" class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
         </div>
-    </header>
-    <br>
-    <br>
-    <main>
-        <div id="azul">
-            <h2 id="hs">Sistema de frenagem:</h2>
-        </div>
-        <br>
+  </header>
+
+  <main><br>
+  <div class="paddese">
+   
+     <div id="azul">
+            <h2 id="hs">Sistema de Frenagem</h2>
+        </div><BR>
         <br>
 
-        <div class = "pad3">
-            <a href="paginaSistemadeFrenagem2.php">
-                <div class="redonda5">
-                    <p class="gastoss">Vazamento de fluido de freio ▼</p>
-                </div>
-            </a>
+    <section class="linhasde">
 
-            <a href="paginaSistemadeFrenagem3.php">
-                <div class="redonda5">
-                    <p class="gastoss">Ar no sistema</p><p class="red"><strong>°1 </strong></p> <p> ▼</p>
-                </div>
-            </a>
+   <article class="linhade2" data-line="1">
+  <div class="nomede">
+    <div class="titulolinhas">Vazamento de fuido de freio</div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <button class="botaodese" aria-expanded="true" data-target="1">▾</button>
+    </div>
+  </div>
 
-            <a href="paginaSistemadeFrenagem4.php">
-                <div class="redonda5">
-                    <p class="gastoss">Desgate de componentes</p><p class="red"><strong>°1</strong></p><p> ▼</p>
-                </div>
-            </a>
+  <div class="items" id="items-1">
 
-            <a href="paginaSistemadeFrenagem5.php">
-                <div class="redonda5">
-                    <p class="gastoss">Falhas operacionais e elétricas ▼</p></p>
-                </div>
-            </a>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+    <div class="item">
+      <span class="estado errado"></span>
+      Linha 005<strong>Necessita de troca de material devido ao contato excessivo com rolamentos</strong>
+    </div>
 
-        <script>
+    <div class="item">
+      <span class="estado certo"></span>
+      Restante das linhas: <strong>Sem vazamentos</strong>
+    </div>
+
+  </div>
+</article>
+
+
+    
+   <article class="linhade2" data-line="2">
+  <div class="nomede">
+    <div class="titulolinhas">Ar no Sistema</div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <button class="botaodese" aria-expanded="false" data-target="2">▸</button>
+    </div>
+  </div>
+
+  <div class="items" id="items-2" style="display:none">
+
+    <div class="item">
+      <span class="estado certo"></span>
+       <strong>Todos os componentes do freio a ar e do sistema eletrônico de controle foram inspecionados e estão operando dentro dos parâmetros de segurança.</strong>
+    </div>
+
+
+  </div>
+</article>
+
+
+<article class="linhade2" data-line="3">
+  <div class="nomede">
+    <div class="titulolinhas">Desgaste de Componentes</div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <button class="botaodese" aria-expanded="false" data-target="3">▸</button>
+    </div>
+  </div>
+
+  <div class="items" id="items-3" style="display:none">
+
+    <div class="item">
+      <span class="estado errado"></span>
+      <strong>Detectado desgaste em pastilhas e discos de freio durante inspeção. Recomenda-se substituição preventiva nas próximas 200 horas de operação.</strong>
+    </div>
+
+    
+
+  </div>
+</article>
+
+
+<article class="linhade2" data-line="4">
+  <div class="nomede">
+    <div class="titulolinhas">Falhas operacionais e elétricas</div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <button class="botaodese" aria-expanded="false" data-target="4">▸</button>
+    </div>
+  </div>
+
+  <div class="items" id="items-4" style="display:none">
+
+    <div class="item">
+      <span class="estado errado"></span>
+      Registradas falhas operacionais e elétricas no sistema de frenagem: <strong>Equipe de manutenção acionada para diagnóstico e correção imediata.</strong>
+    </div>
+
+   
+  </div>
+</article>
+
+    </section>
+    </div>
+  </main>
+
+  <script>
                 document.getElementById("im2").addEventListener("click", function() {
                 const alerta = document.getElementById("alertaNotificacao");
                 
@@ -76,16 +142,16 @@ if (!isset($_SESSION["credencial_funcionario"])) {
                 }, 2000);
             });
         </script>
-    </main>
 
-    <footer>
-        <div id="barra">
+  
+ <div id="barra">
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
             <a href="paginaAlertaseNotificacoes1.php"><img class="im5" src="../asets/imagens/meio/configuracao.png" alt="" height= "35px" width= "35px"></a>
             <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
             <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
         </div>
-    </footer>
+  
+ <script src="../scripts/desempenho.js"></script>
 </body>
 </html>
