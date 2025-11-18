@@ -75,7 +75,7 @@ if (!isset($_SESSION["credencial_funcionario"])) {
 
     <div class="item">
       <span class="estado certo"></span>
-       <strong>>Nenhum problema relatado</strong>
+       <strong>Nenhum problema relatado</strong>
     </div>
 
   </div>
@@ -106,6 +106,7 @@ if (!isset($_SESSION["credencial_funcionario"])) {
 <article class="linhade2" data-line="4">
   <div class="nomede">
     <div class="titulolinhas">Intertravamento</div>
+    <div style="display:flex;align-items:center;gap:8px">
       <button class="botaodese" aria-expanded="false" data-target="4">▸</button>
     </div>
   </div>
@@ -113,14 +114,13 @@ if (!isset($_SESSION["credencial_funcionario"])) {
   <div class="items" id="items-4" style="display:none">
 
     <div class="item">
-      <span class="estado certo"></span>
-      <strong>Nenhum problema relatado</strong>
+      <span class="estado errado"></span>
+       <strong>Nenhum problema relatado</strong>
     </div>
 
    
   </div>
 </article>
-    
 
   </div>
 </article>
