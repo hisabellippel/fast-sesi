@@ -976,7 +976,7 @@ background-color: rgb(136, 144, 153);
     .linhasde{
         display:flex;
         flex-direction:column;
-        gap:12px
+        gap:12px;
     }
     .linhade2{
       background:var(--linhade2);
@@ -986,7 +986,10 @@ background-color: rgb(136, 144, 153);
       display:flex;
       flex-direction:column;
       gap:8px;
-      transition:transform .12s ease
+      transition:transform .12s ease;
+      margin-left:15px ;
+      margin-right: 15px;
+      background-color: #e6e6e6;
     }
     .linhade2:hover{
         transform:translateY(-4px)
