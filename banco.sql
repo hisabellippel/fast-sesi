@@ -103,11 +103,21 @@ INSERT INTO funcionario (credencial_funcionario, nome_funcionario, cpf_funcionar
     telefone_funcionario, cargo_funcionario, funcao_funcionario, salario_funcionario)
 VALUES
 ('1234', 'João', '08068776931', 'adm_joao@gmail.com', '6768', '47997794533', 'ADM', 'Gerente', '10000'),
-
 ('2222', 'Pedro Almeida', '12345678901', 'pedro.almeida@gmail.com', 'pedro22', '47999880011', 'FUNCIONARIO', 'Motorista', '2800'),
-
 ('3333', 'José Carvalho', '98765432100', 'jose.carvalho@gmail.com', 'jose33', '47999776655', 'FUNCIONARIO', 'Motorista', '2600'),
-
 ('4444', 'Marcos Silva', '56789012345', 'marcos.silva@gmail.com', 'marcos44', '47999665544', 'FUNCIONARIO', 'Motorista', '3200'),
-
 ('5555', 'Rafael Santos', '10293847566', 'rafael.santos@gmail.com', 'rafa55', '47999554433', 'FUNCIONARIO', 'Motorista', '3000');
+
+INSERT INTO linhas 
+(nome_linhas, velocidade_linhas, passageiros_linhas, avisos_linhas, distancia_linhas, horario_linhas, eficiencia_eletrica_linhas, consumo_energia_linhas, acidentes_linhas, falhas_tecnicas_linhas, motorista_linhas)
+VALUES
+('Linha Norte', 80, 120, 'Normal', 32, '2025-02-10 08:30:00', 'Alta', 450, 0, 'Nenhuma', 1);
+('Linha Sul', 75, 98, 'Manutenção leve', 28, '2025-02-10 09:15:00', 'Média', 500, 1, 'Freio revisado', 2);
+('Linha Leste', 90, 150, 'Atraso de 5min', 40, '2025-02-10 10:00:00', 'Alta', 520, 0, 'Nenhuma', 3);
+('Linha Oeste', 70, 110, 'Normal', 25, '2025-02-10 11:10:00', 'Média', 480, 2, 'Falha elétrica leve', 4);
+('Linha Central', 85, 160, 'Fluxo alto', 36, '2025-02-10 12:00:00', 'Alta', 560, 0, 'Nenhuma', 5);
+('Linha Industrial', 60, 89, 'Normal', 22, '2025-02-10 13:25:00', 'Baixa', 620, 1, 'Sensor trocado', 6);
+('Linha Portuária', 78, 130, 'Tráfego intenso', 31, '2025-02-10 14:40:00', 'Média', 510, 0, 'Nenhuma', 7);
+('Linha Rural', 55, 70, 'Normal', 18, '2025-02-10 15:10:00', 'Alta', 430, 0, 'Nenhuma', 8);
+('Linha Universitária', 82, 145, 'Pico estudantil', 34, '2025-02-10 16:00:00', 'Alta', 570, 0, 'Nenhuma', 9);
+('Linha Aeroporto', 95, 180, 'Alta demanda', 45, '2025-02-10 17:20:00', 'Alta', 600, 1, 'Falha de comunicação', 10);
