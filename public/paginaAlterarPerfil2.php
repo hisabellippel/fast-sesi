@@ -205,11 +205,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
                 <input type="file" id="fotoInput" name="foto_funcionario" accept="image/*">
 
                 </div>
-                <br>
-
-               
-
-               
+                <br>      
 
                 <button type="submit">Finalizar</button>
             </form>
