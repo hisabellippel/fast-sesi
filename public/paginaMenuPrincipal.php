@@ -101,8 +101,10 @@ if (!isset($_SESSION["credencial_funcionario"])) {
                 </div>
 
                 <div class="red5">
-                    <img src="../asets/imagens/meio/perfil2.png" alt="" height= "60px" width= "60px">
-                    <a href="paginaFuncionarios.php.php"><p class="cormenu"><strong>Funcionários</strong></p></a>
+                    <a href="paginaFuncionarios.php">
+                        <img src="../asets/imagens/meio/perfil2.png" alt="" height= "60px" width= "60px">
+                        <p class="cormenu"><strong>Funcionários</strong></p>
+                    </a>
                 </div>
                 <br>
             </div>
