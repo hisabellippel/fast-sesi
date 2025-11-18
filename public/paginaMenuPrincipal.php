@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+if (!isset($_SESSION["credencial_funcionario"])) {
+    header("Location: paginaLogin.php?msg=expired");
+    exit;
+}
+
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -80,13 +90,13 @@
             </div>
             <div class="lado">
                 <div class="red4">
-                    <img src="../asets/imagens/meio/ouvidoriamenu.png" alt="" height= "60px" width= "60px">
-                    <a href="paginaOuvidoriaGeral.php"><p class="cormenu">Ouvidoria</p></a>
+                    <img src="../asets/imagens/meio/sensor.png" alt="" height= "50px" width= "60px">
+                    <a href="paginaSensores1.php"><p class="cormenu">Sensores</p></a>
                 </div>
 
                 <div class="red5">
-                    <img src="../asets/imagens/meio/configuracao.png" alt="" height= "60px" width= "60px">
-                    <a href="paginaAlertaseNotificacoes1.php"><p class="cormenu">Configurações</p></a>
+                    <img src="../asets/imagens/meio/perfil2.png" alt="" height= "60px" width= "60px">
+                    <a href="paginaAlertaseNotificacoes1.php"><p class="cormenu">Funcionários</p></a>
                 </div>
                 <br>
             </div>
@@ -107,6 +117,7 @@
          <div id="barra">
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
+            <a href="paginaAlertaseNotificacoes1.php"><img class="im5" src="../asets/imagens/meio/configuracao.png" alt="" height= "35px" width= "35px"></a>
             <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
             <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
         </div>

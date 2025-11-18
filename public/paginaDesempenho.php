@@ -11,8 +11,6 @@
    <style>
     html,body{height:100%}
     body{
-      margin:0;
-      background:linear-gradient(180deg, #eef4ff 0%, var(--bg) 100%);
       color:#0f172a;
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;
@@ -34,7 +32,7 @@
    
      <div id="azul">
             <h2 id="hs">Dados sobre desempenho e eficiência operacional</h2>
-        </div><BR>
+        </div><BR><br><br>
 
     <section class="linhasde">
 
@@ -134,6 +132,7 @@
  <div id="barra">
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
+            <a href="paginaAlertaseNotificacoes1.php"><img class="im5" src="../asets/imagens/meio/configuracao.png" alt="" height= "35px" width= "35px"></a>
             <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
             <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
         </div>
