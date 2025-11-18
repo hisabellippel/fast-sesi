@@ -56,9 +56,12 @@ if (!isset($_SESSION["credencial_funcionario"])) {
                 <option value="Trens">
                 <option value="Inspecao">
                 <option value="Relatorio">
-                <option value="Alertas">
-                <option value="Notificacoes">
+                <option value="Configuracao">
+                <option value="Sensores">
                 <option value="Gastos">
+                <option value="Trilhos">
+                <option value="Alertas">
+                <option value="Sinalizacao">
             </datalist>
             <button type="submit">Buscar</button>
             </form>
