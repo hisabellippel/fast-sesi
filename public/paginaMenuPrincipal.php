@@ -79,8 +79,8 @@
             </div>
             <div class="lado">
                 <div class="red4">
-                    <img src="../asets/imagens/meio/ouvidoriamenu.png" alt="" height= "60px" width= "60px">
-                    <a href="paginaOuvidoriaGeral.php"><p class="cormenu">Ouvidoria</p></a>
+                    <img src="../asets/imagens/meio/sensor.png" alt="" height= "50px" width= "60px">
+                    <a href="paginaSensores1.php"><p class="cormenu">Sensores</p></a>
                 </div>
 
                 <div class="red5">
