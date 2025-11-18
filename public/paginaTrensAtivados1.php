@@ -9,12 +9,8 @@
   
 
    <style>
-    html,body{height:100%}
     body{
       color:#0f172a;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      padding-bottom:84px; 
     }
 </style>
 </head>

@@ -9,14 +9,8 @@
   
 
    <style>
-    html,body{height:100%}
     body{
-      margin:0;
-      background:linear-gradient(180deg, #eef4ff 0%, var(--bg) 100%);
       color:#0f172a;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      padding-bottom:84px; 
     }
 </style>
 </head>
