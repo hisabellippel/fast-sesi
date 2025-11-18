@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         if ($dados["cargo_funcionario"] === "ADM") {
             header("Location: paginaMenuPrincipal.php");
         } elseif ($dados["cargo_funcionario"] === "FUNCIONARIO") {
-            header("Location: ../funcionario/paginaMenuPrincipalFuncionario.php");
+            header("Location:paginaMenuPrincipalFuncionario.php");
         }
         exit;
     } else {

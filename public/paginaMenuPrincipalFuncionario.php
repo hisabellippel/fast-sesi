@@ -8,35 +8,42 @@ if (!isset($_SESSION["credencial_funcionario"])) {
 
 ?>
 
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Controle de Inspeção</title>
+    <title>Menu Principal</title>
     <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/style2.css">
     <link rel="stylesheet" href="../style/style3.css">
+    <style>
+        body{
+            background-color:  rgb(255, 255, 255);
+        }
+    </style>
 </head>
 
 <body>
+    
+
     <header>
         <div id="barraescura">
-             <a href="paginaMenuPrincipal.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
-            <a href="paginaNotificacoes.php"><img id="im2" class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
-        </div>
+            <a href="paginaLogin.php?logout=1"><img id="im6" class="im6" src="../asets/imagens/barraAcima/Saída.png" alt=""></a>
+            <img id="im2" class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt="">
     </header>
     <br>
-    <br>
     <main>
+
+            <div id="alertaNotificacao" class="alerta">
+            Você não possui nenhuma notificação
+            </div>
         <div id="azul">
-            <h2 id="hs">Controle de Inspeção:</h2>
+            <h2> Menu Principal</h2>
         </div>
+
         <div class="fundo">
 
-        <br>
-            
-         <form action="pesquisa.php" method="get" class="form-pesquisa" autocomplete="off">
+            <form action="pesquisa.php" method="get" class="form-pesquisa" autocomplete="off">
             <input
                 type="text"
                 id="c-pesquisa"
@@ -46,6 +53,7 @@ if (!isset($_SESSION["credencial_funcionario"])) {
                 required
             >
             <datalist id="sugestoes">
+                <option value="Linhas">
                 <option value="Trens">
                 <option value="Inspecao">
                 <option value="Relatorio">
@@ -56,33 +64,39 @@ if (!isset($_SESSION["credencial_funcionario"])) {
             <button type="submit">Buscar</button>
             </form>
 
-            
-                <div class="red6">
-                    <a href="paginaTrilhos1.php">
-                        <img src="../asets/imagens/meio/trilhos.png" alt="" height= "60px" width= "80px">
-                        <p class="cormenu">Trilhos</p>
-                    </a>
+            <div class="lado">
+                <a href="paginaSelecioneLinhas.php">
+                    <div class="red">
+                    <img src="../asets/imagens/meio/linhas.png" alt="" height= "60px" width= "80px">
+                    <p class="cormenu">Linhas</p></a>
                 </div>
 
-                <div class="red6">
-                    <a href="paginaAlertasMecanicos.php">
-                        <img src="../asets/imagens/meio/alertasmec.png" alt="" height= "70px" width= "70px">
-                        <p class="cormenu">Alertas Mecânicos</p>
+                <div class="red1">
+                    <a href="paginaTrensAtivados1.php">
+                        <img src="../asets/imagens/meio/tremmenu.png" alt="" height= "60px" width= "80px">
+                        <p class="cormenu">Trens</p>
                     </a>
                 </div>
-            
-                <div class="red6">
-                    <a href="paginaSistemasdeSinalizacao.php">
-                        <img src="../asets/imagens/meio/sinalizacao.png" alt="" height= "50px" width= "50px">
-                        <p class="cormenu">Sistema de sinalização</p>
-                    </a>
-                </div>
-                <br><br>
             </div>
-        </div>
-    </main>
+            <div class="lado">
+                <div class="red2">
+                    <a href="paginaControledeInspeção.php">
+                        <img src="../asets/imagens/meio/analisemenu.png" alt="" height= "50px" width= "50px">
+                        <p class="cormenu">Controle de inspeção</p>
+                    </a>
+                </div>
 
-    <script>
+              
+            <div class="lado0_">
+                <div class="red0_">
+                    <a href="paginaSensores1.php">
+                        <img src="../asets/imagens/meio/sensor.png" alt="" height= "50px" width= "60px">
+                        <p class="cormenu">Sensores</p>
+                    </a>
+                </div>
+
+                
+        <script>
                 document.getElementById("im2").addEventListener("click", function() {
                 const alerta = document.getElementById("alertaNotificacao");
                 
@@ -93,12 +107,11 @@ if (!isset($_SESSION["credencial_funcionario"])) {
                 }, 2000);
             });
         </script>
-        
+    </main>
     <footer>
-        <div id="barra">
+         <div id="barra">
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
-            <h3>Fast.sesi</h3>
-            <a href="paginaAlertaseNotificacoes1.php"><img class="im5" src="../asets/imagens/meio/configuracao.png" alt="" height= "35px" width= "35px"></a>
+            <h3>Fast.sesi</h3>     
             <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
             <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
         </div>
