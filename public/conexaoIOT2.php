@@ -7,7 +7,7 @@ $topic = "projeto/trem/velocidade";
 $client_id = "phpmqtt-" . rand();
 
 $username = "Placa-4-Ana";
-$password = "123456abX";
+$password = "";
 
 header('Content-Type: application/json');
 
