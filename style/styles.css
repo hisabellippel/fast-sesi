@@ -436,9 +436,9 @@ body {
     height: 50px;
 }
 
-.im2 {
+.im2{
     width: 70px;
-    height: 70px;
+    height: 60px;
     padding-left: 280px;
     margin-top: -10px;
     cursor: pointer;
@@ -451,12 +451,12 @@ body {
 .im3 {
     width: 60px;
     height: 40px;
-    padding-left: 5px;
+    padding-left: 9px;
     margin-top:8px;
 }
 
 .im5 {
-    padding-left: 140px;
+    padding-left: 120px;
     margin-top:10px;
 }
 

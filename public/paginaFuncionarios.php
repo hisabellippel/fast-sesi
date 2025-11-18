@@ -29,7 +29,22 @@ if (isset($_GET['logout'])) {
     exit;
 }
 
-
+$message = "";
+if (isset($_GET['delete']) && isset($_GET['credencial_funcionario'])) {
+    $credencial = $_GET['credencial_funcionario'];
+    $sql = "SELECT * FROM funcionario WHERE credencial_funcionario = '$credencial'";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        $sql = "DELETE FROM funcionario WHERE credencial_funcionario = '$credencial'";
+        if ($conn->query($sql) === TRUE) {
+            $message = "Funcionário excluído com sucesso!";
+        } else {
+            $message = "Erro ao excluir: " . $conn->error;
+        }
+    } else {
+        $message = "Funcionário não encontrado!";
+    }
+}
 ?>
 
 <html lang="en">
@@ -63,6 +78,7 @@ if (isset($_GET['logout'])) {
         <style></style>
 
         
+        <h1>Funcionários:</h1>
         <?php if (!empty($message)) echo "<p style='color: red;'>$message</p>"; ?>
         <div id= "sair">
             <div class="botoes">
@@ -78,13 +94,20 @@ if (isset($_GET['logout'])) {
 
         <div id="botoes_novos">
             <button onclick="window.location.href='?logout=1'">Sair</button>
+            <?php if ($_SESSION['cargo_funcionario'] === 'ADM'): ?>
+            <button onclick="window.location.href='paginaCriarConta.php'">Cadastrar Novo Funcionário</button>
+            <?php endif; ?>
          </div>
          
 
         <div id="padAlterar">
             <?php
             $credencial_user = $_SESSION['credencial_funcionario'];
-            $sql = "SELECT * FROM funcionario WHERE credencial_funcionario = '$credencial_user'";
+            if ($_SESSION['cargo_funcionario'] === 'ADM') {
+                $sql = "SELECT * FROM funcionario";
+            } else {
+                $sql = "SELECT * FROM funcionario WHERE credencial_funcionario = '$credencial_user'";
+            }
             $result = $conn->query($sql);
 
             if ($result && $result->num_rows > 0) {
@@ -100,7 +123,7 @@ if (isset($_GET['logout'])) {
                     $cpf_formatted = substr($cpf, 0, 3) . '.' . substr($cpf, 3, 3) . '.' . substr($cpf, 6, 3) . '-' . substr($cpf, 9, 2);
                     $img_src = ($row['foto_funcionario'] && $row['foto_funcionario'] != 'default.jpg') ? "../uploads/" . htmlspecialchars($row['foto_funcionario']) : "../asets/imagens/meio/rostoAlterarPerfil.png";
 
-                    $bg_color = 'rgb(131, 168, 241)';
+                    $bg_color = ($row['credencial_funcionario'] === $credencial_user) ? 'rgb(59, 226, 9)' : 'rgb(131, 168, 241)';
 
                     echo '<table border="1" style="margin-right: 20px; background-color: ' . $bg_color . '; border-radius: 20px; color: aliceblue; width: 350px; height: 475px;">';
                     echo '<tr><td colspan="2" style="text-align:center;"><img src="' . $img_src . '" alt="" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;"></td></tr>';
@@ -118,7 +141,13 @@ if (isset($_GET['logout'])) {
                                 <button type="button">Alterar Perfil:</button>
                             </a>
                           </td></tr>';
-
+                    if ($_SESSION['cargo_funcionario'] === 'ADM' && $row['credencial_funcionario'] !== $credencial_user) {
+                        echo '<tr><td colspan="2" style="text-align:center;">
+                                <a href="?delete=1&credencial_funcionario=' . $row['credencial_funcionario'] . '" onclick="return confirm(\'Tem certeza que deseja excluir este funcionário?\')">
+                                    <button type="button">Excluir Perfil</button>
+                                </a>
+                              </td></tr>';
+                    }
                     echo '</table>';
                 }
                 echo '</div>';
@@ -153,7 +182,6 @@ if (isset($_GET['logout'])) {
             <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
         </div>
     </footer>
-    <?php endif; ?>
+    <?php endif; ?> 
 </body>
 </html>
-
