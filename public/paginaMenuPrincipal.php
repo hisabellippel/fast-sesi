@@ -28,7 +28,7 @@ if (!isset($_SESSION["credencial_funcionario"])) {
     <header>
         <div id="barraescura">
             <a href="paginaLogin.php?logout=1"><button class ="sair" type="submit">SAIR</button></a>
-            <img id="im2" class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt="" height= "70px" width= "60px">
+            <img id="im2" class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt="">
     </header>
     <br>
     <main>
