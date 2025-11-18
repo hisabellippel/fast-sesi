@@ -99,6 +99,7 @@ CREATE TABLE trens_descarrilhados(
     FOREIGN KEY (nome_trem_descarrilhado) REFERENCES trens(id_trem)
 );
 
+
 INSERT INTO funcionario (credencial_funcionario, nome_funcionario, cpf_funcionario, email_funcionario, senha_funcionario,
     telefone_funcionario, cargo_funcionario, funcao_funcionario, salario_funcionario)
 VALUES
@@ -111,13 +112,8 @@ VALUES
 INSERT INTO linhas 
 (nome_linhas, velocidade_linhas, passageiros_linhas, avisos_linhas, distancia_linhas, horario_linhas, eficiencia_eletrica_linhas, consumo_energia_linhas, acidentes_linhas, falhas_tecnicas_linhas, motorista_linhas)
 VALUES
-('Linha Norte', 80, 120, 'Normal', 32, '2025-02-10 08:30:00', 'Alta', 450, 0, 'Nenhuma', 1);
-('Linha Sul', 75, 98, 'Manutenção leve', 28, '2025-02-10 09:15:00', 'Média', 500, 1, 'Freio revisado', 2);
-('Linha Leste', 90, 150, 'Atraso de 5min', 40, '2025-02-10 10:00:00', 'Alta', 520, 0, 'Nenhuma', 3);
-('Linha Oeste', 70, 110, 'Normal', 25, '2025-02-10 11:10:00', 'Média', 480, 2, 'Falha elétrica leve', 4);
-('Linha Central', 85, 160, 'Fluxo alto', 36, '2025-02-10 12:00:00', 'Alta', 560, 0, 'Nenhuma', 5);
-('Linha Industrial', 60, 89, 'Normal', 22, '2025-02-10 13:25:00', 'Baixa', 620, 1, 'Sensor trocado', 6);
-('Linha Portuária', 78, 130, 'Tráfego intenso', 31, '2025-02-10 14:40:00', 'Média', 510, 0, 'Nenhuma', 7);
-('Linha Rural', 55, 70, 'Normal', 18, '2025-02-10 15:10:00', 'Alta', 430, 0, 'Nenhuma', 8);
-('Linha Universitária', 82, 145, 'Pico estudantil', 34, '2025-02-10 16:00:00', 'Alta', 570, 0, 'Nenhuma', 9);
-('Linha Aeroporto', 95, 180, 'Alta demanda', 45, '2025-02-10 17:20:00', 'Alta', 600, 1, 'Falha de comunicação', 10);
+('Altorre-Glaciari­s', 80, 15000, 'Orbitalis', 90, '2025-11-18 08:30:00', 'Alta', 450, 0, 'Nenhuma', 2),
+('Ouro negro — Monte Claro', 75, 22500, 'Metrópolis Leste', 115, '2025-11-18 09:15:00', 'Média', 500, 1, 'Freio revisado', 3),
+('Rio Verde Eldoria', 90, 13200, 'Corredor Sul', 80, '2025-11-18 10:00:00', 'Alta', 520, 0, 'Nenhuma', 4),
+('Coralua — Maresia', 70, 19800, 'Vale dos Pinheiros', 100, '2025-11-18 11:10:00', 'Média', 480, 2, 'Falha elétrica leve', 5),
+('Linha Central', 85, 16000, 'Fluxo alto', 36, '2025-11-18 12:00:00', 'Alta', 560, 0, 'Nenhuma', 1); -- Linha de inserção adicional para completar o bloco
