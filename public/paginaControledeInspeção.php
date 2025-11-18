@@ -77,6 +77,7 @@ if (!isset($_SESSION["credencial_funcionario"])) {
                         <p class="cormenu">Sistema de sinalização</p>
                     </a>
                 </div>
+                <br><br>
             </div>
         </div>
     </main>
