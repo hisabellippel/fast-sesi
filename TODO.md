@@ -1,7 +1,7 @@
-- [x] Improve photo icon visibility: Increase size to 150px and add border
-- [x] Remove the file input button
-- [x] Add PHP code to list files in uploads/ directory
-- [x] Create a select dropdown for photo selection
-- [x] Add hidden input for selected photo filename
-- [x] Update JavaScript to handle select change and update preview
-- [ ] Test the changes
+# TODO for Login Role-Based Redirect
+
+- [x] Update SELECT query in paginaLogin.php to include cargo_funcionario
+- [x] Change password verification to plain text comparison (since DB has plain passwords)
+- [x] Set session for cargo_funcionario after successful login
+- [x] Add conditional redirect: ADM to paginaMenuPrincipal.php, FUNCIONARIO to funcionario/paginaMenuPrincipalFuncionario.php
+- [x] Syntax check passed for paginaLogin.php

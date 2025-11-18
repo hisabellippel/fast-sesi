@@ -67,13 +67,13 @@ if (!isset($_SESSION["credencial_funcionario"])) {
                 <a href="paginaSelecioneLinhas.php">
                     <div class="red">
                     <img src="../asets/imagens/meio/linhas.png" alt="" height= "60px" width= "80px">
-                    <p class="cormenu">Linhas</p></a>
+                    <p class="cormenu"><strong>Linhas</strong></p></a>
                 </div>
 
                 <div class="red1">
                     <a href="paginaTrensAtivados1.php">
                         <img src="../asets/imagens/meio/tremmenu.png" alt="" height= "60px" width= "80px">
-                        <p class="cormenu">Trens</p>
+                        <p class="cormenu"><strong>Trens</strong></p>
                     </a>
                 </div>
             </div>
@@ -81,14 +81,14 @@ if (!isset($_SESSION["credencial_funcionario"])) {
                 <div class="red2">
                     <a href="paginaControledeInspeção.php">
                         <img src="../asets/imagens/meio/analisemenu.png" alt="" height= "50px" width= "50px">
-                        <p class="cormenu">Controle de inspeção</p>
+                        <p class="cormenu"><strong>Controle de inspeção</strong></p>
                     </a>
                 </div>
 
                 <div class="red3">
                     <a href="paginaRelatorioeAnalises.php">
                         <img src="../asets/imagens/meio/controledeinspecaomenu.png" alt="" height= "60px" width= "60px">
-                        <p class="cormenu">Relatório e análises </p>
+                        <p class="cormenu"><strong>Relatório e análises</strong></p>
                     </a>
                 </div>
             </div>
@@ -96,13 +96,15 @@ if (!isset($_SESSION["credencial_funcionario"])) {
                 <div class="red4">
                     <a href="paginaSensores1.php">
                         <img src="../asets/imagens/meio/sensor.png" alt="" height= "50px" width= "60px">
-                        <p class="cormenu">Sensores</p>
+                        <p class="cormenu"><strong>Sensores</strong></p>
                     </a>
                 </div>
 
                 <div class="red5">
-                    <img src="../asets/imagens/meio/perfil2.png" alt="" height= "60px" width= "60px">
-                    <a href="paginaFuncionarios.php.php"><p class="cormenu">Funcionários</p></a>
+                    <a href="paginaFuncionarios.php">
+                        <img src="../asets/imagens/meio/perfil2.png" alt="" height= "60px" width= "60px">
+                        <p class="cormenu"><strong>Funcionários</strong></p>
+                    </a>
                 </div>
                 <br>
             </div>

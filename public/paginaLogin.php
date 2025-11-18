@@ -24,24 +24,23 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $pass = $_POST["password"] ?? ""; 
 
     
-    $stmt = $mysqli->prepare("SELECT nome_funcionario, credencial_funcionario, senha_funcionario FROM funcionario WHERE nome_funcionario=? AND credencial_funcionario=?");
+    $stmt = $mysqli->prepare("SELECT nome_funcionario, credencial_funcionario, senha_funcionario, cargo_funcionario FROM funcionario WHERE nome_funcionario=? AND credencial_funcionario=?");
     $stmt->bind_param("ss", $nome, $cred);
     $stmt->execute();
     $result = $stmt->get_result();
     $dados = $result->fetch_assoc();
     $stmt->close();
 
-    //password_verify
-    if (password_verify($pass, $dados["senha_funcionario"])) {
-    echo 'Senha válida!';
-    } else {
-    echo 'Senha inválida';
-    }
-
-    if ($dados) {
+    if ($dados && $pass === $dados["senha_funcionario"]) {
         $_SESSION["nome_funcionario"] = $dados["nome_funcionario"];
         $_SESSION["credencial_funcionario"] = $dados["credencial_funcionario"];
-        header("Location: paginaMenuPrincipal.php");
+        $_SESSION["cargo_funcionario"] = $dados["cargo_funcionario"];
+
+        if ($dados["cargo_funcionario"] === "ADM") {
+            header("Location: paginaMenuPrincipal.php");
+        } elseif ($dados["cargo_funcionario"] === "FUNCIONARIO") {
+            header("Location:paginaMenuPrincipalFuncionario.php");
+        }
         exit;
     } else {
         $msg = "Usuário ou senha incorretos!";
