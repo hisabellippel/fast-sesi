@@ -130,9 +130,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
         <div class="brancaAlterarPerfil2">
             <?php
             $img_src = ($foto_funcionario && $foto_funcionario != 'default.jpg') ? "../uploads/" . htmlspecialchars($foto_funcionario) : "../asets/imagens/meio/rostoAlterarPerfil.png";
-            echo '<div style="text-align:center; margin-bottom: 20px;"><img id="previewImg" src="' . $img_src . '" alt="Foto de Perfil" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;"></div>';
+            echo '<div style="text-align:center; margin-bottom: 20px; position: relative; z-index: 10;"><img id="previewImg" src="' . $img_src . '" alt="Foto de Perfil" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; border: 2px solid #000;"></div>';
             ?>
+
             <form method="post" action="" enctype="multipart/form-data">
+                <div class="c2" style=" padding-left: 82px;">
+                    <button type="button" id="selectFotoBtn">Selecionar Foto</button>
+                    <input type="file" name="foto_funcionario" id="fotoInput" accept="image/*" style="display: none;">
+                </div>
+                <br>
+
                 <input type="hidden" name="credencial_funcionario" value="<?php echo htmlspecialchars($credencial); ?>">
 
                 <div class="c2">
@@ -208,16 +215,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
                     <img class="imag" src="../asets/imagens/meio/salario.png" alt="">
                     <input type="number" step="0.01" name="salario_funcionario" id="salario_funcionario" placeholder="Insira seu salário:" value="<?php echo htmlspecialchars($salario_funcionario); ?>" required>
                 </div>
+                <br>
 
-                <div class="c2">
-                <label for="foto_funcionario"></label><br>
-                 <h2>Upload de Foto:</h2>
-                <input type="file" id="fotoInput" name="foto_funcionario" accept="image/*">
-
-                </div>
-                <br>      
-
-                <button type="submit">Finalizar</button>
+                <button type="submit" style="font-size: 12px; padding: 6px 13px; margin-bottom: 15px;">Salvar</button>
             </form>
         </div>
 
@@ -234,6 +234,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
     </main>
 
     <script>
+        document.getElementById('selectFotoBtn').addEventListener('click', function() {
+            document.getElementById('fotoInput').click();
+        });
+
         document.getElementById('fotoInput').addEventListener('change', function(event) {
             const file = event.target.files[0];
             if (file) {
@@ -242,19 +246,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
                     document.getElementById('previewImg').src = e.target.result;
                 };
                 reader.readAsDataURL(file);
+            } else {
+                document.getElementById('previewImg').src = '../asets/imagens/meio/rostoAlterarPerfil.png';
             }
         });
     </script>
     <script>
-                document.getElementById("im2").addEventListener("click", function() {
-                const alerta = document.getElementById("alertaNotificacao");
-                
-                alerta.classList.add("show");
+        document.getElementById("im2").addEventListener("click", function() {
+            const alerta = document.getElementById("alertaNotificacao");
 
-                setTimeout(() => {
-                    alerta.classList.remove("show");
-                }, 2000);
-            });
-        </script>
+            alerta.classList.add("show");
+
+            setTimeout(() => {
+                alerta.classList.remove("show");
+            }, 2000);
+        });
+    </script>
 </body>
 </html>
