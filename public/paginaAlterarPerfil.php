@@ -21,10 +21,7 @@ if ($result && $result->num_rows > 0) {
 }
 
 
-if ( $_SESSION['cargo_funcionario'] !== 'ADM') {
-    echo "<div class='card'><p>Acesso negado. Apenas administradores </p><p><a href='paginaMenuPrincipal.php'>Voltar ao menu principal</a></p></div>";
-    exit;
-}
+
 
 if (isset($_GET['logout'])) {
     session_destroy();
@@ -95,65 +92,40 @@ if (isset($_GET['delete']) && isset($_GET['credencial_funcionario'])) {
             </div>
          </div>
 
-         <div id="botoes_novos">
+        <div id="botoes_novos">
             <button onclick="window.location.href='?logout=1'">Sair</button>
+            <?php if ($_SESSION['cargo_funcionario'] === 'ADM'): ?>
             <button onclick="window.location.href='paginaCriarConta.php'">Cadastrar Novo Funcionário</button>
+            <?php endif; ?>
          </div>
          
 
         <div id="padAlterar">
             <?php
-            $credencial_admin = $_SESSION['credencial_funcionario'];
-            $sql = "SELECT * FROM funcionario";
+            $credencial_user = $_SESSION['credencial_funcionario'];
+            if ($_SESSION['cargo_funcionario'] === 'ADM') {
+                $sql = "SELECT * FROM funcionario";
+            } else {
+                $sql = "SELECT * FROM funcionario WHERE credencial_funcionario = '$credencial_user'";
+            }
             $result = $conn->query($sql);
 
             if ($result && $result->num_rows > 0) {
-                $admin_row = null;
-                $other_rows = [];
-
+                $rows = [];
                 while ($row = $result->fetch_assoc()) {
-                    if ($row['credencial_funcionario'] === $credencial_admin) {
-                        $admin_row = $row;
-                    } else {
-                        $other_rows[] = $row;
-                    }
+                    $rows[] = $row;
                 }
 
                 echo '<div style="display:flex; flex-wrap: wrap;">';
-                if ($admin_row) {
-                    $cpf = $admin_row['cpf_funcionario'];
-                    $senha_mascarada = str_repeat('*', 8);
-                    $cpf_formatted = substr($cpf, 0, 3) . '.' . substr($cpf, 3, 3) . '.' . substr($cpf, 6, 3) . '-' . substr($cpf, 9, 2);
-                    $img_src = ($admin_row['foto_funcionario'] && $admin_row['foto_funcionario'] != 'default.jpg') ? "../uploads/" . htmlspecialchars($admin_row['foto_funcionario']) : "../asets/imagens/meio/rostoAlterarPerfil.png";
-
-                    echo '<table border="1" style="margin-right: 20px; background-color: rgb(59, 226, 9); border-radius: 20px; color: aliceblue; width: 350px; height: 475px;">';
-                    echo '<tr><td colspan="2" style="text-align:center;"><img src="' . $img_src . '" alt="" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;"></td></tr>';
-                   
-                    echo "<tr><td><strong>Credencial:</strong></td><td>{$admin_row['credencial_funcionario']}</td></tr>";
-                    echo "<tr><td><strong>Nome:</strong></td><td>{$admin_row['nome_funcionario']}</td></tr>";
-                    echo "<tr><td><strong>E-mail:</strong></td><td>{$admin_row['email_funcionario']}</td></tr>";
-                    echo "<tr><td><strong>Senha:</strong></td><td>{$senha_mascarada}</td></tr>";
-                    echo "<tr><td><strong>CPF:</strong></td><td>{$cpf_formatted}</td></tr>";
-                    echo "<tr><td><strong>Telefone:</strong></td><td>{$admin_row['telefone_funcionario']}</td></tr>";
-                    echo "<tr><td><strong>Cargo:</strong></td><td>{$admin_row['cargo_funcionario']}</td></tr>";
-                    echo "<tr><td><strong>Função:</strong></td><td>{$admin_row['funcao_funcionario']}</td></tr>";
-                    echo "<tr><td><strong>Salário:</strong></td><td>{$admin_row['salario_funcionario']}</td></tr>";
-                    echo '<tr><td colspan="2" style="text-align:center;">
-                            <a href="paginaAlterarPerfil2.php?credencial_funcionario=' . $admin_row['credencial_funcionario'] . '">
-                                <button type="button">Alterar Perfil:</button>
-                            </a>
-                          </td></tr>';
-                    echo '</table>';
-                }
-
-              
-                foreach ($other_rows as $row) {
+                foreach ($rows as $row) {
                     $cpf = $row['cpf_funcionario'];
                     $senha_mascarada = str_repeat('*', 8);
                     $cpf_formatted = substr($cpf, 0, 3) . '.' . substr($cpf, 3, 3) . '.' . substr($cpf, 6, 3) . '-' . substr($cpf, 9, 2);
                     $img_src = ($row['foto_funcionario'] && $row['foto_funcionario'] != 'default.jpg') ? "../uploads/" . htmlspecialchars($row['foto_funcionario']) : "../asets/imagens/meio/rostoAlterarPerfil.png";
 
-                    echo '<table border="1" style="margin-right: 20px; background-color: rgb(131, 168, 241); border-radius: 20px; color: aliceblue; width: 350px; height: 475px;">';
+                    $bg_color = ($row['credencial_funcionario'] === $credencial_user) ? 'rgb(59, 226, 9)' : 'rgb(131, 168, 241)';
+
+                    echo '<table border="1" style="margin-right: 20px; background-color: ' . $bg_color . '; border-radius: 20px; color: aliceblue; width: 350px; height: 475px;">';
                     echo '<tr><td colspan="2" style="text-align:center;"><img src="' . $img_src . '" alt="" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;"></td></tr>';
                     echo "<tr><td><strong>Credencial:</strong></td><td>{$row['credencial_funcionario']}</td></tr>";
                     echo "<tr><td><strong>Nome:</strong></td><td>{$row['nome_funcionario']}</td></tr>";
@@ -165,20 +137,19 @@ if (isset($_GET['delete']) && isset($_GET['credencial_funcionario'])) {
                     echo "<tr><td><strong>Função:</strong></td><td>{$row['funcao_funcionario']}</td></tr>";
                     echo "<tr><td><strong>Salário:</strong></td><td>{$row['salario_funcionario']}</td></tr>";
                     echo '<tr><td colspan="2" style="text-align:center;">
-
                             <a href="paginaAlterarPerfil2.php?credencial_funcionario=' . $row['credencial_funcionario'] . '">
                                 <button type="button">Alterar Perfil:</button>
                             </a>
                           </td></tr>';
-                    echo '<tr><td colspan="2" style="text-align:center;">
-                            <a href="?delete=1&credencial_funcionario=' . $row['credencial_funcionario'] . '" onclick="return confirm(\'Tem certeza que deseja excluir este funcionário?\')">
-                                <button type="button">Excluir Perfil</button>
-                            </a>
-                          </td></tr>';
+                    if ($_SESSION['cargo_funcionario'] === 'ADM' && $row['credencial_funcionario'] !== $credencial_user) {
+                        echo '<tr><td colspan="2" style="text-align:center;">
+                                <a href="?delete=1&credencial_funcionario=' . $row['credencial_funcionario'] . '" onclick="return confirm(\'Tem certeza que deseja excluir este funcionário?\')">
+                                    <button type="button">Excluir Perfil</button>
+                                </a>
+                              </td></tr>';
+                    }
                     echo '</table>';
-
                 }
-
                 echo '</div>';
             } else {
                 echo "<p>Nenhum usuário encontrado.</p>";
