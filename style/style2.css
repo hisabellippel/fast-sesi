@@ -1075,3 +1075,14 @@ background-color: rgb(136, 144, 153);
     height: 70px;
     width: 80px;
 }
+
+
+.fundomenu{
+    background-color:   #f0efef;
+    border-radius: 30px 30px 0px 0px;
+    padding-top: 20px;
+    margin-top: 30px;
+    padding-bottom: 5px;
+    z-index: -10;
+    height: 550px;
+}
