@@ -1,4 +1,14 @@
 <?php
+session_start();
+
+if (!isset($_SESSION["credencial_funcionario"])) {
+    header("Location: paginaLogin.php?msg=expired");
+    exit;
+}
+
+?>
+
+<?php
 if (isset($_GET['q'])) {
     $busca = strtolower(trim($_GET['q']));
 

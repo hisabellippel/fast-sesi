@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+if (!isset($_SESSION["credencial_funcionario"])) {
+    header("Location: paginaLogin.php?msg=expired");
+    exit;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
