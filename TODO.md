@@ -1,6 +1,7 @@
-- [x] Change title from "Funcionários:" to "Meu Perfil:"
-- [x] Modify SQL query to always select only current user's profile
-- [x] Remove ADM check for query
-- [x] Remove delete button code
-- [x] Set background color to blue (rgb(131, 168, 241))
-- [x] Fix syntax error by removing duplicate code
+- [x] Improve photo icon visibility: Increase size to 150px and add border
+- [x] Remove the file input button
+- [x] Add PHP code to list files in uploads/ directory
+- [x] Create a select dropdown for photo selection
+- [x] Add hidden input for selected photo filename
+- [x] Update JavaScript to handle select change and update preview
+- [ ] Test the changes
