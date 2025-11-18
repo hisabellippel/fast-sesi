@@ -437,10 +437,10 @@ body {
 }
 
 .im2{
-    width: 70px;
-    height: 60px;
-    padding-left: 280px;
-    margin-top: -10px;
+    width: 35px;
+    height: 30px;
+    padding-left: 300px;
+    padding-top: 10px;
     cursor: pointer;
 }
 
