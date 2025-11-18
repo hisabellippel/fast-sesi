@@ -66,9 +66,10 @@ if (!isset($_SESSION["credencial_funcionario"])) {
             </form>
 
             <div class="lado">
-                <div class="red">
+                <a href="paginaSelecioneLinhas.php">
+                    <div class="red">
                     <img src="../asets/imagens/meio/linhas.png" alt="" height= "60px" width= "80px">
-                    <a href="paginaSelecioneLinhas.php"><p class="cormenu">Linhas</p></a>
+                    <p class="cormenu">Linhas</p></a>
                 </div>
 
                 <div class="red1">
@@ -89,8 +90,8 @@ if (!isset($_SESSION["credencial_funcionario"])) {
             </div>
             <div class="lado">
                 <div class="red4">
-                    <img src="../asets/imagens/meio/ouvidoriamenu.png" alt="" height= "60px" width= "60px">
-                    <a href="paginaOuvidoriaGeral.php"><p class="cormenu">Ouvidoria</p></a>
+                    <img src="../asets/imagens/meio/sensor.png" alt="" height= "50px" width= "60px">
+                    <a href="paginaSensores1.php"><p class="cormenu">Sensores</p></a>
                 </div>
 
                 <div class="red5">
