@@ -6,6 +6,13 @@ if (!isset($_SESSION["credencial_funcionario"])) {
     exit;
 }
 
+
+$paginaDestino = ($_SESSION["cargo_funcionario"] === "ADM") 
+    ? "paginaMenuPrincipal.php" 
+    : "paginaMenuPrincipalFuncionario.php";
+?>
+
+
 ?>
 
 <!doctype html>
@@ -29,7 +36,9 @@ if (!isset($_SESSION["credencial_funcionario"])) {
    <div id="barraescura">
 
   
-            <a href="paginaMenuPrincipal.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt="">
+           <a href="<?php echo $paginaDestino; ?>">
+                <img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt="">
+            </a>
             <a href="paginaNotificacoes.php"><img id="im2" class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
         </div>
   </header>
