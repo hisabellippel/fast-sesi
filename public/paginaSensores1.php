@@ -25,7 +25,17 @@ if (!isset($_SESSION["credencial_funcionario"])) {
 
     <header>
         <div id="barraescura">
-             <a href="paginaMenuPrincipal.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+           <?php
+                $voltar = "paginaMenuPrincipalFuncionario.php"; 
+
+                if (isset($_SESSION["cargo_funcionario"]) && $_SESSION["cargo_funcionario"] === "ADM") {
+                    $voltar = "paginaMenuPrincipal.php";
+                }
+               ?>
+               <a href="<?php echo $voltar; ?>">
+                   <img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt="Voltar">
+               </a>
+
             <a href="paginaNotificacoes.php"><img id="im2" class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
         </div>
 
