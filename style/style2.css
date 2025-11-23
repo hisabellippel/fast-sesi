@@ -1086,3 +1086,8 @@ background-color: rgb(136, 144, 153);
     z-index: -10;
     height: 550px;
 }
+
+#ladoai{
+
+display: flex;
+}

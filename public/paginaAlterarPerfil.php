@@ -63,9 +63,6 @@ if (isset($_GET['logout'])) {
         <style></style>
 
         
-        <?php if (!empty($message)) echo "<p style='color: red;'>$message</p>"; ?>
-        <div id= "sair">
-            <div class="botoes">
            
             </div>
             <div class="botoes">
@@ -76,9 +73,7 @@ if (isset($_GET['logout'])) {
             </div>
          </div>
 
-        <div id="botoes_novos">
-            <button onclick="window.location.href='?logout=1'">Sair</button>
-         </div>
+       
          
 
         <div id="padAlterar">
@@ -100,24 +95,30 @@ if (isset($_GET['logout'])) {
                     $cpf_formatted = substr($cpf, 0, 3) . '.' . substr($cpf, 3, 3) . '.' . substr($cpf, 6, 3) . '-' . substr($cpf, 9, 2);
                     $img_src = ($row['foto_funcionario'] && $row['foto_funcionario'] != 'default.jpg') ? "../uploads/" . htmlspecialchars($row['foto_funcionario']) : "../asets/imagens/meio/rostoAlterarPerfil.png";
 
-                    $bg_color = 'rgb(131, 168, 241)';
+$bg_color = 'white';
 
-                    echo '<table border="1" style="margin-right: 20px; background-color: ' . $bg_color . '; border-radius: 20px; color: aliceblue; width: 350px; height: 475px;">';
-                    echo '<tr><td colspan="2" style="text-align:center;"><img src="' . $img_src . '" alt="" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;"></td></tr>';
-                    echo "<tr><td><strong>Credencial:</strong></td><td>{$row['credencial_funcionario']}</td></tr>";
-                    echo "<tr><td><strong>Nome:</strong></td><td>{$row['nome_funcionario']}</td></tr>";
-                    echo "<tr><td><strong>E-mail:</strong></td><td>{$row['email_funcionario']}</td></tr>";
-                    echo "<tr><td><strong>Senha:</strong></td><td>{$senha_mascarada}</td></tr>";
-                    echo "<tr><td><strong>CPF:</strong></td><td>{$cpf_formatted}</td></tr>";
-                    echo "<tr><td><strong>Telefone:</strong></td><td>{$row['telefone_funcionario']}</td></tr>";
-                    echo "<tr><td><strong>Cargo:</strong></td><td>{$row['cargo_funcionario']}</td></tr>";
-                    echo "<tr><td><strong>Função:</strong></td><td>{$row['funcao_funcionario']}</td></tr>";
-                    echo "<tr><td><strong>Salário:</strong></td><td>{$row['salario_funcionario']}</td></tr>";
-                    echo '<tr><td colspan="2" style="text-align:center;">
-                            <a href="paginaAlterarPerfil2.php?credencial_funcionario=' . $row['credencial_funcionario'] . '">
-                                <button type="button">Alterar Perfil:</button>
-                            </a>
-                          </td></tr>';
+echo '<table border="1" style="margin-right: 20px; background-color: ' . $bg_color . '; border-radius: 20px; color: black; width: 350px; height: 475px; border-color: #ccc; border-style: solid; border-width: 1px; padding: 10px;">';
+echo '<tr><td colspan="2" style="text-align:center; padding: 8px;"><img src="' . $img_src . '" alt="" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;"></td></tr>';
+echo "<tr><td style=\"padding: 8px;\"><strong>Credencial:</strong></td><td style=\"padding: 8px;\">{$row['credencial_funcionario']}</td></tr>";
+echo "<tr><td style=\"padding: 8px;\"><strong>Nome:</strong></td><td style=\"padding: 8px;\">{$row['nome_funcionario']}</td></tr>";
+echo "<tr><td style=\"padding: 8px;\"><strong>E-mail:</strong></td><td style=\"padding: 8px;\">{$row['email_funcionario']}</td></tr>";
+echo "<tr><td style=\"padding: 8px;\"><strong>Senha:</strong></td><td style=\"padding: 8px;\">{$senha_mascarada}</td></tr>";
+echo "<tr><td style=\"padding: 8px;\"><strong>CPF:</strong></td><td style=\"padding: 8px;\">{$cpf_formatted}</td></tr>";
+echo "<tr><td style=\"padding: 8px;\"><strong>Telefone:</strong></td><td style=\"padding: 8px;\">{$row['telefone_funcionario']}</td></tr>";
+echo "<tr><td style=\"padding: 8px;\"><strong>Cargo:</strong></td><td style=\"padding: 8px;\">{$row['cargo_funcionario']}</td></tr>";
+echo "<tr><td style=\"padding: 8px;\"><strong>Função:</strong></td><td style=\"padding: 8px;\">{$row['funcao_funcionario']}</td></tr>";
+echo "<tr><td style=\"padding: 8px;\"><strong>Salário:</strong></td><td style=\"padding: 8px;\">{$row['salario_funcionario']}</td></tr>";
+echo '<tr><td colspan="2" style="text-align:center; padding: 8px;">
+    <div id="ladoai" style="display: flex; justify-content: center; gap: 10px; align-items: center;">
+        <div id="botoes_novos">
+            <button onclick="window.location.href=\'?logout=1\'">Sair</button>
+        </div>
+        <a href="paginaAlterarPerfil2.php?credencial_funcionario=' . $row['credencial_funcionario'] . '">
+            <button type="button">Alterar Perfil</button>
+        </a>
+    </div>
+</td></tr>';
+
 
                     echo '</table>';
                 }
@@ -126,6 +127,10 @@ if (isset($_GET['logout'])) {
                 echo "<p>Nenhum usuário encontrado.</p>";
             }
             ?>
+                
+                <br>
+               
+            
 
             
             <div id="letrasAlterar2"></div>

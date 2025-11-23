@@ -130,7 +130,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
         <div class="brancaAlterarPerfil2">
             <?php
             $img_src = ($foto_funcionario && $foto_funcionario != 'default.jpg') ? "../uploads/" . htmlspecialchars($foto_funcionario) : "../asets/imagens/meio/rostoAlterarPerfil.png";
-            echo '<div style="text-align:center; margin-bottom: 20px; position: relative; z-index: 10;"><img id="previewImg" src="' . $img_src . '" alt="Foto de Perfil" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; border: 2px solid #000;"></div>';
+            echo '<div style="text-align:center; margin-bottom: 20px; position: relative; z-index: 10;"><img id="previewImg" src="' . $img_src . '" alt="Foto de Perfil" style="border-radius: 50%; width: 150px; height: 100px; object-fit: cover;"></div>';
             ?>
 
             <form method="post" action="" enctype="multipart/form-data">
