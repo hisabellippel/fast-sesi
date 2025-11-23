@@ -6,6 +6,11 @@ if (!isset($_SESSION["credencial_funcionario"])) {
     exit;
 }
 
+if ($_SESSION['cargo_funcionario'] !== 'ADM') {
+    header("Location: paginaMenuPrincipalFuncionario.php");
+    exit;
+}
+
 ?>
 
 <!DOCTYPE html>

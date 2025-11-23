@@ -66,7 +66,7 @@ if (isset($_GET['delete']) && isset($_GET['credencial_funcionario'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alterar Perfil</title>
+    <title>Ver Funcionários</title>
     <link rel="stylesheet" href="../style/styles.css">
      <link rel="stylesheet" href="../style/style2.css">
 </head>
