@@ -2,10 +2,21 @@
 include "db.php";
 session_start();
 
+
+
 if (empty($_SESSION["credencial_funcionario"])) {
     header("Location: paginaLogin.php?msg=expired");
     exit;
 }
+
+
+
+if ($_SESSION['cargo_funcionario'] !== 'ADM') {
+    header("Location: paginaMenuPrincipalFuncionario.php");
+    exit;
+}
+
+    
 
 
 $credencial = $_SESSION['credencial_funcionario'];
@@ -20,7 +31,6 @@ if ($result && $result->num_rows > 0) {
     exit;
 }
 ?>
-<br>
 
 
 
@@ -49,7 +59,7 @@ if (isset($_GET['delete']) && isset($_GET['credencial_funcionario'])) {
     }
 }
 ?>
-<br>
+
 
 <html lang="en">
 
