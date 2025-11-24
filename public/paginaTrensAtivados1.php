@@ -9,12 +9,14 @@ if (!isset($_SESSION["credencial_funcionario"])) {
 }
 
 
-$paginaDestino = ($_SESSION["cargo_funcionario"] === "ADM") 
+$cargo = isset($_SESSION["cargo_funcionario"]) ? $_SESSION["cargo_funcionario"] : 'DEFAULT';
+
+$paginaDestino = ($cargo === "ADM") 
     ? "paginaMenuPrincipal.php" 
     : "paginaMenuPrincipalFuncionario.php";
 ?>
 
-
+<?php
 
 $sql = "SELECT l.*, f.nome_funcionario 
         FROM linhas l 
@@ -37,37 +39,19 @@ $conn->close();
     <title>Trens Ativados</title>
     <link rel="stylesheet" href="../style/styles.css">
     <link rel="stylesheet" href="../style/style2.css">
+    <link rel="stylesheet" href="../style/style_trens.css"> 
     <style>
+        /* CSS do BODY mantido no HTML, conforme solicitado */
         body { color: #0f172a; }
-        .botoes-crud { margin-top: 10px; display: flex; gap: 10px; }
-        .botoes-crud button, .btn-adicionar { 
-            padding: 8px 12px; 
-            border: none; 
-            border-radius: 5px; 
-            cursor: pointer; 
-            font-weight: bold; 
-            text-decoration: none; 
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-        }
-        .btn-editar { background-color: #2563eb; color: white; }
-        .btn-excluir { background-color: #dc2626; color: white; }
-        .btn-adicionar { background-color: #059669; color: white; margin-bottom: 20px; }
         
-        
-        .items { 
-            display: none; 
-            flex-direction: column; 
-            padding-top: 10px;
-        }
+        /* O restante do CSS foi movido para style_trens.css */
     </style>
 </head>
 <body>
   <header>
    <div id="barraescura">
 
-  
+ 
             <a href="paginaMenuPrincipal.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt="">
             <a href="paginaNotificacoes.php"><img id="im2" class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
         </div>
@@ -80,10 +64,10 @@ $conn->close();
             </div>
             <br>
             
-            <a href="adicionar_editar_linha.php" class="btn-adicionar">
+            <a href="adicionar_editar_linha.php" class="btn-adicionartrem">
                 ➕ Adicionar Nova Linha
             </a>
-            <br>
+            <br><br>
 
             <section class="linhasde">
 
