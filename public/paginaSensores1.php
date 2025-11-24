@@ -69,20 +69,35 @@ if (!isset($_SESSION["credencial_funcionario"])) {
 
         <br>
 
+        <?php
+        $pdo = new PDO("mysql:host=localhost;dbname=fast_sesi_sa;charset=utf8","root","root");
+
+        $stmt = $pdo->query("SELECT valor FROM temperaturas ORDER BY id DESC LIMIT 1");
+        $temp = $stmt->fetchColumn();
+
+        if (!$temp) {
+            $temp = "";
+        }
+        ?>
+
         <div class="verificacao">
             <p >Ultima verificação: <p id="data"></p></p>
         </div>
 
         <div class="sensores1">
-            <p>Sensor 1: </p>
+            <p>Sensor 1: Temperatura: 
+                <span class="temp" style="color:black; padding-top: 5px; margin-left:50px; font-size:20px; display:flex">
+                    🌡️ <strong><?= $temp ?> °C</strong>
+            </span> 
+        </p>
         </div>
 
         <div class="sensores2">
-            <p>Sensor 2: </p>
+            <p>Sensor 2: Presença: </p>
         </div>
 
         <div class="sensores3">
-            <p>Sensor 3: </p>
+            <p>Sensor 3: Velocidade: </p>
         </div>
 
     <br>
