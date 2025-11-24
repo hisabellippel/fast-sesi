@@ -42,6 +42,19 @@ if (!isset($_SESSION["credencial_funcionario"])) {
             <span class="temp" style="color:black; padding-top: 7px; margin-left:20px; font-size:25px; display:flex">
                     🌡️ <strong><?= $temp ?> °C</strong>
             </span>
+            <script>
+                function atualizarTemp() {
+                    fetch('mqtt_listener.php')
+                        .then(res => res.text())
+                        .then(temp => {
+                            document.querySelector('.temp strong').textContent = temp + ' °C';
+                        })
+                        .catch(err => console.error('Erro:', err));
+                }
+
+                setInterval(atualizarTemp, 2000);
+                atualizarTemp();
+            </script>
     </header>
     <br>
     <main>
