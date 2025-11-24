@@ -24,6 +24,6 @@ if ($id_linha) {
 $conn->close();
 
 
-header("Location: paginaTrensAtivados.php?msg=" . $msg);
+header("Location: paginaTrensAtivados1.php?msg=" . $msg);
 exit;
 ?>
