@@ -8,7 +8,7 @@ if (!isset($_SESSION["credencial_funcionario"])) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
-    header("Location: paginaTrensAtivados.php?msg=invalid_method");
+    header("Location: paginaTrensAtivados1.php");
     exit;
 }
 
@@ -110,7 +110,7 @@ if ($id_linhas) {
 if ($stmt->execute()) {
     $stmt->close();
     $conn->close();
-    header("Location: paginaTrensAtivados.php?msg=" . urlencode($success_msg));
+    header("Location: paginaTrensAtivados1.php?msg=" . urlencode($success_msg));
     exit;
 } else {
     $error_details = $error_msg . $stmt->error;

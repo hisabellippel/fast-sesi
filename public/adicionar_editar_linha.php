@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'db.php'; 
+include "db.php";
 
 if (!isset($_SESSION["credencial_funcionario"])) {
     header("Location: paginaLogin.php?msg=expired");
@@ -41,7 +41,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     if ($result_linha->num_rows === 1) {
         $linha = $result_linha->fetch_assoc();
     } else {
-        header("Location: paginaTrensAtivados.php?msg=nao_encontrado");
+        header("Location: paginaTrensAtivados1.php");
         exit;
     }
     $stmt->close();
