@@ -17,11 +17,12 @@ $id_linhas = isset($_POST['id_linhas']) ? (int)$_POST['id_linhas'] : null;
 $required_fields = ['nome_linhas', 'velocidade_linhas', 'passageiros_linhas', 'avisos_linhas', 'distancia_linhas', 'motorista_linhas', 'horario_linhas', 'eficiencia_eletrica_linhas', 'consumo_energia_linhas', 'acidentes_linhas'];
 
 foreach ($required_fields as $field) {
-    if (!isset($_POST[$field]) || empty(trim($_POST[$field])) && $_POST[$field] !== '0') {
+    if (!isset($_POST[$field]) || (empty(trim($_POST[$field])) && $_POST[$field] !== '0')) {
         header("Location: " . ($id_linhas ? "adicionar_editar_linha.php?id=$id_linhas&msg=missing_fields" : "adicionar_editar_linha.php?msg=missing_fields"));
         exit;
     }
 }
+
 
 $nome_linhas = trim($_POST['nome_linhas']);
 $velocidade_linhas = (int)$_POST['velocidade_linhas'];
@@ -33,10 +34,13 @@ $horario_linhas = trim($_POST['horario_linhas']);
 $eficiencia_eletrica_linhas = trim($_POST['eficiencia_eletrica_linhas']);
 $consumo_energia_linhas = (float)$_POST['consumo_energia_linhas'];
 $acidentes_linhas = (int)$_POST['acidentes_linhas'];
+
 $falhas_tecnicas_linhas = isset($_POST['falhas_tecnicas_linhas']) ? trim($_POST['falhas_tecnicas_linhas']) : null;
+
 
 if ($id_linhas) {
 
+  
     $sql = "UPDATE linhas SET
                 nome_linhas = ?, 
                 velocidade_linhas = ?, 
@@ -53,11 +57,16 @@ if ($id_linhas) {
     
     $stmt = $conn->prepare($sql);
     if (!$stmt) {
-        die("Erro na preparação do UPDATE: " . $conn->error);
+       
+        $error_details = "Erro na preparação do UPDATE: " . $conn->error;
+        $conn->close();
+        $redirect_url = "adicionar_editar_linha.php?id=$id_linhas&msg=" . urlencode($error_details);
+        header("Location: " . $redirect_url);
+        exit;
     }
 
     $stmt->bind_param(
-        "siissisdsiis", 
+        "siidsisdsisi", 
         $nome_linhas, 
         $velocidade_linhas, 
         $passageiros_linhas, 
@@ -77,6 +86,7 @@ if ($id_linhas) {
 
 } else {
 
+   
     $sql = "INSERT INTO linhas (
                 nome_linhas, velocidade_linhas, passageiros_linhas, avisos_linhas, 
                 distancia_linhas, motorista_linhas, horario_linhas, eficiencia_eletrica_linhas, 
@@ -85,11 +95,17 @@ if ($id_linhas) {
     
     $stmt = $conn->prepare($sql);
     if (!$stmt) {
-        die("Erro na preparação do INSERT: " . $conn->error);
+       
+        $error_details = "Erro na preparação do INSERT: " . $conn->error;
+        $conn->close();
+        $redirect_url = "adicionar_editar_linha.php?msg=" . urlencode($error_details);
+        header("Location: " . $redirect_url);
+        exit;
     }
 
+   
     $stmt->bind_param(
-        "siissisdsii", 
+        "siidsisdsis", 
         $nome_linhas, 
         $velocidade_linhas, 
         $passageiros_linhas, 
@@ -107,6 +123,7 @@ if ($id_linhas) {
     $error_msg = "Erro ao adicionar a linha: ";
 }
 
+
 if ($stmt->execute()) {
     $stmt->close();
     $conn->close();
@@ -116,7 +133,12 @@ if ($stmt->execute()) {
     $error_details = $error_msg . $stmt->error;
     $stmt->close();
     $conn->close();
-    $redirect_url = $id_linhas ? "adicionar_editar_linha.php?id=$id_linhas&msg=" . urlencode($error_details) : "adicionar_editar_linha.php?msg=" . urlencode($error_details);
+    
+    
+    $redirect_url = $id_linhas ? 
+        "adicionar_editar_linha.php?id=$id_linhas&msg=" . urlencode($error_details) : 
+        "adicionar_editar_linha.php?msg=" . urlencode($error_details);
+        
     header("Location: " . $redirect_url);
     exit;
 }
