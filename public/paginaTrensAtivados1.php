@@ -63,11 +63,13 @@ $conn->close();
                 <h2 id="hs">Trens Ativados</h2>
             </div>
             <br>
+            <br>
             
             <a href="adicionar_editar_linha.php" class="btn-adicionartrem">
                 ➕ Adicionar Nova Linha
             </a>
             <br><br>
+            <br>
 
             <section class="linhasde">
 
