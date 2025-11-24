@@ -25,7 +25,7 @@ if (!isset($_SESSION["credencial_funcionario"])) {
 <body>
 
         <?php
-        $pdo = new PDO("mysql:host=localhost;dbname=fast_sesi_sa","root","root");
+        $pdo = new PDO("mysql:host=localhost;dbname=fast_sesi_sa;charset=utf8","root","root");
 
         $stmt = $pdo->query("SELECT valor FROM temperaturas ORDER BY id DESC LIMIT 1");
         $temp = $stmt->fetchColumn();
@@ -34,15 +34,14 @@ if (!isset($_SESSION["credencial_funcionario"])) {
             $temp = "";
         }
         ?>
-    
 
     <header>
         <div id="barraescura">
             <a href="paginaLogin.php?logout=1"><img id="im6" class="im6" src="../asets/imagens/barraAcima/Saída.png" alt=""></a>
-                <span style="color:white; margin-left:20px; font-size:18px;">
-                    🌡️ <strong><?= $temp ?> °C</strong>
-                </span>
             <img id="im2" class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt="">
+            <span class="temp" style="color:black; padding-top: 7px; margin-left:20px; font-size:25px; display:flex">
+                    🌡️ <strong><?= $temp ?> °C</strong>
+            </span>
     </header>
     <br>
     <main>
