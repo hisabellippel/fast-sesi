@@ -25,7 +25,7 @@ $mqtt->connect($settings, true);
 $mqtt->subscribe('S1/temperatura', function ($topic, $message) {
 
     // Conexão ao banco
-    $pdo = new PDO("mysql:host=localhost;dbname=seu_banco;charset=utf8","root","root");
+    $pdo = new PDO("mysql:host=localhost;dbname=fast_sesi_sa;charset=utf8","root","root");
 
     // Insere no banco
     $stmt = $pdo->prepare("INSERT INTO temperaturas (valor, data_hora) VALUES (?, NOW())");
