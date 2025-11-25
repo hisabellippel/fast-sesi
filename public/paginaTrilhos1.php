@@ -57,7 +57,7 @@ if (!isset($_SESSION["credencial_funcionario"])) {
     </div>
 
     <div class="item">
-      <span class="estado alerta"></span>
+      <span class="estado errado"></span>
       Trilho 2: <strong>Em espera para reforma</strong>
     </div>
 
@@ -77,7 +77,7 @@ if (!isset($_SESSION["credencial_funcionario"])) {
   <div class="items" id="items-2" style="display:none">
 
     <div class="item">
-      <span class="estado alerta"></span>
+      <span class="estado errado"></span>
       Linha 001: <strong>Sem risco de rachadura após a manutenção</strong>
     </div>
 
@@ -103,12 +103,12 @@ if (!isset($_SESSION["credencial_funcionario"])) {
 
   <script>
                 document.getElementById("im2").addEventListener("click", function() {
-                const alerta = document.getElementById("alertaNotificacao");
+                const errado = document.getElementById("erradoNotificacao");
                 
-                alerta.classList.add("show");
+                errado.classList.add("show");
 
                 setTimeout(() => {
-                    alerta.classList.remove("show");
+                    errado.classList.remove("show");
                 }, 2000);
             });
         </script>
@@ -117,7 +117,7 @@ if (!isset($_SESSION["credencial_funcionario"])) {
  <div id="barra">
             <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
             <h3>Fast.sesi</h3>
-            <a href="paginaAlertaseNotificacoes1.php"><img class="im5" src="../asets/imagens/meio/configuracao.png" alt="" height= "35px" width= "35px"></a>
+            <a href="paginaerradoseNotificacoes1.php"><img class="im5" src="../asets/imagens/meio/configuracao.png" alt="" height= "35px" width= "35px"></a>
             <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
             <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
         </div>
