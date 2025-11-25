@@ -1,4 +1,5 @@
 <?php
+// ... seu código PHP (sem alterações) ...
 include 'db.php';
 
 $erro = "";
@@ -12,10 +13,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email2 = $_POST['email_confirmar'] ?? "";
     $pass   = $_POST['senha_funcionario'] ?? "";
     $pass2  = $_POST['senha_confirmar'] ?? "";
-    $telefone  = $_POST['telefone_funcionario'] ?? "";
-    $cargo  = $_POST['cargo_funcionario'] ?? "";
-    $funcao  = $_POST['funcao_funcionario'] ?? "";
-    $salario  = $_POST['salario_funcionario'] ?? "";
+    $telefone   = $_POST['telefone_funcionario'] ?? "";
+    $cargo   = $_POST['cargo_funcionario'] ?? "";
+    $funcao   = $_POST['funcao_funcionario'] ?? "";
+    $salario   = $_POST['salario_funcionario'] ?? "";
     $cep = $_POST['cep_funcionario'] ?? "";
     $logradouro = $_POST['logradouro_funcionario'] ?? "";
     $numero = $_POST['numero_funcionario'] ?? "";
@@ -37,8 +38,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $senhaHash = password_hash($pass, PASSWORD_DEFAULT);
 
         $sql = "INSERT INTO funcionario 
-                (credencial_funcionario, nome_funcionario, cpf_funcionario, email_funcionario, senha_funcionario, telefone_funcionario, cargo_funcionario, funcao_funcionario, salario_funcionario, cep_funcionario, logradouro_funcionario, numero_funcionario, bairro_funcionario, cidade_funcionario, uf_funcionario)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                 (credencial_funcionario, nome_funcionario, cpf_funcionario, email_funcionario, senha_funcionario, telefone_funcionario, cargo_funcionario, funcao_funcionario, salario_funcionario, cep_funcionario, logradouro_funcionario, numero_funcionario, bairro_funcionario, cidade_funcionario, uf_funcionario)
+                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("isssssssissssss", $credencial, $name, $cpf, $email, $senhaHash, $telefone, $cargo, $funcao, $salario, $cep, $logradouro, $numero, $bairro, $cidade, $uf);
@@ -60,8 +61,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Funcionário</title>
-   <link rel="stylesheet" href="../style/style2.css">
     <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/style2.css">
+    
+    <style>
+        
+        .imgtopo2 {
+            z-index: 0; 
+        }
+        
+        .pad22 {
+            position: relative; 
+            z-index: 10; 
+        }
+
+       
+        header {
+            
+            position: relative; 
+            z-index: 1; 
+        }
+    </style>
 
     <script>
         async function buscarCEP() {
@@ -87,11 +107,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </script>
 </head>
 <body>
-    <header>
+   
+     <header>
         <div id="barraescura">
-            <a href="paginaAlterarPerfil.php"><img class="topo1" src="../asets/imagens/barraAcima/Flecha.png" alt=""></a>
+            <a href="paginaMenuPrincipal.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
             <a href="paginaNotificacoes.php"><img id="im2" class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
-            <img class="imgtopo" src="../asets/imagens/meio/fotoFundoTrem.png" alt=""/>
+              <img class="imgtopo2" src="../asets/imagens/meio/fotoFundoTrem.png" alt=""/>
         </div>
     </header>
 
@@ -149,7 +170,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <input type="text" name="telefone_funcionario" placeholder="Insira o telefone" required minlength="10">
                     </div>
 
-                 <div class="cargo">
+                   <div class="cargo">
         <div class="cargo">
             <img class="c-img" src="../asets/imagens/meio/cargo.png" alt="Cargo" />
 
@@ -178,7 +199,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <input type="text" name="salario_funcionario" placeholder="Insira o salário" required>
                     </div><br>
 
-                   
+                    
                     <div class="c1">
                         <img class="imag" src="../asets/imagens/meio/CEP.png" alt=""/>
                         <input type="text" id="cep" name="cep_funcionario" placeholder="CEP" required onblur="buscarCEP()">
@@ -211,7 +232,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                     <input type="submit" value="Cadastrar" class="btn-cadastrar"><br>
 
-                   
+                    
                 </form>
             </div>
         </div>

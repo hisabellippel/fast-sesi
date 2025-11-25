@@ -1141,3 +1141,12 @@ display: flex;
     flex-direction: column; 
     padding-top: 10px;
 }
+.imgtopo2 {
+    z-index: -1;
+    position: absolute;
+    height: 310px;
+    padding-left: 20px;
+    width: 410px;
+    -webkit-mask-image: linear-gradient(to top, transparent 15%, rgb(255, 255, 255) 100%);
+    background-image: url("../asets/imagens/meio/fotoFundoTrem.png");
+}
