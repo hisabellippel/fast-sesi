@@ -27,35 +27,37 @@ if (!isset($_SESSION["credencial_funcionario"])) {
         </div>
     </header>
     <br>
-    <br>
+    <br><br>
     <main>
-        <br><br>
+        <br><br><br>
        <div class="pesquisa5">
    
     <h1>Pesquisar 🔎</h1>
 
 
-    <form action="pesquisa.php" method="get" class="form-pesquisa" autocomplete="off">
-      <input
-        type="text"
-        id="c-pesquisa"
-        name="q"
-        placeholder="Digite (ex: linhas, trens, relatórios...)"
-        list="sugestoes"
-        required
-      >
-      <datalist id="sugestoes">
-        <option value="Linhas">
-            <option value="Trens">
-            <option value="Inspecao">
-            <option value="Relatorio">
-            <option value="Alertas">
-            <option value="Notificacoes">
-            <option value="Gastos">
-      </datalist>
-      <button type="submit">Buscar</button>
-    </form>
-
+   <form action="pesquisa.php" method="get" class="form-pesquisa" autocomplete="off">
+    <div class="search-container">
+        <input
+            type="text"
+            id="c-pesquisa"
+            name="q"
+            placeholder="Digite (ex: linhas, trens, relatórios...)"
+            list="sugestoes"
+            required
+        >
+        <button type="submit" class="search-button">Buscar</button>
+    </div>
+    
+    <datalist id="sugestoes">
+        <option value="Linhas"></option>
+        <option value="Trens"></option>
+        <option value="Inspecao"></option>
+        <option value="Relatorio"></option>
+        <option value="Alertas"></option>
+        <option value="Notificacoes"></option>
+        <option value="Gastos"></option>
+    </datalist>
+</form>
 
     <p class="secao">Digite exatamente o nome da seção desejada.</p>
   </div>
