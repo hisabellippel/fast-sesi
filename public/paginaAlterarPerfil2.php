@@ -141,9 +141,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
             width: 120px;
             height: 120px;
             object-fit: cover;
-            background: white;
-            border: 6px solid white;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+            /* Sem borda, sem sombra */
             position: relative;
             z-index: 101;
         }
@@ -185,10 +183,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
             ?>
 
             <form method="post" action="" enctype="multipart/form-data">
-                <div class="c2" style="padding-left: 82px; display: flex; align-items: center; gap: 16px;">
+                <div class="c2" style="padding-left: 10px; display: flex; gap: 10px; align-items: center;">
                     <button type="button" id="selectFotoBtn" tabindex="0">Selecionar Foto</button>
                     <input type="file" name="foto_funcionario" id="fotoInput" accept="image/*" style="display: none;">
-                    <button type="submit" id="btnSalvarNovo" style="background: #28a745; color: #fff; border: none; border-radius: 30px; padding: 10px 28px; font-size: 16px; font-weight: bold; box-shadow: 0 2px 12px rgba(0,0,0,0.18); cursor: pointer;">Salvar</button>
+                    <button type="submit" id="btnSalvar" style="background: #18519d; color: #fff; border: none; border-radius: 30px; padding: 14px 40px; font-size: 18px; font-weight: bold; box-shadow: 0 2px 12px rgba(0,0,0,0.18); cursor: pointer; transition: background 0.2s; z-index: 9999; position: relative;">Salvar</button>
                 </div>
                 <br>
 
@@ -268,7 +266,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
                     <input type="number" step="0.01" name="salario_funcionario" id="salario_funcionario" placeholder="Insira seu salário:" value="<?php echo htmlspecialchars($salario_funcionario); ?>" required>
                 </div>
                 <br>
-                <button type="submit" id="btnSalvar" style="margin: 30px auto 15px auto; display: block;">Salvar</button>
             </form>
         </div>
 
