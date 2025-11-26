@@ -31,7 +31,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $dados = $result->fetch_assoc();
     $stmt->close();
 
-    if ($dados && $pass === $dados["senha_funcionario"]) {
+    
+    if ($dados && password_verify($pass, $dados["senha_funcionario"])) {
         $_SESSION["nome_funcionario"] = $dados["nome_funcionario"];
         $_SESSION["credencial_funcionario"] = $dados["credencial_funcionario"];
         $_SESSION["cargo_funcionario"] = $dados["cargo_funcionario"];
@@ -70,6 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <?php if (empty($_SESSION["credencial_funcionario"])): ?>
        
         <div class="login">
+            <?php if ($msg): ?><p class="msg"><?= $msg ?></p><?php endif; ?>
             
                 <form class="branca1" method="POST">
                 <img class="i" src="../asets/imagens/meio/perfil.png" alt="">

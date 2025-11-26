@@ -181,7 +181,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </label>
 
             <label class="c-opcoes2">
-            <input type="radio" name="cargo_funcionario" value="Funcionário">
+            <input type="radio" name="cargo_funcionario" value="FUNCIONARIO">
             <span>Funcionário</span>
             </label>
         </div>
