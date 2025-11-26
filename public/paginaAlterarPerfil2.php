@@ -124,30 +124,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
             color: white;
             border-radius: 8px;
             border: none;
-            padding: 10px 20px;
+            padding: 5px 5px;
             cursor: pointer;
         }
         .perfil-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 30px;
-            margin-bottom: 30px;
+            margin-top: 5px;
+            margin-bottom: 0px;
             position: relative;
             z-index: 100;
         }
+        .c2 {
+            margin-bottom: 0px;
+        }
         #previewImg {
             border-radius: 50%;
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             object-fit: cover;
             /* Sem borda, sem sombra */
             position: relative;
-            z-index: 101;
+            z-index: 100;
+            margin-top: -10px
         }
         #btnSalvar {
             display: block;
-            margin: 30px auto 15px auto;
+            margin: 30px auto 40x auto;
             padding: 14px 40px;
             font-size: 18px;
             font-weight: bold;
@@ -164,6 +168,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
         #btnSalvar:hover {
             background: #2874c7;
         }
+        form {
+            margin-bottom: 60px;
+        }
     </style>
 </head>
 <body>
@@ -172,7 +179,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
             <div id="nav-itens">
                 <a href="paginaNotificacoes.php"><img id="im2" class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
             </div>
-            <img class="imgtopo" src="../asets/imagens/meio/fotoFundoTrem.png" alt="">
+           
         </div>
     </header>
     <main>
@@ -182,11 +189,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
             echo '<div class="perfil-container"><img id="previewImg" src="' . $img_src . '" alt="Foto de Perfil"></div>';
             ?>
 
-            <form method="post" action="" enctype="multipart/form-data">
-                <div class="c2" style="padding-left: 10px; display: flex; gap: 10px; align-items: center;">
-                    <button type="button" id="selectFotoBtn" tabindex="0">Selecionar Foto</button>
+            <form method="post" action="" enctype="multipart/form-data" style="margin-top: 5px;">
+                <div class="c2" style="display: flex; gap: 10px; align-items: center; border-radius: 30px; justify-content: center;">
+                    <button type="button" id="selectFotoBtn" style="background: #18519d; color: #fff; border: none; border-radius: 10px; padding: 12px 32px; font-size: 10px; font-weight: bold; box-shadow: 0 2px 8px rgba(0,0,0,0.12); cursor: pointer; transition: background 0.2s; z-index: 9999; position: relative; height: 35px; display: flex; align-items: center;">Selecionar Foto</button>
                     <input type="file" name="foto_funcionario" id="fotoInput" accept="image/*" style="display: none;">
-                    <button type="submit" id="btnSalvar" style="background: #18519d; color: #fff; border: none; border-radius: 30px; padding: 14px 40px; font-size: 18px; font-weight: bold; box-shadow: 0 2px 12px rgba(0,0,0,0.18); cursor: pointer; transition: background 0.2s; z-index: 9999; position: relative;">Salvar</button>
+
+                    <div class="c2" style="display: flex; justify-content: center; margin-top: -8px; margin-bottom: 0;">
+                    <button type="submit" id="btnSalvar" style="background: green; color: #fff; border: none; border-radius: 10px; padding: 12px 32px; font-size: 10px; font-weight: bold; box-shadow: 0 2px 8px rgba(0,0,0,0.12); cursor: pointer; transition: background 0.2s; z-index: 9999; position: relative;">Salvar</button>
+                </div>
                 </div>
                 <br>
 
@@ -266,6 +276,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
                     <input type="number" step="0.01" name="salario_funcionario" id="salario_funcionario" placeholder="Insira seu salário:" value="<?php echo htmlspecialchars($salario_funcionario); ?>" required>
                 </div>
                 <br>
+              
             </form>
         </div>
 
