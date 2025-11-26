@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $stmt->close();
 
     
-    if ($dados && password_verify($pass, $dados["senha_funcionario"])) {
+    if ($dados && (password_verify($pass, $dados["senha_funcionario"]) || $pass === $dados["senha_funcionario"])) {
         $_SESSION["nome_funcionario"] = $dados["nome_funcionario"];
         $_SESSION["credencial_funcionario"] = $dados["credencial_funcionario"];
         $_SESSION["cargo_funcionario"] = $dados["cargo_funcionario"];
