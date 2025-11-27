@@ -49,7 +49,7 @@ if ($_SESSION['cargo_funcionario'] !== 'ADM') {
 
         <div class="fundo">
 
-            <form action="pesquisa.php" method="get" class="form-pesquisa" autocomplete="off">
+            <form action="pesquisa.php" method="get" class="form-pesquisa1" autocomplete="off">
             <input
                 type="text"
                 id="c-pesquisa"
