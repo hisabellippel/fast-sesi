@@ -230,7 +230,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
                  <div class="c2">
                     <label for="senha_funcionario"></label><br>
                     <img class="imag" src="../asets/imagens/meio/senha.png" alt="">
-                    <input type="text" name="senha_funcionario" id="senha" placeholder="Insira sua senha:" value="<?php echo htmlspecialchars($senha_funcionario); ?>" required>
+                    <input type="password" name="senha_funcionario" id="senha" placeholder="Insira sua senha:" value="<?php echo htmlspecialchars($senha_funcionario); ?>" required>
                 </div>
 
                 <br>
