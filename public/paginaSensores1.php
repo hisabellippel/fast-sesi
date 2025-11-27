@@ -111,11 +111,15 @@ if (!isset($_SESSION["credencial_funcionario"])) {
         </div>
 
         <div class="sensores2">
-            <p>Sensor 2: Presença: </p>
+            <p>Sensor 2: Presença: 
+            <span class="temp" style="color:black; padding-top: 5px; margin-left:50px; font-size:20px; display:flex">
+                    <h3> 🚨 </h3> <strong id="temperature"><?= $temp ?>. </strong>
         </div>
 
         <div class="sensores3">
-            <p>Sensor 3: Velocidade: </p>
+            <p>Sensor 3: Umidade:
+            <span class="temp" style="color:black; padding-top: 5px; margin-left:50px; font-size:20px; display:flex">
+                    <h3> 🌧️ </h3> <strong id="temperature"><?= $temp ?>. </strong>
         </div>
 
     <br>
