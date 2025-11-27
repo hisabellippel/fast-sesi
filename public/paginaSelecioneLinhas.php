@@ -18,24 +18,19 @@ if (!isset($_SESSION["credencial_funcionario"])) {
 </head>
 <body>
     <header>
-
-
         <div id="barraescura">
+            
+            <?php
+            $voltar = "paginaMenuPrincipalFuncionario.php"; 
 
-               <?php
-                $voltar = "paginaMenuPrincipalFuncionario.php"; 
+            if (isset($_SESSION["cargo_funcionario"]) && $_SESSION["cargo_funcionario"] === "ADM") {
+                $voltar = "paginaMenuPrincipal.php";
+            }
+            ?>
+            <a href="<?php echo $voltar; ?>">
+                <img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt="Voltar">
+            </a>
 
-                if (isset($_SESSION["cargo_funcionario"]) && $_SESSION["cargo_funcionario"] === "ADM") {
-                    $voltar = "paginaMenuPrincipal.php";
-                }
-               ?>
-               <a href="<?php echo $voltar; ?>">
-                   <img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt="Voltar">
-               </a>
-
-                
-          
-        </a>
             <a href="paginaNotificacoes.php"><img id="im2" class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
         </div>
     </header>
@@ -49,10 +44,11 @@ if (!isset($_SESSION["credencial_funcionario"])) {
 
         <div class="selecionar">
 
-        <img src="../asets/imagens/meio/trem.png" height= "50px" width="70" alt="Trem" class="trem-animado" />
+            <div class="animacao-trem-container">
+                <img src="../asets/imagens/meio/caminho.png" alt="Trilho de Desvio" class="caminho-trilho" height= "150px" width="370">
 
-        <img src="../asets/imagens/meio/caminho.png" height= "150px" width="370" alt="">
-
+                <img src="../asets/imagens/meio/trem.png" alt="Trem Animado" class="trem-animado" />
+            </div>
             <div class="selecionar2">
 
                 <div class="selecioneflecha">
@@ -80,23 +76,23 @@ if (!isset($_SESSION["credencial_funcionario"])) {
             <div class="alertaseno">
                 <p>Alertas e Notificações</p>
             </div>
-
-
         </div>
-
     </main>
 
     <script>
-                document.getElementById("im2").addEventListener("click", function() {
-                const alerta = document.getElementById("alertaNotificacao");
-                
-                alerta.classList.add("show");
+        // O script de notificação continua o mesmo.
+        document.getElementById("im2").addEventListener("click", function() {
+            // Se você não tiver a div 'alertaNotificacao', este script pode gerar um erro.
+            // Verifique se você a adicionou em algum lugar no seu HTML.
+            const alerta = document.getElementById("alertaNotificacao");
+            
+            alerta.classList.add("show");
 
-                setTimeout(() => {
-                    alerta.classList.remove("show");
-                }, 2000);
-            });
-        </script>
+            setTimeout(() => {
+                alerta.classList.remove("show");
+            }, 2000);
+        });
+    </script>
 
     <footer> 
         <div id="barra">

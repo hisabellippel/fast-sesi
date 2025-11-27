@@ -763,31 +763,67 @@ background-color: rgb(136, 144, 153);
     text-align: center;
 }
 
-.container-trem {
-    position: relative;
-    width: 100%;
-    height: 100px;
-    overflow: hidden;
-    pointer-events: none; 
-  }
+/* Container que define o espaço da animação */
+.animacao-trem-container {
+    position: relative; 
+    width: 370px; 
+    height: 150px; 
+    margin: 20px auto;
+}
 
-  .trem-animado {
+/* O trilho serve apenas como fundo */
+.caminho-trilho {
     position: absolute;
-    padding-bottom: 630px;
-    bottom: 0;
-    animation: trem-mover 6s ease-in-out infinite alternate;
-  }
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
-  @keyframes trem-mover {
+/* O trem que será animado */
+.trem-animado {
+    position: absolute;
+    height: 50px;
+    width: 70px;
+    top: -30px; /* Ponto de partida vertical (ajuste para o centro do trilho) */
+    left: 0; /* Ponto de partida horizontal */
+    
+    animation: seguirCaminho 4s infinite linear; 
+    transform-origin: center center;
+}
+
+
+@keyframes seguirCaminho {
+    
     0% {
-      left: 50;
-      transform: scaleX(1);
+        transform: translate(0, 0) rotate(0deg); 
     }
+    
+    
+    25% {
+       
+        transform: translate(300px, 0) rotate(0deg); 
+    }
+    
+   
+    50% {
+      
+        transform: translate(300px, 160px) rotate(180deg); 
+    }
+    
+    
+    75% {
+        
+        transform: translate(0, 160px) rotate(180deg); 
+    }
+    
+    
     100% {
-      left: calc(90% - 80px);
-      transform: scaleX(1);
+        
+        transform: translate(0, 0) rotate(360deg);
     }
-  }
+}
+
 .pesquisa5 {
   background: rgba(255, 255, 255, 0.15);
   padding-left: 3px;
@@ -1289,3 +1325,4 @@ display: flex;
     border-radius: 30px 30px 50px 50px;
     margin: 25px 45px 30px 45px;
 }
+
