@@ -19,27 +19,65 @@ if (isset($_GET['q'])) {
     );
 
     
-    $rotas = [
-            'linha' => 'paginaSelecioneLinhas.php',        
-        'trem' => 'paginaTrensAtivados1.php',           
-        'inspecao' => 'paginaControledeInspeção.php',   
-        'relatorio' => 'paginaRelatorioeAnalises.php', 
-        'gasto' => 'paginaGastos.php',                   
-        'alerta' => 'paginaAlertasMecanicos.php',        
-        'notificacao' => 'paginaAlertaseNotificacoes1.php', 
-        'sensor' => 'paginaSensores1.php',              
-        'trilho' => 'paginaTrilhos1.php',               
-        'sinalizacao' => 'paginaSistemasdeSinalizacao.php',
-        'frenagem' => 'paginaSistemadeFrenagem1.php',    
-        'eixof erroviario' => 'paginaEixosFerroviarios1.php',
-        'resistor' => 'paginaResistoresdePotencia.php',   
-        'perfil' => 'paginaAlterarPerfil.php',          
-        'funcionario' => 'paginaFuncionarios.php',      
-        'criaconta' => 'paginaCriarConta.php',           
-        'login' => 'paginaLogin.php',                  
-        'menu' => 'paginaMenuPrincipal.php',             
-        'configuracao' => 'paginaAlertaseNotificacoes1.php',
-    ];
+   $rotas = [
+    'linha' => 'paginaSelecioneLinhas.php',
+    'linhas' => 'paginaSelecioneLinhas.php',
+
+    'trem' => 'paginaTrensAtivados1.php',
+    'trens' => 'paginaTrensAtivados1.php',
+
+    'inspecao' => 'paginaControledeInspeção.php',
+    'inspecoes' => 'paginaControledeInspeção.php',
+
+    'relatorio' => 'paginaRelatorioeAnalises.php',
+    'relatorios' => 'paginaRelatorioeAnalises.php',
+
+    'gasto' => 'paginaGastos.php',
+    'gastos' => 'paginaGastos.php',
+
+    'alerta' => 'paginaAlertasMecanicos.php',
+    'alertas' => 'paginaAlertasMecanicos.php',
+
+    'notificacao' => 'paginaAlertaseNotificacoes1.php',
+    'notificacoes' => 'paginaAlertaseNotificacoes1.php',
+
+    'sensor' => 'paginaSensores1.php',
+    'sensores' => 'paginaSensores1.php',
+
+    'trilho' => 'paginaTrilhos1.php',
+    'trilhos' => 'paginaTrilhos1.php',
+
+    'sinalizacao' => 'paginaSistemasdeSinalizacao.php',
+    'sinalizacoes' => 'paginaSistemasdeSinalizacao.php',
+
+    'frenagem' => 'paginaSistemadeFrenagem1.php',
+    'frenagens' => 'paginaSistemadeFrenagem1.php',
+
+    'eixo ferroviario' => 'paginaEixosFerroviarios1.php',
+    'eixos ferroviarios' => 'paginaEixosFerroviarios1.php',
+
+    'resistor' => 'paginaResistoresdePotencia.php',
+    'resistores' => 'paginaResistoresdePotencia.php',
+
+    'perfil' => 'paginaAlterarPerfil.php',
+    'perfis' => 'paginaAlterarPerfil.php',
+
+    'funcionario' => 'paginaFuncionarios.php',
+    'funcionarios' => 'paginaFuncionarios.php',
+
+    'criaconta' => 'paginaCriarConta.php',
+    'contas' => 'paginaCriarConta.php',
+
+    'login' => 'paginaLogin.php',
+    'logins' => 'paginaLogin.php',
+
+    'menu' => 'paginaMenuPrincipal.php',
+    'menus' => 'paginaMenuPrincipal.php',
+
+    'configuracao' => 'paginaAlertaseNotificacoes1.php',
+    'configuracoes' => 'paginaAlertaseNotificacoes1.php',
+];
+
 
     if (array_key_exists($busca, $rotas)) {
         header("Location: " . $rotas[$busca]);
