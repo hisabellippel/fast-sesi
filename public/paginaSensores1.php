@@ -26,10 +26,10 @@ if (!isset($_SESSION["credencial_funcionario"])) {
     <header>
         <div id="barraescura">
            <?php
-                $voltar = "../paginaMenuPrincipalFuncionario.php"; 
+                $voltar = "paginaMenuPrincipalFuncionario.php"; 
 
                 if (isset($_SESSION["cargo_funcionario"]) && $_SESSION["cargo_funcionario"] === "ADM") {
-                    $voltar = "../paginaMenuPrincipal.php";
+                    $voltar = "paginaMenuPrincipal.php";
                 }
                ?>
                <a href="<?php echo $voltar; ?>">
@@ -109,13 +109,39 @@ if (!isset($_SESSION["credencial_funcionario"])) {
         </script>
 
         <div class="sensores2">
-            <p>Sensor 2: Presença: 
-            
+            <p>Sensor 2: Presença: 🚨
+            <script>
+            function atualizarTemperatura() {
+                fetch("get_messages.php")
+                    .then(response => response.text())
+                    .then(valor => {
+                        if (valor.trim() !== "") {
+                            document.getElementById("temp1").textContent = valor + "°C";
+                        }
+                    })
+                    .catch(err => console.error("Erro ao buscar temperatura:", err));
+            }
+
+            setInterval(atualizarTemperatura, 2000);
+        </script>
         </div>
 
         <div class="sensores3">
-            <p>Sensor 3: Umidade:
-     
+            <p>Sensor 3: Umidade: 🌧️
+            <script>
+            function atualizarTemperatura() {
+                fetch("get_messages.php")
+                    .then(response => response.text())
+                    .then(valor => {
+                        if (valor.trim() !== "") {
+                            document.getElementById("temp1").textContent = valor + "°C";
+                        }
+                    })
+                    .catch(err => console.error("Erro ao buscar temperatura:", err));
+            }
+
+            setInterval(atualizarTemperatura, 2000);
+        </script>
         </div>
 
     <br>

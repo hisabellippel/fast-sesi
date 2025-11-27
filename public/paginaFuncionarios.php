@@ -146,7 +146,8 @@ if (isset($_GET['delete']) && isset($_GET['credencial_funcionario'])) {
                     $cpf = $row['cpf_funcionario'];
                     $senha_mascarada = str_repeat('*', 8);
                     $cpf_formatted = substr($cpf, 0, 3) . '.' . substr($cpf, 3, 3) . '.' . substr($cpf, 6, 3) . '-' . substr($cpf, 9, 2);
-                    $img_src = ($row['foto_funcionario'] && $row['foto_funcionario'] != 'default.jpg') ? "../uploads/" . htmlspecialchars($row['foto_funcionario']) : "../asets/imagens/meio/rostoAlterarPerfil.png";
+                    $img_path = "uploads/uploads/" . htmlspecialchars($row['foto_funcionario']);
+                    $img_src = ($row['foto_funcionario'] && $row['foto_funcionario'] != 'default.jpg' && file_exists($img_path)) ? "uploads/uploads/" . htmlspecialchars($row['foto_funcionario']) : "../asets/imagens/meio/rostoAlterarPerfil.png";
 
 $bg_color = 'white';
 
