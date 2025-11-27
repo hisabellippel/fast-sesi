@@ -80,10 +80,10 @@ if (!isset($_SESSION["credencial_funcionario"])) {
     </main>
 
     <script>
-        // O script de notificação continua o mesmo.
+      
         document.getElementById("im2").addEventListener("click", function() {
-            // Se você não tiver a div 'alertaNotificacao', este script pode gerar um erro.
-            // Verifique se você a adicionou em algum lugar no seu HTML.
+            
+           
             const alerta = document.getElementById("alertaNotificacao");
             
             alerta.classList.add("show");
