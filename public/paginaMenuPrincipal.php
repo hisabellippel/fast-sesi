@@ -39,21 +39,25 @@ if (!isset($_SESSION["credencial_funcionario"])) {
         <div id="barraescura">
             <a href="paginaLogin.php?logout=1"><img id="im6" class="im6" src="../asets/imagens/barraAcima/Saída.png" alt=""></a>
             <img id="im2" class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt="">
-            <span class="temp" style="color:black; padding-top: 7px; margin-left:20px; font-size:25px; display:flex">
-                    🌡️ <strong><?= $temp ?> °C</strong>
-            </span>
+                <span>Temperatura</span>
+                <h1 id="temperature">xxxx</h1>
             <script>
-                function atualizarTemp() {
-                    fetch('mqtt_listener.php')
-                        .then(res => res.text())
-                        .then(temp => {
-                            document.querySelector('.temp strong').textContent = temp + ' °C';
-                        })
-                        .catch(err => console.error('Erro:', err));
-                }
 
-                setInterval(atualizarTemp, 2000);
-                atualizarTemp();
+                function set_Temperature() {
+                    var temp = document.getElementById("temperature");
+
+                    fetch('get_messages.php')
+                        .then(r => r.text())
+                        .then(data => {
+                            console.log("Recebido:", data);
+                            if (data.trim() != "") {
+                                temp.textContent = data.trim();
+                            }
+                        })
+                        .catch(err => console.error(err));
+                }
+                setInterval(set_Temperature, 1000);
+
             </script>
     </header>
     <br>
