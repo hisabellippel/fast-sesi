@@ -20,16 +20,25 @@ if (isset($_GET['q'])) {
 
     
     $rotas = [
-        'linhas' => 'paginaSelecioneLinhas.php',
-        'trens' => 'paginaTrensAtivados1.php',
-        'inspecao' => 'paginaControledeInspeção.php',
-        'relatorio' => 'paginaRelatorioeAnalises.php',
+            'linha' => 'paginaSelecioneLinhas.php',        
+        'trem' => 'paginaTrensAtivados1.php',           
+        'inspecao' => 'paginaControledeInspeção.php',   
+        'relatorio' => 'paginaRelatorioeAnalises.php', 
+        'gasto' => 'paginaGastos.php',                   
+        'alerta' => 'paginaAlertasMecanicos.php',        
+        'notificacao' => 'paginaAlertaseNotificacoes1.php', 
+        'sensor' => 'paginaSensores1.php',              
+        'trilho' => 'paginaTrilhos1.php',               
+        'sinalizacao' => 'paginaSistemasdeSinalizacao.php',
+        'frenagem' => 'paginaSistemadeFrenagem1.php',    
+        'eixof erroviario' => 'paginaEixosFerroviarios1.php',
+        'resistor' => 'paginaResistoresdePotencia.php',   
+        'perfil' => 'paginaAlterarPerfil.php',          
+        'funcionario' => 'paginaFuncionarios.php',      
+        'criaconta' => 'paginaCriarConta.php',           
+        'login' => 'paginaLogin.php',                  
+        'menu' => 'paginaMenuPrincipal.php',             
         'configuracao' => 'paginaAlertaseNotificacoes1.php',
-        'gastos' => 'paginaGastos.php',
-        'sensores' => 'paginaSensores1.php',
-        'trilhos' =>'paginaTrilhos1.php',
-        'alertas' =>'paginaAlertasMecanicos.php',
-        'sinalizacao' =>'paginaSistemasdeSinalizacao.php'
     ];
 
     if (array_key_exists($busca, $rotas)) {

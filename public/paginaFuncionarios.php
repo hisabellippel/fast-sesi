@@ -153,7 +153,7 @@ echo '<table border="1" style="margin-right: 20px; margin-bottom: 20px; backgrou
                                 <button type="button">Alterar Perfil</button>
                             </a>';
                     
-                    if ($_SESSION['cargo_funcionario'] === 'ADM' && $row['credencial_funcionario'] !== $credencial_user) {
+                    if ($_SESSION['cargo_funcionario'] === 'ADM' || $row['credencial_funcionario'] === $credencial_user) {
                         echo '<a href="?delete=1&credencial_funcionario=' . $row['credencial_funcionario'] . '" onclick="return confirm(\'Tem certeza que deseja excluir este funcionário?\')">
                                 <button type="button">Excluir Perfil</button>
                               </a>';

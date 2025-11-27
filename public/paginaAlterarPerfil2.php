@@ -115,7 +115,63 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alterar Perfil</title>
     <link rel="stylesheet" href="../style/styles.css">
-      <link rel="stylesheet" href="../style/style2.css">
+    <link rel="stylesheet" href="../style/style2.css">
+    <style>
+        #selectFotoBtn {
+            z-index: 1000;
+            position: relative;
+            background: #18519d;
+            color: white;
+            border-radius: 8px;
+            border: none;
+            padding: 5px 5px;
+            cursor: pointer;
+        }
+        .perfil-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5px;
+            margin-bottom: 0px;
+            position: relative;
+            z-index: 100;
+        }
+        .c2 {
+            margin-bottom: 0px;
+        }
+        #previewImg {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            /* Sem borda, sem sombra */
+            position: relative;
+            z-index: 100;
+            margin-top: -10px
+        }
+        #btnSalvar {
+            display: block;
+            margin: 30px auto 40x auto;
+            padding: 14px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            background: #18519d;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+            cursor: pointer;
+            transition: background 0.2s;
+            z-index: 9999; /* Garantir que o botão fique acima de outros elementos */
+            position: relative;
+        }
+        #btnSalvar:hover {
+            background: #2874c7;
+        }
+        form {
+            margin-bottom: 60px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -123,20 +179,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
             <div id="nav-itens">
                 <a href="paginaNotificacoes.php"><img id="im2" class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
             </div>
-            <img class="imgtopo" src="../asets/imagens/meio/fotoFundoTrem.png" alt="">
+           
         </div>
     </header>
     <main>
         <div class="brancaAlterarPerfil2">
             <?php
             $img_src = ($foto_funcionario && $foto_funcionario != 'default.jpg') ? "../uploads/" . htmlspecialchars($foto_funcionario) : "../asets/imagens/meio/rostoAlterarPerfil.png";
-            echo '<div style="text-align:center; margin-bottom: 20px; position: relative; z-index: 10;"><img id="previewImg" src="' . $img_src . '" alt="Foto de Perfil" style="border-radius: 50%; width: 150px; height: 100px; object-fit: cover;"></div>';
+            echo '<div class="perfil-container"><img id="previewImg" src="' . $img_src . '" alt="Foto de Perfil"></div>';
             ?>
 
-            <form method="post" action="" enctype="multipart/form-data">
-                <div class="c2" style=" padding-left: 82px;">
-                    <button type="button" id="selectFotoBtn">Selecionar Foto</button>
+            <form method="post" action="" enctype="multipart/form-data" style="margin-top: 5px;">
+                <div class="c2" style="display: flex; gap: 10px; align-items: center; border-radius: 30px; justify-content: center;">
+                    <button type="button" id="selectFotoBtn" style="background: #18519d; color: #fff; border: none; border-radius: 10px; padding: 12px 32px; font-size: 10px; font-weight: bold; box-shadow: 0 2px 8px rgba(0,0,0,0.12); cursor: pointer; transition: background 0.2s; z-index: 9999; position: relative; height: 35px; display: flex; align-items: center;">Selecionar Foto</button>
                     <input type="file" name="foto_funcionario" id="fotoInput" accept="image/*" style="display: none;">
+
+                    <div class="c2" style="display: flex; justify-content: center; margin-top: -8px; margin-bottom: 0;">
+                    <button type="submit" id="btnSalvar" style="background: green; color: #fff; border: none; border-radius: 10px; padding: 12px 32px; font-size: 10px; font-weight: bold; box-shadow: 0 2px 8px rgba(0,0,0,0.12); cursor: pointer; transition: background 0.2s; z-index: 9999; position: relative;">Salvar</button>
+                </div>
                 </div>
                 <br>
 
@@ -216,8 +276,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
                     <input type="number" step="0.01" name="salario_funcionario" id="salario_funcionario" placeholder="Insira seu salário:" value="<?php echo htmlspecialchars($salario_funcionario); ?>" required>
                 </div>
                 <br>
-
-                <button type="submit" style="font-size: 12px; padding: 6px 13px; margin-bottom: 15px;">Salvar</button>
+              
             </form>
         </div>
 
@@ -234,33 +293,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
     </main>
 
     <script>
-        document.getElementById('selectFotoBtn').addEventListener('click', function() {
-            document.getElementById('fotoInput').click();
+document.addEventListener('DOMContentLoaded', function() {
+    var selectFotoBtn = document.getElementById('selectFotoBtn');
+    var fotoInput = document.getElementById('fotoInput');
+    var previewImg = document.getElementById('previewImg');
+    if (selectFotoBtn && fotoInput) {
+        selectFotoBtn.addEventListener('click', function() {
+            fotoInput.click();
         });
-
-        document.getElementById('fotoInput').addEventListener('change', function(event) {
-            const file = event.target.files[0];
-            if (file) {
-                const reader = new FileReader();
+        fotoInput.addEventListener('change', function(event) {
+            var file = event.target.files[0];
+            if (file && previewImg) {
+                var reader = new FileReader();
                 reader.onload = function(e) {
-                    document.getElementById('previewImg').src = e.target.result;
+                    previewImg.src = e.target.result;
                 };
                 reader.readAsDataURL(file);
-            } else {
-                document.getElementById('previewImg').src = '../asets/imagens/meio/rostoAlterarPerfil.png';
+            } else if (previewImg) {
+                previewImg.src = '../asets/imagens/meio/rostoAlterarPerfil.png';
             }
         });
-    </script>
-    <script>
-        document.getElementById("im2").addEventListener("click", function() {
-            const alerta = document.getElementById("alertaNotificacao");
-
-            alerta.classList.add("show");
-
-            setTimeout(() => {
-                alerta.classList.remove("show");
-            }, 2000);
-        });
-    </script>
+    }
+});
+</script>
 </body>
 </html>
