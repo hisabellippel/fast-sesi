@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
     $cargo_funcionario = $_POST['cargo_funcionario'];
     $funcao_funcionario = $_POST['funcao_funcionario'];
 
-    // Fetch current foto_funcionario from database
+    
     $sql_current = "SELECT foto_funcionario FROM funcionario WHERE credencial_funcionario = ?";
     $stmt_current = $conn->prepare($sql_current);
     $stmt_current->bind_param("s", $credencial);
@@ -93,9 +93,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
     }
 
     if ($uploadOk == 1) {
-        $sql = "UPDATE funcionario SET nome_funcionario=?, cpf_funcionario=?, email_funcionario=?, telefone_funcionario=?, salario_funcionario=?, senha_funcionario=?, funcao_funcionario=?, foto_funcionario=? WHERE credencial_funcionario=?";
+        $sql = "UPDATE funcionario SET nome_funcionario=?, cpf_funcionario=?, email_funcionario=?, telefone_funcionario=?,  senha_funcionario=?, funcao_funcionario=?, foto_funcionario=? WHERE credencial_funcionario=?";
         $stmt = $conn->prepare($sql);
-        $stmt->bind_param("ssssdssss", $nome_funcionario, $cpf_funcionario, $email_funcionario, $telefone_funcionario, $salario_funcionario, $senha_funcionario, $funcao_funcionario, $filename, $credencial);
+        $stmt->bind_param("ssssdsss", $nome_funcionario, $cpf_funcionario, $email_funcionario, $telefone_funcionario,  $senha_funcionario, $funcao_funcionario, $filename, $credencial);
 
         if ($stmt->execute()) {
             echo "<script>alert('Perfil atualizado com sucesso!'); window.location.href='paginaFuncionarios.php';</script>";

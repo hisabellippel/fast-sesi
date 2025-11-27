@@ -58,9 +58,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
     $senha_funcionario = $_POST['senha_funcionario'];
     $cpf_funcionario = $_POST['cpf_funcionario'];
     $telefone_funcionario = $_POST['telefone_funcionario'];
-    $salario_funcionario = $_POST['salario_funcionario'];
-    $cargo_funcionario = $_POST['cargo_funcionario'];
-    $funcao_funcionario = $_POST['funcao_funcionario'];
 
     // Fetch current foto_funcionario from database
     $sql_current = "SELECT foto_funcionario FROM funcionario WHERE credencial_funcionario = ?";
@@ -93,9 +90,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
     }
 
     if ($uploadOk == 1) {
-        $sql = "UPDATE funcionario SET nome_funcionario=?, cpf_funcionario=?, email_funcionario=?, telefone_funcionario=?, salario_funcionario=?, senha_funcionario=?, funcao_funcionario=?, foto_funcionario=? WHERE credencial_funcionario=?";
+        $sql = "UPDATE funcionario SET nome_funcionario=?, cpf_funcionario=?, email_funcionario=?, telefone_funcionario=?, senha_funcionario=?, foto_funcionario=? WHERE credencial_funcionario=?";
         $stmt = $conn->prepare($sql);
-        $stmt->bind_param("ssssdssss", $nome_funcionario, $cpf_funcionario, $email_funcionario, $telefone_funcionario, $salario_funcionario, $senha_funcionario, $funcao_funcionario, $filename, $credencial);
+        $stmt->bind_param("ssssss", $nome_funcionario, $cpf_funcionario, $email_funcionario, $telefone_funcionario, $senha_funcionario, $filename, $credencial);
 
         if ($stmt->execute()) {
             echo "<script>alert('Perfil atualizado com sucesso!'); window.location.href='paginaAlterarPerfil.php';</script>";
@@ -255,7 +252,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
                  <div class="c2">
                     <label for="cargo_funcionario"></label><br>
                     <img class="imag" src="../asets/imagens/meio/Cargo.png" alt="">
-                    <input type="text" name="cargo_funcionario" id="funcao" placeholder="Insira seu cargo:" value="<?php echo htmlspecialchars($cargo_funcionario); ?>" required>
+                    <input type="text" name="cargo_funcionario" id="funcao" placeholder="Insira seu cargo:" value="<?php echo htmlspecialchars($cargo_funcionario); ?>" readonly>
                      </div>
 
                 <br>
@@ -273,7 +270,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
                 <div class="c2">
                     <label for="salario_funcionario"></label><br>
                     <img class="imag" src="../asets/imagens/meio/salario.png" alt="">
-                    <input type="number" step="0.01" name="salario_funcionario" id="salario_funcionario" placeholder="Insira seu salário:" value="<?php echo htmlspecialchars($salario_funcionario); ?>" required>
+                    <input type="number" step="0.01" name="salario_funcionario" id="salario_funcionario" placeholder="Insira seu salário:" value="<?php echo htmlspecialchars($salario_funcionario); ?>" readonly>
                 </div>
                 <br>
               

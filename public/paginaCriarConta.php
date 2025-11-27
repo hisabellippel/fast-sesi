@@ -118,8 +118,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     <main>
         <div class="pad22">
+           
             <div class="branca">
+                 <a href="paginaMenuPrincipal.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
                 <img class="i" src="../asets/imagens/meio/perfil.png" alt=""/>
+                
 
                 <?php if (!empty($erro)) { ?>
                     <div class="erro"><?= $erro ?></div>
