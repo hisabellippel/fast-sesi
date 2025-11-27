@@ -111,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
      <header>
         <div id="barraescura">
             <a href="paginaMenuPrincipal.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
-            <a href="paginaNotificacoes.php"><img id="im2" class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
+           
               <img class="imgtopo2" src="../asets/imagens/meio/fotoFundoTrem.png" alt=""/>
         </div>
     </header>
@@ -119,9 +119,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <main>
         <div class="pad22">
            
-            <div class="branca">
-                 <a href="paginaMenuPrincipal.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
-                <img class="i" src="../asets/imagens/meio/perfil.png" alt=""/>
+            <div class="branca2">
+                   <a href="paginaMenuPrincipal.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+                <img class="i9" src="../asets/imagens/meio/perfil.png" alt=""/>
                 
 
                 <?php if (!empty($erro)) { ?>
