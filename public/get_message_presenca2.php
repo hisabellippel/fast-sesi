@@ -4,7 +4,7 @@ include "db.php";
 
 $server = 'a1997d4dddb04e48946891c0ad3241ea.s1.eu.hivemq.cloud';
 $port = 8883;
-$topic = 'Projeto/S2/Distancia2';
+$topic = 'Projeto/S2/Distancia1';
 $client_id = "phpmqtt-" . rand();
 
 $username = "Placa-2-Julia";
@@ -39,5 +39,4 @@ while (time() - $start < 2) {
 }
 
 $mqtt->close();
-
 ?>
