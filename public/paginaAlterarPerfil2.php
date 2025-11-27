@@ -76,7 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
     $filename = $current_foto; // Default to current
 
     if (isset($_FILES["foto_funcionario"]) && !empty($_FILES["foto_funcionario"]["tmp_name"])) {
-        $target_dir = __DIR__ . '/../uploads/';
+        $target_dir = __DIR__ . '/uploads/';
         $original_name = basename($_FILES["foto_funcionario"]["name"]);
         $filename = time() . '_' . $original_name;
         $target_file = $target_dir . $filename;
