@@ -130,3 +130,8 @@ VALUES
 ('Coralua — Maresia', 70, 19800, 'Vale dos Pinheiros', 100, '2025-11-18 11:10:00', 'Média', 480, 2, 'Falha elétrica leve', 5),
 ('Linha Central', 85, 16000, 'Fluxo alto', 36, '2025-11-18 12:00:00', 'Alta', 560, 0, 'Nenhuma', 1); 
 
+INSERT INTO temperaturas 
+(valor, data_hora)
+VALUES
+( 25, 2025-11-27 08:41:20); 
+

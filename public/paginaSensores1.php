@@ -75,6 +75,8 @@ if (!isset($_SESSION["credencial_funcionario"])) {
         $stmt = $pdo->query("SELECT valor FROM temperaturas ORDER BY id DESC LIMIT 1");
         $temp = $stmt->fetchColumn();
 
+        echo $temp ? $temp : "";
+
         if (!$temp) {
             $temp = "";
         }
@@ -84,42 +86,36 @@ if (!isset($_SESSION["credencial_funcionario"])) {
             <p >Ultima verificação: <p id="data"></p></p>
         </div>
 
-        <div class="sensores1">
-            <p>Sensor 1: Temperatura: 
-                <span class="temp" style="color:black; padding-top: 5px; margin-left:50px; font-size:20px; display:flex">
-                    <h3> 🌡️ </h3> <strong id="temperature"><?= $temp ?> °C</strong>
-            <script>
-
-                function set_Temperature() {
-                    var temp = document.getElementById("temperature");
-
-                    fetch('get_messages.php')
-                        .then(r => r.text())
-                        .then(data => {
-                            console.log("Recebido:", data);
-                            if (data.trim() != "") {
-                                temp.textContent = data.trim();
-                            }
-                        })
-                        .catch(err => console.error(err));
-                }
-                setInterval(set_Temperature, 1000);
-
-            </script>
-            </span> 
-        </p>
+       <div class="sensores1">
+            <p>Sensor 1: Temperatura:
+                <span class="temp" style="color:black; padding-left: 20px; font-size:20px; display:flex">
+                    <h3> 🌡️ </h3> <strong id="temp1"><?= $temp ?>°C</strong>
+                </span>
+            </p>
         </div>
+        <script>
+            function atualizarTemperatura() {
+                fetch("get_messages.php")
+                    .then(response => response.text())
+                    .then(valor => {
+                        if (valor.trim() !== "") {
+                            document.getElementById("temp1").textContent = valor + "°C";
+                        }
+                    })
+                    .catch(err => console.error("Erro ao buscar temperatura:", err));
+            }
+
+            setInterval(atualizarTemperatura, 2000);
+        </script>
 
         <div class="sensores2">
             <p>Sensor 2: Presença: 
-            <span class="temp" style="color:black; padding-top: 5px; margin-left:50px; font-size:20px; display:flex">
-                    <h3> 🚨 </h3> <strong id="temperature"><?= $temp ?>. </strong>
+            
         </div>
 
         <div class="sensores3">
             <p>Sensor 3: Umidade:
-            <span class="temp" style="color:black; padding-top: 5px; margin-left:50px; font-size:20px; display:flex">
-                    <h3> 🌧️ </h3> <strong id="temperature"><?= $temp ?>. </strong>
+     
         </div>
 
     <br>

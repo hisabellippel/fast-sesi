@@ -11,10 +11,9 @@ $password = "123456abX";
 $cafile = __DIR__ . "/cacert.pem";
 $message = "";
 
-
-
 $mqtt = new Bluerhinos\phpMQTT($server, $port, $client_id);
 $mqtt->cafile = $cafile;
+
 if (!$mqtt->connect(true, NULL, $username, $password)) {
     echo "Não foi possível conectar ao broker";
     exit;
@@ -23,9 +22,29 @@ if (!$mqtt->connect(true, NULL, $username, $password)) {
 $mqtt->subscribe([
     $topic => [
         "qos" => 0,
-        "function" => function ($topic, $msg) use (&$message) {
+        "function" => function ($topic, $msg) {
+
             if (!empty($msg)) {
-                $message = $msg;
+
+                $servername = "localhost";
+                $username = "root";
+                $password = "root";
+                $dbname = "fast_sesi_sa";
+
+                $conn = new mysqli($servername, $username, $password, $dbname);
+
+                if ($conn->connect_error) {
+                    die("Conexao falhou: " . $conn->connect_error);
+                }
+                $sql = "INSERT INTO temperaturas (valor, data_hora) VALUES (?, NOW())";
+                $stmt = $conn->prepare($sql);
+                $stmt->bind_param("d", $msg); 
+                $stmt->execute();
+
+                $stmt->close();
+                $conn->close();
+
+                echo "Temperatura salva no banco: $msg";
             }
         }
     ]
@@ -38,4 +57,4 @@ while (time() - $start < 2) {
 
 $mqtt->close();
 
-echo $message;
+?>
