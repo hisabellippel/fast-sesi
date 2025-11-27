@@ -41,12 +41,12 @@ if (!isset($_SESSION["credencial_funcionario"])) {
             <h2> Menu Principal</h2>
         </div>
 
-        <div class="fundo">
+        <div class="fundo21">
 
-            <form action="pesquisa.php" method="get" class="form-pesquisa" autocomplete="off">
+        <form action="pesquisa.php" method="get" class="form-pesquisa2" autocomplete="off">
             <input
                 type="text"
-                id="c-pesquisa"
+                id="c-pesquisa2"
                 name="q"
                 placeholder="Digite (ex: linhas, trens, relatórios...)"
                 list="sugestoes"
@@ -57,13 +57,16 @@ if (!isset($_SESSION["credencial_funcionario"])) {
                 <option value="Trens">
                 <option value="Inspecao">
                 <option value="Relatorio">
-                <option value="Alertas">
-                <option value="Notificacoes">
+                <option value="Configuracao">
+                <option value="Sensores">
                 <option value="Gastos">
+                <option value="Trilhos">
+                <option value="Alertas">
+                <option value="Sinalizacao">
             </datalist>
             <button type="submit">Buscar</button>
             </form>
-
+            <br>
             <div class="lado">
                 <a href="paginaSelecioneLinhas.php">
                     <div class="red">
