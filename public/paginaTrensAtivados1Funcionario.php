@@ -65,11 +65,6 @@ $conn->close();
             <br>
             <br>
             
-            <a href="adicionar_editar_linha.php" class="btn-adicionartrem">
-                ➕ Adicionar Nova Linha
-            </a>
-            <br><br>
-            <br>
 
             <section class="linhasde">
 
@@ -112,16 +107,6 @@ $conn->close();
                             Maquinista: <strong><?php echo htmlspecialchars($linha['nome_funcionario']); ?></strong>
                         </div>
                         
-                        <div class="botoes-crud">
-                            <a href="adicionar_editar_linha.php?id=<?php echo $linha['id_linhas']; ?>" class="btn-editar">
-                                ✏️ Editar
-                            </a>
-                            <form action="excluir_linha.php" method="POST" style="display:inline;" onsubmit="return confirm('Tem certeza que deseja excluir a linha: <?php echo htmlspecialchars($linha['nome_linhas']); ?>?');">
-                                <input type="hidden" name="id_linha" value="<?php echo $linha['id_linhas']; ?>">
-                                <button type="submit" class="btn-excluir">🗑️ Excluir</button>
-                            </form>
-                        </div>
-                        
                     </div>
                 </article>
                 <?php 
@@ -135,13 +120,15 @@ $conn->close();
 
  
 
-    <div id="barra">
-        <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
-        <h3>Fast.sesi</h3>
-       
-        <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
-        <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
-    </div>
+    <footer>
+         <div id="barra">
+            <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
+            <h3>Fast.sesi</h3>
+            <a href="paginaAlertaseNotificacoes1.php"><img class="im5" src="../asets/imagens/meio/configuracao.png" alt="" height= "35px" width= "35px"></a>
+            <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
+            <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
+        </div>
+    </footer>
 
     <script src="../scripts/desempenho.js"></script>
     <script src="../scripts/notificacao.js"></script> 
