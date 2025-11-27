@@ -86,7 +86,7 @@ if ($_SESSION['cargo_funcionario'] !== 'ADM') {
                     </a>
                 </div>
 
-                <br>
+                <br><br>
 
         </div>
 
