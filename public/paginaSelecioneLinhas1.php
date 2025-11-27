@@ -17,17 +17,17 @@ if (!isset($_SESSION["credencial_funcionario"])) {
     <link rel="stylesheet" href="../style/style2.css">
 </head>
 <body>
-   <header>
+    <header>
         <div id="barraescura">
-            <a href="paginaSelecioneLinhas.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
-            <a href="paginaNotificacoes.php"><img id="im2" class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
+            <a href="paginaSelecioneLinhas.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt="Voltar"></a>
+            <a href="paginaNotificacoes.php"><img id="im2" class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt="Notificações"></a>
         </div>
     </header>
 <br>
     <main>
 
         <div class="notificacao">
-        Os dados da linha 1 foram atualizados!
+            Os dados da linha 1 foram atualizados!
         </div>
 
         <div id="azul">
@@ -36,15 +36,16 @@ if (!isset($_SESSION["credencial_funcionario"])) {
 
         <div class="selecionar">
 
-        <img src="../asets/imagens/meio/trem.png" height= "50px" width="70" alt="Trem" class="trem-animado" />
+            <div class="animacao-trem-container-linha1">
+                <img src="../asets/imagens/meio/linha1.png" height= "150px" width="370" alt="Trilho de Linha 1" class="caminho-trilho">
 
-        <img src="../asets/imagens/meio/linha1.png" height= "150px" width="370" alt="">
-
+                <img src="../asets/imagens/meio/trem.png" alt="Trem Animado Linha 1" class="trem-animado-linha1" />
+            </div>
             <div class="selecionar2">
 
                 <div class="selecioneflecha">
                     <h3> Selecione a Linha: </h3>
-                    <img src="../asets/imagens/meio/setaabaixar.png" alt="">
+                    <img src="../asets/imagens/meio/setaabaixar.png" alt="Seta para baixo">
                 </div>
 
                 <div class="selecionar3">
@@ -63,50 +64,53 @@ if (!isset($_SESSION["credencial_funcionario"])) {
                 <p> Velocidade: </p>
             </div>
             <div class="passageiros">
-                <p>Passageiros em tempo real:  824 </p>
+                <p>Passageiros em tempo real: 824 </p>
             </div>
             <div class="alertaseno">
-                <p>Alertas e Notificações:  Nenhum </p>
+                <p>Alertas e Notificações: Nenhum </p>
             </div>
 
 
         </div>
 
         <script>
+           
             window.addEventListener('load', function() {
-            const notif = document.getElementById('notificacao');
-            notif.classList.add('mostrar');
+            const notif = document.querySelector('.notificacao'); 
+            if (notif) {
+                notif.classList.add('mostrar');
 
-        setTimeout(() => {
-            notif.classList.remove('mostrar');
-            }, 4000);
+                setTimeout(() => {
+                    notif.classList.remove('mostrar');
+                }, 4000);
+            }
             });
         </script>
 
     </main>
 
     <script>
-                document.getElementById("im2").addEventListener("click", function() {
-                const alerta = document.getElementById("alertaNotificacao");
-                
+       
+        document.getElementById("im2").addEventListener("click", function() {
+            const alerta = document.getElementById("alertaNotificacao");
+            
+            if (alerta) { 
                 alerta.classList.add("show");
 
                 setTimeout(() => {
                     alerta.classList.remove("show");
                 }, 2000);
-            });
-        </script>
+            }
+        });
+    </script>
     <footer> 
         <div id="barra">
-            <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="">
+            <img class="logo" src="../asets/imagens/barraAbaixo/logo.png" alt="Logo Fast.sesi">
             <h3>Fast.sesi</h3>
-            <a href="paginaAlertaseNotificacoes1.php"><img class="im5" src="../asets/imagens/meio/configuracao.png" alt="" height= "35px" width= "35px"></a>
-            <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt=""></a>
-            <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt=""></a>
+            <a href="paginaAlertaseNotificacoes1.php"><img class="im5" src="../asets/imagens/meio/configuracao.png" alt="Configuração" height= "35px" width= "35px"></a>
+            <a href="paginaAlterarPerfil.php"><img class="im3" src="../asets/imagens/meio/perfil.png" alt="Perfil"></a>
+            <a href="paginaPesquisar.php"><img class="im4" src="../asets/imagens/barraAbaixo/Lupa1.png" alt="Pesquisar"></a>
         </div>
     </footer>
-</body>
-</html>
-
 </body>
 </html>

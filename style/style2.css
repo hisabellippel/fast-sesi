@@ -763,7 +763,7 @@ background-color: rgb(136, 144, 153);
     text-align: center;
 }
 
-/* Container que define o espaço da animação */
+
 .animacao-trem-container {
     position: relative; 
     width: 370px; 
@@ -771,7 +771,7 @@ background-color: rgb(136, 144, 153);
     margin: 20px auto;
 }
 
-/* O trilho serve apenas como fundo */
+
 .caminho-trilho {
     position: absolute;
     top: 0;
@@ -780,13 +780,13 @@ background-color: rgb(136, 144, 153);
     height: 100%;
 }
 
-/* O trem que será animado */
+
 .trem-animado {
     position: absolute;
     height: 50px;
     width: 70px;
-    top: -30px; /* Ponto de partida vertical (ajuste para o centro do trilho) */
-    left: 0; /* Ponto de partida horizontal */
+    top: -30px; 
+    left: 0; 
     
     animation: seguirCaminho 4s infinite linear; 
     transform-origin: center center;
@@ -1326,3 +1326,53 @@ display: flex;
     margin: 25px 45px 30px 45px;
 }
 
+.animacao-trem-container-linha1 {
+    position: relative;
+    width: 370px;
+    height: 150px; 
+    margin: 20px auto;
+}
+
+.trem-animado-linha1 {
+    position: absolute;
+    height: 50px;
+    width: 70px;
+    top: -0; 
+    left: 0; 
+    animation: seguirCaminhoLinha1 8s infinite linear; 
+    transform-origin: center center;
+}
+
+@keyframes seguirCaminhoLinha1 {
+    
+    0% {
+        transform: translate(0, -35px) rotate(0deg); 
+    }
+    
+   
+    20% {
+        transform: translate(300px, -35px) rotate(0deg); 
+    }
+    
+   
+    40% {
+       
+        transform: translate(300px, 125px) rotate(180deg); 
+    }
+    
+   
+    60% {
+        
+        transform: translate(20px, 125px) rotate(180deg); 
+    }
+    
+    
+    80% {
+        transform: translate(20px, 125px) rotate(180deg); 
+    }
+    
+    
+    100% {
+        transform: translate(0, -35px) rotate(0deg);
+    }
+}
