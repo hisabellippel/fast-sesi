@@ -95,6 +95,21 @@ if (isset($_GET['delete']) && isset($_GET['credencial_funcionario'])) {
         <h1>Funcionários:</h1>
         <?php if (!empty($message)) echo "<p style='color: red;'>$message</p>"; ?>
         <div id= "sair">
+
+
+        <div class="c2" style="display: flex; gap: 10px; align-items: center; border-radius: 30px; justify-content: center;">
+    <button type="button"
+        onclick="window.location.href='paginaCriarConta.php'"
+        style="background: #18519d; color: #fff; border: none; border-radius: 10px;
+               padding: 12px 32px; font-size: 15px; font-weight: bold;
+               box-shadow: 0 2px 8px rgba(0,0,0,0.12); cursor: pointer;
+               transition: background 0.2s; z-index: 9999; position: relative;
+               height: 35px; display: flex; align-items: center;">
+        Criar novo funcionário
+    </button>
+</div>
+
+                    
             <div class="botoes">
            
             </div>
@@ -149,7 +164,7 @@ echo '<table border="1" style="margin-right: 20px; margin-bottom: 20px; backgrou
                     echo '<tr><td colspan="2" style="text-align:center; padding: 8px;">
                         <div id="ladoai" style="display: flex; justify-content: center; gap: 10px; align-items: center;">
                          
-                            <a href="paginaAlterarPerfil2.php?credencial_funcionario=' . $row['credencial_funcionario'] . '">
+                            <a href="paginaAlterarPerfil3.php?credencial_funcionario=' . $row['credencial_funcionario'] . '">
                                 <button type="button">Alterar Perfil</button>
                             </a>';
                     

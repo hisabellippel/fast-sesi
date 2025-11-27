@@ -30,41 +30,12 @@ if ($_SESSION['cargo_funcionario'] !== 'ADM') {
 
 <body>
 
-        <?php
-        $pdo = new PDO("mysql:host=localhost;dbname=fast_sesi_sa;charset=utf8","root","root");
-
-        $stmt = $pdo->query("SELECT valor FROM temperaturas ORDER BY id DESC LIMIT 1");
-        $temp = $stmt->fetchColumn();
-
-        if (!$temp) {
-            $temp = "";
-        }
-        ?>
 
     <header>
         <div id="barraescura">
             <a href="paginaLogin.php?logout=1"><img id="im6" class="im6" src="../asets/imagens/barraAcima/Saída.png" alt=""></a>
             <img id="im2" class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt="">
-                <span>Temperatura</span>
-                <h1 id="temperature">xxxx</h1>
-            <script>
-
-                function set_Temperature() {
-                    var temp = document.getElementById("temperature");
-
-                    fetch('get_messages.php')
-                        .then(r => r.text())
-                        .then(data => {
-                            console.log("Recebido:", data);
-                            if (data.trim() != "") {
-                                temp.textContent = data.trim();
-                            }
-                        })
-                        .catch(err => console.error(err));
-                }
-                setInterval(set_Temperature, 1000);
-
-            </script>
+                
     </header>
     <br>
     <main>
@@ -78,7 +49,7 @@ if ($_SESSION['cargo_funcionario'] !== 'ADM') {
 
         <div class="fundo">
 
-            <form action="pesquisa.php" method="get" class="form-pesquisa" autocomplete="off">
+            <form action="pesquisa.php" method="get" class="form-pesquisa1" autocomplete="off">
             <input
                 type="text"
                 id="c-pesquisa"
