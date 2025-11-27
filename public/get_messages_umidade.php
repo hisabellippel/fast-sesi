@@ -4,7 +4,7 @@ include "db.php";
 
 $server = '7aecec580ecf4e5cbac2d52b35eb85b9.s1.eu.hivemq.cloud';
 $port = 8883;
-$topic = 'S1/temperatura';
+$topic = 'S1/umidade';
 $client_id = "phpmqtt-" . rand();
 
 $username = "Placa-1-Gustavo";
@@ -38,10 +38,9 @@ while (time() - $start < 2) {
 }
 
 $mqtt->close();
-
 if(($message<>0) && ($message<>"")){
 
-    $sql = "INSERT INTO temperaturas (valor, data_hora) VALUES (?, NOW())";
+    $sql = "INSERT INTO umidade (valor, data_hora) VALUES (?, NOW())";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("d", $message); 
     $stmt->execute();

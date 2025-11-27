@@ -26,7 +26,7 @@ if (!isset($_SESSION["credencial_funcionario"])) {
     <header>
         <div id="barraescura">
            <?php
-                $voltar = "paginaMenuPrincipalFuncionario.php"; 
+                $voltar = "../paginaMenuPrincipalFuncionario.php"; 
 
                 if (isset($_SESSION["cargo_funcionario"]) && $_SESSION["cargo_funcionario"] === "ADM") {
                     $voltar = "../paginaMenuPrincipal.php";
@@ -73,13 +73,14 @@ if (!isset($_SESSION["credencial_funcionario"])) {
         $pdo = new PDO("mysql:host=localhost;dbname=fast_sesi_sa;charset=utf8","root","root");
 
         $stmt = $pdo->query("SELECT valor FROM temperaturas ORDER BY id DESC LIMIT 1");
-        $temp = $stmt->fetchColumn();
+        $temp1 = $stmt->fetchColumn();
 
-        echo $temp ? $temp : "";
+        $stmt = $pdo->query("SELECT valor FROM presenca ORDER BY id DESC LIMIT 1");
+        $temp2 = $stmt->fetchColumn();
 
-        if (!$temp) {
-            $temp = "";
-        }
+        $stmt = $pdo->query("SELECT valor FROM umidade ORDER BY id DESC LIMIT 1");
+        $temp3 = $stmt->fetchColumn();
+
         ?>
 
         <div class="verificacao">
@@ -89,7 +90,7 @@ if (!isset($_SESSION["credencial_funcionario"])) {
        <div class="sensores1">
             <p>Sensor 1: Temperatura:
                 <span class="temp" style="color:black; padding-left: 20px; font-size:20px; display:flex">
-                    <h3> 🌡️ </h3> <strong id="temp1"><?= $temp ?>°C</strong>
+                    <h3> 🌡️ </h3> <strong id="temp1"><?= $temp1 ?>°C</strong>
                 </span>
             </p>
         </div>
@@ -109,10 +110,13 @@ if (!isset($_SESSION["credencial_funcionario"])) {
         </script>
 
         <div class="sensores2">
-            <p>Sensor 2: Presença: 🚨
+            <p>Sensor 2: Presença: 
+                <span class="temp" style="color:black; padding-left: 20px; font-size:20px; display:flex">
+                <h3> 🚨 </h3><strong id="temp1"><?= $temp2 ?></strong>
+                </span>
             <script>
             function atualizarTemperatura() {
-                fetch("get_messages.php")
+                fetch("get_messages_presenca.php")
                     .then(response => response.text())
                     .then(valor => {
                         if (valor.trim() !== "") {
@@ -127,10 +131,13 @@ if (!isset($_SESSION["credencial_funcionario"])) {
         </div>
 
         <div class="sensores3">
-            <p>Sensor 3: Umidade: 🌧️
+            <p>Sensor 3: Umidade: 
+                <span class="temp" style="color:black; padding-left: 20px; font-size:20px; display:flex">
+                 <h3> 🌧️ </h3><strong id="temp1"><?= $temp3 ?></strong>
+                </span>
             <script>
             function atualizarTemperatura() {
-                fetch("get_messages.php")
+                fetch("get_messages_umidade.php")
                     .then(response => response.text())
                     .then(valor => {
                         if (valor.trim() !== "") {
