@@ -15,7 +15,6 @@ if (!isset($_SESSION["credencial_funcionario"])) {
     <title>Selecione Linhas</title>
     <link rel="stylesheet" href="../style/styles.css">
     <link rel="stylesheet" href="../style/style2.css">
-
 </head>
 <body>
     <header>

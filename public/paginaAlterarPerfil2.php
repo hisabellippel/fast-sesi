@@ -92,7 +92,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
     if ($uploadOk == 1) {
         $sql = "UPDATE funcionario SET nome_funcionario=?, cpf_funcionario=?, email_funcionario=?, telefone_funcionario=?, senha_funcionario=?, foto_funcionario=? WHERE credencial_funcionario=?";
         $stmt = $conn->prepare($sql);
-        $stmt->bind_param("ssssss", $nome_funcionario, $cpf_funcionario, $email_funcionario, $telefone_funcionario, $senha_funcionario, $filename, $credencial);
+        $stmt->bind_param("sssssss", $nome_funcionario, $cpf_funcionario, $email_funcionario, $telefone_funcionario, $senha_funcionario, $filename, $credencial);
 
         if ($stmt->execute()) {
             echo "<script>alert('Perfil atualizado com sucesso!'); window.location.href='paginaAlterarPerfil.php';</script>";
@@ -260,7 +260,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
                  <div class="c2">
                     <label for="funcao_funcionario"></label><br>
                     <img class="imag" src="../asets/imagens/meio/funcao.png" alt="">
-                    <input type="text" name="funcao_funcionario" id="funcao" placeholder="Insira sua função:" value="<?php echo htmlspecialchars($funcao_funcionario); ?>" required>
+                    <input type="text" name="funcao_funcionario" id="funcao" placeholder="Insira sua função:" value="<?php echo htmlspecialchars($funcao_funcionario); ?>" readonly>
                      </div>
 
                 <br>
