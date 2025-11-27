@@ -2,7 +2,7 @@
 require("phpMQTT.php");
 include "db.php";
 
-$server = '7aecec580ecf4e5cbac2d52b35eb85b9.s1.eu.hivemq.cloud';
+$server = 'a1997d4dddb04e48946891c0ad3241ea.s1.eu.hivemq.cloud';
 $port = 8883;
 $topic = 'S1/presenca';
 $client_id = "phpmqtt-" . rand();
@@ -25,7 +25,7 @@ $mqtt->subscribe([
         "qos" => 0,
         "function" => function ($topic, $msg) use (&$message) {
             if (!empty($msg)) {
-                $message = $msg;
+                $message = (int)$msg;
             
             }
         }
