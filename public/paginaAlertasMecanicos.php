@@ -62,24 +62,32 @@ if (!isset($_SESSION["credencial_funcionario"])) {
 
             <div class="lado">
                 <div class="red00">
-                    <img src="../asets/imagens/meio/botaoemergencia.png" alt="" height= "60px" width= "60px">
-                    <a href="paginaBotaodeEmergencia1.php"><p class="cormenu">Botão de Emergência</p></a>
+                    <a href="paginaBotaodeEmergencia1.php">
+                        <img src="../asets/imagens/meio/botaoemergencia.png" alt="" height= "60px" width= "60px">
+                        <p class="cormenu">Botão de Emergência</p>
+                    </a>
                 </div>
 
                 <div class="red111">
-                    <img src="../asets/imagens/meio/eixos.png" alt="" height= "70px" width= "70px">
-                    <a href="paginaEixosFerroviarios1.php"><p class="cormenu">Eixos Ferroviários</p></a>
+                    <a href="paginaEixosFerroviarios1.php">
+                        <img src="../asets/imagens/meio/eixos.png" alt="" height= "70px" width= "70px">
+                        <p class="cormenu">Eixos Ferroviários</p>
+                    </a>
                 </div>
             </div>
             <div class="lado">
                 <div class="red222">
-                    <img src="../asets/imagens/meio/frenagem.png" alt="" height= "50px" width= "60px">
-                    <a href="paginaSistemadeFrenagem1.php"><p class="cormenu">Sistema de Frenagem</p></a>
+                    <a href="paginaSistemadeFrenagem1.php">
+                        <img src="../asets/imagens/meio/frenagem.png" alt="" height= "50px" width= "60px">
+                        <p class="cormenu">Sistema de Frenagem</p>
+                    </a>
                 </div>
 
                 <div class="red333">
-                    <img src="../asets/imagens/meio/potencia.png" alt="" height= "60px" width= "70px">
-                    <a href="paginaResistoresdePotencia.php"><p class="cormenu">Resitores de potência</p></a>
+                    <a href="paginaResistoresdePotencia.php">
+                        <img src="../asets/imagens/meio/potencia.png" alt="" height= "60px" width= "70px">
+                        <p class="cormenu">Resitores de potência</p>
+                    </a>
                 </div>
             </div>
         </div>

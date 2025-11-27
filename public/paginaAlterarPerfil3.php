@@ -79,7 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
     $filename = $current_foto; // Default to current
 
     if (isset($_FILES["foto_funcionario"]) && !empty($_FILES["foto_funcionario"]["tmp_name"])) {
-        $target_dir = __DIR__ . '/../uploads/';
+        $target_dir = __DIR__ . '/uploads/uploads/';
         $original_name = basename($_FILES["foto_funcionario"]["name"]);
         $filename = time() . '_' . $original_name;
         $target_file = $target_dir . $filename;
@@ -185,7 +185,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
     <main>
         <div class="brancaAlterarPerfil2">
             <?php
-            $img_src = ($foto_funcionario && $foto_funcionario != 'default.jpg') ? "../uploads/" . htmlspecialchars($foto_funcionario) : "../asets/imagens/meio/rostoAlterarPerfil.png";
+            $img_path = __DIR__ . '/uploads/uploads/' . htmlspecialchars($foto_funcionario);
+            $img_src = ($foto_funcionario && $foto_funcionario != 'default.jpg' && file_exists($img_path)) ? "uploads/uploads/" . htmlspecialchars($foto_funcionario) : "../asets/imagens/meio/rostoAlterarPerfil.png";
             echo '<div class="perfil-container"><img id="previewImg" src="' . $img_src . '" alt="Foto de Perfil"></div>';
             ?>
 
@@ -229,7 +230,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['credencial_funcionario
                  <div class="c2">
                     <label for="senha_funcionario"></label><br>
                     <img class="imag" src="../asets/imagens/meio/senha.png" alt="">
-                    <input type="text" name="senha_funcionario" id="senha" placeholder="Insira sua senha:" value="<?php echo htmlspecialchars($senha_funcionario); ?>" required>
+                    <input type="password" name="senha_funcionario" id="senha" placeholder="Insira sua senha:" value="<?php echo htmlspecialchars($senha_funcionario); ?>" required>
                 </div>
 
                 <br>

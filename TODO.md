@@ -1,0 +1,2 @@
+- [x] Modify public/paginaFuncionarios.php to check if uploaded photo file exists before displaying it, fallback to default image if not.
+- [x] Modify public/paginaAlterarPerfil3.php to check if uploaded photo file exists before displaying it, fallback to default image if not.

@@ -41,17 +41,12 @@ $conn->close();
     <link rel="stylesheet" href="../style/style2.css">
     <link rel="stylesheet" href="../style/style_trens.css"> 
     <style>
-        /* CSS do BODY mantido no HTML, conforme solicitado */
         body { color: #0f172a; }
-        
-        /* O restante do CSS foi movido para style_trens.css */
     </style>
 </head>
 <body>
-  <header>
-   <div id="barraescura">
-
- 
+    <header>
+        <div id="barraescura">
             <a href="paginaMenuPrincipal.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt="">
             <a href="paginaNotificacoes.php"><img id="im2" class="im2" src="../asets/imagens/barraAbaixo/sinoNotificacao.png" alt=""></a>
         </div>
