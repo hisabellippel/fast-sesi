@@ -26,10 +26,10 @@ if (!isset($_SESSION["credencial_funcionario"])) {
     <header>
         <div id="barraescura">
            <?php
-                $voltar = "paginaMenuPrincipalFuncionario.php"; 
+                $voltar = "../paginaMenuPrincipalFuncionario.php"; 
 
                 if (isset($_SESSION["cargo_funcionario"]) && $_SESSION["cargo_funcionario"] === "ADM") {
-                    $voltar = "paginaMenuPrincipal.php";
+                    $voltar = "../paginaMenuPrincipal.php";
                 }
                ?>
                <a href="<?php echo $voltar; ?>">
