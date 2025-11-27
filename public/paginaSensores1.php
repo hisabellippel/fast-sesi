@@ -87,7 +87,7 @@ if (!isset($_SESSION["credencial_funcionario"])) {
         <div class="sensores1">
             <p>Sensor 1: Temperatura: 
                 <span class="temp" style="color:black; padding-top: 5px; margin-left:50px; font-size:20px; display:flex">
-                    <h1> 🌡️ </h1> <strong id="temperature"><?= $temp ?> °C</strong>
+                    <h3> 🌡️ </h3> <strong id="temperature"><?= $temp ?> °C</strong>
             <script>
 
                 function set_Temperature() {

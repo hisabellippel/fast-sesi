@@ -30,16 +30,6 @@ if ($_SESSION['cargo_funcionario'] !== 'ADM') {
 
 <body>
 
-        <?php
-        $pdo = new PDO("mysql:host=localhost;dbname=fast_sesi_sa;charset=utf8","root","root");
-
-        $stmt = $pdo->query("SELECT valor FROM temperaturas ORDER BY id DESC LIMIT 1");
-        $temp = $stmt->fetchColumn();
-
-        if (!$temp) {
-            $temp = "";
-        }
-        ?>
 
     <header>
         <div id="barraescura">

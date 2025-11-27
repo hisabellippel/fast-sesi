@@ -606,6 +606,7 @@ background-color: rgb(136, 144, 153);
     padding: 1px;
     justify-content: center;
     position: relative;
+    align-items: center;
 }
 
 .sensores2{
