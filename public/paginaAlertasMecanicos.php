@@ -37,7 +37,7 @@ if (!isset($_SESSION["credencial_funcionario"])) {
 
         <br>
             
-         <form action="pesquisa.php" method="get" class="form-pesquisa" autocomplete="off">
+         <form action="pesquisa.php" method="get" class="form-pesquisa1" autocomplete="off">
             <input
                 type="text"
                 id="c-pesquisa"

@@ -97,6 +97,20 @@ CREATE TABLE temperaturas (
     data_hora DATETIME NOT NULL
 );
 
+CREATE TABLE umidade (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    valor FLOAT NOT NULL,
+    data_hora DATETIME NOT NULL
+);
+
+
+CREATE TABLE presenca (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    valor FLOAT NOT NULL,
+    data_hora DATETIME NOT NULL
+);
+
+
 
 INSERT INTO funcionario (credencial_funcionario, nome_funcionario, cpf_funcionario, email_funcionario, senha_funcionario,
     telefone_funcionario, cargo_funcionario, funcao_funcionario, salario_funcionario)
