@@ -4,10 +4,10 @@ include "db.php";
 
 $server = 'a1997d4dddb04e48946891c0ad3241ea.s1.eu.hivemq.cloud';
 $port = 8883;
-$topic = 'Projeto/S2/Distancia2';
+$topic = 'S1/presenca';
 $client_id = "phpmqtt-" . rand();
 
-$username = "Placa-2-Julia";
+$username = "Placa-1-Gustavo";
 $password = "123456abX";
 $cafile = __DIR__ . "/cacert.pem";
 $message = "";
@@ -39,5 +39,16 @@ while (time() - $start < 2) {
 }
 
 $mqtt->close();
+if(($message<>0) && ($message<>"")){
+
+    $sql = "INSERT INTO presenca (valor, data_hora) VALUES (?, NOW())";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("d", $message); 
+    $stmt->execute();
+    
+    $stmt->close();
+    $conn->close();
+    
+}
 
 ?>
