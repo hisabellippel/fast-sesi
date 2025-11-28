@@ -120,7 +120,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div class="pad22">
            
             <div class="branca2">
-                   <a href="paginaMenuPrincipal.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
+                   <a href="paginaFuncionarios.php"><img class="topo1" src="../asets/imagens/barraAcima/flecha.png" alt=""></a>
                 <img class="i9" src="../asets/imagens/meio/perfil.png" alt=""/>
                 
 
