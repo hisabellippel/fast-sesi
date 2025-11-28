@@ -133,5 +133,5 @@ VALUES
 INSERT INTO temperaturas 
 (valor, data_hora)
 VALUES
-( 25, 2025-11-27 08:41:20); 
+( 25, '2025-11-27 08:41:20'); 
 
