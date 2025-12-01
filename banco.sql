@@ -52,7 +52,7 @@ CREATE TABLE sensores(
 );
 
 CREATE TABLE linhas(
-    id_linhas int primary key AUTO_INCREMENT NOT NULL ,
+    id_linhas int primary key AUTO_INCREMENT NOT NULL,
     nome_linhas varchar(45) NOT NULL,
     velocidade_linhas int(45) NOT NULL,
     passageiros_linhas int NOT NULL,
@@ -63,8 +63,11 @@ CREATE TABLE linhas(
     consumo_energia_linhas int NOT NULL,
     acidentes_linhas int NOT NULL,
     falhas_tecnicas_linhas varchar(45),
-    motorista_linhas INT NOT NULL,
-    FOREIGN KEY (motorista_linhas) REFERENCES funcionario(id_funcionario)
+    motorista_linhas INT NULL,
+    CONSTRAINT fk_motorista
+        FOREIGN KEY (motorista_linhas) 
+        REFERENCES funcionario(id_funcionario)
+        ON DELETE SET NULL
 );
 
 CREATE TABLE trilhos_manutencao(
@@ -103,14 +106,11 @@ CREATE TABLE umidade (
     data_hora DATETIME NOT NULL
 );
 
-
 CREATE TABLE presenca (
     id INT AUTO_INCREMENT PRIMARY KEY,
     valor FLOAT NOT NULL,
     data_hora DATETIME NOT NULL
 );
-
-
 
 INSERT INTO funcionario (credencial_funcionario, nome_funcionario, cpf_funcionario, email_funcionario, senha_funcionario,
     telefone_funcionario, cargo_funcionario, funcao_funcionario, salario_funcionario)
@@ -128,10 +128,9 @@ VALUES
 ('Ouro negro — Monte Claro', 75, 22500, 'Metrópolis Leste', 115, '2025-11-18 09:15:00', 'Média', 500, 1, 'Freio revisado', 3),
 ('Rio Verde Eldoria', 90, 13200, 'Corredor Sul', 80, '2025-11-18 10:00:00', 'Alta', 520, 0, 'Nenhuma', 4),
 ('Coralua — Maresia', 70, 19800, 'Vale dos Pinheiros', 100, '2025-11-18 11:10:00', 'Média', 480, 2, 'Falha elétrica leve', 5),
-('Linha Central', 85, 16000, 'Fluxo alto', 36, '2025-11-18 12:00:00', 'Alta', 560, 0, 'Nenhuma', 1); 
+('Linha Central', 85, 16000, 'Fluxo alto', 36, '2025-11-18 12:00:00', 'Alta', 560, 0, 'Nenhuma', 1);
 
 INSERT INTO temperaturas 
 (valor, data_hora)
 VALUES
-( 25, '2025-11-27 08:41:20'); 
-
+(25, '2025-11-27 08:41:20');
